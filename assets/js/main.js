@@ -137,3 +137,60 @@ $('#hover-border-color, #hover-border-width').prop('disabled', false);
 	} 
     });
 });
+
+
+
+// DEFAULT VALUES FOR FALL BACK
+
+let   text_styling = {
+    font_text: "My Groovy Button",
+    font_family: "'Lato', sans-serif;",   
+    font_color: "#3829ff",
+    font_size: "12px",
+    text_shadow: '#808080',
+    shadow_X_Axis: '3px',
+    shadow_Y_Axis: '0px',
+    text_shaddow_blur: '3px',
+    }
+
+let  box_styling = {
+    style_box_shadow: "#808080",
+    style_box_x:  "2px",
+    style_box_y:     "5px",
+    style_box_blur:   "6px",
+    style_box_padding:   "5px",
+    style_tb_padding:   "5px",
+    style_lr_padding:   "5px",
+    }
+
+let   border_styling = {
+    style_border_radius: "5px",
+    style_border_width: "1px",
+    style_border_color: "#3834FF",   // note sure what color, but need to add one once its all working.
+    }
+
+let color_styling = {
+    color_styling_color: "#007bff",
+    style_gradient1_color: "#007bff",
+    style_gradient2_color: "#005ec2",
+    gradient_direction: "top",
+
+    }
+
+    hover_styling = {
+        style_color_hover:  "005ec2",
+    style_gradient1_hover:  "005ec2",
+    style_gradient2_hover:  "007bff",
+    gradient_hover_direction:  "to bottom",
+
+    }
+
+
+// ADDS THE TEXT TO THE DEMO BUTTON
+var demoText = ""
+    var demoBtn = $('#demo-button');
+
+    $( "#style-text" ).on('keyup', function() {
+        demoText = $('#style-text').val()
+        $('#demo-button').html(demoText);
+});

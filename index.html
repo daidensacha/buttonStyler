@@ -149,7 +149,7 @@
                                                         <div class="row mb-3 text-sm-right">
                                                             <label for="style-color" class="col-sm-4 col-form-label">Color</label>
                                                             <div class="col-sm-8">
-                                                                <input class="form-control color-input" type="text" id="style-color" data-jscolor="{value:'#3829FF', alpha:1}" >
+                                                                <input class="form-control color-input" type="text" id="style-color" data-jscolor="{value:'#FDFFBB', alpha:1}" oninput="update()">
                                                             </div>
                                                             <!-- <script>  oninput="console.log(this.jscolor.toString() + ' ' + this.name)  </script> -->
                                                     
@@ -158,10 +158,15 @@
                                                         <div class="row mb-3 text-sm-right">
                                                             <label for="style-color" class="col-sm-4 col-form-label">Font size</label>
                                                             <div class="range-slider col-sm-8">
-                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36">
+                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36" oninput="sliderValue()" >
                                                                 <span class="range-slider__value">12</span>
                                                             </div>
                                                         </div>
+
+                                                        <script>
+                                                            //
+                                                                   // oninput="$('#codeFontSize').html($(this).val())"
+                                                         </script>
                                                     
                                                     </form>
                                                 </div>
@@ -185,7 +190,7 @@
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-shadow" class="col-sm-4 col-form-label">Text Shadow</label>
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -256,7 +261,7 @@
                                                                 <label for="style-box-shadow" class="col-sm-4 col-form-label">Shadow</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -367,7 +372,7 @@
                                                                 <label for="style-border-color" class="col-sm-4 col-form-label">Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input border-group" type="text" id="style-border-color" data-jscolor="{value:'#3829FF', alpha:1}">
+                                                                    <input class="form-control color-input border-group" type="text" id="style-border-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -432,21 +437,21 @@
                                                                 <label for="style-bg-color" class="col-sm-4 col-form-label">Background</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'#3829FF', alpha:1}">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient1-color" class="col-sm-4 col-form-label">Color 1</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient1-color" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient1-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient2-color" class="col-sm-4 col-form-label">Color 2</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient2-color" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient2-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -496,7 +501,7 @@
     
                                             <div class="row heading">
                                                 <div class="col-sm-6" >
-                                                    <h3>Background Color</h3>
+                                                    <h3>Hover Background</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
                                                     <input type="checkbox" class="form-control" id="hover-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
@@ -511,28 +516,28 @@
                                                                 <label for="style-bg-color" class="col-sm-4 col-form-label">Solid Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="style-color-hover" data-jscolor="{value:'#3829FF', alpha:1}">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-color-hover" data-jscolor="{value:'rgba(0,0,0,0)'}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient1-hover" class="col-sm-4 col-form-label">Color 1</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient1-hover" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient1-hover" data-jscolor="{value:'rgba(0,0,0,0)'}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient2-hover" class="col-sm-4 col-form-label">Color 2</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient2-hover" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient2-hover" data-jscolor="{value:'rgba(0,0,0,0)'}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="gradient-hover-direction" class="col-sm-4 col-form-label hover-group">Direction</label>
                                                                 <div class="col-sm-8">
                                                                 <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" disabled="true">
+                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" oninput="update()" disabled="true">
                                                                     <option selected>to bottom</option>
                                                                     <option value="1">to right</option>
                                                                     <option value="2">to bottom</option>
@@ -553,10 +558,10 @@
                                                             </div>
     
                                                             <div class="row mb-3 text-sm-right">
-                                                                <label for="hover-border-color" class="col-sm-4 col-form-label">Hover order Color</label>
+                                                                <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Border Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -607,7 +612,7 @@
                                     <!-- <pre class="text-left"> -->
                                         <code class = "text-left d-block" id="cssTextarea"  style="color: pink">
 
-                                            <span class="css-out d-block" id="btnId">.btn {</span>
+                                            <span class="css-out d-block" id="openTag">.btn {</span>
                                             <span class="css-out d-block pl-3"  id="fontFamily">font-family: 'Lato', sans-serif;</span>
                                             <span class="css-out d-block pl-3"  id="fontColor">color: #ffffff;</span>
                                             <span class="css-out d-block pl-3" id="codeFontSize">font-size: 12px;</span>
@@ -626,14 +631,22 @@
                                             <span class="css-out d-block pl-3" id="styleBorderWidth"></span>
                                             <span class="css-out d-block pl-3" id="styleBorderColor"></span>
                                             <span class="css-out d-block pl-3" id="styleBgColor"></span>
-                                            <span class="css-out d-block pl-3" id="styleGr1Color"></span>
-                                            <span class="css-out d-block pl-3" id="styleGr2Color"></span>
-                                            <span class="css-out d-block pl-3" id="styleGrDirection"></span>
+                                            
+                                            
+                                            <span class="css-out d-block pl-3" id="styleGrDirection"> <span class="css-out d-block pl-3" id="styleGr1Color"></span> <span class="css-out d-block pl-3" id="styleGr2Color"></span></span>
+                                            <span class="css-out d-block mb-2" id="endTag">}</span>
+                                            <span class="css-out d-block" id="hoverOpenTag">.btn:hover {</span>
                                             <span class="css-out d-block pl-3" id="styleColorHover"></span>
-                                            <span class="css-out d-block pl-3" id="styleGr1Hover"></span>
-                                            <span class="css-out d-block pl-3" id="stylegr2Hover"></span>
-                                            <span class="css-out d-block pl-3" id="styleGrHoverDirection"></span>
-                                            <span class="css-out d-block" id="endTag">}</span>
+                                            
+                                            <span class=""> <!-- Gradient properties to show inline -->
+                                                <span class="css-out d-inline pl-0" id="styleGrHoverDirection"></span>
+                                                <span class="css-out d-inline pl-3" id="styleGr1Hover"></span>
+                                                <span class="css-out d-inline pl-3" id="styleGr2Hover"></span>
+                                            </span>
+
+                                            <span class="css-out d-block pl-3" id="styleBorderHover"></span>
+
+                                            <span class="css-out d-block" id="hoverEndTag">}</span>
 
                                         </code>
                                     <!-- </pre> -->
@@ -678,6 +691,7 @@
         <div class="row footer">
             <div class="col-xs-12"></div>
         </div>
+       
 
     </div> <!-- end main container div -->
 
@@ -688,5 +702,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="assets/js/jscolor.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <script src="assets/js/colorScript.js"></script>
+    <script>
+        // jscolor.install();
+        // update();
+        
+    </script>
+    
 </body>
 </html>

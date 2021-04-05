@@ -25,19 +25,19 @@ $(function() {
 //    ========================= JSCOLOR PICKER OPTIONS =========================
 //Color picker options
 // These options apply to all color pickers on the page
-jscolor.presets.default = {
-	previewPosition:'right', 
-    previewSize:60, 
-    position:'top',
-    palette:'rgba(0,0,0,0) #fff #808080 #000 #996e36 #f55525 #ffe438 #88dd20 #22e0cd #269aff #bb1cd4',
-	backgroundColor:'rgba(61,20,130,1)', 
-	borderColor:'rgba(54,68,187,1)', 
-    width:139, 
-    height:80, 
-	controlBorderColor:'rgba(54,68,187,1)', 
-    sliderSize:12, 
-	shadowColor:'rgba(0,0,0,0.43)'
-};
+// jscolor.presets.default = {
+// 	previewPosition:'right', 
+//     previewSize:60, 
+//     position:'top',
+//     palette:'rgba(0,0,0,0) #fff #808080 #000 #996e36 #f55525 #ffe438 #88dd20 #22e0cd #269aff #bb1cd4',
+// 	backgroundColor:'rgba(61,20,130,1)', 
+// 	borderColor:'rgba(54,68,187,1)', 
+//     width:139, 
+//     height:80, 
+// 	controlBorderColor:'rgba(54,68,187,1)', 
+//     sliderSize:12, 
+// 	shadowColor:'rgba(0,0,0,0.43)'
+// };
 
 
 // ==============  RANGE SLIDER ================================================
@@ -138,9 +138,16 @@ $('#hover-border-color, #hover-border-width').prop('disabled', false);
     });
 });
 
-
+let x;
 
 // DEFAULT VALUES FOR FALL BACK
+
+let cssTags = {
+    open_tag: ".btn {",
+    close_tag: "}",
+    hoverOpenTag: ".btn:hover {",
+    hoverCloseTag: "}",
+}
 
 let   text_styling = {
     font_text: "My Groovy Button",
@@ -177,8 +184,8 @@ let color_styling = {
 
     }
 
-    hover_styling = {
-        style_color_hover:  "005ec2",
+let hover_styling = {
+    style_color_hover:  "005ec2",
     style_gradient1_hover:  "005ec2",
     style_gradient2_hover:  "007bff",
     gradient_hover_direction:  "to bottom",
@@ -188,9 +195,44 @@ let color_styling = {
 
 // ADDS THE TEXT TO THE DEMO BUTTON
 var demoText = ""
-    var demoBtn = $('#demo-button');
-
+var demoButton = $('#demo-button');
     $( "#style-text" ).on('keyup', function() {
         demoText = $('#style-text').val()
         $('#demo-button').html(demoText);
 });
+
+var openTag = document.getElementById("openTag");
+var endTag = document.getElementById("endTag");
+
+// ADDS TO THE START AND END CODE FOR THE BUTTON CSS
+openTag.innerHTML = `${cssTags.open_tag}`;
+endTag.innerHTML = `${cssTags.close_tag}`;
+
+$("#rs-1").on("slide", function (slideEvt) {
+    $("#rs-1-val").text(slideEvt.value);
+  });
+
+  // ADDING AND CHANGING FONT SIZE  TO CSS OUTPUT AND BUTTON
+  var btn = document.getElementById("demo-button"); 
+  var fontsizeSlider = document.getElementById("style-fontsize");  // source input
+  var codeFontSize = document.getElementById("codeFontSize");      // target span css output
+  // FUNCTION TO DISPLAY VALUE IN THE CSS OUTPUT // from w3c schools https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_oninput
+  function sliderValue() { 
+    var x = fontsizeSlider.value;
+    codeFontSize.innerHTML = `font-size: ${x}px;`;
+    btn.style.fontSize = `${x}px`;
+    console.log(x)
+    }    
+        
+// ADD FONT FAMILY TO THE DEMO BTN AND CSS DISPLAY
+const selectElement = document.querySelector('#style-font');
+fontFamily.innerHTML = `font-family: ${text_styling.font_family}`;
+
+selectElement.addEventListener('change', (event) => {
+    fontFamily = selectElement.value
+    const result = document.querySelector('#fontFamily');
+    result.textContent = `font-family: ${event.target.value};`;
+    btn.style.fontFamily = event.target.value;
+})
+
+

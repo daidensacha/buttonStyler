@@ -15,7 +15,68 @@
         <div class="row">
             <div class="col-xs-12">
 
-
+                <section class="bg-primary">
+                    <div class="container">
+                        <!--  START NAVBAR   -->
+                        <nav class="navbar  fixed-top navbar-dark bg-dark navbar-offcanvas">
+                            <a class="navbar-brand mr-auto" href="#"></a>
+                
+                            <!--     If you want to show the button online on mobile use this toggle    -->
+                
+                            <!-- <button class="navbar-toggler p-0 border-0 " type="button" data-toggle="offcanvas">
+                                            <span class="navbar-toggler-icon"></span>
+                                          </button> -->
+                
+                            <!--      This toggle button is always visible  -->
+                            <button class="navbar-toggler d-block" type="button" id="navToggle">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                
+                            <div class="navbar-collapse offcanvas-collapse">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Link <span class="sr-only"></span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                                            <a class="dropdown-item" href="#">Link Secondary</a>
+                                            <a class="dropdown-item" href="#">Link Secondary</a>
+                                            <a class="dropdown-item" href="#">Link Secondary</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                
+                
+                            </div>
+                        </nav>
+                        <!--  END NAVBAR   -->
+                    </div>
+                    <!--/.container    -->
+                
+                </section>
+                <section> <!-- -->
+                    <h1>Main</h1>
+                    <p>Possible Jumbotron content section</p>
+                </section>
+                <main>
+                    <div class="row" style="height:100%;">
+                        <div class="container">
+                            <h2>Main content</h2>
+                        </div>
+                    </div>
+                
+                </main>
 
             </div> <!-- end nav col -->
         </div> <!-- end nav conatiner row -->
@@ -33,6 +94,497 @@
                 <div class="row"> 
 
                     <div class="col-md-6"> <!-- accordion column -->
+
+                        <h1>Accordion</h1>
+
+                        <!-- start accordion -->
+                        <div id="accordion">
+                            <!-- Accordion begins -->
+                            <div class="card">
+                                <div class="card-header" id="text-heading">
+                                    <h5 class="mb-0">                                                                       <!-- note to self, remove the btn-link class from the accordion botton -->
+                                        <button class="btn btn-block text-right" data-toggle="collapse" data-target="#form-text" 
+                                            aria-expanded="true" aria-controls="form-text">
+                                            <h3 class="accordion-heading">Text Styling</h3> 
+                                        </button>
+                                    </h5>
+                                </div>
+    
+                                <div id="form-text" class="collapse show" aria-labelledby="form-text"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+    
+                                        <div class="container">
+                                            <div class="row heading">
+                                                <div class="col-sm-12">
+                                                    <h3>Font</h3>
+                                                </div>
+                                            </div>
+                                            <div class="row text-group">
+                                                <div class="col-sm-12">
+                                                    <form>
+                                                        <div class="row mb-3 text-sm-right">
+                                                          <label for="style-text" class="col-sm-4 col-form-label">Text</label>
+                                                          <div class="col-sm-8">
+                                                            <input type="text" class="form-control" id="style-text" placeholder="My groovy button">
+                                                          </div>
+                                                        </div>
+                                                    
+                                                        <div class="row mb-3 text-sm-right">
+                                                          <label for="style-font" class="col-sm-4 col-form-label">font-family</label>
+                                                          <div class="col-sm-8">
+                                                            <!-- <input type="select" class="form-control" id="style-font"> -->
+                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example">
+                                                                <option selected>'Lato', sans-serif;</option>
+    
+                                                                <option value="'Lobster', cursive;">'Lobster', cursive</option>
+                                                                <option value="'Montserrat', sans-serif">'Montserrat', sans-serif</option>
+                                                                <option value="'Oxygen', sans-serif">'Oxygen', sans-serif</option>
+                                                                <option value="'Poppins', sans-serif">'Poppins', sans-serif</option>
+                                                                <option value="'PT Sans', sans-serif">'PT Sans', sans-serif</option>
+                                                                <option value="'Roboto', sans-serif">'Roboto', sans-serif</option>
+                                                              </select>
+                                                          </div>
+                                                        </div>
+                                                        <div class="row mb-3 text-sm-right">
+                                                            <label for="style-color" class="col-sm-4 col-form-label">Color</label>
+                                                            <div class="col-sm-8">
+                                                                <input class="form-control color-input" type="text" id="style-color" data-jscolor="{value:'#3829FF', alpha:1}" >
+                                                            </div>
+                                                            <!-- <script>  oninput="console.log(this.jscolor.toString() + ' ' + this.name)  </script> -->
+                                                    
+                                                        </div>
+                                                    
+                                                        <div class="row mb-3 text-sm-right">
+                                                            <label for="style-color" class="col-sm-4 col-form-label">Font size</label>
+                                                            <div class="range-slider col-sm-8">
+                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36">
+                                                                <span class="range-slider__value">12</span>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    </form>
+                                                </div>
+                                                <!-- <div class="col-sm-4"></div>
+                                                <div class="col-sm-4"></div> -->
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="row heading">
+                                                <div class="col-sm-6">
+                                                    <h3>Shadow</h3>
+                                                </div>
+                                                <div class="col-sm-6 text-right">
+                                                    <input type="checkbox" class="form-control" id="blur-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow">
+                                                </div>
+                                            </div>
+                                            <div class="row text-group">
+                                              
+                                                <div class="col-sm-12">
+                                                    <form>
+                                                        <fieldset>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-text-shadow" class="col-sm-4 col-form-label">Text Shadow</label>
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-text-x" class="col-sm-4 col-form-label">X-Axis</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range blur-group" id="style-text-x" type="range" value="2" min="-10" max="10" disabled="true">
+                                                                    <span class="range-slider__value">2</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-text-y" class="col-sm-4 col-form-label">Y-Axis</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="0" min="-10" max="10" disabled="true">
+                                                                    <span class="range-slider__value">0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-text-blur" class="col-sm-4 col-form-label">Blur</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="5" min="0" max="20" disabled="true">
+                                                                    <span class="range-slider__value">5</span>
+                                                                </div>
+                                                            </div>
+    
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                              
+                                            </div> <!-- Row text group end -->
+                                           
+                                        </div><!-- End container-->
+    
+                                    </div><!-- end card body-->
+                                </div> <!-- end for text -->
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="box-heading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-block collapsed" data-toggle="collapse"
+                                            data-target="#form-box" aria-expanded="false"
+                                            aria-controls="form-box">
+                                            <h3 class="accordion-heading text-right">
+                                                Box Styling
+                                            </h3>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="form-box" class="collapse" aria-labelledby="form-box"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+    
+                                        <div class="container">
+                                            <div class="row heading">
+                                                <div class="col-sm-6" >
+                                                    <h3>Box</h3>
+                                                </div>
+                                                <div class="col-sm-6 text-right">
+                                                    <input type="checkbox" class="form-control" id="shadow-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow">
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="row text-group">
+                                                
+                                                <div class="col-sm-12">
+                                                    <form action="">
+                                                        <fieldset>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-box-shadow" class="col-sm-4 col-form-label">Shadow</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-box-x" class="col-sm-4 col-form-label">X-Axis</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range shadow-group" id="style-box-x" type="range" value="2" min="-10" max="10" disabled="true">
+                                                                    <span class="range-slider__value">2</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-box-y" class="col-sm-4 col-form-label">Y-Axis</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="0" min="-10" max="10" disabled="true">
+                                                                    <span class="range-slider__value">0</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-box-blur" class="col-sm-4 col-form-label">Blur</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="5" min="0" max="20" disabled="true">
+                                                                    <span class="range-slider__value">5</span>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="dropdown-divider"></div>
+                                                        </fieldset>
+    
+                                                    </form>
+    
+                                                </div>
+                                                <div class="dropdown-divider"></div> <!-- second group divier -->
+                                                <div class="col-sm-12">
+                                                    <div class="row heading">
+                                                        <div class="col-sm-6">
+                                                            <h3>Padding</h3>
+                                                        </div>
+                                                        <div class="col-sm-6 text-right">
+                                                            <input type="checkbox" class="form-control" id="padding-group-toggle" data-toggle="toggle" data-width="70" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Toggle" data-off="Toggle">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="row padding-group"> -->
+                                                    <div class="col-sm-12">
+                                                        <form action="">
+                                                            <fieldset>
+                                                                <div class="row mb-3 text-sm-right">
+                                                                    <label for="style-box-padding" class="col-sm-4 col-form-label">Top-Bottom-Right-Left</label>
+                                                                    <div class="range-slider col-sm-8">
+                                                                        <input class="range-slider__range padding-group" id="style-box-padding" type="range" value="5" min="0" max="15" >
+                                                                        <span class="range-slider__value">2</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3 text-sm-right">
+                                                                    <label for="style-tb-padding" class="col-sm-4 col-form-label">Top-Bottom</label>
+                                                                    <div class="range-slider col-sm-8">
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-tb-padding" type="range" value="4" min="0" max="10" disabled="true">
+                                                                        <span class="range-slider__value">0</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row mb-3 text-sm-right">
+                                                                    <label for="style-rl-padding" class="col-sm-4 col-form-label">Right-Left</label>
+                                                                    <div class="range-slider col-sm-8">
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="5" min="0" max="15" disabled="true">
+                                                                        <span class="range-slider__value">5</span>
+                                                                    </div>
+                                                                </div>
+                                                            </fieldset>
+                                                        </form>
+                                                    </div>
+                                            
+                                            </div> <!-- Row text group end -->
+                                        
+    
+                                        </div> <!-- ends the container-->
+    
+                                    </div> <!-- card body end-->
+                                </div> <!-- form border end-->
+                            </div> <!-- end card-->
+                            <div class="card">
+                                <div class="card-header" id="border-heading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-block collapsed" data-toggle="collapse"
+                                            data-target="#form-border" aria-expanded="false"
+                                            aria-controls="form-border">
+                                            <h3 class="accordion-heading text-right">
+                                                Border Styling
+                                            </h3>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="form-border" class="collapse" aria-labelledby="form-border"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+    
+                                        <div class="container">
+    
+                                            <div class="row heading">
+                                                <div class="col-sm-12">
+                                                    <h3>Border</h3>
+                                                </div>
+                                            </div>
+                                            <div class="row text-group">
+                                                
+                                                <div class="col-sm-12">
+                                                    <form action="">
+                                                        <fieldset>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-border-color" class="col-sm-4 col-form-label">Color</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input border-group" type="text" id="style-border-color" data-jscolor="{value:'#3829FF', alpha:1}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-border-width" class="col-sm-4 col-form-label">Border Width</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range border-group" id="style-border-width" type="range" value="2" min="-10" max="10">
+                                                                    <span class="range-slider__value">2</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-border-radius" class="col-sm-4 col-form-label">Border Radius</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range border-group" id="style-border-radius" type="range" value="2" min="0" max="15">
+                                                                    <span class="range-slider__value">0</span>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <!-- <div class="dropdown-divider"></div> -->
+                                                        </fieldset>
+    
+                                                    </form>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div> <!-- end card-->
+                            <div class="card">
+                                <div class="card-header" id="color-heading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-block collapsed" data-toggle="collapse"
+                                            data-target="#form-color" aria-expanded="false"
+                                            aria-controls="form-color">
+                                            <h3 class="accordion-heading text-right">
+                                                Color Styling
+                                            </h3>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="form-color" class="collapse" aria-labelledby="form-color"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        <div class="container">
+    
+                                            <div class="row heading">
+                                                <div class="col-sm-6" >
+                                                    <h3>Background</h3>
+                                                </div>
+                                                <div class="col-sm-6 text-right">
+                                                    <input type="checkbox" class="form-control" id="bg-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
+    
+                                                </div>
+                                            </div>
+                                            <div class="row text-group">
+                                                <div class="col-sm-12">
+                                                    <form action="">
+                                                        <fieldset>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-bg-color" class="col-sm-4 col-form-label">Background</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'#3829FF', alpha:1}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-gradient1-color" class="col-sm-4 col-form-label">Color 1</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient1-color" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-gradient2-color" class="col-sm-4 col-form-label">Color 2</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient2-color" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="gradient-direction" class="col-sm-4 col-form-label">Direction</label>
+                                                                <div class="col-sm-8">
+                                                                <!-- <input type="select" class="form-control" id="style-font"> -->
+                                                                <select class="form-select form-control" id="gradient-direction" aria-label="Default select example" disabled="true">
+                                                                    <option selected>to bottom</option>
+                                                                    <option value="1">to right</option>
+                                                                    <option value="2">to bottom</option>
+                                                                    <option value="3">to left</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <!-- <div class="dropdown-divider"></div> -->
+                                                        </fieldset>
+    
+                                                    </form>
+    
+                                                </div>
+    
+                                            </div>
+    
+    
+    
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div> <!-- end card-->
+                            <div class="card">
+                                <div class="card-header" id="hover-heading">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-block collapsed" data-toggle="collapse"
+                                            data-target="#form-hover" aria-expanded="false"
+                                            aria-controls="form-hover">
+                                            <h3 class="accordion-heading text-right">
+                                                Hover Styling
+                                            </h3>
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="form-hover" class="collapse" aria-labelledby="form-hover"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+    
+                                        <div class="container">
+    
+                                            <div class="row heading">
+                                                <div class="col-sm-6" >
+                                                    <h3>Background Color</h3>
+                                                </div>
+                                                <div class="col-sm-6 text-right">
+                                                    <input type="checkbox" class="form-control" id="hover-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
+    
+                                                </div>
+                                            </div>
+                                            <div class="row text-group">
+                                                <div class="col-sm-12">
+                                                    <form action="">
+                                                        <fieldset>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-bg-color" class="col-sm-4 col-form-label">Solid Color</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-color-hover" data-jscolor="{value:'#3829FF', alpha:1}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-gradient1-hover" class="col-sm-4 col-form-label">Color 1</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient1-hover" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="style-gradient2-hover" class="col-sm-4 col-form-label">Color 2</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient2-hover" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="gradient-hover-direction" class="col-sm-4 col-form-label hover-group">Direction</label>
+                                                                <div class="col-sm-8">
+                                                                <!-- <input type="select" class="form-control" id="style-font"> -->
+                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" disabled="true">
+                                                                    <option selected>to bottom</option>
+                                                                    <option value="1">to right</option>
+                                                                    <option value="2">to bottom</option>
+                                                                    <option value="3">to left</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="dropdown-divider"></div>
+    
+                                                            <div class="row heading">
+                                                                <div class="col-sm-6">
+                                                                    <h3>Hover Border</h3>
+                                                                </div>
+                                                                <div class="col-sm-6 text-right">
+                                                                    <input type="checkbox" class="form-control" id="hover-border-toggle" data-toggle="toggle" data-size="sm" data-style="slow">
+                                                                </div>
+                                                            </div>
+    
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="hover-border-color" class="col-sm-4 col-form-label">Hover order Color</label>
+    
+                                                                <div class="col-sm-8">
+                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'#3829FF', alpha:1}" disabled="true">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mb-3 text-sm-right">
+                                                                <label for="hover-border-width" class="col-sm-4 col-form-label">Border Width</label>
+                                                                <div class="range-slider col-sm-8">
+                                                                    <input class="range-slider__range hover-group" id="hover-border-width" type="range" value="1" min="0" max="5" disabled="true">
+                                                                    <span class="range-slider__value">2</span>
+                                                                </div>
+                                                            </div>
+                                                        
+                                                            <!-- <div class="dropdown-divider"></div> -->
+                                                        </fieldset>
+    
+                                                    </form>
+    
+                                                </div>
+    
+                                            </div>
+    
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div> <!-- end card-->
+                            
+                        </div> <!-- end accordion  -->
 
                     </div> <!-- end accordion column -->
 

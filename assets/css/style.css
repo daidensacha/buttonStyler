@@ -1,23 +1,23 @@
 /*  Temporary for header height , to fix once main content is in */
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Lobster&family=Marck+Script&family=Montserrat&family=Noto+Sans+JP&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&display=swap');
 
-/* ================== TEMP STYLING ==================== */
+/* ================== TEMP STYLING ========================================== */
 
 .row.header {
     height: 100px;
 }
+div#css-button {
+    height: 100px; 
+    margin-bottom: 50px;
+}
 
-
-/* ==================END TEMP STYLING================== */
-
+/* ==================END TEMP STYLING======================================== */
 
 
 html,
 body {
   overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
-
-
 
 /* since the navbar is fixed we need to add some space to the body */
 body {

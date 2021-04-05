@@ -1,0 +1,4 @@
+/*  Temporary for header height , to fix once main content is in */
+.row.header {
+    height: 100px;
+}

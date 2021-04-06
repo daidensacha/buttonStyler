@@ -137,3 +137,94 @@ $('#hover-border-color, #hover-border-width').prop('disabled', false);
 	} 
     });
 });
+
+// From W3C schools
+function myFunction() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    document.execCommand("Copy");
+    alert("Copied the text: " + copyText.value);
+  } 
+
+
+//==============================================================================Fpr copying the css to clipboard
+//Function to copy from the text area to the Clipboard. 
+//https://codepen.io/fabean/pen/GprQJa
+// let button = document.getElementById('clickMe');
+
+// button.addEventListener('click', function(e) {
+//   e.preventDefault();
+//   document.execCommand('copy', false, document.getElementById('select-this').select());
+// });
+
+
+// DEFAULT VALUES FOR FALL BACK
+
+let cssTags = {
+    open_tag: ".Btn {",
+    close_tag: "}",
+}
+
+let   text_styling = {
+    font_text: "My Groovy Button",
+    font_family: "'Lato', sans-serif;",   
+    font_color: "#3829ff",
+    font_size: "12px",
+    text_shadow: '#808080',
+    shadow_X_Axis: '3px',
+    shadow_Y_Axis: '0px',
+    text_shaddow_blur: '3px',
+    }
+
+let  box_styling = {
+    style_box_shadow: "#808080",
+    style_box_x:  "2px",
+    style_box_y:     "5px",
+    style_box_blur:   "6px",
+    style_box_padding:   "5px",
+    style_tb_padding:   "5px",
+    style_lr_padding:   "5px",
+    }
+
+let   border_styling = {
+    style_border_radius: "5px",
+    style_border_width: "1px",
+    style_border_color: "#3834FF",   // note sure what color, but need to add one once its all working.
+    }
+
+let color_styling = {
+    color_styling_color: "#007bff",
+    style_gradient1_color: "#007bff",
+    style_gradient2_color: "#005ec2",
+    gradient_direction: "top",
+
+    }
+
+ let   hover_styling = {
+        style_color_hover:  "005ec2",
+    style_gradient1_hover:  "005ec2",
+    style_gradient2_hover:  "007bff",
+    gradient_hover_direction:  "to bottom",
+
+    }
+
+// ADDS THE TEXT TO THE DEMO BUTTON
+var demoText = ""
+    var demoButton = $('#demo-button');
+
+    $( "#style-text" ).on('keyup', function() {
+        demoText = $('#style-text').val()
+        $('#demo-button').html(demoText);
+});
+
+var fontsizeSlider = document.querySelector("#style-fontsize");    
+//FUNCTION TO ADD THE SLIDER VALUE TO THE CSS OUTPUT
+
+let update = () => {codeFontSize.innerHTML =  "font-size: " + this.fontsizeSlider.value + "px;";
+styleSize = fontsizeSlider.value;
+demoButton.style.fontSize = this.fontsizeSlider.value +"px";
+}
+
+// EVENT LISTENER FOR THE FONT SIZE SLIDER
+fontsizeSlider.addEventListener('input', update);
+    update();

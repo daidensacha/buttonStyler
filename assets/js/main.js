@@ -194,45 +194,45 @@ let hover_styling = {
 
 
 // ADDS THE TEXT TO THE DEMO BUTTON
-var demoText = ""
-var demoButton = $('#demo-button');
-    $( "#style-text" ).on('keyup', function() {
-        demoText = $('#style-text').val()
-        $('#demo-button').html(demoText);
-});
+// var demoText = ""
+// var demoButton = $('#demo-button');
+//     $( "#style-text" ).on('keyup', function() {
+//         demoText = $('#style-text').val()
+//         $('#demo-button').html(demoText);
+// });
 
-var openTag = document.getElementById("openTag");
-var endTag = document.getElementById("endTag");
+// var openTag = document.getElementById("openTag");
+// var endTag = document.getElementById("endTag");
 
 // ADDS TO THE START AND END CODE FOR THE BUTTON CSS
-openTag.innerHTML = `${cssTags.open_tag}`;
-endTag.innerHTML = `${cssTags.close_tag}`;
+// openTag.innerHTML = `${cssTags.open_tag}`;
+// endTag.innerHTML = `${cssTags.close_tag}`;
 
-$("#rs-1").on("slide", function (slideEvt) {
-    $("#rs-1-val").text(slideEvt.value);
-  });
+// $("#rs-1").on("slide", function (slideEvt) {
+//     $("#rs-1-val").text(slideEvt.value);
+//   });
 
   // ADDING AND CHANGING FONT SIZE  TO CSS OUTPUT AND BUTTON
-  var btn = document.getElementById("demo-button"); 
-  var fontsizeSlider = document.getElementById("style-fontsize");  // source input
-  var codeFontSize = document.getElementById("codeFontSize");      // target span css output
+//   var btn = document.getElementById("demo-button"); 
+//   var fontsizeSlider = document.getElementById("style-fontsize");  // source input
+//   var codeFontSize = document.getElementById("codeFontSize");      // target span css output
   // FUNCTION TO DISPLAY VALUE IN THE CSS OUTPUT // from w3c schools https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_oninput
-  function sliderValue() { 
-    var x = fontsizeSlider.value;
-    codeFontSize.innerHTML = `font-size: ${x}px;`;
-    btn.style.fontSize = `${x}px`;
-    console.log(x)
-    }    
+//   function sliderValue() { 
+//     var x = fontsizeSlider.value;
+//     codeFontSize.innerHTML = `font-size: ${x}px;`;
+//     btn.style.fontSize = `${x}px`;
+//     console.log(x)
+//     }    
         
 // ADD FONT FAMILY TO THE DEMO BTN AND CSS DISPLAY
-const selectElement = document.querySelector('#style-font');
-fontFamily.innerHTML = `font-family: ${text_styling.font_family}`;
+// const selectElement = document.querySelector('#style-font');
+// fontFamily.innerHTML = `font-family: ${text_styling.font_family}`;
 
-selectElement.addEventListener('change', (event) => {
-    fontFamily = selectElement.value
-    const result = document.querySelector('#fontFamily');
-    result.textContent = `font-family: ${event.target.value};`;
-    btn.style.fontFamily = event.target.value;
-})
+// selectElement.addEventListener('change', (event) => {
+//     fontFamily = selectElement.value
+//     const result = document.querySelector('#fontFamily');
+//     result.textContent = `font-family: ${event.target.value};`;
+//     btn.style.fontFamily = event.target.value;
+// })
 
 

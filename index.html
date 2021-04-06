@@ -19,7 +19,9 @@
                     <div class="container">
                         <!--  START NAVBAR   -->
                         <nav class="navbar  fixed-top navbar-dark bg-dark navbar-offcanvas">
-                            <a class="navbar-brand mr-auto" href="#"></a>
+                            <a class="navbar-brand mr-auto" href="#">
+                                <!-- <img src="assets/Images/contrast.png" class="img-fluid" width="30px" alt="logo"> -->
+                            </a>
                 
                             <!--     If you want to show the button online on mobile use this toggle    -->
                 
@@ -102,7 +104,7 @@
                             <!-- Accordion begins -->
                             <div class="card">
                                 <div class="card-header" id="text-heading">
-                                    <h5 class="mb-0">                                                                       <!-- note to self, remove the btn-link class from the accordion botton -->
+                                    <h5 class="mb-0">                                                                      
                                         <button class="btn btn-block text-right" data-toggle="collapse" data-target="#form-text" 
                                             aria-expanded="true" aria-controls="form-text">
                                             <h3 class="accordion-heading">Text Styling</h3> 
@@ -126,7 +128,7 @@
                                                         <div class="row mb-3 text-sm-right">
                                                           <label for="style-text" class="col-sm-4 col-form-label">Text</label>
                                                           <div class="col-sm-8">
-                                                            <input type="text" class="form-control" id="style-text" placeholder="My groovy button">
+                                                            <input type="text" class="form-control" id="style-text" placeholder="My groovy button" oninput="update()" >
                                                           </div>
                                                         </div>
                                                     
@@ -134,7 +136,7 @@
                                                           <label for="style-font" class="col-sm-4 col-form-label">font-family</label>
                                                           <div class="col-sm-8">
                                                             <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example">
+                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example" oninput="update()" >
                                                                 <option selected>'Lato', sans-serif;</option>
     
                                                                 <option value="'Lobster', cursive;">'Lobster', cursive</option>
@@ -151,27 +153,24 @@
                                                             <div class="col-sm-8">
                                                                 <input class="form-control color-input" type="text" id="style-color" data-jscolor="{value:'#FDFFBB', alpha:1}" oninput="update()">
                                                             </div>
-                                                            <!-- <script>  oninput="console.log(this.jscolor.toString() + ' ' + this.name)  </script> -->
                                                     
                                                         </div>
                                                     
                                                         <div class="row mb-3 text-sm-right">
                                                             <label for="style-color" class="col-sm-4 col-form-label">Font size</label>
                                                             <div class="range-slider col-sm-8">
-                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36" oninput="sliderValue()" >
+                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36" oninput="sliderValue(), update()" >
                                                                 <span class="range-slider__value">12</span>
                                                             </div>
                                                         </div>
 
                                                         <script>
-                                                            //
+                                                                    //oninput="sliderValue(),    
                                                                    // oninput="$('#codeFontSize').html($(this).val())"
                                                          </script>
                                                     
                                                     </form>
                                                 </div>
-                                                <!-- <div class="col-sm-4"></div>
-                                                <div class="col-sm-4"></div> -->
                                             </div>
                                             <div class="dropdown-divider"></div>
                                             <div class="row heading">
@@ -608,49 +607,10 @@
                             <div class="col-sm-12"> <!-- css output display -->
 
                                 <!-- <section class=""> -->
+                                    <pre id="cssContainer" style="color: pink" >
 
-                                    <!-- <pre class="text-left"> -->
-                                        <code class = "text-left d-block" id="cssTextarea"  style="color: pink">
+                                    </pre>
 
-                                            <span class="css-out d-block" id="openTag">.btn {</span>
-                                            <span class="css-out d-block pl-3"  id="fontFamily">font-family: 'Lato', sans-serif;</span>
-                                            <span class="css-out d-block pl-3"  id="fontColor">color: #ffffff;</span>
-                                            <span class="css-out d-block pl-3" id="codeFontSize">font-size: 12px;</span>
-                                            <span class="css-out d-block pl-3" id="textShadow">text-shadow: 5px 1px 2px #080808;</span>
-                                            <span class="css-out d-block pl-3" id="styleTextX"></span>
-                                            <span class="css-out d-block pl-3" id="styleTextY"></span>
-                                            <span class="css-out d-block pl-3" id="styleTextBlur"></span>
-                                            <span class="css-out d-block pl-3" id="styleBoxShadow"></span>
-                                            <span class="css-out d-block pl-3" id="styleBoxX"></span>
-                                            <span class="css-out d-block pl-3" id="styleBoxY"></span>
-                                            <span class="css-out d-block pl-3" id="styleBoxBlur"></span>
-                                            <span class="css-out d-block pl-3" id="styleBoxPadding"></span>
-                                            <span class="css-out d-block pl-3" id="styleTbPadding"></span>
-                                            <span class="css-out d-block pl-3" id="styleLrPadding"></span>
-                                            <span class="css-out d-block pl-3" id="styleBorderRadius"></span>
-                                            <span class="css-out d-block pl-3" id="styleBorderWidth"></span>
-                                            <span class="css-out d-block pl-3" id="styleBorderColor"></span>
-                                            <span class="css-out d-block pl-3" id="styleBgColor"></span>
-                                            
-                                            
-                                            <span class="css-out d-block pl-3" id="styleGrDirection"> <span class="css-out d-block pl-3" id="styleGr1Color"></span> <span class="css-out d-block pl-3" id="styleGr2Color"></span></span>
-                                            <span class="css-out d-block mb-2" id="endTag">}</span>
-                                            <span class="css-out d-block" id="hoverOpenTag">.btn:hover {</span>
-                                            <span class="css-out d-block pl-3" id="styleColorHover"></span>
-                                            
-                                            <span class=""> <!-- Gradient properties to show inline -->
-                                                <span class="css-out d-inline pl-0" id="styleGrHoverDirection"></span>
-                                                <span class="css-out d-inline pl-3" id="styleGr1Hover"></span>
-                                                <span class="css-out d-inline pl-3" id="styleGr2Hover"></span>
-                                            </span>
-
-                                            <span class="css-out d-block pl-3" id="styleBorderHover"></span>
-
-                                            <span class="css-out d-block" id="hoverEndTag">}</span>
-
-                                        </code>
-                                    <!-- </pre> -->
-                                    
                                 <!-- </section> -->
 
                             </div> <!-- css output display -->
@@ -702,8 +662,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="assets/js/jscolor.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script src="assets/js/colorScript.js"></script>
+    <script src="assets/js/form.js"></script>
+    <!-- <script src="assets/js/colorScript.js"></script> -->
     <script>
         // jscolor.install();
         // update();

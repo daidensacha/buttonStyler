@@ -2,7 +2,7 @@
 // NAVBAR OFFCANVAS JS
 $(function() {
     // executes when HTML-Document is loaded and DOM is ready
-   console.log("document is ready");
+  // console.log("document is ready");
      
      
        $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
@@ -16,7 +16,7 @@ $(function() {
    
    window.onload = function() {
     // executes when complete page is fully loaded, including all frames, objects and images
-   console.log("window is loaded");
+   //console.log("window is loaded");
      
      
    // window load  
@@ -77,6 +77,42 @@ $('.blur-group').prop('disabled', false);
 	} 
     });
 });
+
+
+// function syncFieldsWithTheFieldsets() {
+//     document.querySelectorAll('fieldset').forEach((fieldsetEl) => {
+//         fieldsetEl.querySelectorAll('input, select, textarea, button').forEach((el) => {
+//             el.disabled = fieldsetEl.disabled;
+//         });
+//     });
+// }
+
+//  syncFieldsWithTheFieldsets()
+
+// Assign variable to fiedset
+// let myFieldset = document.querySelector("#text-shadow-fieldset");
+// // Set state of input to disabled by default
+// myFieldset.disabled = true;
+// console.log(myFieldset.disabled);
+// // Function to toggle the switch, 
+// function toggle() {
+//     let fieldset = document.querySelector("#text-shadow-fieldset");
+//                 if (fieldset.disabled === false) {
+//     disableField();
+//     } else if (fieldset.disabled === true) {
+//     undisableField();
+//     }
+// }
+// // Function to  disable form fieldset
+// function disableField() {
+//     document.querySelector("#text-shadow-fieldset").disabled = true;
+
+// }
+// // Function to  un-disable form fieldset 
+// function undisableField() {
+//     document.querySelector("#text-shadow-fieldset").disabled = false;
+// }
+
 
 // This function enables and disables the box shadow group
 $(function() {

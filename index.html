@@ -136,8 +136,8 @@
                                                           <label for="style-font" class="col-sm-4 col-form-label">font-family</label>
                                                           <div class="col-sm-8">
                                                             <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example" oninput="update()" >
-                                                                <option selected>'Lato', sans-serif;</option>
+                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example" onchange="update()" >
+                                                                <option selected>'Lato', sans-serif</option>
     
                                                                 <option value="'Lobster', cursive;">'Lobster', cursive</option>
                                                                 <option value="'Montserrat', sans-serif">'Montserrat', sans-serif</option>
@@ -159,8 +159,8 @@
                                                         <div class="row mb-3 text-sm-right">
                                                             <label for="style-color" class="col-sm-4 col-form-label">Font size</label>
                                                             <div class="range-slider col-sm-8">
-                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36" oninput="update()" >
-                                                                <span class="range-slider__value">12</span>
+                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="28" min="0" max="48" oninput="update()" >
+                                                                <span class="range-slider__value">28</span>
                                                             </div>
                                                         </div>
 
@@ -178,38 +178,38 @@
                                                     <h3>Shadow</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="blur-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" oninput="update()" >
+                                                    <input type="checkbox" class="form-control" id="blur-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" onchange=" update()" >
                                                 </div>
                                             </div>
                                             <div class="row text-group">
                                               
                                                 <div class="col-sm-12">
                                                     <form>
-                                                        <fieldset>
+                                                        <fieldset class="blur-group" id="text-shadow-fieldset" disabled >
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-shadow" class="col-sm-4 col-form-label">Text Shadow</label>
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}"  oninput="update()">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-x" class="col-sm-4 col-form-label">X-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-x" type="range" value="2" min="-10" max="10" disabled="true" oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-x" type="range" value="2" min="-10" max="10"  oninput="update()" >
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-y" class="col-sm-4 col-form-label">Y-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="0" min="-10" max="10" disabled="true" oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="0" min="-10" max="10"  oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-blur" class="col-sm-4 col-form-label">Blur</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="5" min="0" max="20" disabled="true" oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="5" min="0" max="20"  oninput="update()" >
                                                                     <span class="range-slider__value">5</span>
                                                                 </div>
                                                             </div>
@@ -247,7 +247,7 @@
                                                     <h3>Box</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="shadow-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" oninput="update()" >
+                                                    <input type="checkbox" class="form-control" id="shadow-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" onchange="update()" >
                                                 </div>
                                             </div>
                                         
@@ -255,32 +255,32 @@
                                                 
                                                 <div class="col-sm-12">
                                                     <form action="">
-                                                        <fieldset>
+                                                        <fieldset id="shadow-fieldset" class="shadow-group" disabled>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-shadow" class="col-sm-4 col-form-label">Shadow</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-x" class="col-sm-4 col-form-label">X-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-x" type="range" value="2" min="-10" max="10" disabled="true" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-x" type="range" value="2" min="-10" max="10" oninput="update()" >
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-y" class="col-sm-4 col-form-label">Y-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="0" min="-10" max="10" disabled="true" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="0" min="-10" max="10" oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-blur" class="col-sm-4 col-form-label">Blur</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="5" min="0" max="20" disabled="true" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="5" min="0" max="20" oninput="update()" >
                                                                     <span class="range-slider__value">5</span>
                                                                 </div>
                                                             </div>
@@ -298,32 +298,32 @@
                                                             <h3>Padding</h3>
                                                         </div>
                                                         <div class="col-sm-6 text-right">
-                                                            <input type="checkbox" class="form-control" id="padding-group-toggle" data-toggle="toggle" data-width="70" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Toggle" data-off="Toggle" oninput="update()"  >
+                                                            <input type="checkbox" class="form-control" id="padding-group-toggle" data-toggle="toggle" value="true" data-width="70" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="light" data-on="Top-Right-Bottom-Left" data-off="TBRL" onchange="update()"  >
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <!-- <div class="row padding-group"> -->
                                                     <div class="col-sm-12">
                                                         <form action="">
-                                                            <fieldset>
+                                                            <fieldset id="padding-fieldset" class="padding-group">
                                                                 <div class="row mb-3 text-sm-right">
                                                                     <label for="style-box-padding" class="col-sm-4 col-form-label">Top-Bottom-Right-Left</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-group" id="style-box-padding" type="range" value="5" min="0" max="15" oninput="update()"  >
+                                                                        <input class="range-slider__range padding-group" id="style-box-padding" type="range" value="5" min="0" max="25" oninput="update()"  >
                                                                         <span class="range-slider__value">2</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-3 text-sm-right">
                                                                     <label for="style-tb-padding" class="col-sm-4 col-form-label">Top-Bottom</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-trbl-group" id="style-tb-padding" type="range" value="4" min="0" max="10" disabled="true" oninput="update()"  >
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-tb-padding" type="range" value="4" min="0" max="20" disabled="true" oninput="update()"  >
                                                                         <span class="range-slider__value">0</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-3 text-sm-right">
                                                                     <label for="style-rl-padding" class="col-sm-4 col-form-label">Right-Left</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="5" min="0" max="15" disabled="true" oninput="update()" >
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="5" min="0" max="25" disabled="true" oninput="update()" >
                                                                         <span class="range-slider__value">5</span>
                                                                     </div>
                                                                 </div>
@@ -366,7 +366,7 @@
                                                 
                                                 <div class="col-sm-12">
                                                     <form action="">
-                                                        <fieldset>
+                                                        <fieldset id="borderFieldset">
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-border-color" class="col-sm-4 col-form-label">Color</label>
     
@@ -377,14 +377,14 @@
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-border-width" class="col-sm-4 col-form-label">Border Width</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range border-group" id="style-border-width" type="range" value="2" min="-10" max="10">
+                                                                    <input class="range-slider__range border-group" id="style-border-width" type="range" value="2" min="-10" max="10" oninput="update()" >
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-border-radius" class="col-sm-4 col-form-label">Border Radius</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range border-group" id="style-border-radius" type="range" value="2" min="0" max="15">
+                                                                    <input class="range-slider__range border-group" id="style-border-radius" type="range" value="2" min="0" max="28" oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
@@ -424,7 +424,7 @@
                                                     <h3>Background</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="bg-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
+                                                    <input type="checkbox" class="form-control" id="bg-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid" onchange="update()" >
     
                                                 </div>
                                             </div>
@@ -457,11 +457,11 @@
                                                                 <label for="gradient-direction" class="col-sm-4 col-form-label">Direction</label>
                                                                 <div class="col-sm-8">
                                                                 <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                                <select class="form-select form-control" id="gradient-direction" aria-label="Default select example" disabled="true">
-                                                                    <option selected>to bottom</option>
-                                                                    <option value="1">to right</option>
-                                                                    <option value="2">to bottom</option>
-                                                                    <option value="3">to left</option>
+                                                                <select class="form-select form-control" id="gradient-direction" aria-label="Default select example" onchange="update()" disabled="true">
+                                                                    <option selected>to top</option>
+                                                                    <option value="to right">to right</option>
+                                                                    <option value="to bottom">to bottom</option>
+                                                                    <option value="to left">to left</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -503,7 +503,7 @@
                                                     <h3>Hover Background</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="hover-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
+                                                    <input type="checkbox" class="form-control" id="hover-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid" onchange="update()" >
     
                                                 </div>
                                             </div>
@@ -536,11 +536,11 @@
                                                                 <label for="gradient-hover-direction" class="col-sm-4 col-form-label hover-group">Direction</label>
                                                                 <div class="col-sm-8">
                                                                 <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" oninput="update()" disabled="true">
-                                                                    <option selected>to bottom</option>
-                                                                    <option value="1">to right</option>
-                                                                    <option value="2">to bottom</option>
-                                                                    <option value="3">to left</option>
+                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" onchange="update()" disabled="true">
+                                                                    <option selected>to top</option>
+                                                                    <option value="to right">to right</option>
+                                                                    <option value="to bottom">to bottom</option>
+                                                                    <option value="to left">to left</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -552,7 +552,7 @@
                                                                     <h3>Hover Border</h3>
                                                                 </div>
                                                                 <div class="col-sm-6 text-right">
-                                                                    <input type="checkbox" class="form-control" id="hover-border-toggle" data-toggle="toggle" data-size="sm" data-style="slow">
+                                                                    <input type="checkbox" class="form-control" id="hover-border-toggle" data-toggle="toggle" data-size="sm" data-style="slow" checked onchange="update()" >
                                                                 </div>
                                                             </div>
     
@@ -560,13 +560,13 @@
                                                                 <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Border Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="hover-border-width" class="col-sm-4 col-form-label">Border Width</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range hover-group" id="hover-border-width" type="range" value="1" min="0" max="5" oninput="update()" disabled="true">
+                                                                    <input class="range-slider__range hover-group" id="hover-border-width" type="range" value="1" min="0" max="5" oninput="update()">
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>

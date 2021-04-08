@@ -1,3 +1,21 @@
+// TEXT SHADDOW FIELDSET TOGGLE DISABLE
+
+// This function enables and disables the text shadow group
+// $(function() {
+//     $('#blur-group-toggle').on('change', function() {
+//       	if(this.checked) {
+// $('.blur-group').prop('disabled', false);
+// 	}
+// 	else {
+// 		$(".blur-group").prop('disabled', true);
+// 	} 
+//     });
+// });
+
+
+
+
+
 // JS COLOR PICKER OPTIONS
 jscolor.presets.default = {
 	previewPosition:'right', 
@@ -61,22 +79,6 @@ function update() {
     //  SHADOW CSS STRING
     let textShadowStyle =     `text-shadow: ${textShadowXRange.value}px ${textShadowYRange.value}px ${textShadowBlurRange.value}px ${textShadowColorPicker.toString('rgba')};`;
 
-    // shadowToggle.addEventListener('toggle', function(){
-    //     textShadowStyle.hidden = true;
-
-    // })
-    
-    // if (shadowToggle.checked === true) {
-    //     //console.log("true is "+shadowToggle.checked);
-    //     textShadowStyle = [
-    //         `text-shadow: ${textShadowXRange.value}px ${textShadowYRange.value}px ${textShadowBlurRange.value}px ${textShadowColorPicker.toString('rgba')};`
-    //     ]
-    //     } else {
-            
-    //     //textShadowStyle = undefined;
-    //         // console.log("false is "+shadowToggle.checked)
-    //     };
-
     // =========================================================================
     // BOX 
     let shadowGroupToggle = document.querySelector('#shadow-group-toggle');
@@ -137,68 +139,137 @@ function update() {
     // ========================CSS VARIABLEd AND STRINGS========================
 
     /* CSS Font Strings */ 
-    let fontFamily = `font-family: ${fontFamilySelect.value};`;
-    let fontColor = `color: ${fontStyleColorPicker.toString('rgba')};`;
-    let fontSize = `font-size: ${fontSizeRange.value}px;`;   
+    let fontFamily = "\tfont-family: " + fontFamilySelect.value + ";";
+    let fontColor = "\tcolor: " + fontStyleColorPicker.toString('rgba') + ";";
+    let fontSize = "\tfont-size: " + fontSizeRange.value + "px;";   
     /* CSS Text Shadow Strings */ 
-    let textShadow = `text-shadow: ${textShadowXRange.value} ${textShadowYRange.value} ${textShadowYRange.value} ${textShadowColorPicker.toString('rgba')};`;
+    let textShadow = `\ttext-shadow: ${textShadowXRange.value}px ${textShadowYRange.value}px ${textShadowBlurRange.value}px ${textShadowColorPicker.toString('rgba')};`;
     /* CSS Box Shadow String */ 
-    let boxShadow = `box-shadow: ${boxXRange.value} ${boxYRange.value} ${boxBlurRange.value} ${boxColorPicker.toString('rgba')};`;
+    let boxShadow = `\tbox-shadow: ${boxXRange.value}px ${boxYRange.value}px ${boxBlurRange.value}px ${boxColorPicker.toString('rgba')};`;
     /* CSS Padding Strings */ 
-    let padding = `padding: ${boxPaddingRange.value}px;`;
-    let paddingTbRl = `padding: ${boxTbPaddingRange.value}px ${boxLrlPaddingRange.value}px;`;
+    let padding = `\tpadding: ${boxPaddingRange.value}px;`;
+    let paddingTbRl = `\tpadding: ${boxTbPaddingRange.value}px ${boxLrlPaddingRange.value}px;`;
     /* CSS Border String */ 
-    let border = `border: ${borderWidthRange.value}px solid ${borderColorPicker.toString('rgba')};`;
-    let borderRadius = `border-radius: ${borderRadiusRange.value}px;`;
+    let border = `\tborder: ${borderWidthRange.value}px solid ${borderColorPicker.toString('rgba')};`;
+    let borderRadius = `\tborder-radius: ${borderRadiusRange.value}px;`;
     /* CSS Background Strings */ 
-    let background = `background: ${backgroundColorPicker.toString('rgba')};`;
-    let backgroundGradient = ` background: ${gradient1ColorPicker.toString('rgba')};
-    background-image: -webkit-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    background-image: -moz-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    background-image: -ms-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    background-image: -o-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    background-image: linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});`;
+    let background = `\tbackground: ${backgroundColorPicker.toString('rgba')};`;
+    let backgroundGradient = ` \tbackground: ${gradient1ColorPicker.toString('rgba')};
+    \tbackground-image: -webkit-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: -moz-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: -ms-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: -o-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});`;
     /* CSS Hover Strings */ 
-    let backgroundHover = `background: ${backgroundHoverColorPicker.toString('rgba')};`;
-    let backgroundGradientHover = ` background: ${gradient1HoverColorPicker.toString('rgba')};
-    background-image: -webkit-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    background-image: -moz-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    background-image: -ms-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    background-image: -o-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    background-image: linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});`;
+    let backgroundHover = `\tbackground: ${backgroundHoverColorPicker.toString('rgba')};`;
+    let backgroundGradientHover = `\tbackground: ${gradient1HoverColorPicker.toString('rgba')};
+    \tbackground-image: -webkit-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: -moz-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: -ms-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: -o-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});`;
     /* Border Hover string */
-    let borderHover = `border: ${hoverBorderWidthRange.value} solid ${hoverBorderColorPicker.toString('rgba')}`;
+    let borderHover = `\tborder: ${hoverBorderWidthRange.value}px solid ${hoverBorderColorPicker.toString('rgba')}`;
 
     // CSS STRINGS
-let openTag = `#demo-button.btn {`;
-let closeTag = `        }`;
+let openTag = "#demo-button.btn {";
+let closeTag =        " }";
+let hoverOpenTag = `\n#demo-button.btn:hover {`;
+let hoverCloseTag = `}`;
 
+let shadowFieldset = document.querySelector("#text-shadow-fieldset");
+let boxShadowFieldset = document.querySelector("#shadow-fieldset");
+let paddingFieldset = document.querySelector("#padding-fieldset");
 
 let lines = []; // lines of CSS rules
 
 lines.push(openTag); // opening tag of CSS rules
-lines.push(fontFamilySelect.value);
-lines.push(fontSizeRange.value)
+lines.push(fontFamily);
+lines.push(fontColor);
+lines.push(fontSize);
+// TEXT SHADOW
+// if (shadowToggle.checked === !true){
+    if (!shadowToggle.checked){
+    console.log("Text Shadow Toggle OFF");
+} else {
+    lines.push(textShadow);
+    console.log("Text Shadow Toggle ON");
+}
 
+// BOX SHADOW 
+if (shadowGroupToggle.checked ===!true){
+    console.log("Box Shadow Toggle OFF");
+} else {
+    lines.push(boxShadow);
+    console.log("Box Shadow Toggle ON");
+}
+// PADDING
+if (paddingGroupToggle.checked === false){
+    lines.push(padding);
+    console.log("Padding TRBL ON/ TB-LR OFF");
+} else {
+    lines.push(paddingTbRl);
+    console.log("Padding TRBL OFF/ TB-LR ON");
+}
+// BORDER 
+lines.push(border);
+// BORDER RADIUS
+lines.push(borderRadius);
+// BACKGROUND
+if (!backgroundGroupToggle.checked) {
+    lines.push(background);
+    console.log("Solid background: " + backgroundGroupToggle.checked);
+} else {
+    lines.push(backgroundGradient);
+    console.log("Gradient background: " + backgroundGroupToggle.checked);
+}
+// CLOSING TAG
 lines.push(closeTag); // closing tag of CSS rules
 
+// HOVER OPEN TAG
+lines.push(hoverOpenTag)
+if (!hoverGroupToggle.checked) {
+    lines.push(backgroundHover);
+    console.log("Hover Solid background: " + hoverGroupToggle.checked);
+} else {
+    lines.push(backgroundGradientHover);
+    console.log("Hover Gradient background: " + hoverGroupToggle.checked);
+}
+// HOVER BORDER
+if (hoverBorderToggle.checked) {
+    lines.push(borderHover);
+}
+// HOVER CLOSING TAG
+lines.push(hoverCloseTag)
 
+let css = lines.join("\n");
+// console.log(lines.join("\n"));
+// console.log(css);
     //======================================================= Generate CSS rules
-    let css = [
-        `#demo-button.btn {
-            font-family: ${fontFamilySelect.value};
-            font-size: ${fontSizeRange.value}px;
-            ${textShadowStyle}
-            padding: ${boxPaddingRange.value}px;
-        }`
-    ].join("\n");
+//     let css = [
+//         `#demo-button.btn {
+//             font-family: ${fontFamilySelect.value};
+//             font-size: ${fontSizeRange.value}px;
+//             ${textShadowStyle}
+//             padding: ${boxPaddingRange.value}px;
+//         }
+// ${hoverOpenTag}
+
+//         ${hoverCloseTag}
+//         `
+//     ].join("\n");
 
     // Show the CSS rules in the container element
     cssContainer.innerHTML = ''; // Empty it first
+
+    //let newCssStyles = document.getElementsByTagName('style')[0].innerHTML; 
+    
     cssContainer.appendChild(document.createTextNode(css));
 
     // Update STYLE element with new CSS rules
     set_css(css);
+
+    //cssContainer = document.getElementsByTagName('style')[0].innerHTML;
 
 }
 

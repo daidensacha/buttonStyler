@@ -1,20 +1,8 @@
-// TEXT SHADDOW FIELDSET TOGGLE DISABLE
-
-// This function enables and disables the text shadow group
-// $(function() {
-//     $('#blur-group-toggle').on('change', function() {
-//       	if(this.checked) {
-// $('.blur-group').prop('disabled', false);
-// 	}
-// 	else {
-// 		$(".blur-group").prop('disabled', true);
-// 	} 
-//     });
-// });
-
-
-
-
+// This code processes the data from the accorion with the forms of inputs that 
+// are used to select the CSS styles for the display button. It appends the CSS 
+// to the HEAD in a style tag, which in turn styles the demo button with live 
+//results. The CSS rules for the generated style is output into a <pre> </pre>
+// so the CSS can be copied to use and replicate the generated style.
 
 // JS COLOR PICKER OPTIONS
 jscolor.presets.default = {
@@ -76,9 +64,6 @@ function update() {
     let textShadowYRange = document.querySelector('#style-text-y');
     let textShadowBlurRange = document.querySelector('#style-text-blur');
 
-    //  SHADOW CSS STRING
-    let textShadowStyle =     `text-shadow: ${textShadowXRange.value}px ${textShadowYRange.value}px ${textShadowBlurRange.value}px ${textShadowColorPicker.toString('rgba')};`;
-
     // =========================================================================
     // BOX 
     let shadowGroupToggle = document.querySelector('#shadow-group-toggle');
@@ -94,13 +79,11 @@ function update() {
     let boxTbPaddingRange = document.querySelector('#style-tb-padding');
     let boxLrlPaddingRange = document.querySelector('#style-rl-padding');
 
-
     // =========================================================================
     // BORDER
     let borderColorPicker = document.querySelector('#style-border-color').jscolor;
     let borderWidthRange = document.querySelector('#style-border-width');
     let borderRadiusRange = document.querySelector('#style-border-radius');
-
 
     // =========================================================================
     // BACKGROUND
@@ -110,7 +93,6 @@ function update() {
     let gradient2ColorPicker = document.querySelector('#style-gradient2-color').jscolor;
     let gradientDirectionSelect = document.querySelector('#gradient-direction');
  
-
     // =========================================================================
     // HOVER
     let hoverGroupToggle = document.querySelector('#hover-group-toggle');
@@ -119,17 +101,15 @@ function update() {
     let gradient2HoverColorPicker = document.querySelector('#style-gradient2-hover').jscolor;
     let gradientHoverDirectionSelect = document.querySelector('#gradient-hover-direction');
 
-
     // =========================================================================
     // HOVER BORDER
     let hoverBorderToggle = document.querySelector('#hover-border-toggle');
     let hoverBorderColorPicker = document.querySelector('#hover-border-color').jscolor;
     let hoverBorderWidthRange = document.querySelector('#hover-border-width');
 
-
     ////////////////////////////////////////////////////////////////////////////
 
-
+    // Adds user text to the button
     //================================================Set the text of the button
     styleText.addEventListener('keyup', setText);
     function setText() {
@@ -142,16 +122,21 @@ function update() {
     let fontFamily = "\tfont-family: " + fontFamilySelect.value + ";";
     let fontColor = "\tcolor: " + fontStyleColorPicker.toString('rgba') + ";";
     let fontSize = "\tfont-size: " + fontSizeRange.value + "px;";   
+
     /* CSS Text Shadow Strings */ 
     let textShadow = `\ttext-shadow: ${textShadowXRange.value}px ${textShadowYRange.value}px ${textShadowBlurRange.value}px ${textShadowColorPicker.toString('rgba')};`;
+
     /* CSS Box Shadow String */ 
     let boxShadow = `\tbox-shadow: ${boxXRange.value}px ${boxYRange.value}px ${boxBlurRange.value}px ${boxColorPicker.toString('rgba')};`;
+
     /* CSS Padding Strings */ 
     let padding = `\tpadding: ${boxPaddingRange.value}px;`;
     let paddingTbRl = `\tpadding: ${boxTbPaddingRange.value}px ${boxLrlPaddingRange.value}px;`;
+
     /* CSS Border String */ 
     let border = `\tborder: ${borderWidthRange.value}px solid ${borderColorPicker.toString('rgba')};`;
     let borderRadius = `\tborder-radius: ${borderRadiusRange.value}px;`;
+
     /* CSS Background Strings */ 
     let background = `\tbackground: ${backgroundColorPicker.toString('rgba')};`;
     let backgroundGradient = ` \tbackground: ${gradient1ColorPicker.toString('rgba')};
@@ -160,6 +145,7 @@ function update() {
     \tbackground-image: -ms-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
     \tbackground-image: -o-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
     \tbackground-image: linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});`;
+
     /* CSS Hover Strings */ 
     let backgroundHover = `\tbackground: ${backgroundHoverColorPicker.toString('rgba')};`;
     let backgroundGradientHover = `\tbackground: ${gradient1HoverColorPicker.toString('rgba')};
@@ -168,6 +154,7 @@ function update() {
     \tbackground-image: -ms-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
     \tbackground-image: -o-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
     \tbackground-image: linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});`;
+
     /* Border Hover string */
     let borderHover = `\tborder: ${hoverBorderWidthRange.value}px solid ${hoverBorderColorPicker.toString('rgba')}`;
 
@@ -177,18 +164,25 @@ let closeTag =        " }";
 let hoverOpenTag = `\n#demo-button.btn:hover {`;
 let hoverCloseTag = `}`;
 
+// Fieldset variables
 let shadowFieldset = document.querySelector("#text-shadow-fieldset");
 let boxShadowFieldset = document.querySelector("#shadow-fieldset");
 let paddingFieldset = document.querySelector("#padding-fieldset");
 
+// CREATE THE ARRAY TO HOLD THE CSS VARIABLES
 let lines = []; // lines of CSS rules
 
+// PUSH THE REQUIRED CSS RULES TO THE ARRAY
+
+// Button name and opening css rule tag
 lines.push(openTag); // opening tag of CSS rules
+
+// FONT-FAMILY - FONT-COLOR - FONT-SIZE
 lines.push(fontFamily);
 lines.push(fontColor);
 lines.push(fontSize);
+
 // TEXT SHADOW
-// if (shadowToggle.checked === !true){
     if (!shadowToggle.checked){
     console.log("Text Shadow Toggle OFF");
 } else {
@@ -197,14 +191,15 @@ lines.push(fontSize);
 }
 
 // BOX SHADOW 
-if (shadowGroupToggle.checked ===!true){
+if (!shadowGroupToggle.checked){
     console.log("Box Shadow Toggle OFF");
 } else {
     lines.push(boxShadow);
     console.log("Box Shadow Toggle ON");
 }
+
 // PADDING
-if (paddingGroupToggle.checked === false){
+if (!paddingGroupToggle.checked){
     lines.push(padding);
     console.log("Padding TRBL ON/ TB-LR OFF");
 } else {
@@ -213,8 +208,10 @@ if (paddingGroupToggle.checked === false){
 }
 // BORDER 
 lines.push(border);
+
 // BORDER RADIUS
 lines.push(borderRadius);
+
 // BACKGROUND
 if (!backgroundGroupToggle.checked) {
     lines.push(background);
@@ -223,10 +220,11 @@ if (!backgroundGroupToggle.checked) {
     lines.push(backgroundGradient);
     console.log("Gradient background: " + backgroundGroupToggle.checked);
 }
+
 // CLOSING TAG
 lines.push(closeTag); // closing tag of CSS rules
 
-// HOVER OPEN TAG
+// HOVER CSS RULE OPENING TAG
 lines.push(hoverOpenTag)
 if (!hoverGroupToggle.checked) {
     lines.push(backgroundHover);
@@ -235,29 +233,16 @@ if (!hoverGroupToggle.checked) {
     lines.push(backgroundGradientHover);
     console.log("Hover Gradient background: " + hoverGroupToggle.checked);
 }
+
 // HOVER BORDER
 if (hoverBorderToggle.checked) {
     lines.push(borderHover);
 }
+
 // HOVER CLOSING TAG
 lines.push(hoverCloseTag)
 
 let css = lines.join("\n");
-// console.log(lines.join("\n"));
-// console.log(css);
-    //======================================================= Generate CSS rules
-//     let css = [
-//         `#demo-button.btn {
-//             font-family: ${fontFamilySelect.value};
-//             font-size: ${fontSizeRange.value}px;
-//             ${textShadowStyle}
-//             padding: ${boxPaddingRange.value}px;
-//         }
-// ${hoverOpenTag}
-
-//         ${hoverCloseTag}
-//         `
-//     ].join("\n");
 
     // Show the CSS rules in the container element
     cssContainer.innerHTML = ''; // Empty it first
@@ -268,8 +253,6 @@ let css = lines.join("\n");
 
     // Update STYLE element with new CSS rules
     set_css(css);
-
-    //cssContainer = document.getElementsByTagName('style')[0].innerHTML;
 
 }
 

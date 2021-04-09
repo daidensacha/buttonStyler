@@ -8,10 +8,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css">
-    <script src="https://kit.fontawesome.com/7432ab4d43.js" crossorigin="anonymous"></script>
-    <script src="assets/js//clipboard.min.js"></script>
-
-    <!-- <link rel="stylesheet" href="assets/css/prism.css"> -->
 </head>
 <body>
     <div class="container-fluid main-container ">
@@ -101,6 +97,8 @@
 
                     <div class="col-md-6"> <!-- accordion column -->
 
+                        <h1>Accordion</h1>
+
                         <!-- start accordion -->
                         <div id="accordion">
                             <!-- Accordion begins -->
@@ -138,27 +136,22 @@
                                                           <label for="style-font" class="col-sm-4 col-form-label">font-family</label>
                                                           <div class="col-sm-8">
                                                             <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example" onchange="update()" >
-                                                                <option selected>'Montserrat', sans-serif</option>
-                                                                <option value="1">'Lobster', cursive</option>
-                                                                <option value="2">'Lato', sans-serif</option>
-                                                                <option value="3">'Oxygen', sans-serif</option>
-                                                                <option value="4">'Poppins', sans-serif</option>
-                                                                <option value="5">'PT Sans', sans-serif</option>
-                                                                <option value="6">'Roboto', sans-serif</option>
-                                                                <option value="7">'Abril Fatface', cursive</option>
-                                                                <option value="8">'Courgette', cursive</option>
-                                                                <option value="9">'Dancing Script', cursive</option>
-                                                                <option value="10">'Hind', sans-serif</option>
-                                                                <option value="11">'Tajawal', sans-serif</option>
+                                                            <select class="form-select form-control" id="style-font" aria-label="Default select example" oninput="update()" >
+                                                                <option selected>'Lato', sans-serif</option>
+    
+                                                                <option value="'Lobster', cursive;">'Lobster', cursive</option>
+                                                                <option value="'Montserrat', sans-serif">'Montserrat', sans-serif</option>
+                                                                <option value="'Oxygen', sans-serif">'Oxygen', sans-serif</option>
+                                                                <option value="'Poppins', sans-serif">'Poppins', sans-serif</option>
+                                                                <option value="'PT Sans', sans-serif">'PT Sans', sans-serif</option>
+                                                                <option value="'Roboto', sans-serif">'Roboto', sans-serif</option>
                                                               </select>
-                                                            
                                                           </div>
                                                         </div>
                                                         <div class="row mb-3 text-sm-right">
                                                             <label for="style-color" class="col-sm-4 col-form-label">Color</label>
                                                             <div class="col-sm-8">
-                                                                <input class="form-control color-input" type="text" id="style-color" data-jscolor="{value:'rgba(156,35,174,1)', alpha:1}" oninput="update()">
+                                                                <input class="form-control color-input" type="text" id="style-color" data-jscolor="{value:'#FDFFBB', alpha:1}" oninput="update()">
                                                             </div>
                                                     
                                                         </div>
@@ -166,8 +159,8 @@
                                                         <div class="row mb-3 text-sm-right">
                                                             <label for="style-color" class="col-sm-4 col-form-label">Font size</label>
                                                             <div class="range-slider col-sm-8">
-                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="28" min="0" max="64" oninput="update()" >
-                                                                <span class="range-slider__value">28</span>
+                                                                <input class="range-slider__range" id="style-fontsize" type="range" value="12" min="0" max="36" oninput="update()" >
+                                                                <span class="range-slider__value">12</span>
                                                             </div>
                                                         </div>
 
@@ -185,38 +178,38 @@
                                                     <h3>Shadow</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="blur-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" onchange=" update()" >
+                                                    <input type="checkbox" class="form-control" id="blur-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" oninput="update()" >
                                                 </div>
                                             </div>
                                             <div class="row text-group">
                                               
                                                 <div class="col-sm-12">
                                                     <form>
-                                                        <fieldset class="blur-group" id="text-shadow-fieldset" disabled >
+                                                        <fieldset id="text-shadow-fieldset">
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-shadow" class="col-sm-4 col-form-label">Text Shadow</label>
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}"  oninput="update()">
+                                                                    <input class="form-control color-input blur-group" type="text" id="style-text-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-x" class="col-sm-4 col-form-label">X-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-x" type="range" value="1" min="-10" max="10"  oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-x" type="range" value="2" min="-10" max="10" disabled="true" oninput="update()" >
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-y" class="col-sm-4 col-form-label">Y-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="1" min="-10" max="10"  oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="0" min="-10" max="10" disabled="true" oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-blur" class="col-sm-4 col-form-label">Blur</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="10" min="0" max="20"  oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="5" min="0" max="20" disabled="true" oninput="update()" >
                                                                     <span class="range-slider__value">5</span>
                                                                 </div>
                                                             </div>
@@ -254,7 +247,7 @@
                                                     <h3>Box</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="shadow-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" onchange="update()" >
+                                                    <input type="checkbox" class="form-control" id="shadow-group-toggle" data-toggle="toggle" data-size="sm" data-style="slow" oninput="update()" >
                                                 </div>
                                             </div>
                                         
@@ -262,32 +255,32 @@
                                                 
                                                 <div class="col-sm-12">
                                                     <form action="">
-                                                        <fieldset id="shadow-fieldset" class="shadow-group" disabled>
+                                                        <fieldset>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-shadow" class="col-sm-4 col-form-label">Shadow</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" >
+                                                                    <input class="form-control color-input shadow-group" type="text" id="style-box-shadow" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-x" class="col-sm-4 col-form-label">X-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-x" type="range" value="2" min="-10" max="10" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-x" type="range" value="2" min="-10" max="10" disabled="true" oninput="update()" >
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-y" class="col-sm-4 col-form-label">Y-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="0" min="-10" max="10" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="0" min="-10" max="10" disabled="true" oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-blur" class="col-sm-4 col-form-label">Blur</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="5" min="0" max="20" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="5" min="0" max="20" disabled="true" oninput="update()" >
                                                                     <span class="range-slider__value">5</span>
                                                                 </div>
                                                             </div>
@@ -305,32 +298,32 @@
                                                             <h3>Padding</h3>
                                                         </div>
                                                         <div class="col-sm-6 text-right">
-                                                            <input type="checkbox" class="form-control icon-tbrl-dark" id="padding-group-toggle" data-toggle="toggle" value="true" data-width="80" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="light" data-on="TB | RL" data-off=" All " onchange="update()"  >
+                                                            <input type="checkbox" class="form-control" id="padding-group-toggle" data-toggle="toggle" data-width="70" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Toggle" data-off="Toggle" oninput="update()"  >
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <!-- <div class="row padding-group"> -->
                                                     <div class="col-sm-12">
                                                         <form action="">
-                                                            <fieldset id="padding-fieldset" class="padding-group">
+                                                            <fieldset>
                                                                 <div class="row mb-3 text-sm-right">
-                                                                    <label for="style-box-padding" class="col-sm-4 col-form-label">All Sides</label>
+                                                                    <label for="style-box-padding" class="col-sm-4 col-form-label">Top-Bottom-Right-Left</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-group" id="style-box-padding" type="range" value="5" min="0" max="25" oninput="update()"  >
+                                                                        <input class="range-slider__range padding-group" id="style-box-padding" type="range" value="5" min="0" max="15" oninput="update()"  >
                                                                         <span class="range-slider__value">2</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-3 text-sm-right">
                                                                     <label for="style-tb-padding" class="col-sm-4 col-form-label">Top-Bottom</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-trbl-group" id="style-tb-padding" type="range" value="4" min="0" max="20" disabled="true" oninput="update()"  >
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-tb-padding" type="range" value="4" min="0" max="10" disabled="true" oninput="update()"  >
                                                                         <span class="range-slider__value">0</span>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row mb-3 text-sm-right">
                                                                     <label for="style-rl-padding" class="col-sm-4 col-form-label">Right-Left</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="5" min="0" max="25" disabled="true" oninput="update()" >
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="5" min="0" max="15" disabled="true" oninput="update()" >
                                                                         <span class="range-slider__value">5</span>
                                                                     </div>
                                                                 </div>
@@ -373,25 +366,25 @@
                                                 
                                                 <div class="col-sm-12">
                                                     <form action="">
-                                                        <fieldset id="borderFieldset">
+                                                        <fieldset>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-border-color" class="col-sm-4 col-form-label">Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input border-group" type="text" id="style-border-color" data-jscolor="{value:'rgba(156,35,174,1)', alpha:1}" oninput="update()" >
+                                                                    <input class="form-control color-input border-group" type="text" id="style-border-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-border-width" class="col-sm-4 col-form-label">Border Width</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range border-group" id="style-border-width" type="range" value="3" min="0" max="10" oninput="update()" >
+                                                                    <input class="range-slider__range border-group" id="style-border-width" type="range" value="2" min="-10" max="10">
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-border-radius" class="col-sm-4 col-form-label">Border Radius</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range border-group" id="style-border-radius" type="range" value="10" min="0" max="28" oninput="update()" >
+                                                                    <input class="range-slider__range border-group" id="style-border-radius" type="range" value="2" min="0" max="15">
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
@@ -431,7 +424,7 @@
                                                     <h3>Background</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="bg-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid" onchange="update()" >
+                                                    <input type="checkbox" class="form-control" id="bg-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
     
                                                 </div>
                                             </div>
@@ -443,29 +436,29 @@
                                                                 <label for="style-bg-color" class="col-sm-4 col-form-label">Background</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'rgba(19,85,139,1)', alpha:1}" oninput="update()" >
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient1-color" class="col-sm-4 col-form-label">Color 1</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient1-color" data-jscolor="{value:'rgba(105,19,255,1)', alpha:1}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient1-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient2-color" class="col-sm-4 col-form-label">Color 2</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient2-color" data-jscolor="{value:'rgba(17,9,61,1)', alpha:1}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-gradient2-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="gradient-direction" class="col-sm-4 col-form-label">Direction</label>
                                                                 <div class="col-sm-8">
                                                                 <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                                <select class="form-select form-control" id="gradient-direction" aria-label="Default select example" onchange="update()" disabled="true">
-                                                                    <option selected>to top</option>
+                                                                <select class="form-select form-control" id="gradient-direction" aria-label="Default select example" disabled="true">
+                                                                    <option selected>to bottom</option>
                                                                     <option value="1">to right</option>
                                                                     <option value="2">to bottom</option>
                                                                     <option value="3">to left</option>
@@ -503,27 +496,14 @@
                                     data-parent="#accordion">
                                     <div class="card-body">
     
-                                        <div class="container"> <!-- from here -->
-
-                                            <div class="row">
-                                                <div class="col-sm-12" >
-                                                    <h3>Hover Font</h3>
-                                                </div>
-                                            </div>
-                                                <div class="row mb-3 text-sm-right">
-                                                    <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Font Color</label>
-
-                                                    <div class="col-sm-8">
-                                                        <input class="form-control color-input hover-group" type="text" id="hover-color" data-jscolor="{value:'rgba(19,85,139,1)', alpha:1}" oninput="update()">
-                                                    </div>
-                                                </div>
-                                                
-                                            <div class="row heading"> <!-- to here -->
+                                        <div class="container">
+    
+                                            <div class="row heading">
                                                 <div class="col-sm-6" >
                                                     <h3>Hover Background</h3>
                                                 </div>
                                                 <div class="col-sm-6 text-right">
-                                                    <input type="checkbox" class="form-control" id="hover-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid" onchange="update()" >
+                                                    <input type="checkbox" class="form-control" id="hover-group-toggle" data-toggle="toggle" data-width="90" data-size="sm" data-style="slow" data-onstyle="info" data-offstyle="info" data-on="Gradient" data-off="Solid">
     
                                                 </div>
                                             </div>
@@ -535,29 +515,29 @@
                                                                 <label for="style-bg-color" class="col-sm-4 col-form-label">Solid Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="style-color-hover" data-jscolor="{value:'rgba(156,35,174,1)'}" oninput="update()" >
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-color-hover" data-jscolor="{value:'rgba(0,0,0,0)'}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient1-hover" class="col-sm-4 col-form-label">Color 1</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient1-hover" data-jscolor="{value:'rgba(17,9,61,1)'}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient1-hover" data-jscolor="{value:'rgba(0,0,0,0)'}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-gradient2-hover" class="col-sm-4 col-form-label">Color 2</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient2-hover" data-jscolor="{value:'rgba(105,19,255,1)'}" oninput="update()" disabled="true">
+                                                                    <input class="form-control color-input hover-group" type="text" id="style-gradient2-hover" data-jscolor="{value:'rgba(0,0,0,0)'}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="gradient-hover-direction" class="col-sm-4 col-form-label hover-group">Direction</label>
                                                                 <div class="col-sm-8">
                                                                 <!-- <input type="select" class="form-control" id="style-font"> -->
-                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" onchange="update()" disabled="true">
-                                                                    <option selected>to top</option>
+                                                                <select class="form-select form-control" id="gradient-hover-direction" aria-label="Default select example" oninput="update()" disabled="true">
+                                                                    <option selected>to bottom</option>
                                                                     <option value="1">to right</option>
                                                                     <option value="2">to bottom</option>
                                                                     <option value="3">to left</option>
@@ -572,29 +552,21 @@
                                                                     <h3>Hover Border</h3>
                                                                 </div>
                                                                 <div class="col-sm-6 text-right">
-                                                                    <input type="checkbox" class="form-control" id="hover-border-toggle" data-toggle="toggle" data-size="sm" data-style="slow" checked onchange="update()" >
+                                                                    <input type="checkbox" class="form-control" id="hover-border-toggle" data-toggle="toggle" data-size="sm" data-style="slow">
                                                                 </div>
                                                             </div>
-
-                                                            <!-- <div class="row mb-3 text-sm-right">
-                                                                <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Font Color</label>
-    
-                                                                <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="hover-color" data-jscolor="{value:'rgba(25,157,219,1)', alpha:1}" oninput="update()">
-                                                                </div>
-                                                            </div> -->
     
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Border Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(19,85,139,1)', alpha:1}" oninput="update()">
+                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(0,0,0,0)', alpha:1}" oninput="update()" disabled="true">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="hover-border-width" class="col-sm-4 col-form-label">Border Width</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range hover-group" id="hover-border-width" type="range" value="3" min="0" max="10" oninput="update()">
+                                                                    <input class="range-slider__range hover-group" id="hover-border-width" type="range" value="1" min="0" max="5" oninput="update()" disabled="true">
                                                                     <span class="range-slider__value">2</span>
                                                                 </div>
                                                             </div>
@@ -622,6 +594,7 @@
                         <div class="row">
                             <div class="col-sm-12" id="css-button"> <!-- button display -->
 
+                                <h1>Button Display</h1>
                                 <div class="row text-center">
                                     <div class="col text-center">
                                         <form action="">
@@ -631,15 +604,11 @@
                                 </div>
 
                             </div> <!-- end button display -->
-                            <div class="col-sm-12 highlight" > <!-- css output display -->
-
-                                <!--  <i class="far fa-clipboard"></i>  -->
+                            <div class="col-sm-12"> <!-- css output display -->
 
                                 <!-- <section class=""> -->
-                                    <pre  style="color: pink" class="language-css" >
-                                        <code class="language-css" id="cssContainer" >
+                                    <pre id="cssContainer" style="color: pink" >
 
-                                        </code>
                                     </pre>
 
                                 <!-- </section> -->
@@ -694,11 +663,12 @@
     <script src="assets/js/jscolor.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form.js"></script>
-    <!-- <script src="assets/js/prism.js"></script> -->
-
-    <!-- window.addEventListener('DOMContentLoaded', function () {
-        Prism.highlightElement(cssContainer);
-    }); -->
-
+    <!-- <script src="assets/js/colorScript.js"></script> -->
+    <script>
+        // jscolor.install();
+        // update();
+        
+    </script>
+    
 </body>
 </html>

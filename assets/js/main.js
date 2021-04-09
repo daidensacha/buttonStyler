@@ -17,28 +17,8 @@ $(function() {
    window.onload = function() {
     // executes when complete page is fully loaded, including all frames, objects and images
    //console.log("window is loaded");
-     
-     
    // window load  
    };
-
-//    ========================= JSCOLOR PICKER OPTIONS =========================
-//Color picker options
-// These options apply to all color pickers on the page
-// jscolor.presets.default = {
-// 	previewPosition:'right', 
-//     previewSize:60, 
-//     position:'top',
-//     palette:'rgba(0,0,0,0) #fff #808080 #000 #996e36 #f55525 #ffe438 #88dd20 #22e0cd #269aff #bb1cd4',
-// 	backgroundColor:'rgba(61,20,130,1)', 
-// 	borderColor:'rgba(54,68,187,1)', 
-//     width:139, 
-//     height:80, 
-// 	controlBorderColor:'rgba(54,68,187,1)', 
-//     sliderSize:12, 
-// 	shadowColor:'rgba(0,0,0,0.43)'
-// };
-
 
 // ==============  RANGE SLIDER ================================================
 // Range with tooltip
@@ -88,30 +68,6 @@ $('.blur-group').prop('disabled', false);
 // }
 
 //  syncFieldsWithTheFieldsets()
-
-// Assign variable to fiedset
-// let myFieldset = document.querySelector("#text-shadow-fieldset");
-// // Set state of input to disabled by default
-// myFieldset.disabled = true;
-// console.log(myFieldset.disabled);
-// // Function to toggle the switch, 
-// function toggle() {
-//     let fieldset = document.querySelector("#text-shadow-fieldset");
-//                 if (fieldset.disabled === false) {
-//     disableField();
-//     } else if (fieldset.disabled === true) {
-//     undisableField();
-//     }
-// }
-// // Function to  disable form fieldset
-// function disableField() {
-//     document.querySelector("#text-shadow-fieldset").disabled = true;
-
-// }
-// // Function to  un-disable form fieldset 
-// function undisableField() {
-//     document.querySelector("#text-shadow-fieldset").disabled = false;
-// }
 
 
 // This function enables and disables the box shadow group
@@ -166,109 +122,73 @@ $(function() {
 $(function() {
     $('#hover-border-toggle').on('change', function() {
       	if(this.checked) {
-$('#hover-border-color, #hover-border-width').prop('disabled', false);
+$('#hover-color, #hover-border-color, #hover-border-width').prop('disabled', false);
 	}
 	else {
-		$("#hover-border-color, #hover-border-width").prop('disabled', true);
+		$("#hover-color, #hover-border-color, #hover-border-width").prop('disabled', true);
 	} 
     });
 });
 
-let x;
+// ========== CREATE COPY ICON FOR COPYING THE CSS TO CLIPBOARD. ===============
+// THANKS TO https://clipboardjs.com/
 
-// DEFAULT VALUES FOR FALL BACK
+// FUNCTION TO GET TARGET ELEMENT, COPY, AND OUTPUT SUCCESS/ERROR MESSAGE
+document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
-let cssTags = {
-    open_tag: ".btn {",
-    close_tag: "}",
-    hoverOpenTag: ".btn:hover {",
-    hoverCloseTag: "}",
-}
+    // Create the elements to display on top of the cssContainer
+    let copyIcon = '<i class="far fa-2x">&#xf328;</i><span class="ml-3" id="copied"></span>';
 
-let   text_styling = {
-    font_text: "My Groovy Button",
-    font_family: "'Lato', sans-serif;",   
-    font_color: "#3829ff",
-    font_size: "12px",
-    text_shadow: '#808080',
-    shadow_X_Axis: '3px',
-    shadow_Y_Axis: '0px',
-    text_shaddow_blur: '3px',
+    // Create the element to hold the icon and message span
+    var button = document.createElement('span');
+    button.className = 'copy-code-button';
+    button.type = 'link';
+    button.innerHTML = copyIcon;
+    var pre = codeBlock.parentNode;
+    if (pre.parentNode.classList.contains('highlight')) {
+        var highlight = pre.parentNode;
+        highlight.parentNode.insertBefore(button, highlight);
+    } else {
+        pre.parentNode.insertBefore(button, pre);
     }
+});
 
-let  box_styling = {
-    style_box_shadow: "#808080",
-    style_box_x:  "2px",
-    style_box_y:     "5px",
-    style_box_blur:   "6px",
-    style_box_padding:   "5px",
-    style_tb_padding:   "5px",
-    style_lr_padding:   "5px",
+// Function copies CSS output on click of the clipboard icon
+var clipboard = new ClipboardJS('.copy-code-button', {
+    target: function(trigger) {
+        return trigger.nextElementSibling;
     }
+});
 
-let   border_styling = {
-    style_border_radius: "5px",
-    style_border_width: "1px",
-    style_border_color: "#3834FF",   // note sure what color, but need to add one once its all working.
-    }
+// Define variable for target message element
+let copied = document.querySelector("#copied");
 
-let color_styling = {
-    color_styling_color: "#007bff",
-    style_gradient1_color: "#007bff",
-    style_gradient2_color: "#005ec2",
-    gradient_direction: "top",
+// Function to display success message
+clipboard.on('success', function(e) {
+    copied.innerHTML = "Bazinga, copied!";
+    setTimeout(() => {
+        copied.innerHTML = ""  // removes the message
+    }, 1000)
+    // console.info('Action:', e.action);
+    // console.info('Text:', e.text);
+    // console.info('Trigger:', e.trigger);
 
-    }
+    e.clearSelection();
+});
 
-let hover_styling = {
-    style_color_hover:  "005ec2",
-    style_gradient1_hover:  "005ec2",
-    style_gradient2_hover:  "007bff",
-    gradient_hover_direction:  "to bottom",
+// Prints the error message if the copy doesn't work.
+clipboard.on('error', function(e) {
+    copied.className = "errorMsg"; // Add class to message span to change color of message to red
+    copied.innerHTML = "Oops, that didn't copy!"
+    setTimeout(() => {
+        copied.className = ""; // removes the class and message
+        copied.innerHTML = "";
+    }, 1000)
 
-    }
-
-
-// ADDS THE TEXT TO THE DEMO BUTTON
-// var demoText = ""
-// var demoButton = $('#demo-button');
-//     $( "#style-text" ).on('keyup', function() {
-//         demoText = $('#style-text').val()
-//         $('#demo-button').html(demoText);
-// });
-
-// var openTag = document.getElementById("openTag");
-// var endTag = document.getElementById("endTag");
-
-// ADDS TO THE START AND END CODE FOR THE BUTTON CSS
-// openTag.innerHTML = `${cssTags.open_tag}`;
-// endTag.innerHTML = `${cssTags.close_tag}`;
-
-// $("#rs-1").on("slide", function (slideEvt) {
-//     $("#rs-1-val").text(slideEvt.value);
-//   });
-
-  // ADDING AND CHANGING FONT SIZE  TO CSS OUTPUT AND BUTTON
-//   var btn = document.getElementById("demo-button"); 
-//   var fontsizeSlider = document.getElementById("style-fontsize");  // source input
-//   var codeFontSize = document.getElementById("codeFontSize");      // target span css output
-  // FUNCTION TO DISPLAY VALUE IN THE CSS OUTPUT // from w3c schools https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_oninput
-//   function sliderValue() { 
-//     var x = fontsizeSlider.value;
-//     codeFontSize.innerHTML = `font-size: ${x}px;`;
-//     btn.style.fontSize = `${x}px`;
-//     console.log(x)
-//     }    
-        
-// ADD FONT FAMILY TO THE DEMO BTN AND CSS DISPLAY
-// const selectElement = document.querySelector('#style-font');
-// fontFamily.innerHTML = `font-family: ${text_styling.font_family}`;
-
-// selectElement.addEventListener('change', (event) => {
-//     fontFamily = selectElement.value
-//     const result = document.querySelector('#fontFamily');
-//     result.textContent = `font-family: ${event.target.value};`;
-//     btn.style.fontFamily = event.target.value;
-// })
+    // console.error('Action:', e.action);
+    // console.error('Trigger:', e.trigger);
+});
 
 
+
+    

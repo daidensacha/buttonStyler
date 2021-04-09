@@ -4,7 +4,7 @@
 //results. The CSS rules for the generated style is output into a <pre> </pre>
 // so the CSS can be copied to use and replicate the generated style.
 
-// JS COLOR PICKER OPTIONS
+//============================= JSCOLOR PICKER OPTIONS =========================
 jscolor.presets.default = {
 	previewPosition:'right', 
     previewSize:60, 
@@ -26,7 +26,7 @@ let styleEl = document.createElement('style');
 document.getElementsByTagName('head')[0].appendChild(styleEl);
 
 //
-//========================== Function updates style element with given CSS rules
+//============== Function updates style element with given CSS rules============
 function set_css(css) {
     if (styleEl.styleSheet) {
         styleEl.styleSheet.cssText = css;
@@ -38,7 +38,7 @@ function set_css(css) {
 }
 
 //
-//==================Function to generate CSS rules and set them to STYLE element
+//==========Function to generate CSS rules and set them to STYLE element========
 function update() {
     // The preview button for seeing styling
     let demoButton = document.querySelector('#demo-button');
@@ -52,7 +52,9 @@ function update() {
     // =========================================================================
     // FONT INPUTS
     let styleText = document.querySelector('#style-text');
-    let fontFamilySelect = document.querySelector('#style-font');
+    let fontFamilySel = document.querySelector('#style-font');
+    let fontFamilySelect = fontFamilySel.options[fontFamilySel.selectedIndex].text;
+   // let fontFamilySelect = document.querySelector('#style-font');
     let fontStyleColorPicker = document.querySelector('#style-color').jscolor;
     let fontSizeRange = document.querySelector('#style-fontsize');
  
@@ -91,7 +93,8 @@ function update() {
     let backgroundColorPicker = document.querySelector('#style-bg-color').jscolor;
     let gradient1ColorPicker = document.querySelector('#style-gradient1-color').jscolor;
     let gradient2ColorPicker = document.querySelector('#style-gradient2-color').jscolor;
-    let gradientDirectionSelect = document.querySelector('#gradient-direction');
+    let gradientDirectionSel = document.querySelector('#gradient-direction');
+    let gradientDirectionSelect = gradientDirectionSel.options[gradientDirectionSel.selectedIndex].text;
  
     // =========================================================================
     // HOVER
@@ -99,18 +102,20 @@ function update() {
     let backgroundHoverColorPicker = document.querySelector('#style-color-hover').jscolor;
     let gradient1HoverColorPicker = document.querySelector('#style-gradient1-hover').jscolor;
     let gradient2HoverColorPicker = document.querySelector('#style-gradient2-hover').jscolor;
-    let gradientHoverDirectionSelect = document.querySelector('#gradient-hover-direction');
+    let gradientHoverDirectionSel = document.querySelector('#gradient-hover-direction');
+    let gradientHoverDirectionSelect = gradientHoverDirectionSel.options[gradientHoverDirectionSel.selectedIndex].text;
 
     // =========================================================================
     // HOVER BORDER
     let hoverBorderToggle = document.querySelector('#hover-border-toggle');
+    let hoverColor = document.querySelector('#hover-color').jscolor;
     let hoverBorderColorPicker = document.querySelector('#hover-border-color').jscolor;
     let hoverBorderWidthRange = document.querySelector('#hover-border-width');
 
     ////////////////////////////////////////////////////////////////////////////
 
-    // Adds user text to the button
-    //================================================Set the text of the button
+    //
+    // =======================Set the text of the button========================
     styleText.addEventListener('keyup', setText);
     function setText() {
         demoButton.innerText = styleText.value;
@@ -119,7 +124,8 @@ function update() {
     // ========================CSS VARIABLEd AND STRINGS========================
 
     /* CSS Font Strings */ 
-    let fontFamily = "\tfont-family: " + fontFamilySelect.value + ";";
+    let fontFamily = "\tfont-family: " + fontFamilySelect + ";";
+    //let fontFamily = "\tfont-family: " + fontFamilySelect.value + ";";
     let fontColor = "\tcolor: " + fontStyleColorPicker.toString('rgba') + ";";
     let fontSize = "\tfont-size: " + fontSizeRange.value + "px;";   
 
@@ -140,27 +146,28 @@ function update() {
     /* CSS Background Strings */ 
     let background = `\tbackground: ${backgroundColorPicker.toString('rgba')};`;
     let backgroundGradient = ` \tbackground: ${gradient1ColorPicker.toString('rgba')};
-    \tbackground-image: -webkit-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    \tbackground-image: -moz-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    \tbackground-image: -ms-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    \tbackground-image: -o-linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
-    \tbackground-image: linear-gradient(${gradientDirectionSelect.value}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});`;
+    \tbackground-image: -webkit-linear-gradient(${gradientDirectionSelect}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: -moz-linear-gradient(${gradientDirectionSelect}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: -ms-linear-gradient(${gradientDirectionSelect}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: -o-linear-gradient(${gradientDirectionSelect}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});
+    \tbackground-image: linear-gradient(${gradientDirectionSelect}, ${gradient1ColorPicker.toString('rgba')}, ${gradient2ColorPicker.toString('rgba')});`;
 
     /* CSS Hover Strings */ 
     let backgroundHover = `\tbackground: ${backgroundHoverColorPicker.toString('rgba')};`;
     let backgroundGradientHover = `\tbackground: ${gradient1HoverColorPicker.toString('rgba')};
-    \tbackground-image: -webkit-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    \tbackground-image: -moz-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    \tbackground-image: -ms-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    \tbackground-image: -o-linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
-    \tbackground-image: linear-gradient(${gradientHoverDirectionSelect.value}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});`;
+    \tbackground-image: -webkit-linear-gradient(${gradientHoverDirectionSelect}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: -moz-linear-gradient(${gradientHoverDirectionSelect}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: -ms-linear-gradient(${gradientHoverDirectionSelect}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: -o-linear-gradient(${gradientHoverDirectionSelect}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});
+    \tbackground-image: linear-gradient(${gradientHoverDirectionSelect}, ${gradient1HoverColorPicker.toString('rgba')}, ${gradient2HoverColorPicker.toString('rgba')});`;
 
     /* Border Hover string */
-    let borderHover = `\tborder: ${hoverBorderWidthRange.value}px solid ${hoverBorderColorPicker.toString('rgba')}`;
+    let hoverFontColor = `\tcolor: ${hoverColor.toString('rgba')};`;
+    let borderHover = `\tborder: ${hoverBorderWidthRange.value}px solid ${hoverBorderColorPicker.toString('rgba')};`;
 
     // CSS STRINGS
-let openTag = "#demo-button.btn {";
-let closeTag =        " }";
+let openTag = "\n#demo-button.btn {";
+let closeTag =      "}";
 let hoverOpenTag = `\n#demo-button.btn:hover {`;
 let hoverCloseTag = `}`;
 
@@ -184,27 +191,27 @@ lines.push(fontSize);
 
 // TEXT SHADOW
     if (!shadowToggle.checked){
-    console.log("Text Shadow Toggle OFF");
+    // console.log("Text Shadow Toggle OFF");
 } else {
     lines.push(textShadow);
-    console.log("Text Shadow Toggle ON");
+    // console.log("Text Shadow Toggle ON");
 }
 
 // BOX SHADOW 
 if (!shadowGroupToggle.checked){
-    console.log("Box Shadow Toggle OFF");
+    // console.log("Box Shadow Toggle OFF");
 } else {
     lines.push(boxShadow);
-    console.log("Box Shadow Toggle ON");
+    // console.log("Box Shadow Toggle ON");
 }
 
 // PADDING
 if (!paddingGroupToggle.checked){
     lines.push(padding);
-    console.log("Padding TRBL ON/ TB-LR OFF");
+    // console.log("Padding TRBL ON/ TB-LR OFF");
 } else {
     lines.push(paddingTbRl);
-    console.log("Padding TRBL OFF/ TB-LR ON");
+    // console.log("Padding TRBL OFF/ TB-LR ON");
 }
 // BORDER 
 lines.push(border);
@@ -215,23 +222,28 @@ lines.push(borderRadius);
 // BACKGROUND
 if (!backgroundGroupToggle.checked) {
     lines.push(background);
-    console.log("Solid background: " + backgroundGroupToggle.checked);
+    // console.log("Solid background: " + backgroundGroupToggle.checked);
 } else {
     lines.push(backgroundGradient);
-    console.log("Gradient background: " + backgroundGroupToggle.checked);
+    // console.log("Gradient background: " + backgroundGroupToggle.checked);
 }
 
 // CLOSING TAG
 lines.push(closeTag); // closing tag of CSS rules
 
 // HOVER CSS RULE OPENING TAG
-lines.push(hoverOpenTag)
+lines.push(hoverOpenTag);
+
+// HOVER FONT COLOR
+lines.push(hoverFontColor);
+
+// HOVER BACKGROUND COLOR
 if (!hoverGroupToggle.checked) {
     lines.push(backgroundHover);
-    console.log("Hover Solid background: " + hoverGroupToggle.checked);
+    // console.log("Hover Solid background: " + hoverGroupToggle.checked);
 } else {
     lines.push(backgroundGradientHover);
-    console.log("Hover Gradient background: " + hoverGroupToggle.checked);
+    // console.log("Hover Gradient background: " + hoverGroupToggle.checked);
 }
 
 // HOVER BORDER
@@ -240,14 +252,12 @@ if (hoverBorderToggle.checked) {
 }
 
 // HOVER CLOSING TAG
-lines.push(hoverCloseTag)
+lines.push(hoverCloseTag);
 
 let css = lines.join("\n");
 
     // Show the CSS rules in the container element
     cssContainer.innerHTML = ''; // Empty it first
-
-    //let newCssStyles = document.getElementsByTagName('style')[0].innerHTML; 
     
     cssContainer.appendChild(document.createTextNode(css));
 
@@ -261,3 +271,5 @@ jscolor.install();
 
 // Update the button with current values
 update()
+
+

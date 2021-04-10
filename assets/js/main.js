@@ -8,9 +8,17 @@ $(function() {
        $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
        $('.offcanvas-collapse').toggleClass('open')
      })
+
+     $(function () {
+        'use strict'
+      
+        $('[data-toggle="offcanvas"]', '#offcanvasBottom').on('click', function () {
+          $('.footer-offcanvas').toggleClass('open')
+        })
+      })
      
      
-   // document ready  
+   // document ready  footer-offcanvas
    });
    
    
@@ -132,18 +140,29 @@ $('#hover-color, #hover-border-color, #hover-border-width').prop('disabled', fal
 
 // ========== CREATE COPY ICON FOR COPYING THE CSS TO CLIPBOARD. ===============
 // THANKS TO https://clipboardjs.com/
+// Also thanks to https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa for the script
 
 // FUNCTION TO GET TARGET ELEMENT, COPY, AND OUTPUT SUCCESS/ERROR MESSAGE
 document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
-    // Create the elements to display on top of the cssContainer
-    let copyIcon = '<i class="far fa-2x">&#xf328;</i><span class="ml-3" id="copied"></span>';
+   // Create the container for the icon for the clipboard button
+   let iconClipboard = document.createElement("i");
+   iconClipboard.className = "far fa-2x";
+   iconClipboard.innerHTML = "&#xf328;";
+
+   // Create the success/ error message span
+   let clipMessage = document.createElement("span");
+   clipMessage.className = "ml-3";
+   clipMessage.setAttribute('id', 'copied');
 
     // Create the element to hold the icon and message span
     var button = document.createElement('span');
     button.className = 'copy-code-button';
     button.type = 'link';
-    button.innerHTML = copyIcon;
+    button.appendChild(iconClipboard);
+    button.appendChild(clipMessage);
+
+   // button.innerHTML = "copyIcon";
     var pre = codeBlock.parentNode;
     if (pre.parentNode.classList.contains('highlight')) {
         var highlight = pre.parentNode;
@@ -156,19 +175,30 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 // Function copies CSS output on click of the clipboard icon
 var clipboard = new ClipboardJS('.copy-code-button', {
     target: function(trigger) {
+        let target = document.querySelector("#cssContainer");
+        console.log(target.parentNode);
+      //  console.log(trigger.nextElementSibling);
         return trigger.nextElementSibling;
+        
     }
 });
 
 // Define variable for target message element
 let copied = document.querySelector("#copied");
 
+// Define variable for the cssContainer to highlight text on copy
+let cssContainer = document.querySelector("#cssContainer");
+
 // Function to display success message
 clipboard.on('success', function(e) {
-    copied.innerHTML = "Bazinga, copied!";
+    cssContainer.className = "copyHighlight";
+    copied.className = "successMsg";
+    copied.innerHTML = "Bazinga, CSS copied!";
     setTimeout(() => {
+        cssContainer.className = "language-css";
+        copied.className = "";
         copied.innerHTML = ""  // removes the message
-    }, 1000)
+    }, 2000)
     // console.info('Action:', e.action);
     // console.info('Text:', e.text);
     // console.info('Trigger:', e.trigger);
@@ -183,11 +213,22 @@ clipboard.on('error', function(e) {
     setTimeout(() => {
         copied.className = ""; // removes the class and message
         copied.innerHTML = "";
-    }, 1000)
+    }, 2000)
 
     // console.error('Action:', e.action);
     // console.error('Trigger:', e.trigger);
 });
+
+// ========================= Initialise tooltips ===============================
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip({
+        delay: { 
+            show: 500, 
+            hide: 100 
+        }
+    })
+  });
 
 
 

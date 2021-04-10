@@ -1,4 +1,3 @@
-/*  Temporary for header height , to fix once main content is in */
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script&family=Hind&family=Lobster+Two&family=Montserrat&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&family=Tajawal&display=swap');
 /* FONTS INCLUDED IN FORM
 font-family: 'Abril Fatface', cursive;
@@ -28,10 +27,10 @@ div#css-button {
 /* ==================END TEMP STYLING======================================== */
 
 
-html,
+/* html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
+  /* overflow-x: hidden; Prevent scroll on narrow devices */
+/* } */ 
 
 /* since the navbar is fixed we need to add some space to the body */
 body {
@@ -40,7 +39,7 @@ body {
 
 }
 html {
-  height: 100%;
+  /* height: 100%; */
   background: rgb(32,1,34);
   background: linear-gradient(180deg, rgba(32,1,34,1) 0%, rgba(111,0,0,1) 100%);
 }
@@ -82,8 +81,6 @@ h1 {
     border-right:5px solid rgba(0, 0, 0, 0.2);
     
   }
-
-
 
 
 /* Makes the nav visibile with the open class */
@@ -136,23 +133,25 @@ h1 {
   color: #343a40;
 }
 
-/*  ==========================TOGGLE SWITCH STYLEING ======================== */
+/*  ============================ BOTTOM OFFCANVAS =========================== */
 
-
-/* For adding this icon: 
-html: <i class="icon-tbrl-dark"></i> 
-icon: assets/images/icon-tbrl-dark.ico
-*/
-
-.icon-tbrl-dark{
-  height: 20px;
-  width: 20px;
-  z-index: 1000;
-  display: inline-block;
-  background-size: cover;
-  /* background-color: #fff; */
-  background-image: url("assets/images/icon-tbrl-dark.ico");
+/* .modal-bottom {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  -webkit-transform: translate(0,100%);
+  -o-transform: translate(0,100%);
+  transform: translate(0,100%);
 }
+
+.modal.show .modal-custom {
+  transition: transform 0.20s linear;
+} */
+
+/* .offcanvas-bottom {
+  height: 40vh;
+  min-height: 300px;
+} */
 
 
 /* =========================== RANGE SLIDER TESTING ========================= */
@@ -360,8 +359,25 @@ icon: assets/images/icon-tbrl-dark.ico
     margin: 0;
 }
 
+/* Highlights the cssContainer text on copy */
+.copyHighlight {
+  background-color: rgba(255, 132, 0, 0.22);
+}
+
 /* Error message class for unsuccesful clipboard copy */
 .errorMsg {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-size: 14px; */
   color: red;
   margin-left: 10px;
 }
+.successMsg {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-size: 14px; */
+  color: rgb(23, 196, 87);
+  margin-left: 10px;
+
+}
+
+/* CSS Tooltips | https://codepen.io/neogomo/pen/BjqJzr */
+/*  Tippy.js tooltips | https://github.com/atomiks/tippyjs */

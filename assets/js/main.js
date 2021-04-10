@@ -147,8 +147,12 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
    // Create the container for the icon for the clipboard button
    let iconClipboard = document.createElement("i");
-   iconClipboard.className = "far fa-2x";
-   iconClipboard.innerHTML = "&#xf328;";
+   iconClipboard.className = "far fa-2x"; // note: fas = solid, far = outline
+ //  iconClipboard.innerHTML = "&#xf328;"; // clipboard icon
+   iconClipboard.innerHTML = "&#xf0c5;"; // copy icon
+   iconClipboard.setAttribute("data-toggle", "tooltip");
+   iconClipboard.setAttribute("data-placement", "top");
+   iconClipboard.setAttribute("title", "Copy CSS");
 
    // Create the success/ error message span
    let clipMessage = document.createElement("span");
@@ -176,7 +180,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 var clipboard = new ClipboardJS('.copy-code-button', {
     target: function(trigger) {
         let target = document.querySelector("#cssContainer");
-        console.log(target.parentNode);
+      //  console.log(target.parentNode);
       //  console.log(trigger.nextElementSibling);
         return trigger.nextElementSibling;
         

@@ -1,5 +1,18 @@
-/*  Temporary for header height , to fix once main content is in */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Lato&family=Lobster&family=Marck+Script&family=Montserrat&family=Noto+Sans+JP&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script&family=Hind&family=Lobster+Two&family=Montserrat&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&family=Tajawal&display=swap');
+/* FONTS INCLUDED IN FORM
+font-family: 'Abril Fatface', cursive;
+font-family: 'Courgette', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Hind', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tajawal', sans-serif;
+*/
+
 
 /* ================== TEMP STYLING ========================================== */
 
@@ -14,10 +27,10 @@ div#css-button {
 /* ==================END TEMP STYLING======================================== */
 
 
-html,
+/* html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-}
+  /* overflow-x: hidden; Prevent scroll on narrow devices */
+/* } */ 
 
 /* since the navbar is fixed we need to add some space to the body */
 body {
@@ -26,7 +39,7 @@ body {
 
 }
 html {
-  height: 100%;
+  /* height: 100%; */
   background: rgb(32,1,34);
   background: linear-gradient(180deg, rgba(32,1,34,1) 0%, rgba(111,0,0,1) 100%);
 }
@@ -68,8 +81,6 @@ h1 {
     border-right:5px solid rgba(0, 0, 0, 0.2);
     
   }
-
-
 
 
 /* Makes the nav visibile with the open class */
@@ -122,10 +133,28 @@ h1 {
   color: #343a40;
 }
 
+/*  ============================ BOTTOM OFFCANVAS =========================== */
+
+/* .modal-bottom {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  -webkit-transform: translate(0,100%);
+  -o-transform: translate(0,100%);
+  transform: translate(0,100%);
+}
+
+.modal.show .modal-custom {
+  transition: transform 0.20s linear;
+} */
+
+/* .offcanvas-bottom {
+  height: 40vh;
+  min-height: 300px;
+} */
 
 
-
-/* ===================== RANGE SLIDER TESTING =============================== */
+/* =========================== RANGE SLIDER TESTING ========================= */
 
 
 
@@ -241,4 +270,114 @@ h1 {
     border: 0;
   }
 
-  /* ======================= END RENAGE SLIDER STYLING ====================== */
+
+  /* ============================= ACCORION STYLING ========================= */
+  .card-header {
+    background-color: #607d8b!important;
+  }
+
+  .card-body {
+    background-color: #0a5579;
+  }
+
+  .card {
+    color: #a4adb5;
+    background-color: transparent!important;
+  }
+
+  .dropdown-divider {
+    border-color: #607d8b!important;
+  }
+
+  .accordion-heading {
+    color: #acc5c9;
+    text-shadow: 1px 0 16px black;
+  }
+
+  .form-control {
+    background-color: #135c68!important;
+    border: 1px solid #5b8c94!important;
+    color: #d1d1d1!important;
+  }
+
+  .form-control:disabled {
+    background-color: #343a40!important;
+  }
+
+  pre {
+    padding: 5%;
+    background-image: -webkit-linear-gradientt(0deg , black, transparent);
+    background-image: -moz-linear-gradientt(0deg , black, transparent);
+    background-image: -ms-linear-gradientt(0deg , black, transparent);
+    background-image: linear-gradient(0deg , black, transparent);
+    background-image: -o-linear-gradient(0deg, black, transparent);
+
+
+  }
+
+  /* Copy to clipboard button */
+
+  .copy-code-button {
+    /* color: #4f0606; */
+    color: #d6c4c4;
+    /* background-color: rgba(94, 242, 240, 0.748); */
+    /* background-color: rgba(94, 242, 240, 0); */
+    /* border-color: #550404; */
+    /* border: 2px solid; */
+    border-radius: 8px 8px 0px 0px;
+
+    /* right-align */
+    display: block;
+    margin-right: auto;
+    margin-left:  5%;
+
+    margin-bottom: -2px;
+    padding: 3px 8px;
+    font-size: 0.8em;
+}
+
+.copy-code-button:hover {
+    cursor: pointer;
+    color: #8cc051;
+    /* background-color: #18b860; */
+}
+
+.copy-code-button:focus {
+    /* Avoid an ugly focus outline on click in Chrome,
+       but darken the button for accessibility.
+       See https://stackoverflow.com/a/25298082/1481479 */
+    background-color: #e6e6e659;
+    outline: 0;
+}
+
+.copy-code-button:active {
+    background-color: #775959;
+}
+
+.highlight pre {
+    /* Avoid pushing up the copy buttons. */
+    margin: 0;
+}
+
+/* Highlights the cssContainer text on copy */
+.copyHighlight {
+  background-color: rgba(255, 132, 0, 0.22);
+}
+
+/* Error message class for unsuccesful clipboard copy */
+.errorMsg {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-size: 14px; */
+  color: red;
+  margin-left: 10px;
+}
+.successMsg {
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-size: 14px; */
+  color: rgb(23, 196, 87);
+  margin-left: 10px;
+
+}
+
+/* CSS Tooltips | https://codepen.io/neogomo/pen/BjqJzr */
+/*  Tippy.js tooltips | https://github.com/atomiks/tippyjs */

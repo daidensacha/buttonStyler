@@ -10,13 +10,13 @@ jscolor.presets.default = {
     previewSize:60, 
     position:'top',
     palette:'rgba(0,0,0,0) #fff #808080 #000 #996e36 #f55525 #ffe438 #88dd20 #22e0cd #269aff #bb1cd4',
-	backgroundColor:'rgba(61,20,130,1)', 
-	borderColor:'rgba(54,68,187,1)', 
+	backgroundColor:'rgba(1,2,46,0.72)', 
+	borderColor:'rgba(120,120,120,1)', 
     width:139, 
     height:80, 
-	controlBorderColor:'rgba(54,68,187,1)', 
+	controlBorderColor:'rgba(130,130,130,1)', 
     sliderSize:12, 
-	shadowColor:'rgba(0,0,0,0.43)'
+	shadowColor:'rgba(10,10,10,0.55)'
 };
 
 // Adding style element for the CSS styles
@@ -45,6 +45,15 @@ function update() {
 
     // Container to display generated CSS rules 
     let cssContainer = document.querySelector('#cssContainer');
+
+    // Assign varian to the button background color picker
+    let displayBgPicker = document.querySelector("#display-bg-picker").jscolor;
+
+    // Assign variable to the demo button background
+    let demoBtnBackground = document.querySelector("#css-button");
+
+    // Output the color do the button background
+    demoBtnBackground.style.background = displayBgPicker.toString('rgba');
 
     ////////////////////////////////////////////////////////////////////////////
 

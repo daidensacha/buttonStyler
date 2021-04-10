@@ -3,23 +3,17 @@
 $(function() {
     // executes when HTML-Document is loaded and DOM is ready
   // console.log("document is ready");
-     
-     
-       $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
-       $('.offcanvas-collapse').toggleClass('open')
-     })
+    
+    $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
+    $('#offCanvasLeft').toggleClass('open')
+    })
 
-     $(function () {
-        'use strict'
-      
-        $('[data-toggle="offcanvas"]', '#offcanvasBottom').on('click', function () {
-          $('.footer-offcanvas').toggleClass('open')
-        })
-      })
+    $("contactToggle").on('click', function(){
+    $('#contactModal').modal('show');
+    })  
      
-     
-   // document ready  footer-offcanvas
-   });
+// document ready  footer-offcanvas
+});
    
    
    window.onload = function() {

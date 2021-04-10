@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/7432ab4d43.js" crossorigin="anonymous"></script>
     <script src="assets/js//clipboard.min.js"></script>
 
@@ -23,7 +24,27 @@
                     <div class="container">
                         <!--  START NAVBAR   -->
                         <nav class="navbar  fixed-top navbar-dark bg-dark navbar-offcanvas">
+
+                            <div class="ol social-links list-inline">
+                                <span class="list-inline-item">
+                                   <a class="totop-link" href="#" data-toggle="tooltip" data-placement="top" title="To Top"></a>
+                                </span>
+                                <span class="list-inline-item">
+                                   <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip" data-placement="top"  title="Github"><i class="fab fa-github"></i></a>
+                                </span>
+                                <span class="list-inline-item">
+                                   <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank" data-toggle="tooltip" data-placement="top"  title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </span>
+                                <span class="list-inline-item">
+                                   <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" data-toggle="tooltip" data-placement="top"  title="Codepen"><i class="fab fa-codepen"></i></a>
+                                </span>
+                                <span class="list-inline-item">
+                                   <a class="" id="contactToggle" data-target="#contactModal" data-toggle="modal" href="" data-placement="top"  title="Message me"><i class="far fa-envelope" data-toggle="tooltip" title="Message me"></i></a>
+                                </span>
+                            </div>
+
                             <a class="navbar-brand mr-auto" href="#">
+
                                 <!-- <img src="assets/Images/contrast.png" class="img-fluid" width="30px" alt="logo"> -->
                             </a>
                 
@@ -38,7 +59,7 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                 
-                            <div class="navbar-collapse offcanvas-collapse">
+                            <div class="navbar-collapse offcanvas-collapse" id="offCanvasLeft">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="#">Link <span class="sr-only"></span></a>
@@ -52,7 +73,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Link</a>
                                     </li>
-                                    <li class="nav-item dropdown">
+                                    <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown01">
@@ -60,7 +81,7 @@
                                             <a class="dropdown-item" href="#">Link Secondary</a>
                                             <a class="dropdown-item" href="#">Link Secondary</a>
                                         </div>
-                                    </li>
+                                    </li> -->
                                 </ul>
                 
                 
@@ -71,14 +92,12 @@
                     <!--/.container    -->
                 
                 </section>
-                <section> <!-- -->
-                    <h1>Main</h1>
-                    <p>Possible Jumbotron content section</p>
-                </section>
+ 
                 <main>
                     <div class="row" style="height:100%;">
                         <div class="container">
-                            <h2>Main content</h2>
+                            <h1 class="display-4 ml-5">buttonStyler</h1>
+                            <h4 class="display-5 ml-5">Possible Jumbotron content section</h4>
                         </div>
                     </div>
                 
@@ -93,7 +112,7 @@
             </div>
         </div> <!-- end header row -->
 
-        <div class="row"> <!-- main content row -->
+        <div class="container-fluid"> <!-- main content row -->
 
             <div class="col-sm-12"> <!-- main content column -->
 
@@ -618,19 +637,27 @@
 
                     </div> <!-- end accordion column -->
 
-                    <div class="col-md-6"> <!-- css and button display column -->
-                        <div class="row">
+                    <div class="col-md-6" id="button-output"> <!-- css and button display column -->
+                        <div class="row ">
                             <div class="col-sm-12" id="css-button"> <!-- button display -->
-
-                                <div class="row text-center">
-                                    <div class="col text-center">
-                                        <form action="">
-                                            <button class="btn btn-primary btn-lg text-center" id="demo-button" value="demo-button">My Button</button>
+                                <div class=" display-background-picker" data-toggle="tooltip" data-placement="bottom"  title="Select background color">
+                                    <input class="form-control color-input" type="text" id="display-bg-picker" data-jscolor="{value:'rgba(223, 219, 211,1)', alpha:1}" oninput="update()">
+                                </div>
+                                <div class="row" style="margin-top:50px;" > 
+                                    <div class="col text-center" >
+                                        <form action="" >
+                                            <button class="btn btn-primary btn-lg text-center" id="demo-button" value="demo-button" >My Button</button>
                                         </form>
                                     </div>
                                 </div>
 
+                               
+
                             </div> <!-- end button display -->
+
+                            
+
+
                             <div class="col-sm-12 highlight" > <!-- css output display -->
 
                                 <!--  <i class="far fa-clipboard"></i>  -->
@@ -652,7 +679,7 @@
 
             </div> <!-- end main content column -->
         </div> <!-- end main content row -->
-        <div class="row resources" style="height:600px;">
+        <div class="row resources">
             <div class="col-md-4">
                 <div class="row">
                     <div class="col-sm-12">
@@ -700,15 +727,89 @@
 
         </div>
 
+      
+
+                <!-- Modal Code -->
+        <div class="modal fade centered-modal" tabindex="-1" role="dialog" id="contactModal">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                    
+                </div>
+                <div class="modal-body">
+                    <h4 class="modal-title">Contact Form</h4>
+                    <form action="" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea type="textarea" class="form-control" id="message" placeholder="Your message" required></textarea>
+                        </div>
+                        <div> 
+                            <button type="submit" class="btn btn-default">Submit</button> 
+                        </div>
+                    </form>
+                </div>
+            <!--Modal Body-->
+            <div class="modal-footer">
+                <button type="button"
+                class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+            </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+  
+
 
         <!-- <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#footer-offcanvas" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button> -->
 
-        <div class="row footer" style="border:1px solid orange;"> <!-- Start Footer column  -->
-            <div class="col-sm-12"> <!-- Start Footer column -->
+        <div class="row footer"> <!-- Start Footer column  -->
+            <!-- <div class="col-sm-12"> Start Footer column -->
 
-                <h1>THe footer</h1>
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <p>Contact</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    
+                    <ul class="ol social-links dl list-inline">
+                        <li class="list-inline-item">
+                           <a class="totop-link" href="#" data-toggle="tooltip" data-placement="top" title="To Top"></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip" data-placement="top"  title="Github"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank" data-toggle="tooltip" data-placement="top"  title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" data-toggle="tooltip" data-placement="top"  title="Codepen"><i class="fab fa-codepen"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                           <a class="" id="contactFtrToggle" data-target="#contactModal" data-toggle="modal" href=""  data-placement="top"  ><i class="far fa-envelope" data-toggle="tooltip" title="Message me"></i></a>
+                        </li>
+                     </ul>
 
-                
+
+                </div> 
+
+                <script>
+                  
+              
+                 
+                </script>
               
 
 
@@ -726,7 +827,7 @@
                 -->
 
 
-            </div> <!-- End Footer column -->
+            <!-- </div> End Footer column -->
         </div> <!-- End Footer row -->
        
 
@@ -746,7 +847,7 @@
         Prism.highlightElement(cssContainer);
     }); -->
 
-    <script>
+    <!-- <script>
         var offcanvasElementList = [].slice.call(document.querySelectorAll('#footer-offcanvas'))
         var offcanvasList = offcanvasElementList.map(function (offcanvasEl) {
         return new bootstrap.Offcanvas(offcanvasEl);
@@ -755,7 +856,9 @@
         var myOffcanvas = document.getElementById('offcanvasBottom')
         var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)   
 
-    </script>
+    </script> -->
+
+   
 
 </body>
-</html>q
+</html>

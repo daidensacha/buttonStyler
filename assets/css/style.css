@@ -59,6 +59,12 @@ html {
   background-color: rgb(6, 99, 90);
 }
 
+/* div.header */
+body {
+  background-image: url("../images/bg-paper-yellow.jpg");
+  background-repeat: repeat;
+}
+
 
 
 /* Accordion p3 style */
@@ -78,7 +84,16 @@ main h2 {
 }
 
 .highlight-text {
-  color:rgb(23, 196, 87)
+  color:rgb(29, 104, 56)
+}
+
+/*  Navbar */
+
+.navbar {
+  background-color: #d39e00ab!important;
+}
+.bg-navbar-custom {
+  background-color: #d39e00bb;
 }
 
 /* Offcanvas styling */
@@ -302,12 +317,12 @@ main h2 {
   /* 
   =============================== ACCORION STYLING ========================== */
   .card-header {
-    background-color: #1d2d2d!important;
+    background-color: #706846!important;
   }
 
   .card-body {
     /* background-color: #0a5579; */
-    background-color: #4c4552;
+    background-color: #4c455293;
   }
 
   .card {
@@ -325,7 +340,7 @@ main h2 {
   }
 
   .form-control {
-    background-color: #135c68!important;
+    background-color: #513f09!important;
     border: 1px solid #5b8c94!important;
     color: #a29e9e!important;
   }
@@ -337,13 +352,13 @@ main h2 {
   /* 
   ================================ CSS CODE BLOCK =========================== */
 
-  /* BACKGROUND COLOR PICKER FOR THE BUTTON DISPLAY*/
-  .display-background-picker {
-    position:absolute;
-    bottom:-38px;
-    right:0;
-    width:250px;
-  }
+/* BACKGROUND COLOR PICKER FOR THE BUTTON DISPLAY*/
+.display-background-picker {
+  position:absolute;
+  bottom:-38px;
+  right:0;
+  width:250px;
+}
 
   /*  CSS BUTTON */
 #css-button {
@@ -378,7 +393,7 @@ pre.language-css {
   .copy-code-button {
     top: 100px;
     min-height: 50%;    
-    color: #d6c4c4;
+    color: #757373;
     border-radius: 8px 8px 0px 0px;
     /* right-align */
     display: inline-block;
@@ -391,7 +406,7 @@ pre.language-css {
 
 .copy-code-button:hover {
     cursor: pointer;
-    color: #8cc051;
+    color: #0faa06;
     /* background-color: #18b860; */
 }
 
@@ -429,7 +444,7 @@ pre.language-css {
 .successMsg {
   /* font-family: 'Montserrat', sans-serif; */
   /* font-size: 14px; */
-  color: rgb(23, 196, 87);
+  color: rgb(9, 153, 62);
   margin-left: 10px;
 
 }
@@ -556,7 +571,7 @@ textarea#message.form-control {
 }
 
 .colour-4 {
-  background: #440923;
+  background: #2f351275;
 }
 
 .colour-5 {

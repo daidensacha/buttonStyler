@@ -24,7 +24,7 @@
                 <section class="bg-primary">
                     <div class="container">
                         <!--  START NAVBAR   -->
-                        <nav class="navbar  fixed-top navbar-dark bg-dark navbar-offcanvas">
+                        <nav class="navbar  fixed-top navbar-dark bg-navbar-custom navbar-offcanvas"> <!-- remove class bg-dark -->
 
                             <div class="ol social-links list-inline">
                                 <span class="list-inline-item">
@@ -231,14 +231,14 @@
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-y" class="col-sm-4 col-form-label">Y-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="1" min="-10" max="10"  oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-y" type="range" value="2" min="-10" max="10"  oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-text-blur" class="col-sm-4 col-form-label">Blur</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="20" min="0" max="30"  oninput="update()" >
+                                                                    <input class="range-slider__range blur-group" id="style-text-blur" type="range" value="3" min="0" max="30"  oninput="update()" >
                                                                     <span class="range-slider__value">5</span>
                                                                 </div>
                                                             </div>
@@ -302,14 +302,14 @@
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-y" class="col-sm-4 col-form-label">Y-Axis</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="0" min="-10" max="10" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-y" type="range" value="1" min="-10" max="10" oninput="update()" >
                                                                     <span class="range-slider__value">0</span>
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
                                                                 <label for="style-box-blur" class="col-sm-4 col-form-label">Blur</label>
                                                                 <div class="range-slider col-sm-8">
-                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="5" min="0" max="20" oninput="update()" >
+                                                                    <input class="range-slider__range shadow-group" id="style-box-blur" type="range" value="10" min="0" max="20" oninput="update()" >
                                                                     <span class="range-slider__value">5</span>
                                                                 </div>
                                                             </div>
@@ -352,7 +352,7 @@
                                                                 <div class="row mb-3 text-sm-right">
                                                                     <label for="style-rl-padding" class="col-sm-4 col-form-label">Right-Left</label>
                                                                     <div class="range-slider col-sm-8">
-                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="5" min="0" max="25" disabled="true" oninput="update()" >
+                                                                        <input class="range-slider__range padding-trbl-group" id="style-rl-padding" type="range" value="10" min="0" max="25" disabled="true" oninput="update()" >
                                                                         <span class="range-slider__value">5</span>
                                                                     </div>
                                                                 </div>
@@ -465,7 +465,7 @@
                                                                 <label for="style-bg-color" class="col-sm-4 col-form-label">Background</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'rgba(19,85,139,1)', alpha:1}" oninput="update()" >
+                                                                    <input class="form-control color-input bg-group" type="text" id="style-bg-color" data-jscolor="{value:'rgba(255,178,77,1)', alpha:1}" oninput="update()" >
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -536,7 +536,7 @@
                                                     <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Font Color</label>
 
                                                     <div class="col-sm-8">
-                                                        <input class="form-control color-input hover-group" type="text" id="hover-color" data-jscolor="{value:'rgba(19,85,139,1)', alpha:1}" oninput="update()">
+                                                        <input class="form-control color-input hover-group" type="text" id="hover-color" data-jscolor="{value:'rgba(255,178,77,1)', alpha:1}" oninput="update()">
                                                     </div>
                                                 </div>
                                                 
@@ -610,7 +610,7 @@
                                                                 <label for="hover-border-color" class="col-sm-4 col-form-label">Hover Border Color</label>
     
                                                                 <div class="col-sm-8">
-                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(19,85,139,1)', alpha:1}" oninput="update()">
+                                                                    <input class="form-control color-input hover-group" type="text" id="hover-border-color" data-jscolor="{value:'rgba(255,178,77,1)', alpha:1}" oninput="update()">
                                                                 </div>
                                                             </div>
                                                             <div class="row mb-3 text-sm-right">
@@ -651,7 +651,7 @@
                                 <!-- button display -->
 
                                 <div class=" display-background-picker" data-toggle="tooltip" data-placement="bottom"  title="Select background color">
-                                    <input class="form-control color-input" type="text" id="display-bg-picker" data-jscolor="{value:'rgba(223, 219, 211,1)', alpha:1}" oninput="update()">
+                                    <input class="form-control color-input" type="text" id="display-bg-picker" data-jscolor="{value:'rgba(190,178,145,1)', alpha:1}" oninput="update()">
                                 </div>
 
                                 <div class="row" style="padding:50px auto!important;"> 
@@ -717,7 +717,7 @@
                                     <h3>2. Copy the CSS</h3>
                                     <div class="dropdown-divider"></div>
                                     <p class="text-justify"><span class="highlight-text">Click the copy icon <i class="fas fa-2X">&#xf0c5;</i></span> in the top left of the CSS markup display block.</p>
-                                    <p class="text-justify">Its as easy as that. "Bazinga, it's coppied"!</p>
+                                    <p class="text-justify">Its as easy as that. "Bazinga, it's copied"!</p>
                                 </div>
                             <!-- </div> -->
 
@@ -876,7 +876,7 @@
 
 
   
-<script>
+<!-- <script>
     // Form Validation
 (function() {
   'use strict';
@@ -891,7 +891,7 @@
     }, false);
   }, false);
 })();
-</script>
+</script> -->
    
 
 </body>

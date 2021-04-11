@@ -162,9 +162,9 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
    // button.innerHTML = "copyIcon";
     var pre = codeBlock.parentNode;
-    if (pre.parentNode.classList.contains('highlight')) {
-        var highlight = pre.parentNode;
-        highlight.parentNode.insertBefore(button, highlight);
+    if (pre.parentNode.classList.contains('bazinga')) {
+        var bazinga = pre.parentNode;
+        bazinga.parentNode.insertBefore(button, bazinga);
     } else {
         pre.parentNode.insertBefore(button, pre);
     }

@@ -21,7 +21,8 @@ font-family: 'Tajawal', sans-serif;
 }
 div#css-button {
     height: 100px; 
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    padding-top:50px;
 }
 
 /* ==================END TEMP STYLING======================================== */
@@ -37,6 +38,7 @@ body {
   padding-top: 56px;
   background-color: transparent!important;
   overflow-y: scroll;
+  font-family: Roboto, sans-serif;
 }
 
 
@@ -73,6 +75,10 @@ h2 {
 }
 main h2 {
   margin-left: 10%;
+}
+
+.highlight-text {
+  color:rgb(23, 196, 87)
 }
 
 /* Offcanvas styling */
@@ -341,29 +347,25 @@ main h2 {
 
   /*  CSS BUTTON */
 #css-button {
-  min-height:150px;
-  /* padding-top: 50px; */
-  /* padding-bottom: 50px; */
-  background-color: rgb(223, 219, 211);
-  /* top: 50px; */
-  /* margin-top: 50px; */
-  /* margin-bottom: 50px; */
+  min-height:200px;
+  background-color: rgba(223, 219, 211,1);
+  border-radius: 5px 5px 5px 5px;
 }
 
-#demo-button {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+border-radius: 5px 5px 0px 0px;
+
+ /* #demo-button {
+  margin-top: 50px;
+  margin-bottom: 50px; 
+}  */
 
 /*  PRE BLOCK */
 pre.language-css {
   padding: 0 5%;
 }
 
-#button-output {
-  padding-right: 15px;
-  /* padding: 5%; */
-  /* padding: 0 5%; */
+/* #button-output, .accordion-output  */
+#button-main-background{
   background-image: -webkit-linear-gradientt(0deg , black, transparent);
   background-image: -moz-linear-gradientt(0deg , black, transparent);
   background-image: -ms-linear-gradientt(0deg , black, transparent);
@@ -375,20 +377,13 @@ pre.language-css {
 
   .copy-code-button {
     top: 100px;
-    min-height: 50%;
-    /* color: #4f0606; */
+    min-height: 50%;    
     color: #d6c4c4;
-    /* background-color: rgba(94, 242, 240, 0.748); */
-    /* background-color: rgba(94, 242, 240, 0); */
-    /* border-color: #550404; */
-    /* border: 2px solid; */
     border-radius: 8px 8px 0px 0px;
-
     /* right-align */
-    display: block;
+    display: inline-block;
     margin-right: auto;
     margin-left:  5%;
-
     margin-bottom: -2px;
     padding: 3px 8px;
     font-size: 0.8em;
@@ -412,10 +407,10 @@ pre.language-css {
     background-color: #775959;
 }
 
-.highlight pre {
+.bazinga pre {
     /* Avoid pushing up the copy buttons. */
 
-    margin: 100px 0 0 0;
+    margin-top: 100px;
 
 }
 
@@ -445,7 +440,8 @@ pre.language-css {
 /*
 ********************************* RESOURCES BLOCK *************************** */
 div.resources {
-  margin: 30px 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*
@@ -455,7 +451,7 @@ div.footer {
   background-color: #343a40;
   border-top: 1px solid black;
   padding-top: 10px;
-  height: 65px;
+  min-height: 65px;
 }
 .social-links ul {
   margin-bottom: 0!important;
@@ -504,7 +500,9 @@ textarea#message.form-control  {
 }
 
 .modal-content {
-  background-color: #e7e7e7e0!important;
+  background-image: url("../images/bg-paper.jpg");
+  background-repeat: repeat;
+  /* background-color: #e7e7e7e0!important; */
 }
 
 .modal-header, 
@@ -512,3 +510,89 @@ textarea#message.form-control  {
 .modal-footer {
   background-color: #e7e7e754;
 }
+
+input#firstname.form-control,
+input#lastname.form-control,
+input#email.form-control,
+textarea#message.form-control {
+  background-color: #f0f0f0!important;
+}
+/* ///////////////////// Flex columns experiement /////////////////////////// */
+
+/* display this row with flex and use wrap (= respect columns' widths) */
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* vertical spacing between columns */
+
+[class*="col-"] {
+  margin-bottom: 30px;
+}
+
+.content {
+  height: 100%;
+  padding: 20px 20px 10px;
+  color: #fff;
+}
+
+
+/* Demo backgrounds and styling*/
+
+.colour-1 {
+  background: #483C46;
+  color: #fff;
+}
+
+.colour-2 {
+  background: #3C6E71;
+}
+
+.colour-3 {
+  background: #70AE6E;
+}
+
+.colour-4 {
+  background: #440923;
+}
+
+.colour-5 {
+  background: #558C8C;
+}
+
+.colour-6 {
+  background: #917C78;
+}
+
+
+.content h3 {
+  margin-top: 0px;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+                                        
+/*  Form validation css */
+/* 
+button[type="submit"] {
+  background-color: #044da1;
+  border-color: #044da1;
+  color: #fff;
+  transition: background-color .5s;
+}
+
+button[type="submit"]:hover {
+  background-color: #009ed9;
+  border-color: #044da1;
+}
+
+button[type="submit"]:focus, button[type="submit"].focus { box-shadow: none; } */
+
+                                    

@@ -1,8 +1,8 @@
-// This code processes the data from the accorion with the forms of inputs that 
+// This code processes the data from the accordion with the forms of inputs that 
 // are used to select the CSS styles for the display button. It appends the CSS 
-// to the HEAD in a style tag, which in turn styles the demo button with live 
+// to the HEAD in style tags, and styles the demo button with live 
 //results. The CSS rules for the generated style is output into a <pre> </pre>
-// so the CSS can be copied to use and replicate the generated style.
+// block so the CSS can be copied to use and replicate the generated style.
 
 //============================= JSCOLOR PICKER OPTIONS =========================
 jscolor.presets.default = {
@@ -130,7 +130,7 @@ function update() {
         demoButton.innerText = styleText.value;
     }
 
-    // ========================CSS VARIABLEd AND STRINGS========================
+    // ========================CSS VARIABLES AND STRINGS========================
 
     /* CSS Font Strings */ 
     let fontFamily = "\tfont-family: " + fontFamilySelect + ";";
@@ -175,95 +175,95 @@ function update() {
     let borderHover = `\tborder: ${hoverBorderWidthRange.value}px solid ${hoverBorderColorPicker.toString('rgba')};`;
 
     // CSS STRINGS
-let openTag = "\n#demo-button.btn {";
-let closeTag =      "}";
-let hoverOpenTag = `\n#demo-button.btn:hover {`;
-let hoverCloseTag = `}`;
+    let openTag = "\n#demo-button.btn {";
+    let closeTag =      "}";
+    let hoverOpenTag = `\n#demo-button.btn:hover {`;
+    let hoverCloseTag = `}`;
 
-// Fieldset variables
-let shadowFieldset = document.querySelector("#text-shadow-fieldset");
-let boxShadowFieldset = document.querySelector("#shadow-fieldset");
-let paddingFieldset = document.querySelector("#padding-fieldset");
+    // Fieldset variables
+    let shadowFieldset = document.querySelector("#text-shadow-fieldset");
+    let boxShadowFieldset = document.querySelector("#shadow-fieldset");
+    let paddingFieldset = document.querySelector("#padding-fieldset");
 
-// CREATE THE ARRAY TO HOLD THE CSS VARIABLES
-let lines = []; // lines of CSS rules
+    // CREATE THE ARRAY TO HOLD THE CSS VARIABLES
+    let lines = []; // lines of CSS rules
 
-// PUSH THE REQUIRED CSS RULES TO THE ARRAY
+    // PUSH THE REQUIRED CSS RULES TO THE ARRAY
 
-// Button name and opening css rule tag
-lines.push(openTag); // opening tag of CSS rules
+    // Button name and opening css rule tag
+    lines.push(openTag); // opening tag of CSS rules
 
-// FONT-FAMILY - FONT-COLOR - FONT-SIZE
-lines.push(fontFamily);
-lines.push(fontColor);
-lines.push(fontSize);
+    // FONT-FAMILY - FONT-COLOR - FONT-SIZE
+    lines.push(fontFamily);
+    lines.push(fontColor);
+    lines.push(fontSize);
 
-// TEXT SHADOW
-    if (!shadowToggle.checked){
-    // console.log("Text Shadow Toggle OFF");
-} else {
-    lines.push(textShadow);
-    // console.log("Text Shadow Toggle ON");
-}
+    // TEXT SHADOW
+        if (!shadowToggle.checked){
+        // console.log("Text Shadow Toggle OFF");
+    } else {
+        lines.push(textShadow);
+        // console.log("Text Shadow Toggle ON");
+    }
 
-// BOX SHADOW 
-if (!shadowGroupToggle.checked){
-    // console.log("Box Shadow Toggle OFF");
-} else {
-    lines.push(boxShadow);
-    // console.log("Box Shadow Toggle ON");
-}
+    // BOX SHADOW 
+    if (!shadowGroupToggle.checked){
+        // console.log("Box Shadow Toggle OFF");
+    } else {
+        lines.push(boxShadow);
+        // console.log("Box Shadow Toggle ON");
+    }
 
-// PADDING
-if (!paddingGroupToggle.checked){
-    lines.push(padding);
-    // console.log("Padding TRBL ON/ TB-LR OFF");
-} else {
-    lines.push(paddingTbRl);
-    // console.log("Padding TRBL OFF/ TB-LR ON");
-}
-// BORDER 
-lines.push(border);
+    // PADDING
+    if (!paddingGroupToggle.checked){
+        lines.push(padding);
+        // console.log("Padding TRBL ON/ TB-LR OFF");
+    } else {
+        lines.push(paddingTbRl);
+        // console.log("Padding TRBL OFF/ TB-LR ON");
+    }
+    // BORDER 
+    lines.push(border);
 
-// BORDER RADIUS
-lines.push(borderRadius);
+    // BORDER RADIUS
+    lines.push(borderRadius);
 
-// BACKGROUND
-if (!backgroundGroupToggle.checked) {
-    lines.push(background);
-    // console.log("Solid background: " + backgroundGroupToggle.checked);
-} else {
-    lines.push(backgroundGradient);
-    // console.log("Gradient background: " + backgroundGroupToggle.checked);
-}
+    // BACKGROUND
+    if (!backgroundGroupToggle.checked) {
+        lines.push(background);
+        // console.log("Solid background: " + backgroundGroupToggle.checked);
+    } else {
+        lines.push(backgroundGradient);
+        // console.log("Gradient background: " + backgroundGroupToggle.checked);
+    }
 
-// CLOSING TAG
-lines.push(closeTag); // closing tag of CSS rules
+    // CLOSING TAG
+    lines.push(closeTag); // closing tag of CSS rules
 
-// HOVER CSS RULE OPENING TAG
-lines.push(hoverOpenTag);
+    // HOVER CSS RULE OPENING TAG
+    lines.push(hoverOpenTag);
 
-// HOVER FONT COLOR
-lines.push(hoverFontColor);
+    // HOVER FONT COLOR
+    lines.push(hoverFontColor);
 
-// HOVER BACKGROUND COLOR
-if (!hoverGroupToggle.checked) {
-    lines.push(backgroundHover);
-    // console.log("Hover Solid background: " + hoverGroupToggle.checked);
-} else {
-    lines.push(backgroundGradientHover);
-    // console.log("Hover Gradient background: " + hoverGroupToggle.checked);
-}
+    // HOVER BACKGROUND COLOR
+    if (!hoverGroupToggle.checked) {
+        lines.push(backgroundHover);
+        // console.log("Hover Solid background: " + hoverGroupToggle.checked);
+    } else {
+        lines.push(backgroundGradientHover);
+        // console.log("Hover Gradient background: " + hoverGroupToggle.checked);
+    }
 
-// HOVER BORDER
-if (hoverBorderToggle.checked) {
-    lines.push(borderHover);
-}
+    // HOVER BORDER
+    if (hoverBorderToggle.checked) {
+        lines.push(borderHover);
+    }
 
-// HOVER CLOSING TAG
-lines.push(hoverCloseTag);
+    // HOVER CLOSING TAG
+    lines.push(hoverCloseTag);
 
-let css = lines.join("\n");
+    let css = lines.join("\n");
 
     // Show the CSS rules in the container element
     cssContainer.innerHTML = ''; // Empty it first

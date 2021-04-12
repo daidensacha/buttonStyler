@@ -17,8 +17,13 @@ font-family: 'Tajawal', sans-serif;
 /* ================== TEMP STYLING ========================================== */
 
 .row.header {
-  height: 400px;
+  /* height: 400px; */
+  /* border: 1px solid black; */
+  /* background-image: url("../images/header-image.png"); */
+ 
+
 }
+
 
 div#css-button {
   height: 100px;
@@ -89,6 +94,7 @@ main h2 {
 
 .navbar {
   background-color: #d39e00ab !important;
+  border-bottom: 1px solid rgb(153, 153, 101)
 }
 
 .bg-navbar-custom {
@@ -293,32 +299,34 @@ input::-moz-focus-outer {
 /* 
   =============================== ACCORION STYLING ========================== */
 .card-header {
-  background-color: #706846 !important;
+  /* background-color: #dad6c5 !important; */
+  background-color: #fffefbf5 !important;
 }
 
 .card-body {
   /* background-color: #0a5579; */
-  background-color: #4c455293;
+  background-color: #ffffff;
 }
 
 .card {
-  color: #a4adb5;
+  color: #575246;
   background-color: transparent !important;
 }
 
 .dropdown-divider {
-  border-color: #607d8b !important;
+  border-color: #d5d4b9 !important;
 }
 
 .accordion-heading {
-  color: #acc5c9;
-  text-shadow: 1px 0 16px black;
+  /* color: #dcd9a8; */
+  color: #383836;
+  /* text-shadow: 1px 0 16px rgb(184, 181, 181); */
 }
 
 .form-control {
-  background-color: #513f09 !important;
-  border: 1px solid #5b8c94 !important;
-  color: #a29e9e !important;
+  background-color: #faf7e6 !important;
+  border: 1px solid #cacaca !important;
+  color: #434040 !important;
 }
 
 .form-control:disabled {
@@ -350,11 +358,11 @@ pre.language-css {
 
 /* #button-output, .accordion-output  */
 #button-main-background {
-  background-image: -webkit-linear-gradientt(0deg, black, transparent);
-  background-image: -moz-linear-gradientt(0deg, black, transparent);
-  background-image: -ms-linear-gradientt(0deg, black, transparent);
-  background-image: linear-gradient(0deg, black, transparent);
-  background-image: -o-linear-gradient(0deg, black, transparent);
+  background-image: -webkit-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
+  background-image: -moz-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
+  background-image: -ms-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
+  background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
 }
 
 /* Copy to clipboard button */

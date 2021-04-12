@@ -18,7 +18,7 @@
 <body>
     <div class="container-fluid main-container ">
 
-        <div class="row">
+        <div class="row" id="header">
             <div class="col-xs-12">
 
                 <section class="bg-primary">
@@ -95,23 +95,30 @@
                 </section>
  
                 <main>
-                    <div class="row" style="height:100%;">
-                        <div class="container">
-                            <h1 class="display-4 ml-5">buttonStyler</h1>
-                            <h4 class="display-5 ml-5">Possible Jumbotron content section</h4>
+                    <!-- <div class="container-fluid"> -->
+                        <div class="container-fluid" > <!-- Needt o work out the issue here with the overflow with the image when class row added to the div.-->
+                            <div class="row row-flex" >
+                                <div class="col-sm-12">
+                                    <h1 class="display-4 ml-5 ">buttonStyler</h1>
+                                    <h4 class="display-5 ml-5 ">"Make it simple, but significant."</h4>
+                                </div>
+
+                                <img src="assets/images/header-image-2.png" class="image-responsive w-100" height="auto" alt="">
+                            </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
                 
                 </main>
 
             </div> <!-- end nav col -->
         </div> <!-- end nav conatiner row -->
 
-        <div class="row header">
+        <!-- <div class="row header">
             <div class="col-xs-12">
 
             </div>
-        </div> <!-- end header row -->
+        </div>  -->
+        <!-- end header row -->
 
         <div class="container-fluid"> <!-- main content row -->
 
@@ -651,7 +658,7 @@
                                 <!-- button display -->
 
                                 <div class=" display-background-picker" data-toggle="tooltip" data-placement="bottom"  title="Select background color">
-                                    <input class="form-control color-input" type="text" id="display-bg-picker" data-jscolor="{value:'rgba(190,178,145,1)', alpha:1}" oninput="update()">
+                                    <input class="form-control color-input" type="text" id="display-bg-picker" data-jscolor="{value:'rgba(246,248,236,1)', alpha:1}" oninput="update()">
                                 </div>
 
                                 <div class="row" style="padding:50px auto!important;"> 
@@ -666,7 +673,7 @@
 
                             <div class="col-sm-12 bazinga"> <!-- css output display -->
 
-                                    <pre  style="color: pink" class="language-css">
+                                    <pre  style="color: rgb(40, 29, 16)" class="language-css">
                                         <code class="language-css" id="cssContainer" >
 
                                         </code>
@@ -698,7 +705,7 @@
                                     <h3>1. Create your button</h3>
                                     <div class="dropdown-divider"></div>
                                     <p class="text-justify">As simple as adding the styling attributes that you want.  </p>
-                                    <p class="text-justify">Change the background color of the button to the background it will be having to see how it will look.  </p>
+                                    <p class="text-justify">The color picker under the button display is to change the background color to match the color where you want to use it.</p>
                                 </div>
                             <!-- </div> -->
 

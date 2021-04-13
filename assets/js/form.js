@@ -181,9 +181,9 @@ function update() {
     let hoverCloseTag = `}`;
 
     // Fieldset variables
-    let shadowFieldset = document.querySelector("#text-shadow-fieldset");
-    let boxShadowFieldset = document.querySelector("#shadow-fieldset");
-    let paddingFieldset = document.querySelector("#padding-fieldset");
+    //let shadowFieldset = document.querySelector("#text-shadow-fieldset");
+    //let boxShadowFieldset = document.querySelector("#shadow-fieldset");
+    //let paddingFieldset = document.querySelector("#padding-fieldset");
 
     // CREATE THE ARRAY TO HOLD THE CSS VARIABLES
     let lines = []; // lines of CSS rules
@@ -279,6 +279,6 @@ function update() {
 jscolor.install();
 
 // Update the button with current values
-update()
+update();
 
 

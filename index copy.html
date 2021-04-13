@@ -669,6 +669,47 @@
         // update();
         
     </script>
+
+<!-- //////////////////////// -->
+
+
+<form class="mx-auto mt-3" id="needs-validation" novalidate>
+    <div class="row">
+      <div class="col-12 col-md-6 mt-3">
+        <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First Name" pattern="[a-zA-Z]{2,}" required>
+      </div>
+      <div class="col-12 col-md-6 mt-3">
+        <label for="lastName">Last Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="Last Name" pattern="^[a-zA-Z]'?([a-zA-Z]|\.| |-)+$" required>
+      </div>
+    </div>
+
+    <div class="form-group mt-3 row">
+      <div class="col-12 col-md-6 mt-3">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <div class="invalid-feedback">Please provide a valid email.</div>
+      </div>
+    </div>
+   
+
+    <div class="form-group mt-4">
+      <label for="textarea">Write message below</label>
+      <textarea class="form-control" id="textarea" rows="3" placeholder="Enter message" maxlength="6000" required></textarea>
+    </div>
+
+    <button type="submit" class="btn mt-3">Submit</button>
+  </form>
+
+<!-- ///////////////////////// -->
+
+
+
+
+
+
     
 </body>
 </html>

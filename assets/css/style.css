@@ -70,8 +70,10 @@ body {
 }
 
 /* Accordion p3 style */
-h3.accordion-heading {
+/* h3.accordion-heading { */
+.accordion-heading {
   font-family: 'Marck Script', cursive;
+  font-size: 24px;
 }
 
 h1 {

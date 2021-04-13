@@ -5,12 +5,12 @@ $(function() {
   // console.log("document is ready");
     
     $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
-    $('#offCanvasLeft').toggleClass('open')
-    })
+    $('#offCanvasLeft').toggleClass('open');
+    });
 
     $("contactToggle").on('click', function(){
     $('#contactModal').modal('show');
-    })  
+    })  ;
 
 // document ready  footer-offcanvas
 });
@@ -51,6 +51,7 @@ var rangeSlider = function () {
 // This function enables and disables the text shadow group
 $(function () {
     $('#blur-group-toggle').on('change', function () {
+        $(".blur-group").prop('disabled', true); // TESTING THE DISABLE OF COLOR PICKER
         if (this.checked) {
             $('.blur-group').prop('disabled', false);
         } else {
@@ -73,11 +74,11 @@ $(function () {
 
 // This function enables and disables the box shadow group
 $(function () {
-    $('#shadow-group-toggle').on('change', function () {
+    $("#shadow-group-toggle").on("change", function () {
         if (this.checked) {
-            $('.shadow-group').prop('disabled', false);
+            $(".shadow-group").prop("disabled", false);
         } else {
-            $(".shadow-group").prop('disabled', true);
+            $(".shadow-group").prop("disabled", true);
         }
     });
 });
@@ -86,9 +87,11 @@ $(function () {
 $(function () {
     $('#padding-group-toggle').on('change', function () {
         if (!!this.checked) {
-            $('#style-rl-padding, #style-tb-padding').prop('disabled', false) && $('#style-box-padding').prop('disabled', true);
+            $('#style-rl-padding, #style-tb-padding').prop('disabled', false);
+            $('#style-box-padding').prop('disabled', true);
         } else {
-            $("#style-rl-padding, #style-tb-padding").prop('disabled', true) && $('#style-box-padding').prop('disabled', false);
+            $("#style-rl-padding, #style-tb-padding").prop('disabled', true);
+            $('#style-box-padding').prop('disabled', false);
         }
     });
 });
@@ -97,9 +100,11 @@ $(function () {
 $(function () {
     $('#bg-group-toggle').on('change', function () {
         if (!!this.checked) {
-            $('#style-gradient1-color, #style-gradient2-color, #gradient-direction').prop('disabled', false) && $('#style-bg-color').prop('disabled', true);
+            $('#style-gradient1-color, #style-gradient2-color, #gradient-direction').prop('disabled', false);
+            $('#style-bg-color').prop('disabled', true);
         } else {
-            $("#style-gradient1-color, #style-gradient2-color, #gradient-direction").prop('disabled', true) && $('#style-bg-color').prop('disabled', false);
+            $("#style-gradient1-color, #style-gradient2-color, #gradient-direction").prop('disabled', true);
+            $('#style-bg-color').prop('disabled', false);
         }
     });
 });
@@ -108,9 +113,11 @@ $(function () {
 $(function () {
     $('#hover-group-toggle').on('change', function () {
         if (!!this.checked) {
-            $('#style-gradient1-hover, #style-gradient2-hover, #gradient-hover-direction').prop('disabled', false) && $('#style-color-hover').prop('disabled', true);
+            $('#style-gradient1-hover, #style-gradient2-hover, #gradient-hover-direction').prop('disabled', false);
+            $('#style-color-hover').prop('disabled', true);
         } else {
-            $("#style-gradient1-hover, #style-gradient2-hover, #gradient-hover-direction").prop('disabled', true) && $('#style-color-hover').prop('disabled', false);
+            $("#style-gradient1-hover, #style-gradient2-hover, #gradient-hover-direction").prop('disabled', true);
+            $('#style-color-hover').prop('disabled', false);
         }
     });
 });
@@ -163,13 +170,12 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
         pre.parentNode.insertBefore(button, pre);
     }
 });
-
+////////////////////////////// UNUSED VARIABLE ///////////////////////////////// target
 // Function copies CSS output on click of the clipboard icon
 var clipboard = new ClipboardJS('.copy-code-button', {
     target: function (trigger) {
         let target = document.querySelector("#cssContainer");
-        //  console.log(target.parentNode);
-        //  console.log(trigger.nextElementSibling);
+   
         return trigger.nextElementSibling;
     }
 });
@@ -188,8 +194,8 @@ clipboard.on('success', function (e) {
     setTimeout(() => {
         cssContainer.className = "language-css";
         copied.className = "";
-        copied.innerHTML = "" // removes the message
-    }, 2000)
+        copied.innerHTML = ""; // removes the message
+    }, 2000);
     // console.info('Action:', e.action);
     // console.info('Text:', e.text);
     // console.info('Trigger:', e.trigger);
@@ -200,11 +206,11 @@ clipboard.on('success', function (e) {
 // Prints the error message if the copy doesn't work.
 clipboard.on('error', function (e) {
     copied.className = "errorMsg"; // Add class to message span to change color of message to red
-    copied.innerHTML = "Oops, that didn't copy!"
+    copied.innerHTML = "Oops, that didn't copy!";
     setTimeout(() => {
         copied.className = ""; // removes the class and message
         copied.innerHTML = "";
-    }, 2000)
+    }, 2000);
 
     // console.error('Action:', e.action);
     // console.error('Trigger:', e.trigger);
@@ -218,7 +224,7 @@ $(function () {
             show: 500,
             hide: 100
         }
-    })
+    });
 });
 
 

@@ -126,9 +126,9 @@ $(function () {
 $(function () {
     $('#hover-border-toggle').on('change', function () {
         if (this.checked) {
-            $('#hover-color, #hover-border-color, #hover-border-width').prop('disabled', false);
+            $('#hover-border-color, #hover-border-width').prop('disabled', false);
         } else {
-            $("#hover-color, #hover-border-color, #hover-border-width").prop('disabled', true);
+            $("#hover-border-color, #hover-border-width").prop('disabled', true);
         }
     });
 });

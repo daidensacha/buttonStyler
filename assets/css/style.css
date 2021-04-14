@@ -439,7 +439,7 @@ div.footer {
   background-color: #343a40;
   border-top: 1px solid black;
   padding-top: 10px;
-  min-height: 65px;
+  height: auto;
 }
 
 .social-links ul {
@@ -518,7 +518,7 @@ textarea#message.form-control {
 
 [class*="col-"] {
   margin-bottom: 30px;
-}
+} 
 
 .content {
   height: 100%;

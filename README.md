@@ -124,7 +124,7 @@ Central to the site will be a playground of features to add styling to buttons.
 	In the wireframes I put the contact form in the footer, however in the end I decided to put it in a modal that opens when you click on the email icon. 
 	I combined the 3 separate wireframes into one image for the README as seeing them side by side gives a better persepctive with of the scale of difference between the different size screens The original size wireframes are available for viewing in the document folder.
 
-![wireframes.png](:/8d920349db814f2a8ecbf3bdcf23b459)
+![Wireframes](assets/images/wireframes.png)
 
 #### 5\. Surface
 

@@ -269,7 +269,7 @@ The initial repository for this project was created in [GitHub Desktop](https://
 3. Under source, click the dropdown, select `master`, or the branch of your choice. 
 4. Click save, and the message shows, " Your site is ready to be published at https://daidensacha.github.io/ButtonStyler/".
 
-assets/Images/header-image-2.png
+NOTE: I had an issue with my background images not showing up. Originally when i created my folders, I named the images folder "Images". GitHub is cas sensitive, so it caused problems. In the end I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, did my `git add .`, `git commit -m "fixing incorrect folder" name`, and `git push`. It was a small mistake, and took a bit to sort it out. 
 
 **CREDITS**
 

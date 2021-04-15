@@ -122,7 +122,10 @@ Central to the site will be a playground of features to add styling to buttons.
 - **Wireframing:**
     As i'm be using Bootstrap, I created the wireframes with the Bootstrap breakpoints in mind for small, medium and large screens. The header row will have a responsive background image. Next are the Next somes the row with form block and CSS display block. Follwed then by a content block and then the footer.
 	In the wireframes I put the contact form in the footer, however in the end I decided to put it in a modal that opens when you click on the email icon. 
-	I combined the 3 separate wireframes into one image for the README as seeing them side by side gives a better persepctive with of the scale of difference between the different size screens The original size wireframes are available for viewing in the document folder.
+	I combined the 3 separate wireframes into one image for the README as seeing them side by side gives a better persepctive with of the scale of difference between the different size screens The original size wireframes are available for viewing in the document folder. 
+    1. ![Bootstrap MD >= 992px](assets/images/bootstrap-md.png)
+    2. ![Bootstrap SM >= 768px](assets/images/bootstrap-sm.png)
+    3. ![Bootstrap MD < 768px](assets/images/bootstrap-xs.png)
 
 ![Wireframes](assets/images/wireframes.png)
 

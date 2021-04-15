@@ -328,7 +328,6 @@ div#css-button {
   /* min-height: 200px; */
   background-color: #dfdbd3;
   border-radius: 5px 5px 5px 5px;
-  z-index: 10;
 }
 
 /* 
@@ -352,8 +351,6 @@ pre.language-css {
   background-image: -ms-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
-  padding-right: 15px;
-  margin-bottom: 30px;
 }
 
 /* Copy to clipboard button */
@@ -361,12 +358,14 @@ pre.language-css {
   top: 100px;
   min-height: 50%;
   color: #757373;
+  border-radius: 8px 8px 0px 0px;
+  /* right-align */
   display: inline-block;
   margin-right: auto;
   margin-left: 5%;
   margin-bottom: -2px;
+  padding: 3px 8px;
   font-size: 0.8em;
-  z-index: 11;
 }
 
 #demo-button {
@@ -380,11 +379,15 @@ pre.language-css {
   /* background-color: #18b860; */
 }
 
-.copy-code-button:focus {
-  /* Avoid an ugly focus outline on click in Chrome,
-       but darken the button for accessibility.
-       See https://stackoverflow.com/a/25298082/1481479 */
+/* .copy-code-button:focus { */
+/* Avoid an ugly focus outline on click in Chrome,
+     but darken the button for accessibility.
+     See https://stackoverflow.com/a/25298082/1481479 */
+/* background-color: #e6e6e659;
   outline: 0;
+} */
+.copy-code-button:active {
+  background-color: #775959;
 }
 
 .bazinga pre {

@@ -30,7 +30,6 @@ body {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
-
   overflow-x: hidden;
 }
 
@@ -60,6 +59,11 @@ main h2 {
 ================================= ACCORDION ==================================== 
 ================================================================================ 
 */
+#accordion-col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 .accordion-heading {
   font-family: "Marck Script", cursive;
   font-size: 24px;
@@ -339,7 +343,7 @@ div#css-button {
   position: absolute;
   bottom: -38px;
   right: 0;
-  width: 250px;
+  width: 100%;
 }
 
 /*  PRE BLOCK */
@@ -355,6 +359,7 @@ pre.language-css {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
   padding-right: 15px;
+  padding-left: 15px;
   margin-bottom: 30px;
 }
 
@@ -367,6 +372,7 @@ pre.language-css {
   margin-right: auto;
   margin-left: 5%;
   margin-bottom: -2px;
+  margin-top: 20px;
   font-size: 0.8em;
   z-index: 11;
 }
@@ -516,6 +522,27 @@ textarea#message.form-control {
 h1 {
   font-weight: 300;
   margin-bottom: 40px;
+}
+
+/* 
+============================================================================== 
+============================ Responsive Specific ============================= 
+============================================================================== 
+*/
+@media (min-width: 576px) {
+  .display-background-picker {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .display-background-picker {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .display-background-picker {
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

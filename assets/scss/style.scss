@@ -14,23 +14,25 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
 
-.container-fluid {
-  padding-left: 0!important;
-  padding-right: 0!important;
-}
+// .container-fluid {
+//   padding-left: 0!important;
+//   padding-right: 0!important;
+// }
 /* 
 ================================================================================ 
 =================================== BODY ======================================= 
 ================================================================================ 
 */
-html {
-  overflow: scroll;
-  overflow-x: hidden;
-}
-::-webkit-scrollbar {
-  width: 0;  /* Remove scrollbar space */
-  background: transparent;  /* Optional: just make scrollbar invisible */
-}
+// html {
+//   overflow: scroll;
+//   overflow-x: hidden;
+// }
+// ::-webkit-scrollbar {
+//   width: 0;  
+//   /* Remove scrollbar space */
+//   background: transparent;  
+//   /* Optional: just make scrollbar invisible */
+// }
 
 body {
     /* padding top for the fixed navbar */
@@ -439,7 +441,7 @@ pre.language-css {
   margin-bottom: 65px;
   
 }
-
+ƒ
 .copy-code-button:hover {
   cursor: pointer;
   color: #0faa06;

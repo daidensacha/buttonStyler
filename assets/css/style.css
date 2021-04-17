@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script&family=Hind&family=Lobster+Two&family=Montserrat&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&family=Tajawal&display=swap");
 /* FONTS INCLUDED IN FORM SELECT
 font-family: 'Abril Fatface', cursive;
@@ -20,6 +21,8 @@ font-family: 'Tajawal', sans-serif;
 body {
   /* padding top for the fixed navbar */
   padding-top: 56px;
+  padding-left: 0;
+  padding-right: 0;
   width: auto;
   background-color: transparent !important;
   background-image: url("../images/bg-paper-yellow.jpg");
@@ -413,7 +416,7 @@ pre.language-css {
   margin-bottom: 65px;
 }
 
-.copy-code-button:hover {
+ƒ .copy-code-button:hover {
   cursor: pointer;
   color: #0faa06;
   /* background-color: #18b860; */

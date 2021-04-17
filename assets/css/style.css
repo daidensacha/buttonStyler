@@ -27,16 +27,16 @@ body {
   overflow-y: scroll;
   font-family: Roboto, sans-serif;
   /* Hide scrollbar for IE, Edge and Firefox */
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none; removing untill I can check the overflow issue not even sure this owrks or is needed*/ 
   /* IE and Edge */
   scrollbar-width: none;
   overflow-x: hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar { removing untill I can check the overflow issue not even sure this owrks or is needed
   display: none;
-}
+} */
 
 h1 {
   color: #dea773 !important;

@@ -274,7 +274,7 @@ I created the initial repository for this project in [GitHub Desktop](https://de
 1. Click `Settings` on the repository page.
 2. Click on the GitHub Pages tab to the left. 
 3. Under source, click the dropdown, select `master`, or the branch of your choice. 
-4. Click save, and the message shows, "Your site is ready to be published at https://daidensacha.github.io/ButtonStyler/".
+4. Click save, and the message shows, "Your site is ready to be published at https://daidensacha.github.io/buttonStyler/".
 
 NOTE: I had an issue with my background images not showing up. Initially, when I created my folders, I named the images folder "Images". GitHub is case sensitive, so it caused problems. In the end, I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, did my `git add .`, `git commit -m "fixing incorrect folder" name`, and `git push`. It was a small mistake and took a bit to sort out. 
 

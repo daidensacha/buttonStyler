@@ -23,16 +23,6 @@ font-family: 'Tajawal', sans-serif;
 =================================== BODY ======================================= 
 ================================================================================ 
 */
-// html {
-//   overflow: scroll;
-//   overflow-x: hidden;
-// }
-// ::-webkit-scrollbar {
-//   width: 0;  
-//   /* Remove scrollbar space */
-//   background: transparent;  
-//   /* Optional: just make scrollbar invisible */
-// }
 
 body {
     /* padding top for the fixed navbar */
@@ -69,6 +59,10 @@ main h2 {
     margin-left: 10%;
 }
 
+.header-heading {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
 /* Highlight color classes  */
 .highlight-color-green {
   color: #248547;
@@ -79,11 +73,17 @@ main h2 {
 .highlight-color-tan {
   color: #fce9b1;
 }
+.highlight-color-yellow {
+  color: #9b7914;
+}
 .highlight-color-orange {
   color: #ba6f20;
 }
 .highlight-color-black {
   color: #070303;
+}
+.highlight-color-white {
+  color: #fcfcfc;
 }
 .highlight-bg-light {
   background: #f5f2f0;
@@ -93,6 +93,12 @@ main h2 {
 }
 .highlight-bg-dark {
   background: #0c0b0a;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+.highlight-bg-blue {
+  background: #14779b;
   padding: .1em;
   border-radius: .3em;
   white-space: normal;
@@ -161,7 +167,8 @@ main h2 {
 
 .navbar {
     background-color: #d39e00ab !important;
-    border-bottom: 1px solid rgb(153, 153, 101)
+    border-bottom: 1px solid rgb(153, 153, 101);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 .bg-navbar-custom {
@@ -481,6 +488,14 @@ pre.language-css {
   margin-left: 10px;
 }
 
+/* 
+================================================================================ 
+=============================== DIRECTIONS BLOCK =============================== 
+================================================================================ 
+*/
+.content {
+  border-top: 3px solid #9b7914;
+}
 
 /* 
 ================================================================================ 
@@ -493,6 +508,7 @@ div.footer {
     border-top: 1px solid black;
     padding-top: 10px;
     height: auto;
+    box-shadow: -2px 0px 3px rgba(0,0,0,0.8);
   }
   
   .social-links ul {

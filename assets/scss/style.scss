@@ -14,7 +14,10 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
 
-
+.container .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
 /* 
 ================================================================================ 
 =================================== BODY ======================================= 
@@ -24,6 +27,8 @@ font-family: 'Tajawal', sans-serif;
 body {
     /* padding top for the fixed navbar */
     padding-top: 56px;
+    padding-left: 0;
+    padding-right: 0;
     width: auto;
     background-color: transparent !important;
     background-image: url("../images/bg-paper-yellow.jpg");

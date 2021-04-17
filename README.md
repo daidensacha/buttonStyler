@@ -7,13 +7,12 @@
 * * *
 
 Building on the skills used to complete my previous project, my goal is to complete a project with interactive features to engage the user. I've decided to build a site that will offer the user tools to create button styles.
-[see buttonStyler](https://daidensacha.github.io/buttonStyler/).
 
 ## UX DESIGN
 
 * * *
 
-#### 1\. Strategy
+### 1\. Strategy
 
 ##### User Stories:
 
@@ -42,7 +41,7 @@ Building on the skills used to complete my previous project, my goal is to compl
         - I want to share this tool with others who might also benefit from it.
         - I want to do this project to learn and to be able to put to use the things I have been learning in this last unit.
 
-#### 2\. Scope
+### 2\. Scope
 
 Having played on a few of these sorts of sites myself, I know what I find interesting. Also, what makes it an experience to which I would return. Given the limit on time and the abundance of ideas, my challenge is to confine the project's scope to submit it in time.
 
@@ -57,33 +56,33 @@ Central to the site will be a playground of features to add styling to buttons.
     - **Gradient Selector** \- Gradients are becoming the norm, supported in all modern browsers. A feature is needed for users to choose gradients.
     - **Social Icons** \- The icons will link to my GitHub, Codepen, and Linkedin profiles.
     - **Contact Form** \- Users can contact me by using the contact form.
-    - **Modal**\* The Modal will be for the contact form so I can keep the site to one page.
-    - **Navbar**\* Navabar will house the social icons.
-    - **Offcanvas navbar** An off-canvas that can be toggled open at any time, not only for small screens.
-    - **Accordion** It will have forms of inputs grouped so that users can style the demo button.
-    - **Demo button** A demo button to show the styling results visually.
-    - **CSS display** An CSS output display that will update as the user styles the button.
-    - **Copy to clipboard** A button for users to copy the CSS style.
-    - **Footer** Simple Footer with the social links from the Navbar replicated, as above so below.
+    - **Modal** \- The Modal will be for the contact form so I can keep the site to one page.
+    - **Navbar** \- Navabar will house the social icons.
+    - **Offcanvas navbar** \- An off-canvas that can be toggled open at any time, not only for small screens.
+    - **Accordion** \- It will have forms of inputs grouped so that users can style the demo button.
+    - **Demo button** \- A demo button to show the styling results visually.
+    - **CSS display** \- An CSS output display that will update as the user styles the button.
+    - **Copy to clipboard** \- A button for users to copy the CSS style.
+    - **Footer** \- Simple Footer with the social links from the Navbar replicated, as above so below.
 - **Functional Requirements**
     
-    - **Color Pickers** Will open when clicked and will have an input so users can enter a specific color if they want or use the mouse cursor. Form inputs have set default values, so there is a designed button to start.
-    - **Range Selectors** The value will be displayed when the user changes it. As a guide, I will set default minimum and maximum values for different attributes for the user.
-    - **Toggle Switches** Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
-    - **Navbar** Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
-    - **Copy to clipboard** Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
-    - **Gradients** /- Users will be able to select colors to create gradients. A start color, end color, and a direction are required to compile CSS rules for cross-browser compatibility.
-    - **Contact form** /- Users can access the contact form from the Navbar or Footer. By clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
-    - **Accordion** There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The Accordion will have one Form open at a time
-    - **Demo button** The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
-    - **CSS Output display** The CSS markup will be output into a display next to the Form and below the button.
+    - **Color Pickers** \- Will open when clicked and will have an input so users can enter a specific color if they want or use the mouse cursor. Form inputs have set default values, so there is a designed button to start.
+    - **Range Selectors** \- The value will be displayed when the user changes it. As a guide, I will set default minimum and maximum values for different attributes for the user.
+    - **Toggle Switches** \- Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
+    - **Navbar** \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
+    - **Copy to clipboard** \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
+    - **Gradients** \- Users will be able to select colors to create gradients. A start color, end color, and a direction are required to compile CSS rules for cross-browser compatibility.
+    - **Contact form** \- Users can access the contact form from the Navbar or Footer. By clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
+    - **Accordion** \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The Accordion will have one Form open at a time
+    - **Demo button** \- The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
+    - **CSS Output display** \- The CSS markup will be output into a display next to the Form and below the button.
 - **Content Requirements**
     
-    - **Single page site** Keeping it simple with a one-page site, not overcooked with content. The button styling will be the central focus.
-    - **Bling** There will be a full-width banner image to welcome the site user.
-    - **Forms within the Accordion** Inputs grouped by CSS rule into fieldsets, laid out sequentially so users can intuitively work through them.
-    - **CSS Markup Block** A block within `<pre><code></code></pre>` tags to display the CSS output from selected CSS rules.
-    - **Instructions** Simple instructions for users, explaining how easy it is to create, copy, and use the style creator.
+    - **Single page site** \- Keeping it simple with a one-page site, not overcooked with content. The button styling will be the central focus.
+    - **Bling** \- There will be a full-width banner image to welcome the site user.
+    - **Forms within the Accordion** \- Inputs grouped by CSS rule into fieldsets, laid out sequentially so users can intuitively work through them.
+    - **CSS Markup Block** \- A block within `<pre><code></code></pre>` tags to display the CSS output from selected CSS rules.
+    - **Instructions** \- Simple instructions for users, explaining how easy it is to create, copy, and use the style creator.
 
 **Required Form Elements**
 
@@ -103,7 +102,7 @@ Central to the site will be a playground of features to add styling to buttons.
     
     - [ ] The Form will contain only one text input for entering the button text.
 
-#### 3\. Structure
+### 3\. Structure
 
 - **Interaction Design**
     
@@ -113,28 +112,27 @@ Central to the site will be a playground of features to add styling to buttons.
 - **Information Architecture** Site information arranged as follows.
     
     - ***Simple and sweet:*** Home page will be colorful. The center point is the forms with inputs for styling the demo button, a playground full of possibilities.
-    - ***Contact Form *** I want it simple and don't want users to navigate away from the reason that brought them to the site. So it will be a one-page site, with a contact form at the bottom of the page. I may put the contact form in a modal if, for some reason, it doesn't fit on the home page.
+    - ***Contact Form*** I want it simple and don't want users to navigate away from the reason that brought them to the site. So it will be a one-page site, with a contact form at the bottom of the page. I may put the contact form in a modal if, for some reason, it doesn't fit on the home page.
     - ***Social Links*** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
     - ***Planning*** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, I have created an excel sheet to use as I put the forms together.
-    - *** Layout *** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
+    - ***Layout*** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 
-#### 4\. Skeleton
+### 4\. Skeleton
 
 - **Wireframing:**
     As I'm be using Bootstrap, I created the wireframes with the Bootstrap breakpoints in mind for small, medium, and large screens. The header row will have a responsive background image. Next comes the row with form block and CSS display block. Followed then by a content block and then the Footer.
     I put the contact form in the Footer in the wireframes. However, in the end, I decided to put it in a modal that opens when you click on the email icon. 
     I combined the three separate wireframes into one image for the README as seeing them side by side gives a better perspective of the scale of difference between the different size screens. The original size wireframes are available for viewing in the assets/images folder. 
-
-
+ 
 ![Wireframes](assets/images/wireframes.png)
 
-#### 5\. Surface
+### 5\. Surface
 
 **Visual Design:**
 Color. Fun. Exploration. I want to take off my conservative hat and be a little daring to create an impression, definitely an experience to remember. It should be a fun experience to play with the button creator, one that the user will remember and return to when they next need to check out button styles.
 
 
-### TECHNOLOGIES USED
+## TECHNOLOGIES USED
 
 * * *
 
@@ -160,7 +158,7 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 5.  [Git Version Control](https://git-scm.com/)
     - Used to commit blocks of work to the project and created branches for working on specific changes or testing.
 6.  [Clipboard.js](https://clipboardjs.com/)
-    Use Copy (add to clipboard) functionality for the user to copy the CSS markup.
+    - Use Copy (add to clipboard) functionality for the user to copy the CSS markup.
 7.  [Balsamiq](https://balsamiq.com/wireframes/?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgNq0GvC2yRLIRMqtOQmJMttVQwRQwncxUgML3HMPxy17ZF6--foTYkaArnQEALw_wcB)
     - Used to create wireframes
 8.  [Adobe Illustrator](https://www.adobe.com/de/creativecloud.html?mv=search&mv=search&sdid=MQH8S7GK&ef_id=Cj0KCQjwgtWDBhDZARIsADEKwgPZA7lnHvCbzk4T9-Q7HVENkRXnk1GxIseaWipJrYnWF0LQvFTw21MaAlQ6EALw_wcB:G:s&s_kwcid=AL!3085!3!392740825380!b!!g!!%2Badobe!1419110055!55481570853&gclid=Cj0KCQjwgtWDBhDZARIsADEKwgPZA7lnHvCbzk4T9-Q7HVENkRXnk1GxIseaWipJrYnWF0LQvFTw21MaAlQ6EALw_wcB)
@@ -180,7 +178,7 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 15. [shoelace](http://shoelace.io/)
     - Application for building Bootstrap grids. It is a convenient tool that simplifies building the responsive grid.
 
-**TESTING**
+### TESTING
 
 * * *
 
@@ -255,7 +253,7 @@ I researched various options and concluded that clipboard.js was the best option
 - [W3C CSS3 Validation](https://jigsaw.w3.org/css-validator/): Passes the W3C CSS3 validation.
 - [JS Hint](https://jshint.com/) : Passes JS Hint validation
 
-**DEPLOYMENT**
+### DEPLOYMENT
 
 * * *
 **Creating the file structure to start**  
@@ -274,7 +272,7 @@ I created the initial repository for this project in [GitHub Desktop](https://de
 1. Click `Settings` on the repository page.
 2. Click on the GitHub Pages tab to the left. 
 3. Under source, click the dropdown, select `master`, or the branch of your choice. 
-4. Click save, and the message shows, "Your site is ready to be published at https://daidensacha.github.io/buttonStyler/".
+4. Click save, and the message shows, "Your site is ready to be published at https://daidensacha.github.io/ButtonStyler/".
 
 NOTE: I had an issue with my background images not showing up. Initially, when I created my folders, I named the images folder "Images". GitHub is case sensitive, so it caused problems. In the end, I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, did my `git add .`, `git commit -m "fixing incorrect folder" name`, and `git push`. It was a small mistake and took a bit to sort out. 
 

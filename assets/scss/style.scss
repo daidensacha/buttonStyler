@@ -257,6 +257,26 @@ main h2 {
     color: #343a40;
 }
 
+/* 
+================================================================================
+================================= TO TOP BUTTON ================================
+================================================================================
+// https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555
+*/
+// .js .cd-top--fade-out {
+//   opacity: .5;
+// }
+
+// .js .cd-top--is-visible {
+//   visibility: visible;
+//   opacity: 1;
+// }
+
+// .js .cd-top {
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: opacity .3s, visibility .3s, background-color .3s;
+// }
 
 /* 
 ================================================================================ 
@@ -448,20 +468,34 @@ pre.language-css {
   margin-bottom: 65px;
   
 }
-ƒ
-.copy-code-button:hover {
+
+.copyCss {
+  color: rgb(170, 88, 11);
+
+}
+.copyCss:hover {
   cursor: pointer;
-  color: #0faa06;
-  /* background-color: #18b860; */
+  color:green;
 }
 
- .copy-code-button:focus { 
-  /* Avoid an ugly focus outline on click in Chrome,
-       but darken the button for accessibility.
-       See https://stackoverflow.com/a/25298082/1481479 */
-  // background-color: red;
-  outline: 0;
-} 
+.copyCss:focus {
+  outline: 0 !important;
+}
+
+// .copy-code-button:hover {
+//   // i .copyCss:hover {
+//   cursor: pointer;
+//   color: #0faa06;
+//   /* background-color: #18b860; */
+// }
+
+//  .copy-code-button:focus { 
+//   /* Avoid an ugly focus outline on click in Chrome,
+//        but darken the button for accessibility.
+//        See https://stackoverflow.com/a/25298082/1481479 */
+//   // background-color: red;
+//   outline: 0 !important;
+// } 
 
 // .copy-code-button:active {
 //   //background-color: #775959;

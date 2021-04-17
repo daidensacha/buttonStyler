@@ -14,6 +14,7 @@
     <script src="assets/js//clipboard.min.js"></script>
 
     <!-- <link rel="stylesheet" href="assets/css/prism.css"> -->
+
 </head>
 <body>
     <div class="main-container">
@@ -100,7 +101,8 @@
                             <!-- Needt o work out the issue here with the overflow with the image when class row added to the div.-->
                             <div class="row row-flex" >
                                 <div class="col-sm-12">
-                                    <h1 class="display-4 ml-sm-5 ml-2 header-heading">buttonStyler</h1>
+                                    <h1 class="d-none d-sm-block display-4 ml-sm-5 ml-2 header-heading">buttonStyler</h1>
+                                    <h1 class="d-block d-sm-none ml-sm-5 ml-2 header-heading">buttonStyler</h1>
                                     <!-- <h4 class="display-5 ml-sm-5 ml-2">"Make it simple, but significant."</h4> -->
                                     <blockquote class="blockquote ml-sm-5 ml-2">
                                         <p class="mb-0">"Make it simple, but significant"</p>
@@ -861,7 +863,7 @@
                     
                     <ul class="ol social-links dl list-inline">
                         <li class="list-inline-item">
-                           <a class="totop-link" href="#" data-toggle="tooltip" data-placement="top" title="To Top"></a>
+                           <a class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" id="toTopBtn" href="#" data-toggle="tooltip"  data-placement="top" title="To Top"><i class="fas fa-chevron-circle-up"></i></a>
                         </li>
                         <li class="list-inline-item">
                            <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip" data-placement="top"  title="Github"><i class="fab fa-github"></i></a>
@@ -898,25 +900,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form.js"></script>
     <!-- <script src="assets/js/prism.js"></script> -->
-
-
-  
-<!-- <script>
-    // Form Validation
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    var form = document.getElementById('needs-validation');
-    form.addEventListener('submit', function(event) {
-      if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-      }
-      form.classList.add('was-validated');
-    }, false);
-  }, false);
-})();
-</script> -->
    
 
 </body>

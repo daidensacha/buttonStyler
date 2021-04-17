@@ -19,17 +19,25 @@ function sendMail(contactForm) {
             contactForm.email.value = "";
             contactForm.message.value = "";
             targetDiv.innerHTML = successMessage;
+            setTimeout(() => {
+                targetDiv.innerHTML = ""; // removes the message after 2 seconds
+            }, 2000);
         }, function(error) {
            console.log('FAILED...', error);
             let targetDiv = document.getElementById("messageDiv");
             let errorMessage = "Error, your message has not been sent!";
             targetDiv.className = "alert-danger";
             targetDiv.innerHTML = errorMessage;
+            setTimeout(() => {
+                targetDiv.innerHTML = ""; // removes the message after 2 seconds
+            }, 2000);
         });
      
         return false;
     
     
     }
+
+    
     
     

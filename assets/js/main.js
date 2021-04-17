@@ -14,6 +14,24 @@ $(function() {
 
 // document ready  footer-offcanvas
 });
+
+// To top smooth scroll function
+$(document).ready(function() {
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 20) {
+    $('#toTopBtn').fadeIn();
+    } else {
+    $('#toTopBtn').fadeOut();
+    }
+    });
+    
+    $('#toTopBtn').click(function() {
+    $("html, body").animate({
+    scrollTop: 0
+    }, 1000);
+    return false;
+    });
+    });
    
    
 window.onload = function() {
@@ -142,7 +160,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
     // Create the container for the icon for the clipboard button
     let iconClipboard = document.createElement("i");
-    iconClipboard.className = "far fa-2x"; // note: fas = solid, far = outline
+    iconClipboard.className = "far fa-2x copyCss"; // note: fas = solid, far = outline
     //  iconClipboard.innerHTML = "&#xf328;"; // clipboard icon
     iconClipboard.innerHTML = "&#xf0c5;"; // copy icon
     iconClipboard.setAttribute("data-toggle", "tooltip");

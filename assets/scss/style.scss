@@ -23,6 +23,14 @@ font-family: 'Tajawal', sans-serif;
 =================================== BODY ======================================= 
 ================================================================================ 
 */
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
 
 body {
     /* padding top for the fixed navbar */

@@ -54,8 +54,33 @@ main h2 {
     margin-left: 10%;
 }
 
-.highlight-text {
-    color: rgb(29, 104, 56)
+/* Highlight color classes  */
+.highlight-color-green {
+  color: #248547;
+}
+.highlight-color-red {
+  color: #f20625;
+}
+.highlight-color-tan {
+  color: #fce9b1;
+}
+.highlight-color-orange {
+  color: #ba6f20;
+}
+.highlight-color-black {
+  color: #070303;
+}
+.highlight-bg-light {
+  background: #f5f2f0;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+}
+.highlight-bg-dark {
+  background: #0c0b0a;
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
 }
 
 /* 

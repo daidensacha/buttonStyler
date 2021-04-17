@@ -27,16 +27,16 @@ body {
   overflow-y: scroll;
   font-family: Roboto, sans-serif;
   /* Hide scrollbar for IE, Edge and Firefox */
-  /* -ms-overflow-style: none; removing untill I can check the overflow issue not even sure this owrks or is needed*/ 
+  -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;
   overflow-x: hidden;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-/* body::-webkit-scrollbar { removing untill I can check the overflow issue not even sure this owrks or is needed
+body::-webkit-scrollbar {
   display: none;
-} */
+}
 
 h1 {
   color: #dea773 !important;
@@ -50,8 +50,39 @@ main h2 {
   margin-left: 10%;
 }
 
-.highlight-text {
-  color: #1d6838;
+/* Highlight color classes  */
+.highlight-color-green {
+  color: #248547;
+}
+
+.highlight-color-red {
+  color: #f20625;
+}
+
+.highlight-color-tan {
+  color: #fce9b1;
+}
+
+.highlight-color-orange {
+  color: #ba6f20;
+}
+
+.highlight-color-black {
+  color: #070303;
+}
+
+.highlight-bg-light {
+  background: #f5f2f0;
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.highlight-bg-dark {
+  background: #0c0b0a;
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
 }
 
 /* 

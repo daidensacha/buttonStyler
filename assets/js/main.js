@@ -1,18 +1,33 @@
 
 // NAVBAR OFFCANVAS JS
+$(function () {
+    'use strict'
+  
+    $(document)
+      .on('click', '[data-toggle="offcanvas"], #navToggle', function(e) {
+        $('.offcanvas-collapse').toggleClass('open'); // toggle `.open`
+        e.stopPropagation(); // and stop propagation
+      })
+      .on('click', function() {
+        $('.offcanvas-collapse').removeClass('open'); // remove `.open`
+      });
+
+    //   $("contactToggle").on('click', function(){
+    //     $('#contactModal').modal('show');
+    //     });
+  });
+
+// TOGGLE MODAL
 $(function() {
     // executes when HTML-Document is loaded and DOM is ready
-  // console.log("document is ready");
     
-    $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
-    $('#offCanvasLeft').toggleClass('open');
-    });
-
+    // $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
+    // $('#offCanvasLeft').toggleClass('open');
+    // });
+   
     $("contactToggle").on('click', function(){
     $('#contactModal').modal('show');
-    })  ;
-
-// document ready  footer-offcanvas
+    });
 });
 
 // To top smooth scroll function

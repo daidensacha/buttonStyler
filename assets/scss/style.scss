@@ -55,6 +55,7 @@ main h2 {
 }
 
 .header-heading {
+  font-size: 3.0rem;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
@@ -636,7 +637,7 @@ div.footer {
 
    /* 
   ============================================================================== 
-  ============================ Responsive Specific ============================= 
+  ============================ Breakpoint Specific ============================= 
   ============================================================================== 
   */                                      
                               
@@ -658,8 +659,8 @@ div.footer {
     width: 100%;
     bottom: -38px;
   }
-  .display-4 {
-    font-size: 2.0rem;
+  .header-heading {
+    font-size: 3.2rem;
   }
   html {
     font-size: 1rem;
@@ -690,8 +691,8 @@ div.footer {
     width: 100%;
     bottom: -41px;
   }
-  .display-4 {
-    font-size: 2.5rem;
+  .header-heading {
+    font-size: 3.3rem;
   }
   html {
     font-size: 1.1rem;
@@ -717,8 +718,8 @@ div.footer {
     width: 50%;
     bottom: -45px;
   }
-  .display-4 {
-    font-size: 3.0rem;
+  .header-heading {
+    font-size: 3.5rem;
   }
   html {
     font-size: 1.2rem;
@@ -733,7 +734,7 @@ div.footer {
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .display-4 {
+  .header-heading {
     font-size: 3.5rem;
   }
   html {

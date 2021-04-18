@@ -52,6 +52,7 @@ main h2 {
 }
 
 .header-heading {
+  font-size: 3rem;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
@@ -617,7 +618,7 @@ h1 {
 
 /* 
 ============================================================================== 
-============================ Responsive Specific ============================= 
+============================ Breakpoint Specific ============================= 
 ============================================================================== 
 */
 @media (min-width: 576px) {
@@ -638,8 +639,8 @@ h1 {
     bottom: -38px;
   }
 
-  .display-4 {
-    font-size: 2rem;
+  .header-heading {
+    font-size: 3.2rem;
   }
 
   html {
@@ -676,8 +677,8 @@ h1 {
     bottom: -41px;
   }
 
-  .display-4 {
-    font-size: 2.5rem;
+  .header-heading {
+    font-size: 3.3rem;
   }
 
   html {
@@ -707,8 +708,8 @@ h1 {
     bottom: -45px;
   }
 
-  .display-4 {
-    font-size: 3rem;
+  .header-heading {
+    font-size: 3.5rem;
   }
 
   html {
@@ -724,7 +725,7 @@ h1 {
   }
 }
 @media (min-width: 1200px) {
-  .display-4 {
+  .header-heading {
     font-size: 3.5rem;
   }
 

@@ -709,14 +709,17 @@ div.footer {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  #button-output {
+    margin-bottom: .4rem;
+  }
   .copy-code-button {
-    margin-top: 4em;
+    margin-top: 2.5rem;
   }
   div#css-button {
     margin-bottom: 33px;
   }
   #accordion-col {
-    margin-bottom: 1.1rem;
+    margin-bottom: 1rem;
   }
   .display-background-picker {
     width: 100%;

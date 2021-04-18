@@ -115,6 +115,7 @@ main h2 {
 #accordion-col {
   padding-left: 0px;
   padding-right: 0px;
+  margin-bottom: 0;
 }
 
 .accordion-heading {
@@ -404,6 +405,10 @@ pre.language-css {
 }
 
 /* #button-output, .accordion-output  */
+#button-output {
+  margin-bottom: 7px;
+}
+
 #button-main-background {
   background-image: -webkit-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -moz-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
@@ -424,7 +429,7 @@ pre.language-css {
   margin-right: auto;
   margin-left: 5%;
   margin-bottom: -2px;
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 0.8em;
   z-index: 11;
 }
@@ -625,18 +630,119 @@ h1 {
 ============================================================================== 
 */
 @media (min-width: 576px) {
+  .copy-code-button {
+    margin-top: 4em;
+  }
+
+  div#css-button {
+    margin-bottom: 30px;
+  }
+
+  #accordion-col {
+    margin-bottom: 0.5rem;
+  }
+
   .display-background-picker {
     width: 100%;
+    bottom: -38px;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  html {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 768px) {
+  .copy-code-button {
+    margin-top: 4em;
+  }
+
+  div#css-button {
+    margin-bottom: 33px;
+  }
+
+  #accordion-col {
+    margin-bottom: 1.1rem;
+  }
+
   .display-background-picker {
     width: 100%;
+    bottom: -41px;
+  }
+
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  html {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 992px) {
+  #demo-button {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  #accordion-col {
+    margin-bottom: 1.1rem;
+  }
+
   .display-background-picker {
     width: 50%;
+    bottom: -45px;
+  }
+
+  .display-4 {
+    font-size: 3rem;
+  }
+
+  html {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .display-4 {
+    font-size: 3.5rem;
+  }
+
+  html {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
   }
 }
 

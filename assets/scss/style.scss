@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script&family=Hind&family=Lobster+Two&family=Montserrat&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&family=Tajawal&display=swap');
 
+// @import "bootstrap/functions";
+// @import "bootstrap/variables";
+// @import "bootstrap/mixins";
+
+
+// $enable-responsive-font-sizes: true;
+// // @import "bootstrap";
+
+// $display4-size:        3.5rem;
+
+
 /* FONTS INCLUDED IN FORM SELECT
 font-family: 'Abril Fatface', cursive;
 font-family: 'Courgette', cursive;
@@ -119,6 +130,7 @@ main h2 {
 #accordion-col {
   padding-left: 0px;
   padding-right: 0px;
+  margin-bottom: 0;
 }
 
 .accordion-heading {
@@ -419,6 +431,7 @@ div#css-button {
 .display-background-picker {
   position: absolute;
   bottom: -38px;
+  // bottom: -45px;
   right: 0;
   width: 100%;
 }
@@ -429,6 +442,10 @@ pre.language-css {
 }
 
 /* #button-output, .accordion-output  */
+#button-output {
+  margin-bottom: 7px;
+}
+
 #button-main-background {
   background-image: -webkit-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -moz-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
@@ -449,7 +466,7 @@ pre.language-css {
   margin-right: auto;
   margin-left: 5%;
   margin-bottom: -2px;
-  margin-top: 20px;
+  margin-top: 2rem;
   font-size: 0.8em;
   z-index: 11;
 }
@@ -663,34 +680,108 @@ div.footer {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
+  .copy-code-button {
+    margin-top: 4em;
+  }
+  div#css-button {
+    margin-bottom: 30px;
+  }
+  #accordion-col {
+    margin-bottom: .5rem;
+  }
   .display-background-picker {
- 
     width: 100%;
+    bottom: -38px;
+  }
+  .display-4 {
+    font-size: 2.0rem;
+  }
+  html {
+    font-size: 1rem;
+  }
+  h1 {
+   font-size: 1.2rem;
+  }
+  h2 {
+   font-size: 1.1rem;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .copy-code-button {
+    margin-top: 4em;
+  }
+  div#css-button {
+    margin-bottom: 33px;
+  }
+  #accordion-col {
+    margin-bottom: 1.1rem;
+  }
   .display-background-picker {
-  
     width: 100%;
+    bottom: -41px;
+  }
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  html {
+    font-size: 1.1rem;
+  }
+  h1 {
+      font-size: 1.3rem;
+  }
+  h2 {
+      font-size: 1.2rem;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  #demo-button {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  #accordion-col {
+    margin-bottom: 1.1rem;
+  }
   .display-background-picker {
-  
     width: 50%;
+    bottom: -45px;
+  }
+  .display-4 {
+    font-size: 3.0rem;
+  }
+  html {
+    font-size: 1.2rem;
+  }
+  h1 {
+      font-size: 1.5rem;
+  }
+  h2 {
+      font-size: 1.4rem;
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+  .display-4 {
+    font-size: 3.5rem;
+  }
+  html {
+    font-size: 1.2rem;
+  }
+  h1 {
+      font-size: 1.7rem;
+  }
+  h2 {
+      font-size: 1.6rem;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
 
 }
+
+

@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script&family=Hind&family=Lobster+Two&family=Montserrat&family=Oxygen&family=PT+Sans&family=Poppins&family=Roboto&family=Tajawal&display=swap');
 
-// @import "bootstrap/functions";
-// @import "bootstrap/variables";
-// @import "bootstrap/mixins";
-
-
-// $enable-responsive-font-sizes: true;
-// // @import "bootstrap";
-
-// $display4-size:        3.5rem;
-
-
 /* FONTS INCLUDED IN FORM SELECT
 font-family: 'Abril Fatface', cursive;
 font-family: 'Courgette', cursive;
@@ -32,7 +21,6 @@ font-family: 'Tajawal', sans-serif;
 */
 
 body {
-    /* padding top for the fixed navbar */
     padding-top: 56px;
     padding-left: 0;
     padding-right: 0;
@@ -267,27 +255,6 @@ main h2 {
 }
 
 /* 
-================================================================================
-================================= TO TOP BUTTON ================================
-================================================================================
-// https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555
-*/
-// .js .cd-top--fade-out {
-//   opacity: .5;
-// }
-
-// .js .cd-top--is-visible {
-//   visibility: visible;
-//   opacity: 1;
-// }
-
-// .js .cd-top {
-//   visibility: hidden;
-//   opacity: 0;
-//   transition: opacity .3s, visibility .3s, background-color .3s;
-// }
-
-/* 
 ================================================================================ 
 ================================ RANGE SLIDER ================================== 
 ================================================================================ 
@@ -412,7 +379,7 @@ input::-moz-focus-outer {
 
 
 /* 
-  ================================ CSS CODE BLOCK =========================== */
+  ================================ CSS CODE BLOCK  */
 
 div#css-button {
   height: auto;
@@ -427,7 +394,7 @@ div#css-button {
 }
 
 /* 
- =============== POSITION COLOR PICKER UNDER THE BUTTON DISPLAY ============= */
+ =============== POSITION COLOR PICKER UNDER THE BUTTON DISPLAY  */
 .display-background-picker {
   position: absolute;
   bottom: -38px;
@@ -441,7 +408,6 @@ pre.language-css {
   padding: 0 5%;
 }
 
-/* #button-output, .accordion-output  */
 #button-output {
   margin-bottom: 7px;
 }
@@ -555,9 +521,9 @@ div.footer {
   }
   
   /* 
-  ================================================================================ 
-  ============================== CONTACT FORM MODAL ============================== 
-  ================================================================================ 
+  ==============================================================================
+  ============================== CONTACT FORM MODAL ============================
+  ==============================================================================
   */
   
   /* Equal column heights */
@@ -588,9 +554,9 @@ div.footer {
   }
 
  /* 
-  ================================================================================ 
+  ==============================================================================
   =================================== BUTTONS ================================== 
-  ================================================================================ 
+  ==============================================================================
   */
                                           
 .btn-custom-1.btn {
@@ -630,9 +596,8 @@ div.footer {
 /* 
 ================================================================================
 ============================== DIRECTION SECTION =============================== 
-================================================================================ 
-*/
-/* ///////////////////// Flex columns experiement /////////////////////////// */
+================================================================================
+*/ 
 
 /* display this row with flex and use wrap (= respect columns' widths) */
 

@@ -19,19 +19,12 @@
 <body>
     <div class="main-container">
 
-        <!-- <div class="row" id="header"> -->
-        <!-- <div class="container" id="header"></div> -->
-            <!-- <div class="col-xs-12"> -->
-
                 <div class="bg-primary">
                     <div class="container">
                         <!--  START NAVBAR   -->
                         <nav class="navbar  fixed-top navbar-dark bg-navbar-custom navbar-offcanvas"> <!-- remove class bg-dark -->
 
                             <div class="ol social-links list-inline">
-                                <span class="list-inline-item">
-                                   <a class="totop-link" href="#" data-toggle="tooltip" data-placement="top" title="To Top"></a>
-                                </span>
                                 <span class="list-inline-item">
                                    <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip" data-placement="top"  title="Github"><i class="fab fa-github"></i></a>
                                 </span>
@@ -87,16 +80,6 @@
                                         <a class="nav-link" href="https://fontawesome.com/" target="_blank">Font Awesome</a>
                                     </li>
 
-
-                                    <!-- <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
-                                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                                            <a class="dropdown-item" href="#">Link Secondary</a>
-                                            <a class="dropdown-item" href="#">Link Secondary</a>
-                                            <a class="dropdown-item" href="#">Link Secondary</a>
-                                        </div>
-                                    </li> -->
                                 </ul>
                 
                 
@@ -107,49 +90,30 @@
                 </div> <!-- bg-primary   -->
  
                 <header class="container-fluid">
-                    <!-- <div > -->
-                        <!-- <div class="container" >  -->
-                            <!-- Needt o work out the issue here with the overflow with the image when class row added to the div.-->
-                            <div class="row row-flex" >
-                                <div class="col-sm-12">
-                                    <h1 class="d-none d-sm-block display-4 ml-sm-5 ml-2 mt-3 header-heading">buttonStyler</h1>
-                                    <h1 class="d-block d-sm-none ml-sm-5 ml-2 mt-3 header-heading">buttonStyler</h1>
-                                    <!-- <h4 class="display-5 ml-sm-5 ml-2">"Make it simple, but significant."</h4> -->
-                                    <blockquote class="blockquote ml-sm-5 ml-2">
-                                        <p class="mb-0">"Make it simple, but significant"</p>
-                                        <footer class="blockquote-footer">Dan Draper <cite title="Mad Men">Mad Men</cite></footer>
-                                    </blockquote>
-                                </div>
+                    <div class="row row-flex" >
+                        <div class="col-sm-12">
+                            <h1 class="d-none d-sm-block display-4 ml-sm-5 ml-2 mt-3 header-heading">buttonStyler</h1>
+                            <h1 class="d-block d-sm-none ml-sm-5 ml-2 mt-3 header-heading">buttonStyler</h1>
+                            <!-- <h4 class="display-5 ml-sm-5 ml-2">"Make it simple, but significant."</h4> -->
+                            <blockquote class="blockquote ml-sm-5 ml-2">
+                                <p class="mb-0">"Make it simple, but significant"</p>
+                                <footer class="blockquote-footer">Dan Draper <cite title="Mad Men">Mad Men</cite></footer>
+                            </blockquote>
+                        </div>
 
-                                <img src="assets/images/header-image.png" class="image-responsive w-100"  alt="">
-                            </div>
-                        <!-- </div> -->
-                    <!-- </div> -->
-                
-                </header>
-
-            <!-- </div>  -->
-            <!-- end nav col-xs-12 -->
-
-        <!-- </div>  -->
-        <!-- end nav conatiner row -->
-
-        <!-- <div class="row header">
-            <div class="col-xs-12">
-
-            </div>
-        </div>  -->
-        <!-- end header row -->
+                        <img src="assets/images/header-image.png" class="image-responsive w-100"  alt="">
+                    </div>
+                </header> <!-- end header row -->
 
         <div class="container-fluid"> <!-- main content row -->
 
             <!-- <div class="col-sm-12"> main content column -->
 
-                <div class="row row-flex px-0 px-sm-2 px-md-3 mb-0" id="button-main-background">  <!-- changed to row-flex -->
+                <main class="row row-flex px-0 px-sm-2 px-md-3 mb-0" id="button-main-background">  <!-- changed to row-flex -->
 
-        <!-- /////////////////////////////// -->
+                    <!-- /////////////////////////////// -->
 
-                    <div class="col-md-12 col-lg-6" id="accordion-col"> <!-- accordion column -->
+                    <section class="col-md-12 col-lg-6" id="accordion-col"> <!-- accordion column -->
 
                         <!-- start accordion -->
                         <div id="accordion">
@@ -667,12 +631,11 @@
                             
                         </div> <!-- end accordion  -->
 
-                    </div> <!-- end accordion column class="col-md-12 col-lg-6" -->
+                    </section> <!-- end accordion column class="col-md-12 col-lg-6" -->
 
-<!-- ///////////////////////////Worked out the issue with this block width and background//////////////////////////////// -->
                     
                     
-                    <div class="col-md-12 col-lg-6" id="button-output"> <!-- css and button display column -->
+                    <section class="col-md-12 col-lg-6" id="button-output"> <!-- css and button display column -->
 
                         <div class="row css-block-bg" > <!-- removed row from div class to fix width and background issue -->
 
@@ -704,20 +667,19 @@
                             </div> <!-- css output display -->
 
                         </div>
-                    </div> <!-- end css and button display column -->
+                    </section> <!-- end css and button display column -->
 
                    
 
-<!--  /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
-                </div> <!-- end the row with accordion and css display blocks/columns -->
+                </main> <!-- end the row with accordion and css display blocks/columns -->
 
             <!-- </div> end main content column -->
 
         </div> <!-- end main content row container-fluid -->
 
         <div class="container-fluid">
-            <div class="row row-flex instructions">
+            <section class="row row-flex instructions">
                 <div class="col-md-12 col-lg-4 px-0 mb-0">
                     <!-- <div class="row">
                         <div class="col-sm-12"> -->
@@ -788,7 +750,7 @@
                     </div> -->
                 </div>
 
-            </div> <!-- End row resources-->
+            </section> <!-- End row resources-->
         </div>
 
       
@@ -863,41 +825,41 @@
         <!-- <button class="btn btn-primary " type="button" data-bs-toggle="offcanvas" data-bs-target="#footer-offcanvas" aria-controls="offcanvasBottom">Toggle bottom offcanvas</button> -->
         <footer class="container-fluid">
         <!-- <div class="row row-flex footer pt-3">  -->
-        <div class="row row-flex footer pt-3"> 
-            <!-- Start Footer column  -->
-            <!-- <div class="col-sm-12"> Start Footer column -->
+            <div class="row row-flex footer pt-3"> 
+                <!-- Start Footer column  -->
+                <!-- <div class="col-sm-12"> Start Footer column -->
 
-                <div class="col-md-4 col-sm-12"></div>
-                <div class="col-md-4 col-sm-12">
-                    <p class="text-light bg-dark text-center">Daiden Sacha 2021</p>
-                </div>
-                <div class="col-md-4 col-sm-12 text-center">
-                    
-                    <ul class="ol social-links dl list-inline">
-                        <li class="list-inline-item">
-                           <a class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" id="toTopBtn" href="#" data-toggle="tooltip"  data-placement="top" title="To Top"><i class="fas fa-chevron-circle-up"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                           <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip" data-placement="top"  title="Github"><i class="fab fa-github"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                           <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank" data-toggle="tooltip" data-placement="top"  title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                           <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" data-toggle="tooltip" data-placement="top"  title="Codepen"><i class="fab fa-codepen"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                           <a class="" id="contactFtrToggle" data-target="#contactModal" data-toggle="modal" href=""  data-placement="top"  ><i class="far fa-envelope" data-toggle="tooltip" title="Message me"></i></a>
-                        </li>
-                     </ul>
+                    <div class="col-md-4 col-sm-12"></div>
+                    <div class="col-md-4 col-sm-12">
+                        <p class="text-light bg-dark text-center">Daiden Sacha 2021</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center">
+                        
+                        <ul class="ol social-links dl list-inline">
+                            <li class="list-inline-item">
+                            <a class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" id="toTopBtn" href="#" data-toggle="tooltip"  data-placement="top" title="To Top"><i class="fas fa-chevron-circle-up"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip" data-placement="top"  title="Github"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank" data-toggle="tooltip" data-placement="top"  title="Linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="" href="https://codepen.io/daidensacha/pens/"  target="_blank" data-toggle="tooltip" data-placement="top"  title="Codepen"><i class="fab fa-codepen"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="" id="contactFtrToggle" data-target="#contactModal" data-toggle="modal" href=""  data-placement="top"  ><i class="far fa-envelope" data-toggle="tooltip" title="Message me"></i></a>
+                            </li>
+                        </ul>
 
 
-                </div> 
+                    </div> 
 
-              
-            <!-- </div> End Footer column -->
-        </div> <!-- End Footer row -->
-    </footer>
+                
+                <!-- </div> End Footer column -->
+            </div> <!-- End Footer row -->
+        </footer>
 
     </div> <!-- end main container div -->
 

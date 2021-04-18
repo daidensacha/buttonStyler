@@ -279,7 +279,16 @@ NOTE: I had an issue with my background images not showing up. Initially, when I
 **CREDITS**
 
 * * *
-
+Thanks to the following resources for elements used in the making of this site.
+- [Built with Boostrap 4.6 framework](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [Bootstrap Offcanvas addapted from Bootstrap example](https://getbootstrap.com/docs/4.1/examples/offcanvas/)
+- [Close Navbar function - on click outside nav](https://stackoverflow.com/questions/57259093/how-do-i-outside-click-to-close-this-custom-offcanvas-nav-from-bootstraps-docs)
+- [Range selector with tooltip](https://css-tricks.com/value-bubbles-for-range-inputs/)
+- [Smooth scroll to top function](https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555)
+- [Bootstrap Slide Switch](https://gitbrent.github.io/bootstrap4-toggle/#usage)
+- [clipboard.js "copy to clipboard"](https://clipboardjs.com/) 
+- [Clipboard implementation script](https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa)
+- [emailjs](https://www.emailjs.com/) Function used to process the contact form was learned in Code Institute lesson, and expanded to add success error message to the form. 
 
 **NOTES:**
 

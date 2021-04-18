@@ -14,11 +14,7 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
 
-// .container-fluid {
-//   padding-left: 0!important;
-//   padding-right: 0!important;
-// }
-/* 
+/*
 ================================================================================ 
 =================================== BODY ======================================= 
 ================================================================================ 
@@ -67,36 +63,46 @@ main h2 {
 .highlight-color-green {
   color: #248547;
 }
+
 .highlight-color-red {
   color: #f20625;
 }
+
 .highlight-color-tan {
   color: #fce9b1;
 }
+
 .highlight-color-yellow {
   color: #9b7914;
 }
+
 .highlight-color-orange {
   color: #ba6f20;
 }
+
 .highlight-color-black {
   color: #070303;
 }
+
 .highlight-color-white {
   color: #fcfcfc;
 }
+
+/* Highlight background classes  */
 .highlight-bg-light {
   background: #f5f2f0;
   padding: .1em;
   border-radius: .3em;
   white-space: normal;
 }
+
 .highlight-bg-dark {
   background: #0c0b0a;
   padding: .1em;
   border-radius: .3em;
   white-space: normal;
 }
+
 .highlight-bg-blue {
   background: #14779b;
   padding: .1em;
@@ -120,14 +126,11 @@ main h2 {
     font-size: 24px;
 }
 
-
 .card-header {
-    /* background-color: #dad6c5 !important; */
     background-color: #fffefbf5 !important;
 }
 
 .card-body {
-    /* background-color: #0a5579; */
     background-color: #ffffff;
 }
 
@@ -141,9 +144,7 @@ main h2 {
 }
 
 .accordion-heading {
-    /* color: #dcd9a8; */
     color: #383836;
-    /* text-shadow: 1px 0 16px rgb(184, 181, 181); */
 }
 
 .form-control {
@@ -156,7 +157,6 @@ main h2 {
     background-color: #716d6d !important;
 }
 
-
 /* 
 ================================================================================ 
 ==================================== NAVBAR ==================================== 
@@ -164,7 +164,6 @@ main h2 {
 */
 /* Navbar and offcanbvas coutesy of Bootstrap example code */
 /************  Navbar ************/
-
 .navbar {
     background-color: #d39e00ab !important;
     border-bottom: 1px solid rgb(153, 153, 101);
@@ -176,8 +175,6 @@ main h2 {
 }
 
 /************  Offcanvas **********/
-
-
 #offCanvasLeft.offcanvas-collapse {
     position: fixed;
     top: 56px;
@@ -406,18 +403,14 @@ input::-moz-focus-outer {
   ================================ CSS CODE BLOCK =========================== */
 
 div#css-button {
-  /* height: 100px; */
   height: auto;
-  /* margin-bottom: 50px; */
-  /* padding-top: 50px; */
+
 }
 
 /*  CSS BUTTON */
 #css-button {
-  /* min-height: 200px; */
   background-color: rgba(223, 219, 211, 1);
   border-radius: 5px 5px 5px 5px;
-  // margin-right: 15px;
   z-index: 10;
 }
 
@@ -427,7 +420,6 @@ div#css-button {
   position: absolute;
   bottom: -38px;
   right: 0;
-  // width: 250px;
   width: 100%;
 }
 
@@ -449,7 +441,6 @@ pre.language-css {
 }
 
 /* Copy to clipboard button */
-
 .copy-code-button {
   top: 100px;
   min-height: 50%;
@@ -466,7 +457,6 @@ pre.language-css {
 #demo-button {
   margin-top: 65px;
   margin-bottom: 65px;
-  
 }
 
 .copyCss {
@@ -481,25 +471,6 @@ pre.language-css {
 .copyCss:focus {
   outline: 0 !important;
 }
-
-// .copy-code-button:hover {
-//   // i .copyCss:hover {
-//   cursor: pointer;
-//   color: #0faa06;
-//   /* background-color: #18b860; */
-// }
-
-//  .copy-code-button:focus { 
-//   /* Avoid an ugly focus outline on click in Chrome,
-//        but darken the button for accessibility.
-//        See https://stackoverflow.com/a/25298082/1481479 */
-//   // background-color: red;
-//   outline: 0 !important;
-// } 
-
-// .copy-code-button:active {
-//   //background-color: #775959;
-// }
 
 .bazinga pre {
   /* Avoid pushing up the copy buttons. */
@@ -547,7 +518,6 @@ div.footer {
   
   .social-links ul {
     margin-bottom: 0 !important;
-    /* display: inline-block; */
   }
   
   .social-links li {
@@ -572,16 +542,6 @@ div.footer {
   ============================== CONTACT FORM MODAL ============================== 
   ================================================================================ 
   */
-  
-  // body.modal-open .modal {
-    /* display: flex !important; */
-    /* height: 100%; */
-  //   top: 30%;
-  // }
-  
-  // body.modal-open .modal .modal-dialog {
-  //   margin: auto;
-  // }
   
   /* Equal column heights */
   

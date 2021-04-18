@@ -12,7 +12,7 @@ font-family: 'PT Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
-/* 
+/*
 ================================================================================ 
 =================================== BODY ======================================= 
 ================================================================================ 
@@ -85,6 +85,7 @@ main h2 {
   color: #fcfcfc;
 }
 
+/* Highlight background classes  */
 .highlight-bg-light {
   background: #f5f2f0;
   padding: 0.1em;
@@ -122,12 +123,10 @@ main h2 {
 }
 
 .card-header {
-  /* background-color: #dad6c5 !important; */
   background-color: #fffefbf5 !important;
 }
 
 .card-body {
-  /* background-color: #0a5579; */
   background-color: #ffffff;
 }
 
@@ -141,9 +140,7 @@ main h2 {
 }
 
 .accordion-heading {
-  /* color: #dcd9a8; */
   color: #383836;
-  /* text-shadow: 1px 0 16px rgb(184, 181, 181); */
 }
 
 .form-control {
@@ -382,15 +379,11 @@ input::-moz-focus-outer {
 /* 
   ================================ CSS CODE BLOCK =========================== */
 div#css-button {
-  /* height: 100px; */
   height: auto;
-  /* margin-bottom: 50px; */
-  /* padding-top: 50px; */
 }
 
 /*  CSS BUTTON */
 #css-button {
-  /* min-height: 200px; */
   background-color: #dfdbd3;
   border-radius: 5px 5px 5px 5px;
   z-index: 10;
@@ -499,7 +492,6 @@ div.footer {
 
 .social-links ul {
   margin-bottom: 0 !important;
-  /* display: inline-block; */
 }
 
 .social-links li {
@@ -524,8 +516,6 @@ div.footer {
 ============================== CONTACT FORM MODAL ============================== 
 ================================================================================ 
 */
-/* display: flex !important; */
-/* height: 100%; */
 /* Equal column heights */
 input#fname.form-control,
 input#lname.form-control,

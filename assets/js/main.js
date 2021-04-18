@@ -1,8 +1,8 @@
 
-// NAVBAR OFFCANVAS JS
+// NAVBAR OFFCANVAS JS - Solution forclosing the modal foudn on Stack Overflow
+// https://stackoverflow.com/questions/57259093/how-do-i-outside-click-to-close-this-custom-offcanvas-nav-from-bootstraps-docs
 $(function () {
     'use strict'
-  
     $(document)
       .on('click', '[data-toggle="offcanvas"], #navToggle', function(e) {
         $('.offcanvas-collapse').toggleClass('open'); // toggle `.open`
@@ -11,26 +11,17 @@ $(function () {
       .on('click', function() {
         $('.offcanvas-collapse').removeClass('open'); // remove `.open`
       });
-
-    //   $("contactToggle").on('click', function(){
-    //     $('#contactModal').modal('show');
-    //     });
   });
 
 // TOGGLE MODAL
 $(function() {
-    // executes when HTML-Document is loaded and DOM is ready
-    
-    // $('[data-toggle="offcanvas"], #navToggle').on('click', function () {
-    // $('#offCanvasLeft').toggleClass('open');
-    // });
-   
     $("contactToggle").on('click', function(){
     $('#contactModal').modal('show');
     });
 });
 
 // To top smooth scroll function
+// https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555
 $(document).ready(function() {
     $(window).scroll(function() {
     if ($(this).scrollTop() > 20) {
@@ -49,11 +40,11 @@ $(document).ready(function() {
     });
    
    
-window.onload = function() {
+// window.onload = function() {
 // executes when complete page is fully loaded, including all frames, objects and images
 //console.log("window is loaded");
 // window load  
-};
+// };
 
 // ==============  RANGE SLIDER ================================================
 // Range with tooltip
@@ -92,18 +83,6 @@ $(function () {
         }
     });
 });
-
-
-// function syncFieldsWithTheFieldsets() {
-//     document.querySelectorAll('fieldset').forEach((fieldsetEl) => {
-//         fieldsetEl.querySelectorAll('input, select, textarea, button').forEach((el) => {
-//             el.disabled = fieldsetEl.disabled;
-//         });
-//     });
-// }
-
-//  syncFieldsWithTheFieldsets()
-
 
 // This function enables and disables the box shadow group
 $(function () {

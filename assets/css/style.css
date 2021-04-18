@@ -164,7 +164,6 @@ header img {
 ================================================================================ 
 */
 /* Navbar and offcanbvas coutesy of Bootstrap example code */
-/************  Navbar ************/
 .navbar {
   background-color: #d39e00ab !important;
   border-bottom: 1px solid #999965;
@@ -581,6 +580,23 @@ textarea#message.form-control {
   color: #ffb24d;
   background: #9c23ae;
   border: 1px solid #ffb24d;
+}
+
+.btn-custom-3.btn {
+  font-family: "Montserrat", sans-serif;
+  color: #fcfee9;
+  font-size: 13px;
+  text-shadow: 1px 1px 2px black;
+  padding: 4px 16px;
+  border: 1px solid #72ae57;
+  border-radius: 5px;
+  background: #ac9e84;
+}
+
+.btn-custom-3.btn:hover {
+  color: #ffeac4;
+  background: #72ae57;
+  border: 1px solid #ac9e84;
 }
 
 /* 

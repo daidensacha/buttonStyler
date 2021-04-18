@@ -65,18 +65,29 @@
                             <div class="navbar-collapse offcanvas-collapse" id="offCanvasLeft">
                                 <h3 class="text-light pt-5">Resourses</h3>
                                 <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="#">Link <span class="sr-only"></span></a>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank">Bootstrap</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="https://gitbrent.github.io/bootstrap4-toggle/" target="_blank">Bootstrap 4 Toggle</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="https://jscolor.com/" target="_blank">jscolor Color Picker</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                        <a class="nav-link" href="https://www.w3schools.com/js/default.asp" target="_blank">w3schools</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="http://shoelace.io/" target="_blank">Shoelace Bootstrap Grids</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                                    </li>
+
+
                                     <!-- <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01"
                                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
@@ -101,8 +112,8 @@
                             <!-- Needt o work out the issue here with the overflow with the image when class row added to the div.-->
                             <div class="row row-flex" >
                                 <div class="col-sm-12">
-                                    <h1 class="d-none d-sm-block display-4 ml-sm-5 ml-2 header-heading">buttonStyler</h1>
-                                    <h1 class="d-block d-sm-none ml-sm-5 ml-2 header-heading">buttonStyler</h1>
+                                    <h1 class="d-none d-sm-block display-4 ml-sm-5 ml-2 mt-3 header-heading">buttonStyler</h1>
+                                    <h1 class="d-block d-sm-none ml-sm-5 ml-2 mt-3 header-heading">buttonStyler</h1>
                                     <!-- <h4 class="display-5 ml-sm-5 ml-2">"Make it simple, but significant."</h4> -->
                                     <blockquote class="blockquote ml-sm-5 ml-2">
                                         <p class="mb-0">"Make it simple, but significant"</p>
@@ -783,53 +794,54 @@
       
 
                 <!-- Modal Code -->
-        <div class="modal fade centered-modal" tabindex="-1" role="dialog" id="contactModal">
-            <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                        aria-hidden="true">&times;</span></button>
-                    
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Contact Form</h4>
-                    <form onsubmit="return sendMail(this);" name="contentForm" id="needs-validation" >
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="firstname" placeholder="First Name" required pattern="[a-zA-Z]{2,}">
-                            <div class="valid-feedback">Looks good!</div>
-                         
+        <!-- <div class="modal fade centered-modal" tabindex="-1" role="dialog" id="contactModal"> -->
+            <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                            
                         </div>
+                        <div class="modal-body">
+                            <h4 class="modal-title">Contact Form</h4>
+                            <form onsubmit="return sendMail(this);" name="contentForm" id="needs-validation" >
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="firstname" placeholder="First Name" required pattern="[a-zA-Z]{2,}">
+                                    <div class="valid-feedback">Looks good!</div>
+                                
+                                </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="lastname" placeholder="Last Name" required pattern="^[a-zA-Z]'?([a-zA-Z]|\.| |-)+$">
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required pattern="^[a-zA-Z]'?([a-zA-Z]|\.| |-)+$">
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
 
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" placeholder="Email" required > 
-                            <div class="valid-feedback">Looks good!</div>
-                        </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required > 
+                                    <div class="valid-feedback">Looks good!</div>
+                                </div>
 
-                        <div class="form-group">
-                            <textarea class="form-control" id="message" maxlength="2000" placeholder="Your message" required></textarea>
-                            <div class="valid-feedback">Looks good!</div>
-                            <span id="messageDiv" class=""></span>
-                        
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" maxlength="2000" placeholder="Your message" required></textarea>
+                                    <div class="valid-feedback">Looks good!</div>
+                                    <span id="messageDiv" class=""></span>
+                                
+                                </div>
+                                <div class="form-group"> 
+                                    <button type="submit" class="btn btn-custom-2" >Submit</button> 
+                                </div>
+                            </form>
                         </div>
-                        <div class="form-group"> 
-                            <button type="submit" class="btn btn-default" >Submit</button> 
-                        </div>
-                    </form>
-                </div>
-            <!--Modal Body-->
-            <div class="modal-footer">
-                <button type="button"
-                class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+                    <!--Modal Body-->
+                    <div class="modal-footer">
+                        <button type="button"
+                        class="btn btn-custom-2" data-dismiss="modal">Close</button>
+                    </div>
 
-            </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
 
             <!-- <script>
                 (function () {

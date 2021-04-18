@@ -524,16 +524,8 @@ div.footer {
 ============================== CONTACT FORM MODAL ============================== 
 ================================================================================ 
 */
-body.modal-open .modal {
-  /* display: flex !important; */
-  /* height: 100%; */
-  top: 30%;
-}
-
-body.modal-open .modal .modal-dialog {
-  margin: auto;
-}
-
+/* display: flex !important; */
+/* height: 100%; */
 /* Equal column heights */
 input#fname.form-control,
 input#lname.form-control,
@@ -560,6 +552,50 @@ textarea#message.form-control {
   background-color: #f0f0f0 !important;
 }
 
+/* 
+ ================================================================================ 
+ =================================== BUTTONS ================================== 
+ ================================================================================ 
+ */
+.btn-custom-1.btn {
+  font-family: "Abril Fatface", cursive;
+  color: #9c23ae;
+  font-size: 12px;
+  padding: 4px 10px;
+  border: 1px solid #9c23ae;
+  border-radius: 5px;
+  background: #ffb24d;
+}
+
+.btn-custom-1.btn:hover {
+  color: #ffb24d;
+  background: #9c23ae;
+  border: 1px solid #ffb24d;
+}
+
+.btn-custom-2.btn {
+  font-family: "Poppins", sans-serif;
+  color: #9c23ae;
+  font-size: 12px;
+  text-shadow: 1px 2px 2px rgba(6, 6, 6, 0.56);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.52);
+  padding: 4px 12px;
+  border: 1px solid #9c23ae;
+  border-radius: 6px;
+  background: #ffb24d;
+}
+
+.btn-custom-2.btn:hover {
+  color: #ffb24d;
+  background: #9c23ae;
+  border: 1px solid #ffb24d;
+}
+
+/* 
+================================================================================
+============================== DIRECTION SECTION =============================== 
+================================================================================ 
+*/
 /* ///////////////////// Flex columns experiement /////////////////////////// */
 /* display this row with flex and use wrap (= respect columns' widths) */
 .row-flex {

@@ -573,15 +573,15 @@ div.footer {
   ================================================================================ 
   */
   
-  body.modal-open .modal {
+  // body.modal-open .modal {
     /* display: flex !important; */
     /* height: 100%; */
-    top: 30%;
-  }
+  //   top: 30%;
+  // }
   
-  body.modal-open .modal .modal-dialog {
-    margin: auto;
-  }
+  // body.modal-open .modal .modal-dialog {
+  //   margin: auto;
+  // }
   
   /* Equal column heights */
   
@@ -610,7 +610,52 @@ div.footer {
     background-color: #f0f0f0 !important;
   }
 
-  /* ///////////////////// Flex columns experiement /////////////////////////// */
+ /* 
+  ================================================================================ 
+  =================================== BUTTONS ================================== 
+  ================================================================================ 
+  */
+                                          
+.btn-custom-1.btn {
+	font-family: 'Abril Fatface', cursive;
+	color: rgba(156,35,174,1);
+	font-size: 12px;
+	padding: 4px 10px;
+	border: 1px solid rgba(156,35,174,1);
+	border-radius: 5px;
+	background: rgba(255,178,77,1);
+}
+
+.btn-custom-1.btn:hover {
+	color: rgba(255,178,77,1);
+	background: rgba(156,35,174,1);
+	border: 1px solid rgba(255,178,77,1);
+}
+                                      
+.btn-custom-2.btn {
+	font-family: 'Poppins', sans-serif;
+	color: rgba(156,35,174,1);
+	font-size: 12px;
+	text-shadow: 1px 2px 2px rgba(6,6,6,0.56);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.52);
+	padding: 4px 12px;
+	border: 1px solid rgba(156,35,174,1);
+	border-radius: 6px;
+	background: rgba(255,178,77,1);
+}
+
+.btn-custom-2.btn:hover {
+	color: rgba(255,178,77,1);
+	background: rgba(156,35,174,1);
+	border: 1px solid rgba(255,178,77,1);
+}
+   
+/* 
+================================================================================
+============================== DIRECTION SECTION =============================== 
+================================================================================ 
+*/
+/* ///////////////////// Flex columns experiement /////////////////////////// */
 
 /* display this row with flex and use wrap (= respect columns' widths) */
 

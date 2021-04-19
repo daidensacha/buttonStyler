@@ -185,14 +185,18 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 - **User Stories**
     - The color pickers are easy to use, and the user can use the mouse cursor to select a color, or can enter HEX, HEXA, RGB, or RGBA color in the color picker input. 
     ![Color pickers](/assets/images/rm-colorpickers.png)
-	 -  Tested the color picker inputs to ensure that entering different color formats displays the entered preferred color.
+
+	- Tested the color picker inputs to ensure that entering different color formats displays the entered preferred color.
     - Changing the values of each of the form inputs and fieldsets changes the button's styling, and the CSS is output to the CSS display block. 
     ![Form UI and output](/assets/images/rm-form-ui-output.png)
 	- The user can select between differnet options, such as solid color or gradient color background.
+
 	![Gradient Color Pickers](/assets/images/rm-form-background.png)
+
 	- The user can also select the direction of the gradient.
+
 	![Gradient Direction](/assets/images/rm-form-gradient.png)
-	- Output of the gradient CSShas been written per the following example for a range of cross browser support.
+	- Output of the gradient CSS has been written per the following example for a range of cross browser support.
 	![CSS Gradient](/assets/images/rm-gradient-css.png)
 	`background-image: -webkit-linear-gradient... // For Chrome (v 10-25) and Safari(v 5.1-6)`
     `background-image: -moz-linear-gradient... // For Firefox(v 3.6-15)`
@@ -202,11 +206,13 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
   
   
   	- CSS is updated as the user changes the styles and is easily copied. Clicking on the copy icon highlights the copied CSS and displays a success message.
-  	![CSS Copied](/assets.images/rm-copied.png)
-    - I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user and enter copied button CSS to see the result. 
+  	![CSS Copied](/assets/images/rm-copied.png)
+    - I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user can enter copied button CSS to see the result. 
+
 	**i.** Click on the Copy to clipboard icon to copy the CSS
 	**ii.** A success message is shown "Bazinga! CSS copied." 
 	**iii.** Go to the Codepen, paste the button CSS into the CSS field. It's marked where to add it. The result is an exact replication of the button displayed in the buttonStyler. It works perfectly.
+
 	![Test CSS Codepen](/assets/images/test-css-codepen.png)
 
 - **Testing Environment**

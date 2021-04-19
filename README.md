@@ -66,13 +66,13 @@ Central to the site will be a playground of features to add styling to buttons.
     - **Footer** \- Simple Footer with the social links from the Navbar replicated, as above so below.
 - **Functional Requirements**
     
-    - **Color Pickers** \- Will open when clicked and will have an input so users can enter a specific color if they want or use the mouse cursor. Form inputs have set default values, so there is a designed button to start.
+    - **Color Pickers** \- Will open when clicked and will have an input so users can enter a specific color if they want. They can also use the mouse cursor to select a color. Form inputs have set default values, so there is a designed button to start.
     - **Range Selectors** \- The value will be displayed when the user changes it. As a guide, I will set default minimum and maximum values for different attributes for the user.
     - **Toggle Switches** \- Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
     - **Navbar** \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
     - **Copy to clipboard** \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
     - **Gradients** \- Users will be able to select colors to create gradients. A start color, end color, and a direction are required to compile CSS rules for cross-browser compatibility.
-    - **Contact form** \- Users can access the contact form from the Navbar or Footer. By clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
+    - **Contact form** \- Users can access the contact form from the Navbar or Footer. Clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
     - **Accordion** \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The Accordion will have one Form open at a time
     - **Demo button** \- The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
     - **CSS Output display** \- The CSS markup will be output into a display next to the Form and below the button.
@@ -183,13 +183,31 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 * * *
 
 - **User Stories**
-    
+    - The color pickers are easy to use, and the user can use the mouse cursor to select a color, or can enter HEX, HEXA, RGB, or RGBA color in the color picker input. 
+    ![Color pickers](/assets/images/rm-colorpickers.png)
+	 -  Tested the color picker inputs to ensure that entering different color formats displays the entered preferred color.
     - Changing the values of each of the form inputs and fieldsets changes the button's styling, and the CSS is output to the CSS display block. 
-    -  Tested the color picker inputs to ensure that entering different color formats displays the entered preferred color.
-    -  I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user and enter copied button CSS to see the result. 
+    ![Form UI and output](/assets/images/rm-form-ui-output.png)
+	- The user can select between differnet options, such as solid color or gradient color background.
+	![Gradient Color Pickers](/assets/images/rm-form-background.png)
+	- The user can also select the direction of the gradient.
+	![Gradient Direction](/assets/images/rm-form-gradient.png)
+	- Output of the gradient CSShas been written per the following example for a range of cross browser support.
+	![CSS Gradient](/assets/images/rm-gradient-css.png)
+	`background-image: -webkit-linear-gradient... // For Chrome (v 10-25) and Safari(v 5.1-6)`
+    `background-image: -moz-linear-gradient... // For Firefox(v 3.6-15)`
+    `background-image: -ms-linear-gradient... // For IE 10+`
+    `background-image: -o-linear-gradient... // For Opera(v 11.5)`
+    `background-image: linear-gradient... // For Google Chrome 25+, Mozilla Firefox 16+, Opera 15+, Safari 6.1+, IE 10+, iOS 7+, Android 4.4+`
+  
+  
+  	- CSS is updated as the user changes the styles and is easily copied. Clicking on the copy icon highlights the copied CSS and displays a success message.
+  	![CSS Copied](/assets.images/rm-copied.png)
+    - I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user and enter copied button CSS to see the result. 
 	**i.** Click on the Copy to clipboard icon to copy the CSS
 	**ii.** A success message is shown "Bazinga! CSS copied." 
 	**iii.** Go to the Codepen, paste the button CSS into the CSS field. It's marked where to add it. The result is an exact replication of the button displayed in the buttonStyler. It works perfectly.
+	![Test CSS Codepen](/assets/images/test-css-codepen.png)
 
 - **Testing Environment**
 I have two DELL U2419H monitors, so I can use one for the code editor and the second for displaying the work when I'm working. Together with Visual Studio Live Server, it allows me to check my work in real-time as I work. 
@@ -243,11 +261,11 @@ This project was my first genuine attempt at working with Javascript. I gave no 
     -  **Addendum**: I thought this was behind me until I ran my code through the validation. One warning was that I had used `input disabled= "true"`, so I changed it to the recommended `input disabled`. My problem came back with the color picker being disabled but popping up on click when disabled. It turned out that I had removed the disabled from one altogether and relied only on a fieldset group class name and jQuery to disable the group. When I added `input disabled` back in, it worked fine, so it was a relatively easy mistake to sort out.
 
 - **CSS Display Copy to clipboard** 
-I researched various options and concluded that clipboard.js was the best option due to cross-browser compatibility and functionality. Their website has clear documentation, and I also found a few other sources with examples showing how to implement the clipboard. 
-    - [add-buttons.js](https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa) I used this code and changed it to suit my needs. I added a text note with the `<i>`, and tooltip attributes, with font awesome copy icon using and this created the copy function. 
+I researched various options and chose clipboard.js due to cross-browser compatibility and functionality. Their website has clear documentation, and I also found a few other sources with examples showing how to implement clipboard.js. 
+    - [add-buttons.js](https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa) I used this code and changed it to suit my needs. I added a text node with the `<i>` element, tooltip attributes, and a font awesome copy icon. This added the copy function to the CSS block. 
     - [clipboard.js](https://clipboardjs.com) documentation shows how to handle the event and display the success message or error message. I tried this, but the copy message was gone in a flash and not user-friendly. I added a timeout, so it disappears after 2 seconds. I created class names for the success and error messages. I then added color to the class names with CSS, and when clicking the copy icon, the function adds the class name to the message display. 
 - **Git Version Control**
-`git status`, `git add .`, `git commit -m "" `, and `git push` was regularly used. I tried to use it as I worked with chunks, so the commits were my reference point if I want to go back and check something. For this project, especially when it came to developing the `form.js` to handle the form input data and output the CSS styles, I decided to create a branch so that if things went haywire, I had a place reserved to start from afresh. Create the branch `git checkout -b add-colorpickers`. It was my first time using this, and it went pretty seamlessly. When I finished and was happy, I sat on it for a few days, fearful of losing the work, not knowing what would happen when I merged it to the master. In the end, I bit the bullet, and Git did not complete the merge but displayed the files with "common code" and the "differences in code" from the two files, so I could choose what to merge and what not to. It was seamless, and I had no real issues. It was a good process, and the experience showed me how to use the git branch. There is a lot to learn, but it is brilliant how it works.  
+`git status`, `git add .`, `git commit -m "commit text" `, and `git push` was regularly used. I tried to use it as I worked with chunks, so the commits were my reference point if I want to go back and check something. For this project, especially when it came to developing the `form.js` to handle the form input data and output the CSS styles, I decided to create a branch so that if things went haywire, I had a place reserved to start from afresh. Create the branch `git checkout -b add-colorpickers`. It was my first time using this, and it went pretty seamlessly. When I finished and was happy, I sat on it for a few days, fearful of losing the work, not knowing what would happen when I merged it to the master. In the end, I bit the bullet, and Git did not complete the merge but displayed the files with "common code" and the "differences in code" from the two files, so I could choose what to merge and what not to. It was seamless, and I had no real issues. It was a good process, and the experience showed me how to use the git branch. There is a lot to learn, but it is brilliant how it works.  
 
 - [W3C HTML Validation](https://validator.w3.org/nu/): Passes W3C HTML validation.
 - [W3C CSS3 Validation](https://jigsaw.w3.org/css-validator/): Passes the W3C CSS3 validation.
@@ -276,19 +294,14 @@ I created the initial repository for this project in [GitHub Desktop](https://de
 
 NOTE: I had an issue with my background images not showing up. Initially, when I created my folders, I named the images folder "Images". GitHub is case sensitive, so it caused problems. In the end, I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, did my `git add .`, `git commit -m "fixing incorrect folder" name`, and `git push`. It was a small mistake and took a bit to sort out. 
 
+**Deployment Issues**
+Until deployment, my only real means of testing was on my local server using Chrome DevTools, Firefox dev tools, and Safari dev tools. On my local server, the site was viewing well; however, the live version on GitHub Pages was presenting an issue with margins and padding that was not showing on the locally served version. The site page had an overflow issue caused by using the Bootstrap helper class `px-0` on the `container-fluid` to remove margin on mobile devices. I moved the helper classes to the `row` element, and the issue was fixed. 
+I still had problems, though, with the site appearing to be served differently from my local server and the GitHub pages server. From this point, I worked with Chrome DevTools to identify needed changes, then implemented them locally, committed, and pushed them to the remote master repository. This is why, at the end of my project, there are so many commits. I stopped trusting the locally served version of the site and wanted to check it on the live version before proceeding. 
+
 **CREDITS**
 
 * * *
-Thanks to the following resources for elements used in the making of this site.
-- [Built with Boostrap 4.6 framework](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- [Bootstrap Offcanvas addapted from Bootstrap example](https://getbootstrap.com/docs/4.1/examples/offcanvas/)
-- [Close Navbar function - on click outside nav](https://stackoverflow.com/questions/57259093/how-do-i-outside-click-to-close-this-custom-offcanvas-nav-from-bootstraps-docs)
-- [Range selector with tooltip](https://css-tricks.com/value-bubbles-for-range-inputs/)
-- [Smooth scroll to top function](https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555)
-- [Bootstrap Slide Switch](https://gitbrent.github.io/bootstrap4-toggle/#usage)
-- [clipboard.js "copy to clipboard"](https://clipboardjs.com/) 
-- [Clipboard implementation script](https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa)
-- [emailjs](https://www.emailjs.com/) Function used to process the contact form was learned in Code Institute lesson, and expanded to add success error message to the form. 
+
 
 **NOTES:**
 

@@ -213,7 +213,7 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
   	- CSS is updated as the user changes the styles and is easily copied. Clicking on the copy icon highlights the copied CSS and displays a success message.
 
   	![CSS Copied](/assets/images/rm-copied.png)
-      
+
     - I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user can enter copied button CSS to see the result. 
 
 	    1. Click on the Copy to clipboard icon to copy the CSS.
@@ -314,8 +314,22 @@ I still had problems, though, with the site appearing to be served differently f
 **CREDITS**
 
 * * *
+Throughout my project, I was continually challenged to research and learn, to draw upon the vast treasure of experience so widely shared online to fill the gaps in my knowledge. I would like to thank and give recognition to the following resources that contributed to my project.
+- [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - I used 4.6 as 5.0 was still in alpha, and I didn't have time to waste on resolving issues that might otherwise be avoided. I continually returned to the documentation to research and look for options and solutions. Examples were used, i.e., the fixed navbar with the toggle and off-canvas was based on the [Bootstrap example code](https://getbootstrap.com/docs/4.1/examples/offcanvas/). 
+- [CSS Tricks Range range selector with tooltip](https://css-tricks.com/value-bubbles-for-range-inputs/) - I used this element in my forms, with minor changes to the CSS.
+- [BBBootstrap smooth scroll to top](https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555) - A simple but effective jQuery function to add smooth "scroll to top" when clicking on an icon in the footer.
+- [Stack Overflow solution for closing offcanvas](https://stackoverflow.com/questions/57259093/how-do-i-outside-click-to-close-this-custom-offcanvas-nav-from-bootstraps-docs) - Stack Overflow was a place I ended up a lot and found many answers, like this one that provided a solution for closing the off-canvas when clicking outside of it. 
+- [Bootstrap 4 Slide Switch](https://gitbrent.github.io/bootstrap4-toggle/#usage) - The API available on GitHub offered an out of the box solution for my toggle switches. 
+- [jscolor color picker](https://jscolor.com/) - The website has many examples showing various implementations of the color picker. The color picker used in this site works perfectly.
+- [clipboard.js](https://clipboardjs.com/) - Very useful information on their website, and along with other resources online such as [this script](https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa) provided me with sufficient information to implement it in my site. My function was based on resources from both these links and customised to suit my needs. 
+- [Deposit Photos](https://depositphotos.com/?admitad_uid=Cj0KCQjw1PSDBhDbARIsAPeTqrf7b1JmJYBCrfkdmwbtqQKsrne1ubak8k-HJDV9CSEhsP3YzDp83NMaAnIAEALw_wcB&utm_source=admitad&utm_medium=cpa&utm_campaign=1253026&gclid=Cj0KCQjw1PSDBhDbARIsAPeTqrf7b1JmJYBCrfkdmwbtqQKsrne1ubak8k-HJDV9CSEhsP3YzDp83NMaAnIAEALw_wcB) - The header image was created from a vector image that I purchased from Deposit Photos. 
+- [Font Awesome](https://fontawesome.com/start) - Icons are from Font Awesome.
+- [Google Fonts](https://fonts.google.com/) - A selection of fonts was chosen from Google Fonts to be used in the buttonStyler font-family selector. 
+
 
 
 **NOTES:**
 
 * * *
+
+It has been a process to learn and develop this application. I had to use and implement many features that I have not used before. It is my first real attempt at using Javascript and jQuery, so at times I felt totally out of my depth. That said, I learned a lot and already viewed my work with a critical eye and ideas on what I can improve and do better. That will be in a future project when I rebuild this with the wisdom of hindsight. 

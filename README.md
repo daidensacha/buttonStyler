@@ -209,9 +209,9 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
   	![CSS Copied](/assets/images/rm-copied.png)
     - I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user can enter copied button CSS to see the result. 
 
-	**i.** Click on the Copy to clipboard icon to copy the CSS
-	**ii.** A success message is shown "Bazinga! CSS copied." 
-	**iii.** Go to the Codepen, paste the button CSS into the CSS field. It's marked where to add it. The result is an exact replication of the button displayed in the buttonStyler. It works perfectly.
+	      **i.** Click on the Copy to clipboard icon to copy the CSS.
+	      **ii.** A success message is shown "Bazinga! CSS copied." 
+	      **iii.** Go to the Codepen, paste the button CSS into the CSS field. It's marked where to add it. The result is an exact replication of the button displayed in the buttonStyler. It works perfectly.
 
 	![Test CSS Codepen](/assets/images/test-css-codepen.png)
 

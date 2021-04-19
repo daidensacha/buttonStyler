@@ -49,15 +49,15 @@ $(document).ready(function() {
 // ==============  RANGE SLIDER ================================================
 // Range with tooltip
 // https://css-tricks.com/value-bubbles-for-range-inputs/
-var rangeSlider = function () {
-    var slider = $('.range-slider'),
+let rangeSlider = function () {
+    let slider = $('.range-slider'),
         range = $('.range-slider__range'),
         value = $('.range-slider__value');
 
     slider.each(function () {
 
         value.each(function () {
-            var value = $(this).prev().attr('value');
+            let value = $(this).prev().attr('value');
             $(this).html(value);
         });
 
@@ -167,16 +167,16 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
     clipMessage.setAttribute('id', 'copied');
 
     // Create the element to hold the icon and message span
-    var button = document.createElement('span');
+    let button = document.createElement('span');
     button.className = 'copy-code-button';
     button.type = 'link';
     button.appendChild(iconClipboard);
     button.appendChild(clipMessage);
 
     // button.innerHTML = "copyIcon";
-    var pre = codeBlock.parentNode;
+    let pre = codeBlock.parentNode;
     if (pre.parentNode.classList.contains('bazinga')) {
-        var bazinga = pre.parentNode;
+        let bazinga = pre.parentNode;
         bazinga.parentNode.insertBefore(button, bazinga);
     } else {
         pre.parentNode.insertBefore(button, pre);
@@ -184,7 +184,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 });
 ////////////////////////////// UNUSED VARIABLE ///////////////////////////////// target
 // Function copies CSS output on click of the clipboard icon
-var clipboard = new ClipboardJS('.copy-code-button', {
+let clipboard = new ClipboardJS('.copy-code-button', {
     target: function (trigger) {
         let target = document.querySelector("#cssContainer");
    

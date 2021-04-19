@@ -1,7 +1,7 @@
 function sendMail(contactForm) {
     emailjs.init("user_Rov9gjpSQq0YevOi1PrAF");
     
-    var templateParams = {
+    let templateParams = {
         "first_name": contactForm.firstname.value,
         "last_name": contactForm.lastname.value,
         "from_email": contactForm.email.value,

@@ -127,7 +127,11 @@ function update() {
     // =======================Set the text of the button========================
     styleText.addEventListener('keyup', setText);
     function setText() {
-        demoButton.innerText = styleText.value;
+        if (styleText.value == "") {
+            demoButton.innerText = "Bazinga";
+        } else {
+            demoButton.innerText = styleText.value;
+        }
     }
 
     // ========================CSS VARIABLES AND STRINGS========================

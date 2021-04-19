@@ -232,10 +232,12 @@ clipboard.on('error', function (e) {
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip({
+        trigger: 'hover',
         delay: {
             show: 500,
-            hide: 100
-        }
+            // hide: 100
+        },
+        hide: 100
     });
 });
 

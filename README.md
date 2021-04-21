@@ -122,9 +122,9 @@ Central to the site will be a playground of features to add styling to buttons.
 - **Wireframing:**
     As I'm be using Bootstrap, I created the wireframes with the Bootstrap breakpoints in mind for small, medium, and large screens. The header row will have a responsive background image. Next comes the row with form block and CSS display block. Followed then by a content block and then the Footer.
     I put the contact form in the Footer in the wireframes. However, in the end, I decided to put it in a modal that opens when you click on the email icon. 
-    I combined the three separate wireframes into one image for the README as seeing them side by side gives a better perspective of the scale of difference between the different size screens. The original size wireframes are available for viewing in the assets/images folder. 
+    I combined the three separate wireframes into one image for the README as seeing them side by side gives a better perspective of the scale of difference between the different size screens. The original size wireframes are available for viewing in the folder path: assets/documentation/images/wireframes/. 
  
-![Wireframes](assets/images/wireframes.png)
+![Wireframes](assets/documentation/images/wireframes/wireframes.png)
 
 ### 5\. Surface
 
@@ -185,24 +185,24 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 - **User Stories**
     - The color pickers are easy to use, and the user can use the mouse cursor to select a color, or can enter HEX, HEXA, RGB, or RGBA color in the color picker input. 
 
-    ![Color pickers](/assets/images/rm-colorpickers.png)
+    ![Color pickers](/assets/documentation/images/screenshots/rm-colorpickers.png)
 
 	- Tested the color picker inputs to ensure that entering different color formats displays the entered preferred color.
     - Changing the values of each of the form inputs and fieldsets changes the button's styling, and the CSS is output to the CSS display block. 
 
-    ![Form UI and output](/assets/images/rm-form-ui-output.png)
+    ![Form UI and output](/assets/documentation/images/screenshots/rm-form-ui-output.png)
 
 	- The user can select between differnet options, such as solid color or gradient color background.
 
-	![Gradient Color Pickers](/assets/images/rm-form-background.png)
+	![Gradient Color Pickers](/assets/documentation/images/screenshots/rm-form-background.png)
 
 	- The user can also select the direction of the gradient.
 
-	![Gradient Direction](/assets/images/rm-form-gradient.png)
+	![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.png)
 
 	- Output of the gradient CSS has been written per the following example for a range of cross browser support.
 
-	![CSS Gradient](/assets/images/rm-gradient-css.png)
+	![CSS Gradient](/assets/documentation/images/screenshots/rm-gradient-css.png)
 	`background-image: -webkit-linear-gradient... // For Chrome (v 10-25) and Safari(v 5.1-6)`
     `background-image: -moz-linear-gradient... // For Firefox(v 3.6-15)`
     `background-image: -ms-linear-gradient... // For IE 10+`
@@ -212,7 +212,7 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
   
   	- CSS is updated as the user changes the styles and is easily copied. Clicking on the copy icon highlights the copied CSS and displays a success message.
 
-  	![CSS Copied](/assets/images/rm-copied.png)
+  	![CSS Copied](/assets/documentation/images/screenshots/rm-copied.png)
 
     - I created a [Codepen](https://codepen.io/daidensacha/pen/oNBqJoR) for this next test,  where the user can enter copied button CSS to see the result. 
 
@@ -220,7 +220,7 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 	    2. A success message is shown "Bazinga! CSS copied." 
 	    3. Go to the Codepen, paste the button CSS into the CSS field. It's marked where to add it. The result is an exact replication of the button displayed in the buttonStyler. It works perfectly.
 
-	![Test CSS Codepen](/assets/images/test-css-codepen.png)
+	![Test CSS Codepen](/assets/documentation/images/screenshots/test-css-codepen.png)
 
 - **Testing Environment**
 I have two DELL U2419H monitors, so I can use one for the code editor and the second for displaying the work when I'm working. Together with Visual Studio Live Server, it allows me to check my work in real-time as I work. 
@@ -303,7 +303,7 @@ I created the initial repository for this project in [GitHub Desktop](https://de
 1. Click `Settings` on the repository page.
 2. Click on the GitHub Pages tab to the left. 
 3. Under source, click the dropdown, select `master`, or the branch of your choice. 
-4. Click save, and the message shows, "Your site is ready to be published at https://daidensacha.github.io/ButtonStyler/".
+4. Click save, and the message shows, "Your site is ready to be published at https://daidensacha.github.io/buttonStyler/".
 
 NOTE: I had an issue with my background images not showing up. Initially, when I created my folders, I named the images folder "Images". GitHub is case sensitive, so it caused problems. In the end, I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, did my `git add .`, `git commit -m "fixing incorrect folder" name`, and `git push`. It was a small mistake and took a bit to sort out. 
 

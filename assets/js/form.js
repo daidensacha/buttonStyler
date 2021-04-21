@@ -128,7 +128,7 @@ function update() {
     styleText.addEventListener('keyup', setText);
     function setText() {
         if (styleText.value == "") {
-            demoButton.innerText = "Bazinga";
+            demoButton.innerText = "My Button"; // Ensures an empty field is not an acceptable value
         } else {
             demoButton.innerText = styleText.value;
         }

@@ -160,8 +160,8 @@ header img {
 
 #required-message {
   position: absolute;
-  top: -30px;
-  left: 10px;
+  bottom: -1.6em;
+  left: 0.8rem;
 }
 
 .show-error {

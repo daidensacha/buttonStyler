@@ -135,7 +135,7 @@ function update() {
         errorSpan.innerText = "Enter 3-16 letters only";
         if (btnText == "" | btnText.length < 3 | isOk == false) {
             errorSpan.className = "show-error"; // Adds error class with css fade in
-            demoButton.innerText = "My Button"; // Ensures an empty field is not an acceptable value
+            demoButton.innerText = "My Button"; // Keeps default value if value invalid
             setTimeout(() => {
                 errorSpan.className = "hide-error"; // Adds error class with css fade out
             }, 3000);

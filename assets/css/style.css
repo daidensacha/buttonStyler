@@ -158,6 +158,26 @@ header img {
   background-color: #716d6d !important;
 }
 
+#required-message {
+  position: absolute;
+  top: -30px;
+  left: 10px;
+}
+
+.show-error {
+  color: red;
+  opacity: 1;
+  transition-duration: 2.7s;
+  transition-property: opacity;
+}
+
+.hide-error {
+  color: red;
+  opacity: 0;
+  transition-duration: 0.7s;
+  transition-property: opacity;
+}
+
 /* 
 ================================================================================ 
 ==================================== NAVBAR ==================================== 

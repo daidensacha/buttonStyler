@@ -124,13 +124,23 @@ function update() {
     ////////////////////////////////////////////////////////////////////////////
 
     //
-    // =======================Set the text of the button========================
+    // ============= Validate text and set the text of the button ==============
+    // 
     styleText.addEventListener('keyup', setText);
     function setText() {
-        if (styleText.value == "") {
+        let re = /^[a-zA-Z ]{3,16}$/; // Regex validate input text
+        let btnText = styleText.value;
+        let isOk = re.test(btnText);
+        let errorSpan = document.querySelector("#required-message");
+        errorSpan.innerText = "Enter 3-16 letters only";
+        if (btnText == "" | btnText.length < 3 | isOk == false) {
+            errorSpan.className = "show-error"; // Adds error class with css fade in
             demoButton.innerText = "My Button"; // Ensures an empty field is not an acceptable value
+            setTimeout(() => {
+                errorSpan.className = "hide-error"; // Adds error class with css fade out
+            }, 3000);
         } else {
-            demoButton.innerText = styleText.value;
+            demoButton.innerText = btnText;
         }
     }
 

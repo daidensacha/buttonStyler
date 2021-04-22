@@ -223,7 +223,7 @@ I put the contact form in the Footer in the wireframes. However, in the end, I d
 
 I combined the three separate wireframes into one image for the README as seeing them side by side gives a better perspective of the scale of difference between the different size screens. The original size wireframes are available for viewing in the assets/images folder.
 
-![Wireframes](assets/images/wireframes.png)
+![Wireframes](assets/documentation/images/wireframes/wireframes.png)
 
   
 
@@ -414,11 +414,15 @@ When I click anywhere other than on a link, the offcanvas closes.
 - Select
 	-	I click on the font-family select, choose a font, and the font in the demo button changes immediately. The font-family displayed in the CSS display block is also updated at the same time.
 	-	When I click on the "select direction" for the gradient background and select a different direction, the gradient direction changes accordingly, and the changed CSS rule is also output to the CSS output block. This meets an outline need in the user stories for all users to see what how syles work, what effect they have, and also see the CSS and out it is written. 
+
 ![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.png)
+
 - Color input
 	-   I click on the color input, the color picker popup appears. I selected a color with the mouse cursor, the color changes in the demo button display and the color RGBA value is displayed in the CSS Output block. 
 	-   In the developer user stories, I identified the need for the developer to be able to enter specific colors for button values. In the color picker input I added different values, HEX, HEXA, RGB, and RGBA. The color in the color picker immediately changes to the color that was entered. This confirms the color pickers accept different color formats, and meets the need of the developer. 
+
 ![Color pickers](/assets/documentation/images/screenshots/rm-colorpickers.png)
+
 - Range selector
 	- I clicked on font change range selector handle, dragged it and the value changed, immmediately increasing the font size in the demo button. 
 - Toggle switch
@@ -434,8 +438,11 @@ When I scroll the button disappears off screen. I added the boostrap sticky-top 
 
 **Copy to clipboard function**
 In the user stories I identified the users need to be able to easily copy the CSS style. I added an icon to the top of the CSS output block, and implemented clipboad.js. When I click on the icon, a message appears confirming the copy success, and at the same time, the CSS is highlighted. I created a codepen where the user can paste the CSS to see it work, and the link to the codepen is under the CSS block highlighted under the heading "Copy the CSS". Pasting the CSS in the codepen creates an exact copy of the button that was ceated using the Button Styler. 
+
 ![CSS Copied](/assets/documentation/images/screenshots/rm-copied.png)
+
 In user stories I identified the need to be able to easily copy the CSS to be able to use it. Users can copy easily, as shown in the image above. Thez can then test the code in a codepen I created. Users can paste the CSS into the codepen, (link below the CSS dsiplay block) and see it work. 
+
 ![Codepen for users to paste the CSS from their button style to test it and see it works.](/assets/documentation/images/screenshots/test-css-codepen.png)
 
 **Demo button Styles**

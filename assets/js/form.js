@@ -134,10 +134,10 @@ function update() {
         let errorSpan = document.querySelector("#required-message");
         errorSpan.innerText = "Enter 3-16 letters only";
         if (btnText == "" | btnText.length < 3 | isOk == false) {
-            errorSpan.className = "show-error"; // Adds error class with css fade in
+            errorSpan.className = "show-span"; // Adds error class with css fade in
             demoButton.innerText = "My Button"; // Keeps default value if value invalid
             setTimeout(() => {
-                errorSpan.className = "hide-error"; // Adds error class with css fade out
+                errorSpan.className = "hide-span"; // Adds error class with css fade out
             }, 3000);
         } else {
             demoButton.innerText = btnText;

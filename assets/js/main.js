@@ -163,7 +163,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
     // Create the success/ error message span
     let clipMessage = document.createElement("span");
-    clipMessage.className = "ml-3";
+    clipMessage.className = "ml-3 hide-fadeout";
     clipMessage.setAttribute('id', 'copied');
 
     // Create the element to hold the icon and message span
@@ -200,12 +200,14 @@ let cssContainer = document.querySelector("#cssContainer");
 
 // Function to display success message
 clipboard.on('success', function (e) {
-    cssContainer.className = "copyHighlight";
-    copied.className = "successMsg";
+    cssContainer.className = "show-fadein copyHighlight";
+    // copied.className = "successMsg";
+    copied.className = "show-fadein successMsg";
     copied.innerHTML = "Bazinga, CSS copied!";
     setTimeout(() => {
         cssContainer.className = "language-css";
-        copied.className = "";
+        // copied.className = "";
+        copied.className = "hide-fadeout";
         copied.innerHTML = ""; // removes the message
     }, 2000);
     // console.info('Action:', e.action);

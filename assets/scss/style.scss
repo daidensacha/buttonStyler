@@ -14,11 +14,20 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Tajawal', sans-serif;
 */
 
+// Element Colors
+$instructions-h3: #b4e826;
+//Color variables
+
+$color-orange: #fccb70;
+
 /*
 ================================================================================ 
 =================================== BODY ======================================= 
 ================================================================================ 
 */
+
+
+
 
 body {
     padding-top: 56px;
@@ -309,7 +318,7 @@ header img {
 
 .range-slider__range {
     -webkit-appearance: none;
-    width: calc(100% - (73px));
+    width: calc(100% - (74px));
     height: 20px;
     border-radius: 5px;
     /*   background: #d7dcdf; */
@@ -491,6 +500,18 @@ pre.language-css {
   background-color: rgba(22, 118, 207, 0.33);
 }
 
+.show-fadein {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+.hide-fadeout {
+  opacity: 0;
+  transition-duration: 2s;
+  transition-property: opacity;
+}
+
 /* Error message class for unsuccesful clipboard copy */
 .errorMsg {
   color: red;
@@ -508,8 +529,8 @@ pre.language-css {
 ================================================================================ 
 */
 
-.content h3 {
-  color: #fccb70;
+.instructions .content h3 {
+  color: $instructions-h3;
 }
 
 .content {

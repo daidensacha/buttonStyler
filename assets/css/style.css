@@ -301,7 +301,7 @@ header img {
 
 .range-slider__range {
   -webkit-appearance: none;
-  width: calc(99% - (73px));
+  width: calc(100% - (74px));
   height: 20px;
   border-radius: 5px;
   /*   background: #d7dcdf; */

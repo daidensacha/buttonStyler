@@ -201,12 +201,10 @@ let cssContainer = document.querySelector("#cssContainer");
 // Function to display success message
 clipboard.on('success', function (e) {
     cssContainer.className = "show-fadein copyHighlight";
-    // copied.className = "successMsg";
     copied.className = "show-fadein successMsg";
     copied.innerHTML = "Bazinga, CSS copied!";
     setTimeout(() => {
         cssContainer.className = "language-css";
-        // copied.className = "";
         copied.className = "hide-fadeout";
         copied.innerHTML = ""; // removes the message
     }, 2000);
@@ -219,10 +217,10 @@ clipboard.on('success', function (e) {
 
 // Prints the error message if the copy doesn't work.
 clipboard.on('error', function (e) {
-    copied.className = "errorMsg"; // Add class to message span to change color of message to red
+    copied.className = "show-fadein errorMsg"; // Add class to message span to change color of message to red
     copied.innerHTML = "Oops, that didn't copy!";
     setTimeout(() => {
-        copied.className = ""; // removes the class and message
+        copied.className = "hide-fadeout"; // removes the class and message
         copied.innerHTML = "";
     }, 2000);
 

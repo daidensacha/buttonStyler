@@ -93,69 +93,69 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Required Features**
 
--  **Color picker feature**  \- Users can select colors for the different attributes of the button.
+  -  **Color picker feature**  \- Users can select colors for the different attributes of the button.
 
--  **Color Format**  \- Users will be able to enter the color in a text input, in preferred format HEX, RGB/A, HSL/A.
+  -  **Color Format**  \- Users will be able to enter the color in a text input, in preferred format HEX, RGB/A, HSL/A.
 
--  **Range Selector**  \- For selecting the size, pixels, distance, etc.
+  -  **Range Selector**  \- For selecting the size, pixels, distance, etc.
 
--  **Toggle Switch**  \- A converted checkbox displayed as a toggle switch for enabling or disabling form fields.
+  -  **Toggle Switch**  \- A converted checkbox displayed as a toggle switch for enabling or disabling form fields.
 
--  **Gradient Selector**  \- Gradients are becoming the norm, supported in all modern browsers. A feature is needed for users to choose gradients.
+  -  **Gradient Selector**  \- Gradients are becoming the norm, supported in all modern browsers. A feature is needed for users to choose gradients.
 
--  **Social Icons**  \- The icons will link to my GitHub, Codepen, and Linkedin profiles.
+  -  **Social Icons**  \- The icons will link to my GitHub, Codepen, and Linkedin profiles.
 
--  **Contact Form**  \- Users can contact me by using the contact form.
+  -  **Contact Form**  \- Users can contact me by using the contact form.
 
--  **Modal**  \- The Modal will be for the contact form so I can keep the site to one page.
+  -  **Modal**  \- The Modal will be for the contact form so I can keep the site to one page.
 
--  **Navbar**  \- Navabar will house the social icons.
+  -  **Navbar**  \- Navabar will house the social icons.
 
--  **Offcanvas navbar**  \- An off-canvas that can be toggled open at any time, not only for small screens.
+  -  **Offcanvas navbar**  \- An off-canvas that can be toggled open at any time, not only for small screens.
 
--  **Accordion**  \- It will have forms of inputs grouped so that users can style the demo button.
+  -  **Accordion**  \- It will have forms of inputs grouped so that users can style the demo button.
 
--  **Demo button**  \- A demo button to show the styling results visually.
+  -  **Demo button**  \- A demo button to show the styling results visually.
 
--  **CSS display**  \- An CSS output display that will update as the user styles the button.
+  -  **CSS display**  \- An CSS output display that will update as the user styles the button.
 
--  **Copy to clipboard**  \- A button for users to copy the CSS style.
+  -  **Copy to clipboard**  \- A button for users to copy the CSS style.
 
--  **Footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
+  -  **Footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
 
 -  **Functional Requirements**
 
--  **Color Pickers**  \- Will open when clicked and will have an input so users can enter a specific color if they want. They can also use the mouse cursor to select a color. Form inputs have set default values, so there is a designed button to start.
+  -  **Color Pickers**  \- Will open when clicked and will have an input so users can enter a specific color if they want. They can also use the mouse cursor to select a color. Form inputs have set default values, so there is a designed button to start.
 
--  **Range Selectors**  \- The value will be displayed when the user changes it. As a guide, I will set default minimum and maximum values for different attributes for the user.
+  -  **Range Selectors**  \- The value will be displayed when the user changes it. As a guide, I will set default minimum and maximum values for different attributes for the user.
 
--  **Toggle Switches**  \- Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
+  -  **Toggle Switches**  \- Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
 
--  **Navbar**  \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
+  -  **Navbar**  \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
 
--  **Copy to clipboard**  \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
+  -  **Copy to clipboard**  \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
 
--  **Gradients**  \- Users will be able to select colors to create gradients. A start color, end color, and a direction are required to compile CSS rules for cross-browser compatibility.
+  -  **Gradients**  \- Users will be able to select colors to create gradients. A start color, end color, and a direction are required to compile CSS rules for cross-browser compatibility.
 
--  **Contact form**  \- Users can access the contact form from the Navbar or Footer. Clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
+  -  **Contact form**  \- Users can access the contact form from the Navbar or Footer. Clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
 
--  **Accordion**  \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The accordion will have one Form open at a time
+  -  **Accordion**  \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The accordion will have one Form open at a time
 
--  **Demo button**  \- The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
+  -  **Demo button**  \- The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
 
--  **CSS Output display**  \- The CSS markup will be output into a display next to the Form and below the button.
+  -  **CSS Output display**  \- The CSS markup will be output into a display next to the Form and below the button.
 
 -  **Content Requirements**
 
--  **Single page site**  \- Keeping it simple with a one-page site, not overcooked with content. The button styling will be the central focus.
+  -  **Single page site**  \- Keeping it simple with a one-page site, not overcooked with content. The button styling will be the central focus.
 
--  **Bling**  \- There will be a full-width banner image to welcome the site user.
+  -  **Bling**  \- There will be a full-width banner image to welcome the site user.
 
--  **Forms within the accordion**  \- Inputs grouped by CSS rule into fieldsets, laid out sequentially so users can intuitively work through them.
+  -  **Forms within the accordion**  \- Inputs grouped by CSS rule into fieldsets, laid out sequentially so users can intuitively work through them.
 
--  **CSS Markup Block**  \- A block within `<pre><code></code></pre>` tags to display the CSS output from selected CSS rules.
+  -  **CSS Markup Block**  \- A block within `<pre><code></code></pre>` tags to display the CSS output from selected CSS rules.
 
--  **Instructions**  \- Simple instructions for users, explaining how easy it is to create, copy, and use the style creator.
+  -  **Instructions**  \- Simple instructions for users, explaining how easy it is to create, copy, and use the style creator.
 
   
 

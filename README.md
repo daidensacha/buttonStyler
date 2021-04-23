@@ -550,7 +550,7 @@ Having the site live enables me to dive deeper into testing and expose it to ext
 - iPad Air
 - iPhone 11 Pro
   
-**Issue 1 - No images****  	
+**Issue 1 - No images**  
 I had an issue with my background images not showing up. When I created my site folders, I mistakingly named the images folder "Images". All my image links were to the "images" folder, and I don't know why, but Chome on my local server was forgiving and displayed my images. GitHub, on the other hand, is a little more pedantic. The website images were not showing.
 It was a little complicated. I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, moved images into it.
 
@@ -583,7 +583,7 @@ I became aware that when clicking in the text input and pressing delete, the dem
 
 ### Feedback
 
-**Jürgen Jung**** - *Software Engineer*  
+**Jürgen Jung** - *Software Engineer*  
 I gave the link to Jürgen so he could test the button styler and get his feedback. The feedback was positive. He used it to create a button, copied it using the Copy to clipboard, and pasted it into the codepen. He said it functions well, and it inspired him to learn more HTML and CSS.
 
 **Jan Odvárko** - *Developer: jscolor*  

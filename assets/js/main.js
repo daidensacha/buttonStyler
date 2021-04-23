@@ -2,7 +2,7 @@
 // NAVBAR OFFCANVAS JS - Solution forclosing the modal foudn on Stack Overflow
 // https://stackoverflow.com/questions/57259093/how-do-i-outside-click-to-close-this-custom-offcanvas-nav-from-bootstraps-docs
 $(function () {
-    'use strict'
+    'use strict';
     $(document)
       .on('click', '[data-toggle="offcanvas"], #navToggle', function(e) {
         $('.offcanvas-collapse').toggleClass('open'); // toggle `.open`
@@ -38,13 +38,6 @@ $(document).ready(function() {
     return false;
     });
     });
-   
-   
-// window.onload = function() {
-// executes when complete page is fully loaded, including all frames, objects and images
-//console.log("window is loaded");
-// window load  
-// };
 
 // ==============  RANGE SLIDER ================================================
 // Range with tooltip
@@ -182,7 +175,6 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
         pre.parentNode.insertBefore(button, pre);
     }
 });
-////////////////////////////// UNUSED VARIABLE ///////////////////////////////// target
 // Function copies CSS output on click of the clipboard icon
 let clipboard = new ClipboardJS('.copy-code-button', {
     target: function (trigger) {
@@ -208,9 +200,6 @@ clipboard.on('success', function (e) {
         copied.className = "hide-fadeout";
         copied.innerHTML = ""; // removes the message
     }, 2000);
-    // console.info('Action:', e.action);
-    // console.info('Text:', e.text);
-    // console.info('Trigger:', e.trigger);
 
     e.clearSelection();
 });
@@ -224,8 +213,6 @@ clipboard.on('error', function (e) {
         copied.innerHTML = "";
     }, 2000);
 
-    // console.error('Action:', e.action);
-    // console.error('Trigger:', e.trigger);
 });
 
 // ========================= Initialise tooltips ===============================

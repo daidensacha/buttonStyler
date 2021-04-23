@@ -133,7 +133,7 @@ function update() {
         let isOk = re.test(btnText);
         let errorSpan = document.querySelector("#required-message");
         errorSpan.innerText = "Enter 3-16 letters only";
-        if (btnText == "" | btnText.length < 3 | isOk == false) {
+        if (btnText == "" || btnText.length < 3 || isOk == false) {
             errorSpan.className = "show-span"; // Adds error class with css fade in
             demoButton.innerText = "My Button"; // Keeps default value if value invalid
             setTimeout(() => {
@@ -193,11 +193,6 @@ function update() {
     let closeTag =      "}";
     let hoverOpenTag = `\n#demo-button.btn:hover {`;
     let hoverCloseTag = `}`;
-
-    // Fieldset variables
-    //let shadowFieldset = document.querySelector("#text-shadow-fieldset");
-    //let boxShadowFieldset = document.querySelector("#shadow-fieldset");
-    //let paddingFieldset = document.querySelector("#padding-fieldset");
 
     // CREATE THE ARRAY TO HOLD THE CSS VARIABLES
     let lines = []; // lines of CSS rules

@@ -215,7 +215,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
   
 
--  **Wireframing:**
+**Wireframing:**
 
 As I'm be using Bootstrap, I created the wireframes with the Bootstrap breakpoints in mind for small, medium, and large screens. The header row will have a responsive background image. Next comes the row with form block and CSS display block. Followed then by a content block and then the footer.
 

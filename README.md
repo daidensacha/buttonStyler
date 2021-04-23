@@ -113,7 +113,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Offcanvas navbar**  \- An off-canvas that can be toggled open at any time, not only for small screens.
 
--  ** accordion**  \- It will have forms of inputs grouped so that users can style the demo button.
+-  **accordion**  \- It will have forms of inputs grouped so that users can style the demo button.
 
 -  **Demo button**  \- A demo button to show the styling results visually.
 
@@ -121,7 +121,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Copy to clipboard**  \- A button for users to copy the CSS style.
 
--  ** footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
+-  **footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
 
 -  **Functional Requirements**
 
@@ -131,15 +131,15 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Toggle Switches**  \- Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
 
--  ** navbar**  \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
+-  **navbar**  \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
 
--  ** Copy to clipboard**  \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
+-  **Copy to clipboard**  \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
 
 -  **Gradients**  \- Users will be able to select colors to create gradients. A start color, end color, and a direction are required to compile CSS rules for cross-browser compatibility.
 
 -  **Contact form**  \- Users can access the contact form from the Navbar or Footer. Clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
 
--  ** accordion**  \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The accordion will have one Form open at a time
+-  **accordion**  \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The accordion will have one Form open at a time
 
 -  **Demo button**  \- The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
 
@@ -199,7 +199,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Information Architecture** Site information arranged as follows.
 
--  ***Simple and sweet:*** Home page will be colorful. The center point is the forms with inputs for styling the demo button, a playground full of possibilities.
+-  ***Simple and sweet*** Home page will be colorful. The center point is the forms with inputs for styling the demo button, a playground full of possibilities.
 
 -  ***Contact Form*** I want it simple and don't want users to navigate away from the reason that brought them to the site. So it will be a one-page site, with a contact form at the bottom of the page. I may put the contact form in a modal if, for some reason, it doesn't fit on the home page.
 
@@ -207,7 +207,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  ***Planning*** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, I have created an excel sheet to use as I put the forms together.
 
--  *** layout *** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
+-  ***layout*** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 
   
 

@@ -368,28 +368,28 @@ The Javascript that processes the form input values and creates the CSS rules is
 
 ***
 
-****Onwards with the new plan****
+****Onwards with the new plan****  
 It was time-consuming, but the plan was clear and easy to implement. It also worked beautifully. I wrote the code in parts, querying selectors, assigning variables, and checking in the DevTools console for error feedback.
 
 My testing in this part of writing the code was to ensure that inputs were assigned variables, the values of those inputs were then assigned to variables and then combined by groups to create the CSS rules. Console.log was my way to see the code was working.
 
 Once I had completed the code in form.js, I was able to see the result in the demo button style and the CSS Output display. At that point, I was able to go one by one through the form inputs, fieldsets and test them to see if they were working. A bug that I thought resolved had returned. The disabling of the color inputs was not working again.
 
-**The Pesky Bug**
+**The Pesky Bug**  
 I had added `oninput update(); `to all the form elements, and it worked for the inputs, but my toggle switches were not working properly. I dove into the console, looking for errors, but none were showing. Clicking on the toggle switches was not triggering the `update()` function. I clicked that the toggle is a checkbox in an aha moment, so I changed the event listener to `onchange update()`, and bazinga! The bug disappeared, and the toggle switches started working.
 
-**Contact Form**
+**Contact Form**  
 When I click on the contact icon in the navbar or the footer, a modal appears with the contact form. If I click send, a message appears asking me to enter my name, the same for all other fields as all are required. Once I complete all fields, I click send, and the form fields empty. A success message appears, indicating success. It then disappears after 2 seconds.
 
-**Social Icon Block**
+**Social Icon Block**  
 When I click on the GitHub, Linkedin, or Codepen icon in the header or the footer, it opens linked pages in new tabs in the browser.
 
-**Off-Canvas**
+**Off-Canvas**  
 When I click on the navbar toggle icon, the off-canvas opens, the toggle icon is always visible, so the off-canvas can be opened to reveal a list of links to resources used to create the site.
 When I click on a link, it opens the webpage in a new tab.
 I click anywhere other than on a link, and the off-canvas closes.
 
-**Scroll to top**
+**Scroll to top**  
 I click on the "to top" icon in the footer, the page smoothly scrolls to the top of the page.
 
 #### Testing the inputs
@@ -420,13 +420,13 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 I checked all the inputs and fieldsets individually to confirm that they are all working as expected.
 
-**Demo Button Background issue**
+**Demo Button Background issue**  
 When I change the font size, the button gets bigger. However, the background does not increase in size. I had set a fixed height of the background, and through using DevTools, I removed the fixed height and added a top/bottom margin on the demo button. Now when I increase the font size, the button increases in size along with the background.  
 
-**Demo Button Display**
+**Demo Button Display**  
 When I scroll, the button disappears off the screen. I added the bootstrap sticky-top class to the demo button background div. The button and background now stick to the top of the screen and remain visible for longer. It is more friendly.
 
-**Copy to clipboard function**
+**Copy to clipboard function**  
 In the user stories, I identified the users' need to copy the CSS style easily. I added an icon to the top of the CSS output block and implemented clipboad.js. When I click on the icon, a message appears confirming the copy success, and at the same time, the CSS highlights. I created a codepen where the user can paste the CSS to see it work, and the link to the codepen is under the CSS block highlighted under the heading "Copy the CSS". Pasting the CSS in the codepen creates an exact copy of the button created using the Button Styler.
 
 ![CSS Copied](/assets/documentation/images/screenshots/rm-copied.png)
@@ -435,10 +435,10 @@ In user stories, I identified the need to copy the CSS to use it easily. Users c
 
 ![Codepen for users to paste the CSS from their button style to test it and see it works.](/assets/documentation/images/screenshots/test-css-codepen.png)
 
-**Demo button Styles**
+**Demo button Styles**  
 When I change any form input values, the change displays immediately in the demo-button style. Clicking on a toggle switch adds or removes the corresponding styles to the button. Selecting a different input color changes the corresponding style color of the demo button. The changes are live and immediate.
 
-**CSS Display block**
+**CSS Display block**  
 Enabled CSS rules display in the CSS display block under the demo button. Then the input values are changed, I see the CSS rules are immediately changing. Enabling or toggling between different options also adds or changes the CSS rules that are displayed.
 
 **Included CSS Styles**
@@ -497,19 +497,12 @@ There is a variety of properties and options from which to choose. The inputs ar
 [Bootstrap Breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/)
 
 |Breakpoint|Class infix|Dimensions |
-
 |--|--|--|
-
 | X-Small | __None__ | <576px |
-
 |Small|sm|≥576px|
-
 | Medium | md | ≥768px|
-
 |Large|lg|≥992px|
-
 |XL|xl|≥1200px|
-
 |XXL|xxl|≥1400px|
 
 I tested display and responsiveness in Chrome DevTools throughout the development stage for each of the screen sizes. The form inputs with their labels needed to be positioned correctly for all screen sizes.  
@@ -557,7 +550,7 @@ Having the site live enables me to dive deeper into testing and expose it to ext
 - iPad Air
 - iPhone 11 Pro
   
-**Issue 1 - No images****		
+**Issue 1 - No images****  	
 I had an issue with my background images not showing up. When I created my site folders, I mistakingly named the images folder "Images". All my image links were to the "images" folder, and I don't know why, but Chome on my local server was forgiving and displayed my images. GitHub, on the other hand, is a little more pedantic. The website images were not showing.
 It was a little complicated. I moved all my images to back them up, deleted the "Images" folder, created a new "images" folder, moved images into it.
 
@@ -565,35 +558,35 @@ Terminal `git add .`, `git commit -m "fixing incorrect folder name"`, and `git p
 
 I don't know if this is a typical experience, but viewing the same site in Chrome, the local version was viewing perfectly. GitHub Pages presented the same website differently. Suddenly, I was not trusting my local server setup.
 
-**Issue 2 - Margins**
+**Issue 2 - Margins**  
 I wanted my accordion/ CSS block row to fold at `sm` screen size for the columns to stack and the side margins to be gone, as they are a waste of space on mobiles. I was getting x-overflow, and it had me stumped.
 
 I had put flex class on the `container-fluid container-flex`, instead of the child `row row-flex`. I found out that if you do that, Bootstrap columns add a negative margin to make up for it, hence the overflow. I moved the flex class to the row, the margin was not there on xs screens, and there was no overflow.
 
-**Issue 3 - Padding**
+**Issue 3 - Padding**  
 At this point, I noticed that the DevTools iPhone X view displayed differently from my iPhone 11 Pro. Same with my iPad. I was getting padding viewing the live site not showing in DevTools iPad view. One issue was of my own making. When I started, I set a fixed height of the button background. It didn't look nice when the font size of the demo button increased. It looked unbalanced. I changed it to min-height with fixed padding top and bottom, and it looked much better.
 Other issues were to refine the styling for xs and Tablet screens so that the margin-left and margin-right were not there.
 
-**Stacking column order**
+**Stacking column order**  
 On Bootstrap xs screen size, the demo button and CSS block were stacking under the accordion. It didn't look right, and I wanted the button to be above the accordion.
 
 I used the Bootstrap `order` class to move the second column to `order-1 order-lg-2`, and the accordion column to `order-2 order-lg-1`. It fixed the issue.
 
-**Class sticky-top**
+**Class sticky-top**  
 The next issue was that on the iPhone and iPad, and the larger screens, but to a lesser extent, the demo button scrolled off screen very quickly when scrolling.
 I added the Boostrap class `sticky-top` to the demo button column, so the button stuck to the top of the screen while I scrolled the CSS block.
 
-**Text Input**
+**Text Input**  
 When the user enters text into the text input, it automatically shows in the demo button. I had a default value for the demo button, `My Button`, and placeholder text in the input `Your button text`.
 
 I became aware that when clicking in the text input and pressing delete, the demo button collapsed to a small circle. I added an if statement to check if the input value was an empty string and inserted the default value in the button. After some more research, I added Regex validation to accept 3-16 letters, lower or upper case, with spaces. If it does not match, it displays a message `enter 3-16 letters only`. Otherwise, the default demo button text is displayed.  
 
 ### Feedback
 
-**Jürgen Jung**** - *Software Engineer*
+**Jürgen Jung**** - *Software Engineer*  
 I gave the link to Jürgen so he could test the button styler and get his feedback. The feedback was positive. He used it to create a button, copied it using the Copy to clipboard, and pasted it into the codepen. He said it functions well, and it inspired him to learn more HTML and CSS.
 
-**Jan Odvárko** - *Developer: jscolor*
+**Jan Odvárko** - *Developer: jscolor*  
 Very well done, Daiden. That's an impressive piece of work.
 I just tried it in Chrome, and it works like a charm.
 Thanks for sharing it with me, and I wish that your application helps many people to generate nice buttons.

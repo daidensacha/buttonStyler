@@ -91,7 +91,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
   
 
--  **Required Features**
+**Required Features**
 
   -  **Color picker feature**  \- Users can select colors for the different attributes of the button.
 
@@ -123,7 +123,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
   -  **Footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
 
--  **Functional Requirements**
+**Functional Requirements**
 
   -  **Color Pickers**  \- Will open when clicked and will have an input so users can enter a specific color if they want. They can also use the mouse cursor to select a color. Form inputs have set default values, so there is a designed button to start.
 
@@ -145,7 +145,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
   -  **CSS Output display**  \- The CSS markup will be output into a display next to the Form and below the button.
 
--  **Content Requirements**
+**Content Requirements**
 
   -  **Single page site**  \- Keeping it simple with a one-page site, not overcooked with content. The button styling will be the central focus.
 
@@ -164,18 +164,23 @@ Central to the site will be a playground of features to add styling to buttons.
   
 
 - [ ] **Color picker:**
+
   It was a process to research and select a color picker. There are many around, with varying degrees of documentation, and each has its pros and cons. In the end, my choice was the [jscolor color picker](https://jscolor.com/). It is well documented and has lots of examples showing different possibilities and how to configure them. They are very friendly and offer great support if you have any questions.
 
 - [ ] **Range Selector:**
+
   I found some great examples on [CSS Tricks](https://css-tricks.com/value-bubbles-for-range-inputs/) showing different ways to style range inputs and to output the value as it changes. I used one of these in my formes, with some minor changes to the CSS.
 
 - [ ] **Toggle Switch:**
+
   I have little experience or knowledge about this element. It's my preferred option to disable form field groups, so users can easily choose styling they want to include. I found the [Bootstrap Switch Button](https://gitbrent.github.io/bootstrap4-toggle/#usage) API available on Github. There is a working example on Codepen with the Bootstrap Range Selector.
 
 - [ ] **Select:**
+
   This is pretty straightforward and easy to incorporate. I will use the [Bootstrap Select](https://getbootstrap.com/docs/5.0/forms/select/).
 
 - [ ] **Text Input:**
+
   The Form will contain only one text input for entering the button text.
 
   

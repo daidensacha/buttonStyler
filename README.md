@@ -122,21 +122,21 @@ Central to the site will be a playground of features to add styling to buttons.
 
 - **Instructions** \- Simple instructions for users, explaining how easy it is to create, copy, and use the style creator.
 
-****Required Form Elements****
+**Required Form Elements**
 
-- [ ] **Color picker:**
+- [ ] **Color picker:**  
 	It was a process to research and select a color picker. There are many around, with varying degrees of documentation, and each has its pros and cons. In the end, my choice was the [jscolor color picker](https://jscolor.com/). It is well documented and has lots of examples showing different possibilities and how to configure them. They are very friendly and offer great support if you have any questions.
 
-- [ ] **Range Selector:**
+- [ ] **Range Selector:**  
 	I found some great examples on [CSS Tricks](https://css-tricks.com/value-bubbles-for-range-inputs/) showing different ways to style range inputs and to output the value as it changes. I used one of these in my formes, with some minor changes to the CSS.
 
-- [ ] **Toggle Switch:**
+- [ ] **Toggle Switch:**  
 	I have little experience or knowledge about this element. It's my preferred option to disable form field groups, so users can easily choose styling they want to include. I found the [Bootstrap Switch Button](https://gitbrent.github.io/bootstrap4-toggle/#usage) API available on Github. There is a working example on Codepen with the Bootstrap Range Selector.
 
-- [ ] **Select:**
+- [ ] **Select:**  
 	The select input is pretty straightforward and easy to incorporate. I will use the [Bootstrap Select](https://getbootstrap.com/docs/5.0/forms/select/).
 
-- [ ] **Text Input:**
+- [ ] **Text Input:**  
 	The Form will contain only one text input for entering the button text.
 
   

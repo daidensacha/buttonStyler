@@ -113,7 +113,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Offcanvas navbar**  \- An off-canvas that can be toggled open at any time, not only for small screens.
 
--  **accordion**  \- It will have forms of inputs grouped so that users can style the demo button.
+-  **Accordion**  \- It will have forms of inputs grouped so that users can style the demo button.
 
 -  **Demo button**  \- A demo button to show the styling results visually.
 
@@ -121,7 +121,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Copy to clipboard**  \- A button for users to copy the CSS style.
 
--  **footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
+-  **Footer**  \- Simple Footer with the social links from the navbar replicated, as above so below.
 
 -  **Functional Requirements**
 
@@ -131,7 +131,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Toggle Switches**  \- Users will be able to disable or enable some fields of inputs to include or exclude them from the button styling. Not everyone likes a pizza with the works.
 
--  **navbar**  \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
+-  **Navbar**  \- Fixed Navbar, with a toggle button so users will be able to open the off-canvas and see a list of valuable resources.
 
 -  **Copy to clipboard**  \- Users will be able to copy the CSS style easily, and there will be visual feedback to confirm the Copy is successful.
 
@@ -139,7 +139,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 -  **Contact form**  \- Users can access the contact form from the Navbar or Footer. Clicking on the email icon will open the modal with the contact form. It will include validation, and they will be able to send a message. A message will inform the user of the message submission's success or failure.
 
--  **accordion**  \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The accordion will have one Form open at a time
+-  **Accordion**  \- There will be multiple levels of forms containing fieldsets of grouped inputs providing values to compile CSS rules. The user will work through the different style attributes and see the result live as they change the style values. The accordion will have one Form open at a time
 
 -  **Demo button**  \- The user will add their button text, colors, style attributes by changing the values of the form inputs. The change in values will be updated live to the demo button. The user can change the button's background color to see how it looks against the intended background color.
 
@@ -164,24 +164,19 @@ Central to the site will be a playground of features to add styling to buttons.
   
 
 - [ ] **Color picker:**
-
-- [ ] It was a process to research and select a color picker. There are many around, with varying degrees of documentation, and each has its pros and cons. In the end, my choice was the [jscolor color picker](https://jscolor.com/). It is well documented and has lots of examples showing different possibilities and how to configure them. They are very friendly and offer great support if you have any questions.
+  It was a process to research and select a color picker. There are many around, with varying degrees of documentation, and each has its pros and cons. In the end, my choice was the [jscolor color picker](https://jscolor.com/). It is well documented and has lots of examples showing different possibilities and how to configure them. They are very friendly and offer great support if you have any questions.
 
 - [ ] **Range Selector:**
-
-- [ ] I found some great examples on [CSS Tricks](https://css-tricks.com/value-bubbles-for-range-inputs/) showing different ways to style range inputs and to output the value as it changes. I used one of these in my formes, with some minor changes to the CSS.
+  I found some great examples on [CSS Tricks](https://css-tricks.com/value-bubbles-for-range-inputs/) showing different ways to style range inputs and to output the value as it changes. I used one of these in my formes, with some minor changes to the CSS.
 
 - [ ] **Toggle Switch:**
-
-- [ ] I have little experience or knowledge about this element. It's my preferred option to disable form field groups, so users can easily choose styling they want to include. I found the [Bootstrap Switch Button](https://gitbrent.github.io/bootstrap4-toggle/#usage) API available on Github. There is a working example on Codepen with the Bootstrap Range Selector.
+  I have little experience or knowledge about this element. It's my preferred option to disable form field groups, so users can easily choose styling they want to include. I found the [Bootstrap Switch Button](https://gitbrent.github.io/bootstrap4-toggle/#usage) API available on Github. There is a working example on Codepen with the Bootstrap Range Selector.
 
 - [ ] **Select:**
-
-- [ ] This is pretty straightforward and easy to incorporate. I will use the [Bootstrap Select](https://getbootstrap.com/docs/5.0/forms/select/).
+  This is pretty straightforward and easy to incorporate. I will use the [Bootstrap Select](https://getbootstrap.com/docs/5.0/forms/select/).
 
 - [ ] **Text Input:**
-
-- [ ] The Form will contain only one text input for entering the button text.
+  The Form will contain only one text input for entering the button text.
 
   
 
@@ -189,25 +184,25 @@ Central to the site will be a playground of features to add styling to buttons.
 
   
 
--  **Interaction Design**
+**Interaction Design**
 
-- I think it is human nature to be curious and to want to explore. My vision is that the site will engage and invite exploration to discover available features. It's meant to be an intuitive and joyful experience. Color has a powerful impact on feeling and emotion, so this will be a playground for exploring colors.
+  - I think it is human nature to be curious and to want to explore. My vision is that the site will engage and invite exploration to discover available features. It's meant to be an intuitive and joyful experience. Color has a powerful impact on feeling and emotion, so this will be a playground for exploring colors.
 
-- There will be color pickers, range selectors, fonts, a variety of features to tweak the color, size, and style of the buttons to see how the CSS is output.
+  - There will be color pickers, range selectors, fonts, a variety of features to tweak the color, size, and style of the buttons to see how the CSS is output.
 
-- The user will be able to play, create a button, and easily copy it to be able to use the exact style where they want to use it.
+  - The user will be able to play, create a button, and easily copy it to be able to use the exact style where they want to use it.
 
--  **Information Architecture** Site information arranged as follows.
+**Information Architecture** Site information arranged as follows.
 
--  ***Simple and sweet*** Home page will be colorful. The center point is the forms with inputs for styling the demo button, a playground full of possibilities.
+  -  ***Simple and sweet*** Home page will be colorful. The center point is the forms with inputs for styling the demo button, a playground full of possibilities.
 
--  ***Contact Form*** I want it simple and don't want users to navigate away from the reason that brought them to the site. So it will be a one-page site, with a contact form at the bottom of the page. I may put the contact form in a modal if, for some reason, it doesn't fit on the home page.
+  -  ***Contact Form*** I want it simple and don't want users to navigate away from the reason that brought them to the site. So it will be a one-page site, with a contact form at the bottom of the page. I may put the contact form in a modal if, for some reason, it doesn't fit on the home page.
 
--  ***Social Links*** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
+  -  ***Social Links*** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
 
--  ***Planning*** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, I have created an excel sheet to use as I put the forms together.
+  -  ***Planning*** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, I have created an excel sheet to use as I put the forms together.
 
--  ***layout*** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
+  -  ***layout*** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 
   
 

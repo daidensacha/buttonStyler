@@ -319,9 +319,9 @@ Application for building Bootstrap grids. It is a convenient tool that simplifie
 ### Research
 ***
 
-**1. What's available?
-**2. How does it work?
-**3. What can I expect?
+*1. What's available?*
+*2. How does it work?*
+*3. What can I expect?*
 The three questions I needed answers to start my project. I never used or worked with range selectors, color pickers, or toggle switches, so I need to experiment to understand. 
 My initial strategy was to research and use Codepen to implement working features to see how they work. I wanted to learn this before writing any code. There are several pens where you can see what I was playing with, and you will understand what I have put into the site. 
 - [Toggle Switch disables fieldset of form inputs](https://codepen.io/daidensacha/pen/yLgzojL) An experiment in styling a toggle switch and using it to disable the fieldset of form elements.

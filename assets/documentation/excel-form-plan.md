@@ -1,5 +1,5 @@
 ## INITIAL PLAN FOR FORM INPUTS
-[Back to Structure](/README.md/#3\.-structure)
+[Back to Structure](/README.md/#3.-structure)
 
 
 ### Form information 

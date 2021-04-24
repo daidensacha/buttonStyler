@@ -1,7 +1,7 @@
 ﻿
 
 ## TESTING PLAN
-back to [README/Testing](/README.md/#\ testing)
+back to [README/Testing](/README.md/#testing)
 ### RESEARCH
 
 #### Required elements

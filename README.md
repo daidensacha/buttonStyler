@@ -159,7 +159,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 - **Social Links** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
 
-- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, I have created an excel sheet to use as I put the forms together.
+- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, I created a [table](/assets/documentation/excel-form-plan.md) to use as I put the forms together.
 
 - **Layout** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 

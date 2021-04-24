@@ -88,7 +88,7 @@ function update() {
     let paddingGroupToggle = document.querySelector('#padding-group-toggle');
     let boxPaddingRange = document.querySelector('#style-box-padding');
     let boxTbPaddingRange = document.querySelector('#style-tb-padding');
-    let boxLrlPaddingRange = document.querySelector('#style-rl-padding');
+    let boxLrPaddingRange = document.querySelector('#style-rl-padding');
 
     // =========================================================================
     // BORDER
@@ -160,7 +160,7 @@ function update() {
 
     /* CSS Padding Strings */ 
     let padding = `\tpadding: ${boxPaddingRange.value}px;`;
-    let paddingTbRl = `\tpadding: ${boxTbPaddingRange.value}px ${boxLrlPaddingRange.value}px;`;
+    let paddingTbRl = `\tpadding: ${boxTbPaddingRange.value}px ${boxLrPaddingRange.value}px;`;
 
     /* CSS Border String */ 
     let border = `\tborder: ${borderWidthRange.value}px solid ${borderColorPicker.toString('rgba')};`;

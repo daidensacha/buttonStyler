@@ -12,7 +12,7 @@ mind on more important things while writing code when I have it written down.
         <tr><th>Label</th><th>Element</th><th>Toggles</th><th>toggleId</th><th>ID</th><th>Variable</th></tr>
     </thead>
     <tbody>
-        <tr><td colspan=6>FORM ONE - TEXT STYLING BLOCK</td></tr>
+        <tr><td colspan=6>FORM 1 - TEXT STYLING BLOCK</td></tr>
         <tr><td>Button&nbsp;Text</td><td>Textbox</td><td>&nbsp;</td><td>&nbsp;</td><td>style-text</td><td>styleText</td></tr>
         <tr><td>Font&nbsp;family</td><td>select</td><td>&nbsp;</td><td>&nbsp;</td><td>style-font</td><td>fontFamilySel</td></tr>
         <tr><td>Font&nbsp;color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>style-color</td><td>fontStyleColorPicker</td></tr>

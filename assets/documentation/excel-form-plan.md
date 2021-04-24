@@ -1,5 +1,5 @@
 ## INITIAL PLAN FOR FORM INPUTS
-[Back to Structure](/README.md/#3-structure)
+[Back to README/UX DESIGN/Structure](/README.md/#3-structure)
 
 
 ### Form information 
@@ -7,14 +7,13 @@ I had so many inputs to put into the accordion; I created this table to be clear
 mind on more important things while writing code when I have it written down. 
 
 |Label                        |Element     |Toggle Action        |toggleId         |ID                       |Variable                  |
-|-----------------------------|------------|---------------------|-----------------|-------------------------|--------------------------|
+|:----------------------------|:-----------|:--------------------|:----------------|:------------------------|:-------------------------|
 |FORM ONE - Text Styling Block|            |                     |                 |                         |                          |
 |Button Text                  |Textbox     |                     |                 |#style-text              |styleText                 |
 |Font family                  |select      |                     |                 |#style-font              |fontFamilySel             |
 |Font color                   |color picker|                     |                 |#style-color             |fontStyleColorPicker      |
 |Font size                    |range       |                     |                 |#style-size              |fontSizeRange             |
 |                             |            |                     |                 |                         |                          |
-|Disable group                |            |                     |                 |                         |                          |
 |text shadow                  |color picker|toggle on/off        |toggleShadow     |#style-text-shadow       |textShadowColorPicker     |
 |x-axis                       |range       |                     |                 |#style-text-x            |textShadowXRange          |
 |y-axis                       |range       |                     |                 |#style-text-y            |textShadowYRange          |

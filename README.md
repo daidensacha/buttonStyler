@@ -249,6 +249,8 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 ## Testing
 [Testing Plan](/assets/documentation/testing-plan.md/#testing-plan) outlines my development and testing strategy.
 ### Research
+To: [Testing Plan > Research](/assets/documentation/testing-plan.md/#research)
+
 
 ***
 
@@ -277,6 +279,8 @@ In this preliminary testing phase, I chose what I felt would best suit my needs 
 ### Development
 
 ***
+To: [Testing Plan > Development](/assets/documentation/testing-plan.md/#development)
+
 
 #### Git Version Control
 
@@ -513,9 +517,10 @@ Before deploying I validated the sites code in the [W3C HTML validator](https://
 
 With testing completed to a point where I needed to have the site live to test further and share the work to get feedback, I moved to the deployment phase.  
 
-### Production/ Deployment
+### Deployment
 
 ***
+To: [Testing Plan > Research](/assets/documentation/testing-plan.md/#deployment)
 
 **Deploy to GitHub Pages**
 

@@ -1,8 +1,9 @@
 ﻿
 
 ## TESTING PLAN
-back to [README/Testing](/README.md/#testing)
+To: [README/Testing](/README.md/#testing)
 ### RESEARCH
+To: [README/Research](/README.md/#research)
 
 #### Required elements
     
@@ -12,6 +13,7 @@ back to [README/Testing](/README.md/#testing)
    -  Use Codepen to experiment, learn, and implement instances of the components to see which are better suited for the button styler project.
 
 ### DEVELOPMENT
+To: [README/Development](/README.md/#development)
 
   #### HTML
     
@@ -40,7 +42,8 @@ back to [README/Testing](/README.md/#testing)
 		- **Copy to clipboard**: User can click an icon and copy the CSS to the clipboard.
 - Use Chrome DevTools JS console to monitor for errors and test code with "console.logs".
 
-### PRODUCTION/ DEPLOYMENT
+### DEPLOYMENT
+To: [README/Deployment](/README.md/#deployment)
 
 #### Test for production
 

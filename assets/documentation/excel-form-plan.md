@@ -2,7 +2,7 @@
 [Back to Structure](/README.md/#3\.-structure)
 
 
-### FORM PLAN  
+### Form information 
 I had so many inputs to put into the accordion; I created this table to be clear with what I was adding. I can focus my 
 mind on more important things while writing code when I have it written down. 
 

@@ -247,7 +247,7 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 	Application for building Bootstrap grids. It is a convenient tool that simplifies building the responsive grid.
 
 ## Testing
-[Testing Plan](/assets/documentation/testing-plan.md)
+[Testing Plan](/assets/documentation/testing-plan.md) outlines my development and testing strategy.
 ### Research
 
 ***

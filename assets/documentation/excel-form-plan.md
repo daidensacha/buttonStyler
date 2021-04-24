@@ -38,14 +38,14 @@ mind on more important things while writing code when I have it written down.
         <tr><td>border-color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>#style-border-color</td><td>borderColorPicker</td></tr>
         <tr><td colspan=6></td></tr>
         <tr><td colspan=6>FORM 4  - Color Styling</td></tr>
-        <tr><td>background&nbsp;(solid)</td><td>color&nbsp;picker</td><td>toggle&nbsp;on&nbsp;(solid)</td><td>toggleBackground</td><td>#style-bg-color</td><td>backgroundColorPicker</td></tr>
-        <tr><td>start&nbsp;color</td><td>color&nbsp;picker</td><td>toggle&nbsp;off&nbsp;(gradient)</td><td>&nbsp;</td><td>#style-gradient1-color</td><td>gradient1ColorPicker</td></tr>
+        <tr><td>background&nbsp;(solid)</td><td>color&nbsp;picker</td><td>toggle&nbsp;on</td><td>toggleBackground</td><td>#style-bg-color</td><td>backgroundColorPicker</td></tr>
+        <tr><td>start&nbsp;color</td><td>color&nbsp;picker</td><td>toggle&nbsp;off</td><td>&nbsp;</td><td>#style-gradient1-color</td><td>gradient1ColorPicker</td></tr>
         <tr><td>end&nbsp;color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>#style-gradient2-color</td><td>gradient2ColorPicker</td></tr>
         <tr><td>gradient&nbsp;direction</td><td>select</td><td>&nbsp;</td><td>&nbsp;</td><td>#gradient-direction</td><td>gradientDirectionSel</td></tr>
         <tr><td colspan=6></td></tr>
         <tr><td colspan=6>FORM 5 Hover - Hover Styling</td></tr>
-        <tr><td>background&nbsp;(solid)</td><td>color&nbsp;picker</td><td>toggle&nbsp;on&nbsp;(solid)</td><td>toggleHover</td><td>#style-color-hover</td><td>backgroundHoverColorPicker</td></tr>
-        <tr><td>start&nbsp;color</td><td>color&nbsp;picker</td><td>toggle&nbsp;off&nbsp;(gradient)</td><td>&nbsp;</td><td>#style-gradient1-hover</td><td>gradient1HoverColorPicker</td></tr>
+        <tr><td>background&nbsp;(solid)</td><td>color&nbsp;picker</td><td>toggle&nbsp;on</td><td>toggleHover</td><td>#style-color-hover</td><td>backgroundHoverColorPicker</td></tr>
+        <tr><td>start&nbsp;color</td><td>color&nbsp;picker</td><td>toggle&nbsp;off</td><td>&nbsp;</td><td>#style-gradient1-hover</td><td>gradient1HoverColorPicker</td></tr>
         <tr><td>end&nbsp;color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>#style-gradient2-hover</td><td>gradient2HoverColorPicker</td></tr>
         <tr><td>gradient&nbsp;direction</td><td>select</td><td>&nbsp;</td><td>&nbsp;</td><td>#gradient-hover-direction</td><td>gradientHoverDirectionSel</td></tr>
         <tr><td>Hover&nbsp;border&nbsp;color</td><td>color&nbsp;picker</td><td>toggle&nbsp;on/off</td><td>toggleHoverBorder</td><td>#hover-border-color</td><td>hoverBorderColorPicker </td></tr>

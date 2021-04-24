@@ -12,7 +12,7 @@ mind on more important things while writing code when I have it written down.
         <tr><th>Label</th><th>Element</th><th>Toggles</th><th>toggleId</th><th>ID</th><th>Variable</th></tr>
     </thead>
     <tbody>
-        <tr><td colspan=6>FORM ONE - Text Styling Block</td></tr>
+        <tr><td colspan=6>FORM ONE - TEXT STYLING BLOCK</td></tr>
         <tr><td>Button&nbsp;Text</td><td>Textbox</td><td>&nbsp;</td><td>&nbsp;</td><td>style-text</td><td>styleText</td></tr>
         <tr><td>Font&nbsp;family</td><td>select</td><td>&nbsp;</td><td>&nbsp;</td><td>style-font</td><td>fontFamilySel</td></tr>
         <tr><td>Font&nbsp;color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>style-color</td><td>fontStyleColorPicker</td></tr>
@@ -22,8 +22,7 @@ mind on more important things while writing code when I have it written down.
         <tr><td>x-axis</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-text-x</td><td>textShadowXRange</td></tr>
         <tr><td>y-axis</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-text-y</td><td>textShadowYRange</td></tr>
         <tr><td>blur</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-text-blur</td><td>textShadowBlurRange</td></tr>
-        <tr><td colspan=6></td></tr>
-        <tr><td colspan=6>FORM 2 - Box Styling</td></tr>
+        <tr><td colspan=6>FORM 2 - BOX STYLING</td></tr>
         <tr><td>box-shadow</td><td>color&nbsp;picker</td><td>on/off</td><td>toggleBox</td><td>style-box-shadow</td><td>boxColorPicker</td></tr>
         <tr><td>x-axis</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-box-x</td><td>boxXRange</td></tr>
         <tr><td>y-axis</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-box-y</td><td>boxYRange</td></tr>
@@ -31,19 +30,16 @@ mind on more important things while writing code when I have it written down.
         <tr><td>padding</td><td>range</td><td>on</td><td>togglePadding</td><td>style-box-padding</td><td>boxPaddingRange</td></tr>
         <tr><td>padding&nbsp;top-bottom</td><td>range</td><td>off</td><td>&nbsp;</td><td>style-tb-padding</td><td>boxLrPaddingRange</td></tr>
         <tr><td>padding&nbsp;right-left</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-lr-padding</td><td>boxLrPaddingRange</td></tr>
-        <tr><td colspan=6></td></tr>
-        <tr><td colspan=6>FORM 3 - Border&nbsp;Styling</td></tr>
+        <tr><td colspan=6>FORM 3 - BORDER&nbsp;Styling</td></tr>
         <tr><td>border-radius</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-border-radius</td><td>borderRadiusRange</td></tr>
         <tr><td>border-width</td><td>range</td><td>&nbsp;</td><td>&nbsp;</td><td>style-border-width</td><td>borderWidthRange</td></tr>
         <tr><td>border-color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>style-border-color</td><td>borderColorPicker</td></tr>
-        <tr><td colspan=6></td></tr>
-        <tr><td colspan=6>FORM 4  - Color Styling</td></tr>
+        <tr><td colspan=6>FORM 4  - COLOR STYLING</td></tr>
         <tr><td>background&nbsp;(solid)</td><td>color&nbsp;picker</td><td>on</td><td>toggleBackground</td><td>style-bg-color</td><td>backgroundColorPicker</td></tr>
         <tr><td>start&nbsp;color</td><td>color&nbsp;picker</td><td>off</td><td>&nbsp;</td><td>style-gradient1-color</td><td>gradient1ColorPicker</td></tr>
         <tr><td>end&nbsp;color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>style-gradient2-color</td><td>gradient2ColorPicker</td></tr>
         <tr><td>gradient&nbsp;direction</td><td>select</td><td>&nbsp;</td><td>&nbsp;</td><td>gradient-direction</td><td>gradientDirectionSel</td></tr>
-        <tr><td colspan=6></td></tr>
-        <tr><td colspan=6>FORM 5 Hover - Hover Styling</td></tr>
+        <tr><td colspan=6>FORM 5 HOVER - HOVER STYLING</td></tr>
         <tr><td>background&nbsp;(solid)</td><td>color&nbsp;picker</td><td>on</td><td>toggleHover</td><td>style-color-hover</td><td>backgroundHoverColorPicker</td></tr>
         <tr><td>start&nbsp;color</td><td>color&nbsp;picker</td><td>off</td><td>&nbsp;</td><td>style-gradient1-hover</td><td>gradient1HoverColorPicker</td></tr>
         <tr><td>end&nbsp;color</td><td>color&nbsp;picker</td><td>&nbsp;</td><td>&nbsp;</td><td>style-gradient2-hover</td><td>gradient2HoverColorPicker</td></tr>

@@ -587,12 +587,12 @@ When the user enters text into the text input, it automatically shows in the dem
 I became aware that when clicking in the text input and pressing delete, the demo button collapsed to a small circle. I added an if statement that inserted the default value "My Button" in the button if the input value was an empty string. After some more research, I added Regex validation to accept 3-16 letters, lower or upper case, with spaces. If it does not match, it displays a message `enter 3-16 letters only`. Otherwise, the default demo button text is displayed. 
 I discovered another issue. When I reduced the font size to zero during additional testing, the button again reduced to a small circle. I set a minimum value for font size to 8px. No one would be able to read it if it was smaller.
 
-**Range Selector Tooltip**
+**Range Selector Tooltip**  
 In the morning, I briefly played with the button styler in Chrome on my MacBook Pro. It was all good. In the afternoon, I was checking the button styler with Chrome using DevTools in Windows 10.  I noted that on small screens, everything appeared ok. On screens bigger than "md", the tooltip on the side of the range inputs was folding under the input track. The range slider width was set to `width: calc(100% - (74px));`. 
 A few days earlier, I had added media queries so the font size would change for different screens as the main heading was too big on my iPhone. Initially, I created two headings, the first visible on large screens and hidden on small screens, and the second visible on small screens but hidden on large screens. It was a hack and worked, but I thought the media queries were a better solution. 
 I missed that the width calculation changed the equation for the display of the tooltip on large screens. I changed the width to `width: calc(100% - (73px));` and it all fell back into place.
 
-**Information Block Headings**
+**Information Block Headings**  
 I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to see how he got on. He had spent the afternoon playing with it, created some buttons, found his way to the test codepen I made, and even copied the code into a repository. He asked me what he needed to do to get the font he chose, and I explained that the instruction was in point 3 of the information block, "Add your button". It was the part he had not read. The heading color was conservative beige, and I decided to change it to something bolder, as I want it to shout out "read me". It's now fluoro green but fits with the banner image that is a rainbow of colors. 
 
 ### Feedback

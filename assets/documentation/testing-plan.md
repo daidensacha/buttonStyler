@@ -1,9 +1,9 @@
 ﻿
 
 ## TESTING PLAN
-To: [README/Testing](/README.md/#testing)
+[README/Testing](/README.md/#testing)
 ### RESEARCH
-To: [README/Research](/README.md/#research)
+[README/Research](/README.md/#research)
 
 #### Required elements
     
@@ -13,7 +13,7 @@ To: [README/Research](/README.md/#research)
    -  Use Codepen to experiment, learn, and implement instances of the components to see which are better suited for the button styler project.
 
 ### DEVELOPMENT
-To: [README/Development](/README.md/#development)
+[README/Development](/README.md/#development)
 
   #### HTML
     
@@ -43,7 +43,7 @@ To: [README/Development](/README.md/#development)
 - Use Chrome DevTools JS console to monitor for errors and test code with "console.logs".
 
 ### DEPLOYMENT
-To: [README/Deployment](/README.md/#deployment)
+[README/Deployment](/README.md/#deployment)
 
 #### Test for production
 

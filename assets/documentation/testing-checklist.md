@@ -19,7 +19,10 @@
 	- [x] **Navbar Icon Tooltips** - I hover over the icons, and a tooltip appears showing what the icon links.
 	- [x] **GitHub** - I click on the icon, and it opens the linked webpage in a new browser tab.
 	- [x] **Linkedin** - I click on the icon, and it opens the linked webpage in a new browser tab.
-	- [x] **Codepen** - I click on the icon, and it opens the linked webpage in a new browser tab.
+	- [x] **Codepen** - I click on the icon, and it opens the linked webpage in a new browser tab.  
+
+    ![Soclial Icons Navbar](/assets/documentation/images/screenshots/social-icons-header.jpg) 
+
 	- [x] **Contact form** - I click on the contact form icon, and it opens the modal with the contact form.
 		- [x] **Form validation** - I click send without filling in the required fields, and a popover appears, prompting me to fill in the required field.  
 
@@ -27,8 +30,6 @@
 
 		- [x]  **Send validation** - I complete the form fields and click send, the form fields empty, and a success message in green appears under the form. The message disappears after a few seconds. The modal remains open.
 		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes.  
-
-    ![Soclial Icons Navbar](/assets/documentation/images/screenshots/social-icons-header.jpg)  
 
 ## Accordion Forms
 
@@ -261,7 +262,7 @@
 		- [x] **Send validation** - After completing the form fields, I click send, the form fields empty, and a success message in green appears under the form. The message disappears after a few seconds. The modal remains open.
 		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes. 
     - [x] **Smooth to top icon** - I click on the upward arrow icon in the footer, the page scrolls smoothly to the top.  
-    
+
     ![Social Icons Footer](/assets/documentation/images/screenshots/social-icons-footer.jpg)  
 
 ## Responsive Breakpoints and media queries

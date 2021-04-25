@@ -42,9 +42,9 @@
 		- **Font Family Select**
 			- [x] I click on the font family select, it opens, and a list of 12 fonts appears.
 			- [x] I select a font, the font in the demo button changes, as does the font-family name in the CSS display.
-			- [x] I check all fonts one by one, and they perform the same.
-			[Select font example 1](/assets/documentation/images/screenshots/select-font-1.png)  
-			[Select font example 2](/assets/documentation/images/screenshots/select-font-2.png)
+			- [x] I check all fonts one by one, and they perform the same.  
+			![Select font example 1](/assets/documentation/images/screenshots/select-font-1.png)  
+			![Select font example 2](/assets/documentation/images/screenshots/select-font-2.png)  
 		- **Font Color**
 			- [x] I click on the color input, and the color picker appears. 
 			- [x] I select a color using the mouse cursor; it changes the demo button font color, and the font-color CSS property changes.

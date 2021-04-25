@@ -159,7 +159,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 - **Social Links** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
 
-- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, [I created a table](/assets/documentation/excel-form-plan.md/#form-information) to use as I put the forms together.
+- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, [I created a table](/assets/documentation/form-plan.md/#form-outline) to use as I put the forms together.
 
 - **Layout** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 
@@ -634,5 +634,8 @@ Throughout my project, I was continually challenged to research and learn, to dr
 **NOTES:**
 
 * * *
+
+1. [Form Outline](/assets/documentation/form-plan.md/#form-outline)  
+    Before starting writing the HTML for the forms, I created an excel sheet with the information in the linked table. GitHub markdown does not have colspan or rowspan, which I needed to present the information. For example, using colspan and rowspan makes it more explicit about the function of the toggle switches. In this document, I reverted to using HTML table tags with colspan and rowspan. 
 
 It has been a process to learn and develop this application. I had to use and implement many features that I have not used before. It is my first genuine attempt at using Javascript and jQuery, so at times I felt totally out of my depth. That said, I learned a lot and already viewed my work with a critical eye for ideas on improving and doing better. That will be in a future project when I rebuild this with the wisdom of hindsight.

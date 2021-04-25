@@ -22,10 +22,14 @@
 	- [x] **Codepen** - I click on the icon, and it opens the linked webpage in a new browser tab.
 	- [x] **Contact form** - I click on the contact form icon, and it opens the modal with the contact form.
 		- [x] **Form validation** - I click send without filling in the required fields, and a popover appears, prompting me to fill in the required field.
+        ![Contact Form Validation](/assets/documentation/images/screenshots/contact-form-validation.jpg)![Message Sent](/assets/documentation/images/screenshots/contact-message-sent.jpg)  
 		- [x]  **Send validation** - I complete the form fields and click send, the form fields empty, and a success message in green appears under the form. The message disappears after a few seconds. The modal remains open.
-		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes. 
+		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes.  
+    ![Soclial Icons Navbar](/assets/documentation/images/screenshots/social-icons-header.jpg)  
 
 ## Accordion Forms
+
+![All Accordion Form Inputs](/assets/documentation/images/screenshots/rm-form-inputs.jpg)
 
 - [x] **Accordion default open** - When I open the webpage, the first level of the accordion is visible.
 - [x] **Accordion folding levels** - When I click on the header of each of the other four groups in the accordion, it opens that level and closes the others. 
@@ -39,17 +43,20 @@
 			- [x] Only letters a-z, A-Z, and spaces are accepted.
 			- [x] When I enter any other character, an error message appears, and the button text reverts to the default text.
 			- [x] I remove the disallowed character, the error message disappears, and my text displays in the demo button.
+            ![Font/Font Shadow Form](/assets/documentation/images/screenshots/rm-form-ui-output.jpg)  
 		- **Font Family Select**
 			- [x] I click on the font family select, it opens, and a list of 12 fonts appears.
 			- [x] I select a font, the font in the demo button changes, as does the font-family name in the CSS display.
 			- [x] I check all fonts one by one, and they perform the same.  
-			![Select font example 1](/assets/documentation/images/screenshots/select-font-1.png)  
-			![Select font example 2](/assets/documentation/images/screenshots/select-font-2.png)  
+			![Select font example 1](/assets/documentation/images/screenshots/select-font-1.jpg)  
+			![Select font example 2](/assets/documentation/images/screenshots/select-font-2.jpg)  
 		- **Font Color**
 			- [x] I click on the color input, and the color picker appears. 
 			- [x] I select a color using the mouse cursor; it changes the demo button font color, and the font-color CSS property changes.
 			- [x] I select a color from the color picker palette of colors, the font color changes, the font-color CSS property changes, and displays RGBA color format. 
 			- [x] I enter a HEX color value in the input, and the color picker automatically updates to the entered color, the button font color changes. The font-color CSS property displays the RGBA color value. 
+            - [x] I test similarly entering HEXA, RGB, RGBA colors in the color picker input. It accepts all formats just like it does for HEX.
+            ![Entering Color Values](/assets/documentation/images/screenshots/rm-colorpickers.jpg)  
 			- [x] I click anywhere outside of the color picker, and the color picker closes.
 		- **Font Size** 
 			- [x] I select the font size range handle and move it to change the font size, the font size in the demo button changes, and the font-size CSS value is immediately updated.
@@ -151,7 +158,9 @@
 		- **Gradient Direction**
 			- [x] I click on the gradient direction select, it opens, and a list of 4 options appears. (to top, to bottom, to right, to left)
 			- [x] I sequentially select each of the options, the direction of the gradient background in the demo button changes.
-			- [x]  When I change the gradient direction, it immediately updates the gradient direction value in the CSS display block.
+			- [x]  When I change the gradient direction, it immediately updates the gradient direction value in the CSS display block.  
+            ![Background Inputs](/assets/documentation/images/screenshots/rm-form-background.jpg)  
+            ![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.jpg)  
 	- **Hover Inputs**
 		- **Hover Font Color**
 			- [x] I click on the hover font color input, and the color picker appears. 
@@ -213,13 +222,17 @@
 -  **Copy Icon**
 	- [x] I hover over the copy icon, and it turns green; a tooltip appears with the message "Copy CSS". 
 	- [x] I click on the copy icon, the background color of the CSS rules is immediately highlighted with a blue color. A message appears, green in color, "Bazinga, CSS Copied!". 
-	- [x] I test this by pasting the copied CSS to a css file. It works
+	- [x] I test this by pasting the copied CSS to a css file. It works.  
+    ![Bazinga, CSS Cpoied!](/assets/documentation/images/screenshots/rm-copied.jpg)
+
 
 ### Information Section
 - **Codepen link to testing codepen**
 	- [x] I click on the "Codepen" link in the information section under the accordion and CSS display. It opens the link to a codepen in a new browser tab,  where I paste in the copied CSS. After about 5 seconds, the same button style I created in the button styler appears. I see the code is easily transferable. 
+    ![Testing CSS Codepen](/assets/documentation/images/screenshots/test-css-codepen.jpg)  
 - [x] **Google Font link Google Fonts**
-	- [x] I click on the Google Font link in the information block under the accordion, under the heading "3. Add your button". It opens the link in a new browser tab, where I see that I can search for the Google Font I selected in my button style. 
+	- [x] I click on the Google Font link in the information block under the accordion, under the heading "3. Add your button". It opens the link in a new browser tab, where I see that I can search for the Google Font I selected in my button style.  
+    ![Information Section](/assets/documentation/images/screenshots/direction-section.jpg)  
 
 ## Footer
 
@@ -232,8 +245,8 @@
 		- [x] **Form validation** - I click send without filling in the required fields, and a popover appears, prompting me to fill in the required field.
 		- [x] **Send validation** - After completing the form fields, I click send, the form fields empty, and a success message in green appears under the form. The message disappears after a few seconds. The modal remains open.
 		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes. 
-- [x] **Smooth to top icon** - I click on the upward arrow icon in the footer, the page scrolls smoothly to the top. 
-		 
+    - [x] **Smooth to top icon** - I click on the upward arrow icon in the footer, the page scrolls smoothly to the top.  
+    ![Social Icons Footer](/assets/documentation/images/screenshots/social-icons-footer.jpg)  
 
 ## Responsive Breakpoints and media queries
 - [x] **Large** Large devices (large desktops, 992px and up) `@media (min-width: 992px)` 

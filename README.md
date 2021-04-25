@@ -173,7 +173,7 @@ I put the contact form in the footer in the wireframes. However, in the end, I d
 
 I combined the three separate wireframes into one image for the README as seeing them side by side gives a better perspective of the scale of difference between the different size screens. The original size wireframes are available for viewing in the assets/images folder.  
 
-![Wireframes](assets/documentation/images/wireframes/wireframes.png)
+![Wireframes](assets/documentation/images/wireframes/wireframes.jpg)
  
 ### 5\. Surface
 
@@ -405,7 +405,7 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 	- When I click on "select direction" for the gradient background and select a different direction, the gradient direction changes accordingly. The changed CSS rule is also output to the CSS output block. It fulfills a need expressed in the user stories to see how syles work, their effect, and the generated CSS output.
 
-![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.png)
+![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.jpg)
 
 - Color input
 
@@ -413,7 +413,7 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 	- In the developer user stories, I identified the need for the developer to enter specific colors for button values. I added different values in the color picker input, HEX, HEXA, RGB, and RGBA. The color in the color picker immediately changes to the color entered. It confirms the color pickers accept different color formats and meets the need of the developer.
 
-![Color pickers](/assets/documentation/images/screenshots/rm-colorpickers.png)
+![Color pickers](/assets/documentation/images/screenshots/rm-colorpickers.jpg)
 
 - Range selector
 
@@ -434,11 +434,11 @@ When I scroll, the button disappears off the screen. I added the bootstrap stick
 **Copy to clipboard function**  
 In the user stories, I identified the users' need to copy the CSS style easily. I added an icon to the top of the CSS output block and implemented clipboad.js. When I click on the icon, a message appears confirming the copy success, and at the same time, the CSS highlights. I created a codepen where the user can paste the CSS to see it work, and the link to the codepen is under the CSS block highlighted under the heading "Copy the CSS". Pasting the CSS in the codepen creates an exact copy of the button created using the Button Styler.
 
-![CSS Copied](/assets/documentation/images/screenshots/rm-copied.png)
+![CSS Copied](/assets/documentation/images/screenshots/rm-copied.jpg)
 
 In user stories, I identified the need to copy the CSS to use it easily. Users can copy easily, as shown in the image above. They can then test the code in a codepen I created. Users can paste the CSS into the codepen (link below the CSS display block) and see it work.
 
-![Codepen for users to paste the CSS from their button style to test it and see it works.](/assets/documentation/images/screenshots/test-css-codepen.png)
+![Codepen for users to paste the CSS from their button style to test it and see it works.](/assets/documentation/images/screenshots/test-css-codepen.jpg)
 
 **Demo button Styles**  
 When I change any form input values, the change displays immediately in the demo-button style. Clicking on a toggle switch adds or removes the corresponding styles to the button. Selecting a different input color changes the corresponding style color of the demo button. The changes are live and immediate.

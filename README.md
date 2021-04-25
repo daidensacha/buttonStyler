@@ -545,16 +545,24 @@ Having the site live enables me to dive deeper into testing and expose it to ext
 **Personal Testing Devices/ Software/ Browsers**
 - Macbook Pro (15-inch)
 	- macOS Big Sur 11.2.3
-		- Safari
-		- Chrome
-		- Firefox
+		- Safari Version 14.0.3 (16610.4.3.1.7)
+		- Chrome Version 90.0.4430.72 (Official Build) (x86_64)	
+		- Firefox 88 (64-bit)
 	- Windows 10 (bootcamp)
-		- Safari
+		- Microsoft Edge
 		- Chrome
 		- Firefox
 - Dell 2419 Monitor
 - iPad Air
 - iPhone 11 Pro
+
+**Secondary Testing Device/ Sofware/ Browser**
+- HP ProDesk 600 Desktop PC
+    - Windows 10 Pro 
+        - Microsoft Edge Version 90.0.818.42 (Official Build) (64-Bit)
+        - Firefox 78.10.0esr (64-Bit)
+        - Chrome Version 90.0.4430.85 (Official Build) (64-Bit)
+- AOC 22E15 21.5-inch Full HD 1920x1080 at 75 Hz
   
 **Issue 1 - No images**  
 I had an issue with my background images not showing up. When I created my site folders, I mistakingly named the images folder "Images". All my image links were to the "images" folder, and I don't know why, but Chome on my local server was forgiving and displayed my images. GitHub, on the other hand, is a little more pedantic. The website images were not showing.

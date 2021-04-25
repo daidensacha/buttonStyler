@@ -36,7 +36,7 @@ mind on more important things while writing code when I have it written down.
         <tr><td colspan="6">FORM 4 - COLOR STYLING</td></tr>
         <tr><td>background&nbsp;(solid)</td><td>color</td><td>on/off</td><td rowspan=4>toggleBackground</td><td>style-bg-color</td><td>backgroundColorPicker</td></tr>
         <tr><td>start&nbsp;color</td><td>color</td><td rowspan=3>off/on</td><td>style-gradient1-color</td><td>gradient1ColorPicker</td></tr>
-        <tr><td>end&nbsp;color</td><td>color</td>><td>style-gradient2-color</td><td>gradient2ColorPicker</td></tr>
+        <tr><td>end&nbsp;color</td><td>color</td><td>td>style-gradient2-color</td> <td>gradient2ColorPicker</td></tr>
         <tr><td>gradient&nbsp;direction</td><td>select</td><td>gradient-direction</td><td>gradientDirectionSel</td></tr>
         <tr><td colspan="6">FORM 5 HOVER - HOVER STYLING</td></tr>
         <tr><td>background&nbsp;(solid)</td><td>color</td><td>on/off</td><td rowspan=4>toggleHover</td><td>style-color-hover</td><td>backgroundHoverColorPicker</td></tr>

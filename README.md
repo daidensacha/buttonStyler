@@ -49,7 +49,7 @@ See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).
 	- I want to share this tool with others who might also benefit from it.
 	- I want to do this project to learn and to be able to put to use the things I have been learning in this last unit.
 
-[Post development-deployment review](/assets/documentation/testing.md/#user-story-review) of user stories can be read in the testing.md
+[Post development-deployment review](/assets/documentation/testing.md/#user-story-review-development-deployment) of user stories can be read in the testing.md
 
 
 ### 2\. Scope
@@ -609,7 +609,7 @@ I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to 
 
 ### User Story review  
 
-[User stories review](assets/documentation/testing.md/#user-story-images) can be seen in the testing.md file.
+[User stories review](assets/documentation/testing.md/#user-story-review-development-deployment) can be seen in the testing.md file.
 
 ### Feedback
 

@@ -234,6 +234,7 @@ mind on more important things while writing code when I have it written down.
 			- [x] I select a color from the color picker palette of colors, the font color changes, the font-color CSS property changes, and displays RGBA color format. 
 			- [x] I enter a HEX color value in the input, and the color picker automatically updates to the entered color, the button font color changes. The font-color CSS property displays the RGBA color value. 
             - [x] I test similarly entering HEXA, RGB, RGBA colors in the color picker input. It accepts all formats just like it does for HEX.  
+            - [x] I noted that when I added the RGBA or HEXA color with 0 opacity, in order to see the color again, I need to add that opcatiry back for example, adding FF for 0% transparency on the end of the HEX color. Then the color shows again. Another way is to click a color in the color palette. That resets the opacity to 1. I've written this up in the README under [Testing the inputs/color input point 3](/README.md/#testing-the-inputs).
 
             ![Entering Color Values](/assets/documentation/images/screenshots/rm-colorpickers.jpg)  
 

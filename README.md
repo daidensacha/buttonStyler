@@ -417,7 +417,16 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 	- I click on the color input, the color picker popup appears. I select a color with the mouse cursor, the color changes in the demo button display, and the color RGBA value displays in the CSS Output block.
 
-	- In the developer user stories, I identified the need for the developer to enter specific colors for button values. I added different values in the color picker input, HEX, HEXA, RGB, and RGBA. The color in the color picker immediately changes to the color entered. It confirms the color pickers accept different color formats and meets the need of the developer.
+	- In the developer user stories, I identified the need for the developer to enter specific colors for button values. I added different values in the color picker input, HEX, HEXA, RGB, and RGBA. The color in the color picker immediately changes to the color entered. It confirms the color pickers accept different color formats and meets the need of the developer. 
+
+    - One issue arose when testing the color picker, and initially, I thought it was a bug, but it turns out it is simply a quirk of the color picker or entering a color with 0 opacity.  
+    It happens with RGBA or HEXA color formats. When I enter a color, for example, HEXA 00000000 (RRGGBBAA), or rgba(0,0,0,0), it set the opacity to 100% transparent. 
+    Note, with HEX or HEXA, it is unnecessary to add the  # before the color number in this color picker. 
+    If I add another color, I need to change the opacity for it to be visible. For example, I now add FFFFFF for white, but no color appears. If I enter the same color but add the HEX alpha for 0% transparency FF, i.e., FFFFFFFF, the color appears It is the same with using the rgba, I need to add rgba(255,255,255,1), and the color appears. 
+    I will talk with the color picker developer to see that he is aware of this, but for now, there's not a lot I can do about it. At least I understand what is happening; thats a good start. 
+    I have mentioned this issue in the testing.md file [Accordion Forms/font-color, point 6](/assets/documentation/testing.md/#accordion-forms).  
+
+    [CSS Tricks](https://css-tricks.com/8-digit-hex-codes/) give a good explanation of the HEX colors with the alpha added. They in turn reference their source as an article in Stack Overflow.      
 
 ![Color pickers](/assets/documentation/images/screenshots/rm-colorpickers.jpg)
 

@@ -62,9 +62,6 @@ let rangeSlider = function () {
   
   rangeSlider();
 
-// BOOTSTRAP SLIDE SWITCH
-// https://gitbrent.github.io/bootstrap4-toggle/#usage
-
 // This function enables and disables the text shadow group
 $(function () {
     $('#blur-group-toggle').on('change', function () {
@@ -140,7 +137,8 @@ $(function () {
 
 // ========== CREATE COPY ICON FOR COPYING THE CSS TO CLIPBOARD. ===============
 // THANKS TO https://clipboardjs.com/
-// Also thanks to https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa for the script
+// Also thanks to https://gist.github.com/dguo/1730d4bfeb370d92117e092311262bfa 
+// I modified the script for my needs 
 
 // FUNCTION TO GET TARGET ELEMENT, COPY, AND OUTPUT SUCCESS/ERROR MESSAGE
 document.querySelectorAll('pre > code').forEach(function (codeBlock) {

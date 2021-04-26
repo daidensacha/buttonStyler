@@ -236,7 +236,7 @@ mind on more important things while writing code when I have it written down.
             - [x] I test similarly entering HEXA, RGB, RGBA colors in the color picker input. It accepts all formats just like it does for HEX.  
             #### Alpha color issue
             - [x] I noted that when I added the RGBA or HEXA color with 0 opacity, in order to see the color again, I need to add that opcatiry back for example, adding FF for 0% transparency on the end of the HEX color. Then the color shows again. Another way is to click a color in the color palette. That resets the opacity to 1.  
-            I've written this up in the README under [Testing the inputs/color input point 3](/README.md/#testing-the-inputs).
+            I've written this up in the README under [Testing the inputs/color input point 3](/README.md/#alpha-color-issue).
 
             ![Entering Color Values](/assets/documentation/images/screenshots/rm-colorpickers.jpg)  
 

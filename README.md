@@ -419,6 +419,7 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 	- In the developer user stories, I identified the need for the developer to enter specific colors for button values. I added different values in the color picker input, HEX, HEXA, RGB, and RGBA. The color in the color picker immediately changes to the color entered. It confirms the color pickers accept different color formats and meets the need of the developer. 
 
+    #### Alpha color issue
     - One issue arose when testing the color picker, and initially, I thought it was a bug, but it turns out it is simply a quirk of the color picker or entering a color with 0 opacity.  
     It happens with RGBA or HEXA color formats. When I enter a color, for example, HEXA 00000000 (RRGGBBAA), or rgba(0,0,0,0), it set the opacity to 100% transparent. 
     Note, with HEX or HEXA, it is unnecessary to add the  # before the color number in this color picker. 

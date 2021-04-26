@@ -512,8 +512,8 @@ When scrolling the CSS display block, the bootstrap `sticky-top ` class added to
 
 ## USER STORY REVIEW (Development-Deployment)
 
-[Return to README](/README.md/#user-story-review)  
-[Return to README/User stories](/README.md/#1-strategy)
+[Return to README/User stories](/README.md/#1-strategy)  
+[Return to README/User Story Review](/README.md/#user-story-review)  
 
 
 1. As an aspiring developer:

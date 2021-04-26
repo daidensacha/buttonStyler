@@ -1,6 +1,7 @@
 ## USER STORY IMAGES
 
-[Return to README](README.md/#user-story-review)
+[Return to README](/README.md/#user-story-review)
+
 
 1. As an aspiring developer:
 	- I want to play with styles to see what works and what doesn't work.

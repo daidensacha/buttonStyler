@@ -607,10 +607,6 @@ I missed that the width calculation changed the equation for the display of the 
 **Information Block Headings**  
 I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to see how he got on. He had spent the afternoon playing with it, created some buttons, found his way to the test codepen I made, and even copied the code into a repository. He asked me what he needed to do to get the font he chose, and I explained that the instruction was in point 3 of the information block, "Add your button". It was the part he had not read. The heading color was conservative beige, and I decided to change it to something bolder, as I want it to shout out "read me". It's now fluoro green but fits with the banner image that is a rainbow of colors. 
 
-### User Story review  
-
-[User stories review](assets/documentation/testing.md/#user-story-review-development-deployment) can be seen in the testing.md file.
-
 ### Feedback
 
 **Jürgen Jung** - *Software Engineer*  

@@ -1,6 +1,6 @@
 # TESTING
 
-## TESTING PLAN
+## TESTING PLAN (Pre-development)
 [README/Testing](/README.md/#testing)
 ### RESEARCH
 [README/Research](/README.md/#research)
@@ -112,7 +112,10 @@ I have a USB-C to dual HDMI hub for my MacBook Pro, with 2 x Dell U2419H monitor
 		- Width: 2.81 inches (71.4 mm)
 		- Height: 5.67 inches (144.0 mm)
 
-## INITIAL PLAN FOR FORM INPUTS
+***
+***
+
+## INITIAL PLAN FOR FORM INPUTS (Pre-development)
 [Back to README/UX DESIGN/Structure](/README.md/#3-structure)
 
 
@@ -162,8 +165,10 @@ mind on more important things while writing code when I have it written down.
     </tbody>
 </table>
 
+***
+***
 
-## Testing Checklist
+## TESTING CHECKLIST (Development-Deployment)
 [README/Testing](/README.md/#testing)
 
 ## Navbar
@@ -501,9 +506,12 @@ When scrolling the CSS display block, the bootstrap `sticky-top ` class added to
 				- Chrome Version 90.0.4430.85 (64-Bit)
 		- Monitor
 			- AOC 22E15 21.5-inch Full HD 1920x1080 at 75 Hz
+
+***
+***
 	
 
-## USER STORY IMAGES
+## USER STORY IMAGES (Development-Deployment)
 
 [Return to README](/README.md/#user-story-review)
 
@@ -617,7 +625,6 @@ A text box, three selects, eleven color pickers, thirteen range selectors, and s
 **Hover styling**  
 
 ![Hover styling](/assets/documentation/images/screenshots/form-hover-styling.jpg)  
-
 
 
 - **The Owner**

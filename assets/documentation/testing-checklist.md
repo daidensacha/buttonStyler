@@ -285,15 +285,15 @@ the second moving to a position above the accordion in the first column.
 The demo button and CSS display in the second column are also in separate full-width columns, displaying the demo button column above the CSS display column. 
 When scrolling the CSS display block, the bootstrap `sticky-top ` class added to the demo button column means it sticks to the top when it hits the top of the window.  Only when the CSS Display has scrolled up, the demo button also scrolls off-screen. 
 
-**Screensize greater than 992px, `stiky-top` demo button  
+**Screensize greater than 992px, `stiky-top` demo button**  
 
 ![sticky-top Screens > 992px](/assets/documentation/images/screenshots/sticky-top-1.jpg)  
 
-**Screensize equal to or less than 992px, `stiky-top` demo button  
+**Screensize equal to or less than 992px, `stiky-top` demo button**  
 
 ![sticky-top Screens <= 992px](/assets/documentation/images/screenshots/sticky-top-2.jpg)  
 
-**Screensize equal to or less than 576px, `stiky-top` demo button  
+**Screensize equal to or less than 576px, `stiky-top` demo button**  
  
 ![sticky-top Screens < 576px](/assets/documentation/images/screenshots/sticky-top-3.jpg)  
 

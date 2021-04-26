@@ -16,7 +16,7 @@ See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).
 
 ##### User Stories:
 
-- ****External Users**** Hobbyists, through to learning and budding developers.
+- **External Users** Hobbyists, through to learning and budding developers.
 
   
 
@@ -38,7 +38,7 @@ See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).
 
   
 
-- ****The Owner****
+- **The Owner**
 
 
 1. As the owner:
@@ -49,6 +49,8 @@ See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).
 	- I want to share this tool with others who might also benefit from it.
 	- I want to do this project to learn and to be able to put to use the things I have been learning in this last unit.
 
+[Post development-deployment review](/assets/documentation/testing.md/#user-story-review) of user stories can be read in the testing.md
+
 
 ### 2\. Scope
 
@@ -58,7 +60,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 **Required Features**
 
-- ****Color picker feature**** \- Users can select colors for the different attributes of the button.
+- **Color picker feature** \- Users can select colors for the different attributes of the button.
 
 - **Color Format** \- Users will be able to enter the color in a text input, in preferred format HEX, RGB/A, HSL/A.
 
@@ -159,7 +161,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 - **Social Links** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
 
-- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, [I created a table](/assets/documentation/form-plan.md/#form-outline) to use as I put the forms together.
+- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, [I created a table](/assets/documentation/testing.md/#form-outline) to use as I put the forms together.
 
 - **Layout** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 
@@ -247,10 +249,11 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 	Application for building Bootstrap grids. It is a convenient tool that simplifies building the responsive grid.
 
 ## Testing
-[Testing-Plan](/assets/documentation/testing-plan.md/#testing-plan) outlines my development and testing strategy.  
-[Testing-Checklist](/assets/documentation/testing-checklist.md/#testing-checklist) every element listed and checked. 
+[Testing-Plan](/assets/documentation/assets/documentation/testing.md/#testing-plan) outlines my development and testing strategy.  
+[Testing-Checklist](/assets/documentation/testing.md/#testing-checklist) every element listed and checked. 
+
 ### Research
-[Testing-Plan/Research](/assets/documentation/testing-plan.md/#research) outline.
+[Testing-Plan/Research](/assets/documentation/testing.md/#research) outline.
 
 
 ***
@@ -280,7 +283,7 @@ In this preliminary testing phase, I chose what I felt would best suit my needs 
 ### Development
 
 ***
-[Testing-Plan/Development](/assets/documentation/testing-plan.md/#development) outline.
+[Testing-Plan/Development](/assets/documentation/testing.md/#development) outline.
 
 
 #### Git Version Control
@@ -289,7 +292,7 @@ In this preliminary testing phase, I chose what I felt would best suit my needs 
 	To begin my project, I started with `git init` to initialise git within the project.
 
 - **Git Ignore**
-	I created a ****.gitignore**** file to add files and directories I didn't want to upload to GitHub.
+	I created a **.gitignore** file to add files and directories I didn't want to upload to GitHub.
 
 	`git echo "file_name" >> .gitignore` is the terminal command I used to add files and directories to **.gitignore**.
 
@@ -351,13 +354,13 @@ In this preliminary testing phase, I chose what I felt would best suit my needs 
 
 ***
 
-****Obstacle and rethink****
+**Obstacle and rethink**
 
 The first four inputs, for button-text, font-family, font-color, font-size, were all added directly to the button. I quickly discovered this would not work as pseudo css classes cannot be added directly to an element using JavaScript. Also, my plan to add spans to the CSS block for the button style attributes was complicated.
 
 I need to research to see if there was a better way.
 
-****The Solution****
+**The Solution**
 
 1. [Create a style element, append it to the HEAD, and insert the CSS.](https://dev.to/karataev/set-css-styles-with-javascript-3nl5)
 
@@ -373,7 +376,7 @@ The Javascript that processes the form input values and creates the CSS rules is
 
 ***
 
-****Onwards with the new plan****  
+**Onwards with the new plan**  
 It was time-consuming, but the plan was clear and easy to implement. It also worked beautifully. I wrote the code in parts, querying selectors, assigning variables, and checking in the DevTools console for error feedback.
 
 My testing in this part of writing the code was to ensure that inputs were assigned variables, the values of those inputs were then assigned to variables and then combined by groups to create the CSS rules. Console.log was my way to see the code was working.
@@ -521,7 +524,7 @@ With testing completed to a point where I needed to have the site live to test f
 ### Deployment
 
 ***
-[Testing-Plan/Deployment](/assets/documentation/testing-plan.md/#deployment) outline.
+[Testing-Plan/Deployment](/assets/documentation/testing.md/#deployment) outline.
 
 **Deploy to GitHub Pages**
 
@@ -606,9 +609,7 @@ I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to 
 
 ### User Story review  
 
-A review of user stories and images relatign to those stories can be seen at the following link.
-
-[User stories review](assets/documentation/user-stories.md/#user-story-images)
+[User stories review](assets/documentation/testing.md/#user-story-images) can be seen in the testing.md file.
 
 ### Feedback
 
@@ -650,7 +651,7 @@ Throughout my project, I was continually challenged to research and learn, to dr
 
 * * *
 
-1. [Form Outline](/assets/documentation/form-plan.md/#form-outline)  
+1. [Form Outline](/assets/documentation/testing.md/#form-outline)  
     Before starting writing the HTML for the forms, I created an excel sheet with the information in the linked table. GitHub markdown does not have colspan or rowspan, which I needed to present the information. For example, using colspan and rowspan makes it more explicit about the function of the toggle switches. In this document, I reverted to using HTML table tags with colspan and rowspan. 
 
 It has been a process to learn and develop this application. I had to use and implement many features that I have not used before. It is my first genuine attempt at using Javascript and jQuery, so at times I felt totally out of my depth. That said, I learned a lot and already viewed my work with a critical eye for ideas on improving and doing better. That will be in a future project when I rebuild this with the wisdom of hindsight.

@@ -508,12 +508,12 @@ When scrolling the CSS display block, the bootstrap `sticky-top ` class added to
 			- AOC 22E15 21.5-inch Full HD 1920x1080 at 75 Hz
 
 ***
-***
-	
+***	
 
-## USER STORY IMAGES (Development-Deployment)
+## USER STORY REVIEW (Development-Deployment)
 
 [Return to README](/README.md/#user-story-review)
+[Return to README/User stories](/README.md/#user-stories)
 
 
 1. As an aspiring developer:
@@ -539,6 +539,7 @@ Being able to witness that change as it happens and see it visually in the style
 The above example shows how the gradient CSS rule output.
 In the CSS block, the CSS output is in `<code><pre></pre></code>` tags so that it will overflow when needed and will not fold. It's a quirk of using the `pre` tags.   It's easy to copy with the copy to clipboard icon. Note the button is showing the gradient background.
 
+***
 
 2. As a hobbyist who likes to dabble with HTML and CSS:
 	- I want to enjoy playing and be able to create buttons easily.
@@ -554,6 +555,7 @@ then click the link to codepen in the "2. Copy the CSS" section under the CSS di
 
 ![Information Section](/assets/documentation/images/screenshots/direction-section.jpg)  
 
+***
 
 3. As a developer:
 	- I'm always looking and open to trying tools to make my work more efficient and save me time.
@@ -565,7 +567,9 @@ was displayed in the color picker.
 
 ![Entering different color formats](/assets/documentation/images/screenshots/rm-colorpickers.jpg)  
 
-Additionally, I the pallete of colors I added in the color pickers, as follows.
+I added a palette of Bootstrap colors to the default color picker settings. I added "click on close" to the color picker settings so when a user clicks on a color in the palette it closes. 
+
+ The color picker palette is as follows.
 
 
 **Bootstrap palette:**
@@ -598,6 +602,8 @@ default colors if they are needed.
 
 ![Bootstrap color palette](/assets/documentation/images/screenshots/bootstrap-palette.jpg)  
 
+***
+
 **A variety of options conveniently folded up inside the accordion**  
 
 A text box, three selects, eleven color pickers, thirteen range selectors, and six toggle switches are all bundled up neatly inside the accordion to offer various options for all anticipated users. Here are some images showing the different forms, with their inputs that change the style of the button and the CSS display values. 
@@ -626,6 +632,7 @@ A text box, three selects, eleven color pickers, thirteen range selectors, and s
 
 ![Hover styling](/assets/documentation/images/screenshots/form-hover-styling.jpg)  
 
+***
 
 - **The Owner**
 

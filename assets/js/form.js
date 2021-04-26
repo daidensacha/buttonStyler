@@ -9,8 +9,10 @@ jscolor.presets.default = {
 	previewPosition:'right', 
     previewSize:60, 
     position:'top',
-    // palette:'rgba(0,0,0,0) #fff #808080 #000 #996e36 #f55525 #ffe438 #88dd20 #22e0cd #269aff #bb1cd4',
-    palette:'#007bff #6610f2 #6f42c1 #e83e8c #dc3545 #fd7e14 #f0ad4e #28a745 #20c997 #17a2b8 #fff #f8f9fa #6c757d #343a40 #000 rgba(0,0,0,0)',
+    format:'auto', 
+    // palette:'rgba(0,0,0,0) #fff #808080 #000 #996e36 #f55525 #ffe438 #88dd20 #22e0cd #269aff #bb1cd4', // Simple palette
+    palette:'#007bff #6610f2 #6f42c1 #e83e8c #dc3545 #fd7e14 #f0ad4e #28a745 #20c997 #17a2b8 #ffffff #f8f9fa #6c757d #343a40 #000000 rgba(0,0,0,0)', // Bootstrap palette
+    hideOnPaletteClick:true,
 	backgroundColor:'rgba(1,2,46,0.72)', 
 	borderColor:'rgba(120,120,120,1)', 
     width:139, 

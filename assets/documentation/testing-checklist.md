@@ -271,6 +271,33 @@
 - [x] **Small** Small devices (small desktops, 576px and up) `@media (min-width: 576px)` 
 - [x] **Extra Small** // X-Small devices (portrait phones, less than 576px) // No media query for `xs` since this is the default in Bootstrap
 
+I tested responsiveness with Chrome DevTools, on a variety of different devices and in various browsers. 
+The site's main content is the accordion with inputs for changing CSS styles, the demo button, and the CSS display.
+I positioned them so that it is possible to make changes, see the CSS output and the changing style of the demo button. 
+
+**The HTML main content structure with boostrap classes**
+
+![Main Row Content](/assets/documentation/images/screenshots/main-row-html.jpg)  
+
+The two columns display side by side on a screen size larger than 992px. On screens smaller than 992px, the two columns stack with
+the second moving to a position above the accordion in the first column. 
+
+The demo button and CSS display in the second column are also in separate full-width columns, displaying the demo button column above the CSS display column. 
+When scrolling the CSS display block, the bootstrap `sticky-top ` class added to the demo button column means it sticks to the top when it hits the top of the window.  Only when the CSS Display has scrolled up, the demo button also scrolls off-screen. 
+
+**Screensize greater than 992px, `stiky-top` demo button  
+
+![sticky-top Screens > 992px](/assets/documentation/images/screenshots/sticky-top-1.jpg)  
+
+**Screensize equal to or less than 992px, `stiky-top` demo button  
+
+![sticky-top Screens <= 992px](/assets/documentation/images/screenshots/sticky-top-2.jpg)  
+
+**Screensize equal to or less than 576px, `stiky-top` demo button  
+ 
+![sticky-top Screens < 576px](/assets/documentation/images/screenshots/sticky-top-3.jpg)  
+
+
 ## Testing Devices
 
 #### **MacBook Pro (15-inch, 2017)**

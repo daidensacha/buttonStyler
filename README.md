@@ -251,8 +251,9 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 	Application for building Bootstrap grids. It is a convenient tool that simplifies building the responsive grid.
 
 ## Testing
-[Testing-Plan](/assets/documentation/assets/documentation/testing.md/#testing-plan) outlines my development and testing strategy.  
-[Testing-Checklist](/assets/documentation/testing.md/#testing-checklist) every element listed and checked. 
+[Testing-Plan (Pre-development)](/assets/documentation/testing.md/#testing-plan-pre-development  ) outlines my development and testing strategy.
+
+[Testing-Checklist](/assets/documentation/testing.md/#testing-checklist-development-deployment) every element listed and checked. 
 
 ### Research
 [Testing-Plan/Research](/assets/documentation/testing.md/#research) outline.

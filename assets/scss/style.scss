@@ -86,7 +86,7 @@ main h2 {
 
 #heading-container {
   position: relative;
-  top: 3rem;
+  padding-top: 3rem;
 }
 
 .header-heading {
@@ -152,6 +152,7 @@ header img {
 // 404 Error styling
 div#pnf-error {
   // min-height: 80%;
+  margin-bottom:14rem;
 }
 
 div#pnf-error h4,
@@ -587,10 +588,10 @@ pre.language-css {
 ================================================================================ 
 */
 
-#footer-container {
-  position: absolute;
-  bottom: 0;
-}
+// #footer-container {
+//   position: absolute;
+//   bottom: -150px;
+// }
 
 div.footer {
     background-color: #343a40;

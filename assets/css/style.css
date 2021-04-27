@@ -46,13 +46,8 @@ body::-webkit-scrollbar {
   -o-background-size: cover;
 }
 
-#footer-container {
-  position: absolute;
-  top: 100%;
-}
-
-#bg-fullscreen {
-  min-height: 100vh;
+#elephant-row {
+  margin-bottom: 13rem;
 }
 
 h1 {

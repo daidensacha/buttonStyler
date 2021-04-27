@@ -74,13 +74,17 @@ body::-webkit-scrollbar {
 }
 
 #footer-container {
-  position: absolute;
-  top: 100%;
+  // position: absolute; // second issue found in the web inspector
+  // top: 100%; 
+  
 }
 
+#elephant-row {
+  margin-bottom: 13rem;
+}
 
 #bg-fullscreen {
-  min-height: 100vh;
+  // min-height: calc(100vh);
 }
 
 
@@ -164,7 +168,7 @@ color: #fcfcfc;
 // 404 Error styling
 div#pnf-error {
   // min-height: 80%;
-  // margin-bottom:14rem;
+  // margin-bottom:14rem; // one issue found in web inspector
 }
 
 div#pnf-error h4,

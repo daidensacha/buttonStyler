@@ -622,6 +622,10 @@ I missed that the width calculation changed the equation for the display of the 
 **Information Block Headings**  
 I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to see how he got on. He had spent the afternoon playing with it, created some buttons, found his way to the test codepen I made, and even copied the code into a repository. He asked me what he needed to do to get the font he chose, and I explained that the instruction was in point 3 of the information block, "Add your button". It was the part he had not read. The heading color was conservative beige, and I decided to change it to something bolder, as I want it to shout out "read me". It's now fluoro green but fits with the banner image that is a rainbow of colors. 
 
+**404 Page not found**  
+***The pièce de résistance*** last of all. I added a [custom 404 "Page not found"](/404.html) page. It was the last item to tick of the list. I encountered the GitHub pages default 404 error page with broken links as I was working on the README.md and testing.md files. 
+The first when the 404 error page opens is a negative impression. I kept the flavor of the site with the navbar, offcanvas, header title, blockquote, and footer. I added a full-screen image of an elephant sitting on a bench with a dog watching the sunset. If users find themselves at the 404 error page, I can't take away the negative experience, but the image lightens it somewhat. I also added light humor with the message, ***"Talk about the elephant in the room!"***. Humor also adds positive impressions, and there is a styled button saying, ***"Take me back!"***. It links to the homepage, where users can continue with the button styler if they wish. 
+
 ### Feedback
 
 **Jürgen Jung** - *Software Engineer*  

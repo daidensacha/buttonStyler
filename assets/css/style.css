@@ -132,6 +132,19 @@ header img {
   white-space: normal;
 }
 
+div#pnf-error h4,
+div#four-0-four {
+  color: #6d4c34;
+}
+
+blockquote p:first-child {
+  color: #68562e;
+}
+
+p.blockquote-footer {
+  color: #795c25;
+}
+
 /* 
 ================================================================================ 
 ================================= ACCORDION ==================================== 
@@ -541,7 +554,7 @@ pre.language-css {
 ================================================================================ 
 */
 #footer-container {
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 

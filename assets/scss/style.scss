@@ -149,6 +149,20 @@ header img {
   white-space: normal;
 }
 
+// 404 Error styling
+div#pnf-error h4,
+div#four-0-four {
+  color: rgb(109, 76, 52);
+}
+
+// Blockquote styling
+blockquote p:first-child {
+  color: rgb(104, 86, 46);
+}
+p.blockquote-footer {
+  color: rgb(121, 92, 37);
+}
+
 /* 
 ================================================================================ 
 ================================= ACCORDION ==================================== 
@@ -570,7 +584,7 @@ pre.language-css {
 */
 
 #footer-container {
-  position: fixed;
+  position: absolute;
   bottom: 0;
 }
 

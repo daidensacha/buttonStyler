@@ -49,11 +49,6 @@ body::-webkit-scrollbar {
   height: 100vh;
 }
 
-#footer-container {
-  position: absolute;
-  bottom: 0;
-}
-
 h1 {
   color: #dea773 !important;
 }

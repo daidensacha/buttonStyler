@@ -41,18 +41,11 @@ body::-webkit-scrollbar {
 }
 
 .bg {
-  /* The image used */
-  background-image: url("../images/elephant.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("../images/elephant.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
-}
-
-#bg-fullscreen {
-  height: 100vh;
+  -o-background-size: cover;
 }
 
 h1 {

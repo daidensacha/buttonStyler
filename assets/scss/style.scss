@@ -73,18 +73,18 @@ body::-webkit-scrollbar {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  height: 100vh;
+  // height: 100vh;
 }
 
-// #footer-container {
-//   position: absolute;
-//   bottom: 0;
-// }
+#footer-container {
+  position: absolute;
+  bottom: 0;
+}
 
 
-// #bg-fullscreen {
-//   height: 100vh;
-// }
+#bg-fullscreen {
+  height: 100vh;
+}
 
 h1 {
     color: #dea773 !important;

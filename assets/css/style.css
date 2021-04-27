@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 
 .bg {
   /* The image used */
-  background-image: url("/assets/images/elephant.jpg");
+  background-image: url("../images/elephant.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */

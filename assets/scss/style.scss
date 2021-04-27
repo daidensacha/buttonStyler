@@ -73,9 +73,10 @@ body::-webkit-scrollbar {
  
 }
 
-#footer-container {
-  // position: absolute; // second issue found in the web inspector
-  // top: 100%; 
+#footer-container {// second issue found in the web inspector
+  position: absolute; 
+  bottom: 0;
+  // top: calc(100% - 105px); 
   
 }
 
@@ -84,7 +85,7 @@ body::-webkit-scrollbar {
 }
 
 #bg-fullscreen {
-  // min-height: calc(100vh);
+  min-height: 100vh;
 }
 
 

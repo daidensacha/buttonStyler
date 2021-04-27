@@ -156,7 +156,7 @@ mind on more important things while writing code when I have it written down.
         <tr><td>end&nbsp;color</td><td>color</td><td>style-gradient2-color</td> <td>gradient2ColorPicker</td></tr>
         <tr><td>gradient&nbsp;direction</td><td>select</td><td>gradient-direction</td><td>gradientDirectionSel</td></tr>
         <tr><td colspan="6">FORM 5 HOVER - HOVER STYLING</td></tr>
-        <tr><td>background&nbsp;(solid)</td><td>color</td><td>on/off</td><td rowspan=4>hover-background-toggle<br/>hoverBackgroundToggle</td><td>style-color-hover</td><td>backgroundHoverColorPicker</td></tr>
+        <tr><td>background&nbsp;(solid)</td><td>color</td><td>on/off</td><td rowspan=4>hover-bg-toggle<br/>hoverBgToggle</td><td>style-color-hover</td><td>backgroundHoverColorPicker</td></tr>
         <tr><td>start&nbsp;color</td><td>color</td><td rowspan=3>off/on</td><td>style-gradient1-hover</td><td>gradient1HoverColorPicker</td></tr>
         <tr><td>end&nbsp;color</td><td>color</td><td>style-gradient2-hover</td><td>gradient2HoverColorPicker</td></tr>
         <tr><td>gradient&nbsp;direction</td><td>select</td><td>gradient-hover-direction</td><td>gradientHoverDirectionSel</td></tr>

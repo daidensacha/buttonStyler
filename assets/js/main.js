@@ -113,7 +113,7 @@ $(function () {
 
 // This function toggles option between solid and gradient background for the hover group
 $(function () {
-    $('#hover-background-toggle').on('change', function () {
+    $('#hover-bg-toggle').on('change', function () {
         if (!!this.checked) {
             $('#style-gradient1-hover, #style-gradient2-hover, #gradient-hover-direction').prop('disabled', false);
             $('#style-color-hover').prop('disabled', true);

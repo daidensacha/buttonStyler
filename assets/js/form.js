@@ -110,7 +110,7 @@ function update() {
  
     // =========================================================================
     // HOVER
-    let hoverBackgroundToggle = document.querySelector('#hover-background-toggle');
+    let hoverBgToggle = document.querySelector('#hover-bg-toggle');
     let backgroundHoverColorPicker = document.querySelector('#style-color-hover').jscolor;
     let gradient1HoverColorPicker = document.querySelector('#style-gradient1-hover').jscolor;
     let gradient2HoverColorPicker = document.querySelector('#style-gradient2-hover').jscolor;
@@ -259,12 +259,12 @@ function update() {
     lines.push(hoverFontColor);
 
     // HOVER BACKGROUND COLOR
-    if (!hoverBackgroundToggle.checked) {
+    if (!hoverBgToggle.checked) {
         lines.push(backgroundHover);
-        // console.log("Hover Solid background: " + hoverBackgroundToggle.checked);
+        // console.log("Hover Solid background: " + hoverBgToggle.checked);
     } else {
         lines.push(backgroundGradientHover);
-        // console.log("Hover Gradient background: " + hoverBackgroundToggle.checked);
+        // console.log("Hover Gradient background: " + hoverBgToggle.checked);
     }
 
     // HOVER BORDER

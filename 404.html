@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styling</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="https://kit.fontawesome.com/7432ab4d43.js" crossorigin="anonymous"></script>
+    <script src="assets/vendor/js/clipboard.min.js"></script>
+
+    <style>
+         div#pnf-error h4 {
+                    color: rgb(82, 56, 38);
+                }
+    </style>
+
+</head>
+
+<body class="bg">
+    <div class="main-container" id="bg-fullscreen">
+
+        <div class="bg-primary">
+            <div class="container">
+                <!--  START NAVBAR   -->
+                <nav class="navbar  fixed-top navbar-dark bg-navbar-custom navbar-offcanvas">
+                    <!-- remove class bg-dark -->
+
+                    <div class="ol social-links list-inline">
+                        <span class="list-inline-item">
+                            <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip"
+                                data-placement="top" title="Github"><i class="fab fa-github"></i></a>
+                        </span>
+                        <span class="list-inline-item">
+                            <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank"
+                                data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </span>
+                        <span class="list-inline-item">
+                            <a class="" href="https://codepen.io/daidensacha/pens/" target="_blank"
+                                data-toggle="tooltip" data-placement="top" title="Codepen"><i
+                                    class="fab fa-codepen"></i></a>
+                        </span>
+                        <span class="list-inline-item">
+                            <a class="" id="contactToggle" data-target="#contactModal" data-toggle="modal" href=""
+                                data-placement="top" title="Message me"><i class="far fa-envelope" data-toggle="tooltip"
+                                    title="Message me"></i></a>
+                        </span>
+                    </div>
+
+                    <a class="navbar-brand mr-auto" href="#">
+                    </a>
+
+                    <button class="navbar-toggler d-block" type="button" id="navToggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse offcanvas-collapse" id="offCanvasLeft">
+                        <h3 class="text-light pt-5">Resourses</h3>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://getbootstrap.com/docs/4.6/getting-started/introduction/"
+                                    target="_blank">Bootstrap</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="http://shoelace.io/" target="_blank">Shoelace Bootstrap
+                                    Grids</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://gitbrent.github.io/bootstrap4-toggle/"
+                                    target="_blank">Bootstrap 4 Toggle</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://jscolor.com/" target="_blank">jscolor Color Picker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.w3schools.com/js/default.asp"
+                                    target="_blank">w3schools</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://squoosh.app/" target="_blank">Squoosh</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </nav> <!--  END NAVBAR   -->
+            </div> <!-- end nav container   -->
+
+        </div> <!-- bg-primary   -->
+
+        <div class="container-fluid" id="heading-container">
+            <div class="row row-flex" >
+                <div class="col-sm-12">
+
+                    <h1 class="ml-sm-5 ml-2 mt-3 mb-1 header-heading">buttonStyler</h1>
+                    <blockquote class="blockquote ml-sm-5 ml-2">
+                        <p class="mb-0">"Make it simple, but significant"</p>
+                        <p class="blockquote-footer">Dan Draper <cite title="Mad Men">Mad Men</cite></p>
+                    </blockquote>
+                </div>
+
+            </div>
+        </div> <!-- end header row -->
+        <!-- <div class="row row-flex">
+            <div class="col col-sm-3 text-center float-right">
+                <h1 class="display-1 ">404</h1>
+            </div>
+        </div> -->
+        <div class="d-flex align-items-end flex-column" id="pnf-error">
+            <div class="p-2" >
+                <h4>Talk about the elephant in the room!</h4>
+                </div>
+            <div class="mb-auto p-2 display-1">404</div>
+            
+            <div class="p-2 h2">Page not found.</div>
+            <div><button class="btn btn-primary take-me-back" onclick="window.location.href='index.html'">Take me back!</button></div>
+          </div>
+
+    
+
+      
+      
+
+     
+       
+
+        <!-- Modal Code -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="modal-title">Contact Form</h4>
+                        <form onsubmit="return sendMail(this);" name="contentForm" id="needs-validation">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="firstname" placeholder="First Name" required
+                                    pattern="[a-zA-Z]{2,}">
+                                <div class="valid-feedback">Looks good!</div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="lastname" placeholder="Last Name" required
+                                    pattern="^[a-zA-Z]'?([a-zA-Z]|\.| |-)+$">
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <div class="valid-feedback">Looks good!</div>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" maxlength="2000" placeholder="Your message"
+                                    required></textarea>
+                                <div class="valid-feedback">Looks good!</div>
+                                <span id="messageDiv" class=""></span>
+
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-custom-3">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-custom-3" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+
+        <footer class="container-fluid " id="footer-container">
+            <!-- <div class="row row-flex footer pt-3">  -->
+            <div class="row row-flex footer pt-3">
+                <!-- Start Footer column  -->
+
+                <div class="col-md-4 col-sm-12">
+                    <p class="text-light bg-dark text-center">Daiden Sacha 2021</p>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <img src="assets/images/contrast-2.png" class="img-fluid" style="width: 34px" alt="logo">
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+
+                    <ul class="ol social-links dl list-inline">
+                        <li class="list-inline-item">
+                            <a class="" id="toTopBtn" href="#" data-toggle="tooltip" data-placement="top"
+                                title="To Top"><i class="fas fa-chevron-circle-up"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="" href="https://github.com/daidensacha" target="_blank" data-toggle="tooltip"
+                                data-placement="top" title="Github"><i class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="" href="https://www.linkedin.com/in/daiden-sacha-8852b41a6/" target="_blank"
+                                data-toggle="tooltip" data-placement="top" title="Linkedin"><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="" href="https://codepen.io/daidensacha/pens/" target="_blank"
+                                data-toggle="tooltip" data-placement="top" title="Codepen"><i
+                                    class="fab fa-codepen"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="" id="contactFtrToggle" data-target="#contactModal" data-toggle="modal" href=""
+                                data-placement="top"><i class="far fa-envelope" data-toggle="tooltip"
+                                    title="Message me"></i></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div> <!-- End Footer row -->
+        </footer>
+
+    </div> <!-- end main container div -->
+
+    <script src="assets/vendor/js/jquery-3.6.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-drawer/1.0.6/js/drawer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.min.js"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/vendor/js/jscolor.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- <script src="assets/js/form.js"></script> -->
+
+</body>
+
+</html>

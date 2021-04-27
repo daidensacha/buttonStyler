@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Dancing+Script&family=Lobster+Two&family=Montserrat&family=Nunito&family=Nunito+Sans&family=Oxygen&family=PT+Sans&family=Pattaya&family=Poppins&family=Roboto&display=swap");
-/* FONTS INCLUDED IN FORM SELECT
-font-family: 'Abril Fatface', cursive;
-font-family: 'Courgette', cursive;
-font-family: 'Dancing Script', cursive;
-font-family: 'Hind', sans-serif;
-font-family: 'Lobster Two', cursive;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oxygen', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'PT Sans', sans-serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Tajawal', sans-serif;
-
+/* FONT FAMILIES INCLUDED IN FORM
 font-family: 'Abril Fatface', cursive;
 font-family: 'Courgette', cursive;
 font-family: 'Dancing Script', cursive;
@@ -31,7 +19,6 @@ font-family: 'Roboto', sans-serif;
 ================================================================================ 
 */
 body {
-  padding-top: 56px;
   padding-left: 0;
   padding-right: 0;
   width: auto;
@@ -40,6 +27,7 @@ body {
   background-repeat: repeat;
   overflow-y: scroll;
   font-family: Roboto, sans-serif;
+  /* Hide Scrolbars https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
   /* IE and Edge */
@@ -52,6 +40,21 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.bg {
+  /* The image used */
+  background-image: url("/assets/images/elephant.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-fullscreen {
+  height: 100vh;
+}
+
 h1 {
   color: #dea773 !important;
 }
@@ -62,6 +65,11 @@ h2 {
 
 main h2 {
   margin-left: 10%;
+}
+
+#heading-container {
+  position: relative;
+  top: 3rem;
 }
 
 .header-heading {
@@ -532,6 +540,11 @@ pre.language-css {
 =================================== FOOTER BLOCK =============================== 
 ================================================================================ 
 */
+#footer-container {
+  position: fixed;
+  bottom: 0;
+}
+
 div.footer {
   background-color: #343a40;
   border-top: 1px solid black;
@@ -646,6 +659,22 @@ textarea#message.form-control {
   color: #ffeac4;
   background: #72ae57;
   border: 1px solid #ac9e84;
+}
+
+button.btn.take-me-back {
+  font-family: "Dancing Script", cursive;
+  color: #0081ae;
+  font-size: 42px;
+  text-shadow: 1px 2px 3px black;
+  padding: 4px 19px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0);
+}
+
+button.btn.take-me-back:hover {
+  color: #20c997;
+  background: rgba(0, 0, 0, 0);
 }
 
 /* 

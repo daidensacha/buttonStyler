@@ -9,7 +9,9 @@
 
 Building on the skills used to complete my previous project, my goal is to complete a project with interactive features to engage the user. I've decided to build a site that will offer the user tools to create button styles.
 
-See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).
+See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).  
+
+[Testing-documentation](/documentation/testing.md/#testing  ) outlines my complete testing strategy, pre-development, development, deployment and post deployment.
 
 ## UX DESIGN
 ### 1\. Strategy
@@ -411,7 +413,7 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 	- When I click on "select direction" for the gradient background and select a different direction, the gradient direction changes accordingly. The changed CSS rule is also output to the CSS output block. It fulfills a need expressed in the user stories to see how syles work, their effect, and the generated CSS output.
 
-![Gradient Direction](/documentation/images/screenshots/rm-form-gradient.jpg)
+    ![Gradient Direction](/documentation/images/screenshots/rm-form-gradient.jpg)
 
 - Color input
 
@@ -429,7 +431,7 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
     [CSS Tricks](https://css-tricks.com/8-digit-hex-codes/) give a good explanation of the HEX colors with the alpha added. They in turn reference their source as an article in Stack Overflow.      
 
-![Color pickers](/documentation/images/screenshots/rm-colorpickers.jpg)
+    ![Color pickers](/documentation/images/screenshots/rm-colorpickers.jpg)
 
 - Range selector
 

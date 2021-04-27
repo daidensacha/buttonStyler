@@ -72,7 +72,7 @@ function update() {
  
     // =========================================================================
     // SHADOW
-    let shadowToggle = document.querySelector('#blur-group-toggle');
+    let textShadowToggle = document.querySelector('#blur-group-toggle');
     let textShadowColorPicker = document.querySelector('#style-text-shadow').jscolor;
     let textShadowXRange = document.querySelector('#style-text-x');
     let textShadowYRange = document.querySelector('#style-text-y');
@@ -80,7 +80,7 @@ function update() {
 
     // =========================================================================
     // BOX 
-    let shadowGroupToggle = document.querySelector('#shadow-group-toggle');
+    let boxShadowToggle = document.querySelector('#shadow-group-toggle');
     let boxColorPicker = document.querySelector('#style-box-shadow').jscolor;
     let boxXRange = document.querySelector('#style-box-x');
     let boxYRange = document.querySelector('#style-box-y');
@@ -88,7 +88,7 @@ function update() {
 
     // =========================================================================
     // PADDING
-    let paddingGroupToggle = document.querySelector('#padding-group-toggle');
+    let paddingToggle = document.querySelector('#padding-group-toggle');
     let boxPaddingRange = document.querySelector('#style-box-padding');
     let boxTbPaddingRange = document.querySelector('#style-tb-padding');
     let boxLrPaddingRange = document.querySelector('#style-rl-padding');
@@ -101,7 +101,7 @@ function update() {
 
     // =========================================================================
     // BACKGROUND
-    let backgroundGroupToggle = document.querySelector('#bg-group-toggle');
+    let backgroundToggle = document.querySelector('#bg-group-toggle');
     let backgroundColorPicker = document.querySelector('#style-bg-color').jscolor;
     let gradient1ColorPicker = document.querySelector('#style-gradient1-color').jscolor;
     let gradient2ColorPicker = document.querySelector('#style-gradient2-color').jscolor;
@@ -110,7 +110,7 @@ function update() {
  
     // =========================================================================
     // HOVER
-    let hoverGroupToggle = document.querySelector('#hover-group-toggle');
+    let hoverBackgroundToggle = document.querySelector('#hover-group-toggle');
     let backgroundHoverColorPicker = document.querySelector('#style-color-hover').jscolor;
     let gradient1HoverColorPicker = document.querySelector('#style-gradient1-hover').jscolor;
     let gradient2HoverColorPicker = document.querySelector('#style-gradient2-hover').jscolor;
@@ -211,7 +211,7 @@ function update() {
     lines.push(fontSize);
 
     // TEXT SHADOW
-        if (!shadowToggle.checked){
+        if (!textShadowToggle.checked){
         // console.log("Text Shadow Toggle OFF");
     } else {
         lines.push(textShadow);
@@ -219,7 +219,7 @@ function update() {
     }
 
     // BOX SHADOW 
-    if (!shadowGroupToggle.checked){
+    if (!boxShadowToggle.checked){
         // console.log("Box Shadow Toggle OFF");
     } else {
         lines.push(boxShadow);
@@ -227,7 +227,7 @@ function update() {
     }
 
     // PADDING
-    if (!paddingGroupToggle.checked){
+    if (!paddingToggle.checked){
         lines.push(padding);
         // console.log("Padding TRBL ON/ TB-LR OFF");
     } else {
@@ -241,12 +241,12 @@ function update() {
     lines.push(borderRadius);
 
     // BACKGROUND
-    if (!backgroundGroupToggle.checked) {
+    if (!backgroundToggle.checked) {
         lines.push(background);
-        // console.log("Solid background: " + backgroundGroupToggle.checked);
+        // console.log("Solid background: " + backgroundToggle.checked);
     } else {
         lines.push(backgroundGradient);
-        // console.log("Gradient background: " + backgroundGroupToggle.checked);
+        // console.log("Gradient background: " + backgroundToggle.checked);
     }
 
     // CLOSING TAG
@@ -259,12 +259,12 @@ function update() {
     lines.push(hoverFontColor);
 
     // HOVER BACKGROUND COLOR
-    if (!hoverGroupToggle.checked) {
+    if (!hoverBackgroundToggle.checked) {
         lines.push(backgroundHover);
-        // console.log("Hover Solid background: " + hoverGroupToggle.checked);
+        // console.log("Hover Solid background: " + hoverBackgroundToggle.checked);
     } else {
         lines.push(backgroundGradientHover);
-        // console.log("Hover Gradient background: " + hoverGroupToggle.checked);
+        // console.log("Hover Gradient background: " + hoverBackgroundToggle.checked);
     }
 
     // HOVER BORDER

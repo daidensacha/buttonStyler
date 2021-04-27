@@ -46,6 +46,12 @@ body::-webkit-scrollbar {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 100vh;
+}
+
+#footer-container {
+  position: absolute;
+  bottom: 0;
 }
 
 h1 {

@@ -73,6 +73,12 @@ body::-webkit-scrollbar {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  height: 100vh;
+}
+
+#footer-container {
+  position: absolute;
+  bottom: 0;
 }
 
 
@@ -596,10 +602,7 @@ pre.language-css {
 ================================================================================ 
 */
 
-// #footer-container {
-//   position: absolute;
-//   bottom: -150px;
-// }
+
 
 div.footer {
     background-color: #343a40;

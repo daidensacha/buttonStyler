@@ -64,7 +64,7 @@ let rangeSlider = function () {
 
 // This function enables and disables the text shadow group
 $(function () {
-    $('#blur-group-toggle').on('change', function () {
+    $('#text-shadow-toggle').on('change', function () {
         $(".blur-group").prop('disabled', true); // TESTING THE DISABLE OF COLOR PICKER
         if (this.checked) {
             $('.blur-group').prop('disabled', false);
@@ -76,7 +76,7 @@ $(function () {
 
 // This function enables and disables the box shadow group
 $(function () {
-    $("#shadow-group-toggle").on("change", function () {
+    $("#box-shadow-toggle").on("change", function () {
         if (this.checked) {
             $(".shadow-group").prop("disabled", false);
         } else {
@@ -87,7 +87,7 @@ $(function () {
 
 // This function toggles options in the padding group
 $(function () {
-    $('#padding-group-toggle').on('change', function () {
+    $('#padding-toggle').on('change', function () {
         if (!!this.checked) {
             $('#style-rl-padding, #style-tb-padding').prop('disabled', false);
             $('#style-box-padding').prop('disabled', true);
@@ -100,7 +100,7 @@ $(function () {
 
 // This function enables and disables the box shadow group
 $(function () {
-    $('#bg-group-toggle').on('change', function () {
+    $('#background-toggle').on('change', function () {
         if (!!this.checked) {
             $('#style-gradient1-color, #style-gradient2-color, #gradient-direction').prop('disabled', false);
             $('#style-bg-color').prop('disabled', true);
@@ -113,7 +113,7 @@ $(function () {
 
 // This function toggles option between solid and gradient background for the hover group
 $(function () {
-    $('#hover-group-toggle').on('change', function () {
+    $('#hover-background-toggle').on('change', function () {
         if (!!this.checked) {
             $('#style-gradient1-hover, #style-gradient2-hover, #gradient-hover-direction').prop('disabled', false);
             $('#style-color-hover').prop('disabled', true);

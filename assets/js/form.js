@@ -72,7 +72,7 @@ function update() {
  
     // =========================================================================
     // SHADOW
-    let textShadowToggle = document.querySelector('#blur-group-toggle');
+    let textShadowToggle = document.querySelector('#text-shadow-toggle');
     let textShadowColorPicker = document.querySelector('#style-text-shadow').jscolor;
     let textShadowXRange = document.querySelector('#style-text-x');
     let textShadowYRange = document.querySelector('#style-text-y');
@@ -80,7 +80,7 @@ function update() {
 
     // =========================================================================
     // BOX 
-    let boxShadowToggle = document.querySelector('#shadow-group-toggle');
+    let boxShadowToggle = document.querySelector('#box-shadow-toggle');
     let boxColorPicker = document.querySelector('#style-box-shadow').jscolor;
     let boxXRange = document.querySelector('#style-box-x');
     let boxYRange = document.querySelector('#style-box-y');
@@ -88,7 +88,7 @@ function update() {
 
     // =========================================================================
     // PADDING
-    let paddingToggle = document.querySelector('#padding-group-toggle');
+    let paddingToggle = document.querySelector('#padding-toggle');
     let boxPaddingRange = document.querySelector('#style-box-padding');
     let boxTbPaddingRange = document.querySelector('#style-tb-padding');
     let boxLrPaddingRange = document.querySelector('#style-rl-padding');
@@ -101,7 +101,7 @@ function update() {
 
     // =========================================================================
     // BACKGROUND
-    let backgroundToggle = document.querySelector('#bg-group-toggle');
+    let backgroundToggle = document.querySelector('#background-toggle');
     let backgroundColorPicker = document.querySelector('#style-bg-color').jscolor;
     let gradient1ColorPicker = document.querySelector('#style-gradient1-color').jscolor;
     let gradient2ColorPicker = document.querySelector('#style-gradient2-color').jscolor;
@@ -110,7 +110,7 @@ function update() {
  
     // =========================================================================
     // HOVER
-    let hoverBackgroundToggle = document.querySelector('#hover-group-toggle');
+    let hoverBackgroundToggle = document.querySelector('#hover-background-toggle');
     let backgroundHoverColorPicker = document.querySelector('#style-color-hover').jscolor;
     let gradient1HoverColorPicker = document.querySelector('#style-gradient1-hover').jscolor;
     let gradient2HoverColorPicker = document.querySelector('#style-gradient2-hover').jscolor;

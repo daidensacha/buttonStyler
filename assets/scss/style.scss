@@ -68,7 +68,6 @@ body::-webkit-scrollbar {
 // }
 .bg {
   background: url('../images/elephant.jpg') no-repeat center center fixed;
-
   background-size: cover;
   -o-background-size: cover;
  
@@ -81,62 +80,63 @@ body::-webkit-scrollbar {
 
 
 #bg-fullscreen {
-  height: 100vh;
+  min-height: 100vh;
 }
 
+
 h1 {
-    color: #dea773 !important;
+  color: #dea773 !important;
 }
 
 h2 {
-    color: #e88a09 !important;
+  color: #e88a09 !important;
 }
 
 main h2 {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 #heading-container {
-  position: relative;
-  padding-top: 3rem;
+position: relative;
+padding-top: 3rem;
 }
 
 .header-heading {
-  font-size: 3.0rem;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+font-size: 3.0rem;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 header img {
-  margin-bottom: 2.5rem
+margin-bottom: 2.5rem
 }
 
 /* Highlight color classes  */
 .highlight-color-green {
-  color: #248547;
+color: #248547;
 }
 
 .highlight-color-red {
-  color: #f20625;
+color: #f20625;
 }
 
 .highlight-color-tan {
-  color: #fce9b1;
+color: #fce9b1;
 }
 
 .highlight-color-yellow {
-  color: #9b7914;
+color: #9b7914;
 }
 
 .highlight-color-orange {
-  color: #ba6f20;
+color: #ba6f20;
 }
 
 .highlight-color-black {
-  color: #070303;
+color: #070303;
 }
 
 .highlight-color-white {
-  color: #fcfcfc;
+color: #fcfcfc;
 }
 
 /* Highlight background classes  */

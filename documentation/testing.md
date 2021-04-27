@@ -191,19 +191,19 @@ mind on more important things while writing code when I have it written down.
 	- [x] **Linkedin** - I click on the icon, and it opens the linked webpage in a new browser tab.
 	- [x] **Codepen** - I click on the icon, and it opens the linked webpage in a new browser tab.  
 
-    ![Soclial Icons Navbar](/assets/documentation/images/screenshots/social-icons-header.jpg) 
+    ![Soclial Icons Navbar](/documentation/images/screenshots/social-icons-header.jpg) 
 
 	- [x] **Contact form** - I click on the contact form icon, and it opens the modal with the contact form.
 		- [x] **Form validation** - I click send without filling in the required fields, and a popover appears, prompting me to fill in the required field.  
 
-        ![Contact Form Validation](/assets/documentation/images/screenshots/contact-form.jpg)!  
+        ![Contact Form Validation](/documentation/images/screenshots/contact-form.jpg)!  
 
 		- [x]  **Send validation** - I complete the form fields and click send, the form fields empty, and a success message in green appears under the form. The message disappears after a few seconds. The modal remains open.
 		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes.  
 
 ## Accordion Forms
 
-![All Accordion Form Inputs](/assets/documentation/images/screenshots/rm-form-inputs.jpg)
+![All Accordion Form Inputs](/documentation/images/screenshots/rm-form-inputs.jpg)
 
 - [x] **Accordion default open** - When I open the webpage, the first level of the accordion is visible.
 - [x] **Accordion folding levels** - When I click on the header of each of the other four groups in the accordion, it opens that level and closes the others. 
@@ -218,15 +218,15 @@ mind on more important things while writing code when I have it written down.
 			- [x] When I enter any other character, an error message appears, and the button text reverts to the default text.
 			- [x] I remove the disallowed character, the error message disappears, and my text displays in the demo button.  
 
-            ![Font/Font Shadow Form](/assets/documentation/images/screenshots/rm-form-ui-output.jpg)  
+            ![Font/Font Shadow Form](/documentation/images/screenshots/rm-form-ui-output.jpg)  
 
 		- **Font Family Select**
 			- [x] I click on the font family select, it opens, and a list of 12 fonts appears.
 			- [x] I select a font, the font in the demo button changes, as does the font-family name in the CSS display.
 			- [x] I check all fonts one by one, and they perform the same.  
 
-			![Select font example 1](/assets/documentation/images/screenshots/select-font-1.jpg)  
-			![Select font example 2](/assets/documentation/images/screenshots/select-font-2.jpg)  
+			![Select font example 1](/documentation/images/screenshots/select-font-1.jpg)  
+			![Select font example 2](/documentation/images/screenshots/select-font-2.jpg)  
 
 		- **Font Color**
 			- [x] I click on the color input, and the color picker appears. 
@@ -238,7 +238,7 @@ mind on more important things while writing code when I have it written down.
             - [x] I noted that when I added the RGBA or HEXA color with 0 opacity, in order to see the color again, I need to add that opcatiry back for example, adding FF for 0% transparency on the end of the HEX color. Then the color shows again. Another way is to click a color in the color palette. That resets the opacity to 1.  
             I've written this up in the README under [Testing the inputs/color input point 3](/README.md/#alpha-color-issue).
 
-            ![Entering Color Values](/assets/documentation/images/screenshots/rm-colorpickers.jpg)  
+            ![Entering Color Values](/documentation/images/screenshots/rm-colorpickers.jpg)  
 
 			- [x] I click anywhere outside of the color picker, and the color picker closes.
 		- **Font Size** 
@@ -343,8 +343,8 @@ mind on more important things while writing code when I have it written down.
 			- [x] I sequentially select each of the options, the direction of the gradient background in the demo button changes.
 			- [x]  When I change the gradient direction, it immediately updates the gradient direction value in the CSS display block.  
 
-            ![Background Inputs](/assets/documentation/images/screenshots/rm-form-background.jpg)  
-            ![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.jpg)  
+            ![Background Inputs](/documentation/images/screenshots/rm-form-background.jpg)  
+            ![Gradient Direction](/documentation/images/screenshots/rm-form-gradient.jpg)  
 
 	- **Hover Inputs**
 		- **Hover Font Color**
@@ -409,19 +409,19 @@ mind on more important things while writing code when I have it written down.
 	- [x] I click on the copy icon, the background color of the CSS rules is immediately highlighted with a blue color. A message appears, green in color, "Bazinga, CSS Copied!". 
 	- [x] I test this by pasting the copied CSS to a css file. It works.  
 
-    ![Bazinga, CSS Cpoied!](/assets/documentation/images/screenshots/rm-copied.jpg)  
+    ![Bazinga, CSS Cpoied!](/documentation/images/screenshots/rm-copied.jpg)  
 
 
 ### Information Section
 - **Codepen link to testing codepen**
 	- [x] I click on the "Codepen" link in the information section under the accordion and CSS display. It opens the link to a codepen in a new browser tab,  where I paste in the copied CSS. After about 5 seconds, the same button style I created in the button styler appears. I see the code is easily transferable.  
 
-    ![Testing CSS Codepen](/assets/documentation/images/screenshots/test-css-codepen.jpg)  
+    ![Testing CSS Codepen](/documentation/images/screenshots/test-css-codepen.jpg)  
 
 - [x] **Google Font link Google Fonts**
 	- [x] I click on the Google Font link in the information block under the accordion, under the heading "3. Add your button". It opens the link in a new browser tab, where I see that I can search for the Google Font I selected in my button style.  
 
-    ![Information Section](/assets/documentation/images/screenshots/direction-section.jpg)  
+    ![Information Section](/documentation/images/screenshots/direction-section.jpg)  
 
 ## Footer
 
@@ -436,7 +436,7 @@ mind on more important things while writing code when I have it written down.
 		- [x] **Form close** - I click on the form close icon, the close modal icon, or anywhere outside the modal, and the modal with the form closes. 
     - [x] **Smooth to top icon** - I click on the upward arrow icon in the footer, the page scrolls smoothly to the top.  
 
-    ![Social Icons Footer](/assets/documentation/images/screenshots/social-icons-footer.jpg)  
+    ![Social Icons Footer](/documentation/images/screenshots/social-icons-footer.jpg)  
 
 ## Responsive Breakpoints and media queries
 - [x] **Large** Large devices (large desktops, 992px and up) `@media (min-width: 992px)` 
@@ -450,7 +450,7 @@ I positioned them so that it is possible to make changes, see the CSS output and
 
 **The HTML main content structure with boostrap classes**
 
-![Main Row Content](/assets/documentation/images/screenshots/main-row-html.jpg)  
+![Main Row Content](/documentation/images/screenshots/main-row-html.jpg)  
 
 The two columns display side by side on a screen size larger than 992px. On screens smaller than 992px, the two columns stack with
 the second moving to a position above the accordion in the first column. 
@@ -460,15 +460,15 @@ When scrolling the CSS display block, the bootstrap `sticky-top ` class added to
 
 **Screensize greater than 992px, `sticky-top` demo button**  
 
-![sticky-top Screens > 992px](/assets/documentation/images/screenshots/sticky-top-1.jpg)  
+![sticky-top Screens > 992px](/documentation/images/screenshots/sticky-top-1.jpg)  
 
 **Screensize equal to or less than 992px, `sticky-top` demo button**  
 
-![sticky-top Screens <= 992px](/assets/documentation/images/screenshots/sticky-top-2.jpg)  
+![sticky-top Screens <= 992px](/documentation/images/screenshots/sticky-top-2.jpg)  
 
 **Screensize equal to or less than 576px, `sticky-top` demo button**  
  
-![sticky-top Screens < 576px](/assets/documentation/images/screenshots/sticky-top-3.jpg)  
+![sticky-top Screens < 576px](/documentation/images/screenshots/sticky-top-3.jpg)  
 
 
 ## Testing Devices
@@ -531,12 +531,12 @@ The change is instantaneous. The JavaScript function processes changes in values
 work, and learn how to write CSS for buttons. 
 In the short time I played with this tool, my understanding of balancing the different attributes to create a styled button has improved.  
 
-![CSS Output](/assets/documentation/images/screenshots/css-output.jpg)  
+![CSS Output](/documentation/images/screenshots/css-output.jpg)  
 
 The above image shows the CSS output displayed simultaneously in the head style tags and the CSS output display block.
 Being able to witness that change as it happens and see it visually in the style of the button is helpful.  
 
-![CSS Gradient Output](/assets/documentation/images/screenshots/css-output-2.jpg)  
+![CSS Gradient Output](/documentation/images/screenshots/css-output-2.jpg)  
 
 The above example shows how the gradient CSS rule output.
 In the CSS block, the CSS output is in `<code><pre></pre></code>` tags so that it will overflow when needed and will not fold. It's a quirk of using the `pre` tags.   It's easy to copy with the copy to clipboard icon. Note the button is showing the gradient background.
@@ -555,7 +555,7 @@ then click the link to codepen in the "2. Copy the CSS" section under the CSS di
 
 **Information Section targets the inexperienced user**  
 
-![Information Section](/assets/documentation/images/screenshots/direction-section.jpg)  
+![Information Section](/documentation/images/screenshots/direction-section.jpg)  
 
 ***
 
@@ -567,7 +567,7 @@ then click the link to codepen in the "2. Copy the CSS" section under the CSS di
 The following image illustrates how I tested the color pickers. I entered HEX, HEXA, RGB, RGBA color format into the color picker input and the corresponding color 
 was displayed in the color picker. 
 
-![Entering different color formats](/assets/documentation/images/screenshots/rm-colorpickers.jpg)  
+![Entering different color formats](/documentation/images/screenshots/rm-colorpickers.jpg)  
 
 I added a palette of Bootstrap colors to the default color picker settings. I added "click on close" to the color picker settings so when a user clicks on a color in the palette it closes. 
 
@@ -602,7 +602,7 @@ default colors if they are needed.
 
 **Color palette of Bootstrap default colors**  
 
-![Bootstrap color palette](/assets/documentation/images/screenshots/bootstrap-palette.jpg)  
+![Bootstrap color palette](/documentation/images/screenshots/bootstrap-palette.jpg)  
 
 ***
 
@@ -612,27 +612,27 @@ A text box, three selects, eleven color pickers, thirteen range selectors, and s
 
 **Collapsed accordion**
 
-![Accordion collapsed](/assets/documentation/images/screenshots/form-accordion-collapsed.jpg)  
+![Accordion collapsed](/documentation/images/screenshots/form-accordion-collapsed.jpg)  
 
 **Text Styling open by default**
 
-![Text styling](/assets/documentation/images/screenshots/form-text-styling.jpg)  
+![Text styling](/documentation/images/screenshots/form-text-styling.jpg)  
 
 **Box styling**  
 
-![Box styling](/assets/documentation/images/screenshots/form-box-styling.jpg)  
+![Box styling](/documentation/images/screenshots/form-box-styling.jpg)  
 
 **Border styling**  
 
-![Border styling](/assets/documentation/images/screenshots/form-border-styling.jpg)  
+![Border styling](/documentation/images/screenshots/form-border-styling.jpg)  
 
 **Color styling**  
 
-![Color styling](/assets/documentation/images/screenshots/form-color-styling.jpg)  
+![Color styling](/documentation/images/screenshots/form-color-styling.jpg)  
 
 **Hover styling**  
 
-![Hover styling](/assets/documentation/images/screenshots/form-hover-styling.jpg)  
+![Hover styling](/documentation/images/screenshots/form-hover-styling.jpg)  
 
 ***
 
@@ -660,5 +660,5 @@ Adding inputs, color pickers, or range selectors is as easy as copy and paste, a
 
 It has arisen out of a need and the desire to fulfill that need. I'm curious how it might evolve with input from other sources. 
 
-![THe button styler](/assets/documentation/images/screenshots/button-styler.jpg)  
+![THe button styler](/documentation/images/screenshots/button-styler.jpg)  
 

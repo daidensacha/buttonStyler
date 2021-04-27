@@ -49,7 +49,7 @@ See the [buttonStyler Website](https://daidensacha.github.io/buttonStyler/).
 	- I want to share this tool with others who might also benefit from it.
 	- I want to do this project to learn and to be able to put to use the things I have been learning in this last unit.
 
-[Post development-deployment review](/assets/documentation/testing.md/#user-stories-review-development-deployment) of user stories can be read in the testing.md
+[Post development-deployment review](/documentation/testing.md/#user-stories-review-development-deployment) of user stories can be read in the testing.md
 
 
 
@@ -163,7 +163,7 @@ Central to the site will be a playground of features to add styling to buttons.
 
 - **Social Links** There will be social links for connecting to me or viewing my work on GitHub, Codepen, and Linkedin.
 
-- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, [I created a table](/assets/documentation/testing.md/#form-outline) to use as I put the forms together.
+- **Planning** Given the number of CSS rules to be generated, and corresponding inputs to create the data for outputting the CSS, [I created a table](/documentation/testing.md/#form-outline) to use as I put the forms together.
 
 - **Layout** The Layout should be such that the button is visible along with the CSS output so the user can see the result as they change the styles.
 
@@ -177,7 +177,7 @@ I put the contact form in the footer in the wireframes. However, in the end, I d
 
 I combined the three separate wireframes into one image for the README as seeing them side by side gives a better perspective of the scale of difference between the different size screens. The original size wireframes are available for viewing in the assets/images folder.  
 
-![Wireframes](assets/documentation/images/wireframes/wireframes.jpg)
+![Wireframes](documentation/images/wireframes/wireframes.jpg)
  
 ### 5\. Surface
 
@@ -251,12 +251,12 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 	Application for building Bootstrap grids. It is a convenient tool that simplifies building the responsive grid.
 
 ## Testing
-[Testing-Plan (Pre-development)](/assets/documentation/testing.md/#testing-plan-pre-development  ) outlines my development and testing strategy.
+[Testing-Plan (Pre-development)](/documentation/testing.md/#testing-plan-pre-development  ) outlines my development and testing strategy.
 
-[Testing-Checklist](/assets/documentation/testing.md/#testing-checklist-development-deployment) every element listed and checked. 
+[Testing-Checklist](/documentation/testing.md/#testing-checklist-development-deployment) every element listed and checked. 
 
 ### Research
-[Testing-Plan/Research](/assets/documentation/testing.md/#research) outline.
+[Testing-Plan/Research](/documentation/testing.md/#research) outline.
 
 
 ***
@@ -286,7 +286,7 @@ In this preliminary testing phase, I chose what I felt would best suit my needs 
 ### Development
 
 ***
-[Testing-Plan/Development](/assets/documentation/testing.md/#development) outline.
+[Testing-Plan/Development](/documentation/testing.md/#development) outline.
 
 
 #### Git Version Control
@@ -411,7 +411,7 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
 
 	- When I click on "select direction" for the gradient background and select a different direction, the gradient direction changes accordingly. The changed CSS rule is also output to the CSS output block. It fulfills a need expressed in the user stories to see how syles work, their effect, and the generated CSS output.
 
-![Gradient Direction](/assets/documentation/images/screenshots/rm-form-gradient.jpg)
+![Gradient Direction](/documentation/images/screenshots/rm-form-gradient.jpg)
 
 - Color input
 
@@ -425,11 +425,11 @@ I click on the "to top" icon in the footer, the page smoothly scrolls to the top
     Note, with HEX or HEXA, it is unnecessary to add the  # before the color number in this color picker. 
     If I add another color, I need to change the opacity for it to be visible. For example, I now add FFFFFF for white, but no color appears. If I enter the same color but add the HEX alpha for 0% transparency FF, i.e., FFFFFFFF, the color appears It is the same with using the rgba, I need to add rgba(255,255,255,1), and the color appears. 
     I will talk with the color picker developer to see that he is aware of this, but for now, there's not a lot I can do about it. At least I understand what is happening; thats a good start.  
-    [I have mentioned this issue in the testing.md file Accordion Forms/font-color, Alpha color issue](/assets/documentation/testing.md/#alpha-color-issue).  
+    [I have mentioned this issue in the testing.md file Accordion Forms/font-color, Alpha color issue](/documentation/testing.md/#alpha-color-issue).  
 
     [CSS Tricks](https://css-tricks.com/8-digit-hex-codes/) give a good explanation of the HEX colors with the alpha added. They in turn reference their source as an article in Stack Overflow.      
 
-![Color pickers](/assets/documentation/images/screenshots/rm-colorpickers.jpg)
+![Color pickers](/documentation/images/screenshots/rm-colorpickers.jpg)
 
 - Range selector
 
@@ -450,11 +450,11 @@ When I scroll, the button disappears off the screen. I added the bootstrap stick
 **Copy to clipboard function**  
 In the user stories, I identified the users' need to copy the CSS style easily. I added an icon to the top of the CSS output block and implemented clipboad.js. When I click on the icon, a message appears confirming the copy success, and at the same time, the CSS highlights. I created a codepen where the user can paste the CSS to see it work, and the link to the codepen is under the CSS block highlighted under the heading "Copy the CSS". Pasting the CSS in the codepen creates an exact copy of the button created using the Button Styler.
 
-![CSS Copied](/assets/documentation/images/screenshots/rm-copied.jpg)
+![CSS Copied](/documentation/images/screenshots/rm-copied.jpg)
 
 In user stories, I identified the need to copy the CSS to use it easily. Users can copy easily, as shown in the image above. They can then test the code in a codepen I created. Users can paste the CSS into the codepen (link below the CSS display block) and see it work.
 
-![Codepen for users to paste the CSS from their button style to test it and see it works.](/assets/documentation/images/screenshots/test-css-codepen.jpg)
+![Codepen for users to paste the CSS from their button style to test it and see it works.](/documentation/images/screenshots/test-css-codepen.jpg)
 
 **Demo button Styles**  
 When I change any form input values, the change displays immediately in the demo-button style. Clicking on a toggle switch adds or removes the corresponding styles to the button. Selecting a different input color changes the corresponding style color of the demo button. The changes are live and immediate.
@@ -537,7 +537,7 @@ With testing completed to a point where I needed to have the site live to test f
 ### Deployment
 
 ***
-[Testing-Plan/Deployment](/assets/documentation/testing.md/#deployment) outline.
+[Testing-Plan/Deployment](/documentation/testing.md/#deployment) outline.
 
 **Deploy to GitHub Pages**
 
@@ -660,7 +660,7 @@ Throughout my project, I was continually challenged to research and learn, to dr
 
 * * *
 
-1. [Form Outline](/assets/documentation/testing.md/#form-outline)  
+1. [Form Outline](/documentation/testing.md/#form-outline)  
     Before starting writing the HTML for the forms, I created an excel sheet with the information in the linked table. GitHub markdown does not have colspan or rowspan, which I needed to present the information. For example, using colspan and rowspan makes it more explicit about the function of the toggle switches. In this document, I reverted to using HTML table tags with colspan and rowspan. 
 
 It has been a process to learn and develop this application. I had to use and implement many features that I have not used before. It is my first genuine attempt at using Javascript and jQuery, so at times I felt totally out of my depth. That said, I learned a lot and already viewed my work with a critical eye for ideas on improving and doing better. That will be in a future project when I rebuild this with the wisdom of hindsight.

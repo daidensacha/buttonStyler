@@ -62,6 +62,8 @@
 -  **Function**
 	- Test on different devices, operating systems, and browsers.
 	- Test all external links, inputs, forms, navigation links, and features.
+-  **404 Page not found**
+	- Create 404 Page not found page. 
 -  **User Experience** 
     - **Feedback**: Share the application to get feedback and to test the UI to see how users intuit the process of using the application.
     - **User Stories**: Check the application fulfills the needs expressed in the user stories.
@@ -437,6 +439,10 @@ mind on more important things while writing code when I have it written down.
     - [x] **Smooth to top icon** - I click on the upward arrow icon in the footer, the page scrolls smoothly to the top.  
 
     ![Social Icons Footer](/documentation/images/screenshots/social-icons-footer.jpg)  
+
+## 404 Page not found
+- [x] I enter a file name in the URL for button styler, i.e. [https://daidensacha.github.io/buttonStyler/documents.html](https://daidensacha.github.io/buttonStyler/documents.html), and it opens the 404 Page not found page. I check the responsiveness, and it is presentable on all size screens. I click on the button under the 404 message, and it takes me back to the button styler homepage.  
+- [x] I check all icon links, the contact form link, and the contact form. All link to their target pages, and function as expected.
 
 ## Responsive Breakpoints and media queries
 - [x] **Large** Large devices (large desktops, 992px and up) `@media (min-width: 992px)` 

@@ -74,6 +74,14 @@ $(function () {
     });
 });
 
+$(function() {
+    $("#text-shadow-fieldset").on('mouseover', function () {
+        if (this.checked) {
+            $('.blur-group').prop('disabled', false);
+        } 
+    })
+})
+
 // This function enables and disables the box shadow group
 $(function () {
     $("#box-shadow-toggle").on("change", function () {

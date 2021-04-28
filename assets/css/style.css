@@ -60,6 +60,7 @@ body::-webkit-scrollbar {
   min-height: 100vh;
   position: relative;
   padding-top: 59px;
+  padding-bottom: 10rem;
 }
 
 h1 {
@@ -563,8 +564,8 @@ div.footer {
   background-color: #343a40;
   border-top: 1px solid black;
   padding-top: 10px;
-  height: auto;
   box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.8);
+  height: 10rem;
 }
 
 .social-links ul {
@@ -803,6 +804,14 @@ h1 {
 
   h2 {
     font-size: 1.2rem;
+  }
+
+  #bg-fullscreen {
+    padding-bottom: 4rem;
+  }
+
+  div.footer {
+    height: 4rem !important;
   }
 }
 @media (min-width: 992px) {

@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body onload="redirect()">
     <div class="main-container bg" id="bg-fullscreen">
 
         <div class="bg-primary">
@@ -123,10 +123,9 @@
 
                     <div class="p-sm-2 mr-sm-5 text-right">
                         <h4>Page not found.</h4>
-                        <h4>Redirecting ...</h4>
                     </div>
-                    <div class="p-sm-2 mr-sm-5 text-right">
-                        <h4>Redirecting ...</h4>
+                    <div class="spinner-border text-warning p-sm-2 mr-sm-5 text-right" role="status">
+                        <h4>Redirecting <span class="sr-only">Loading...</span></h4>
                     </div>
 
                     <!-- <div class="p-sm-2 mr-sm-5">

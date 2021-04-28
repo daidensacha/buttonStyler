@@ -74,13 +74,7 @@ $(function () {
     });
 });
 
-$(function() {
-    $("#text-shadow-fieldset").on('mouseover', function () {
-        if (this.checked) {
-            $('.blur-group').prop('disabled', false);
-        } 
-    })
-})
+
 
 // This function enables and disables the box shadow group
 $(function () {
@@ -233,6 +227,15 @@ $(function () {
         hide: 100
     });
 });
+
+// ====================== Redirect 404 page to home page========================
+
+function redirect() {
+    setTimeout(function () {
+        window.location.replace("https://daidensacha.github.io/buttonStyler/index.html");
+    }
+        , 3500);
+}
 
 
 

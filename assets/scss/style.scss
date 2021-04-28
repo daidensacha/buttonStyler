@@ -70,22 +70,27 @@ body::-webkit-scrollbar {
   background: url('../images/elephant.jpg') no-repeat center center fixed;
   background-size: cover;
   -o-background-size: cover;
+ // height: 100vh; // //////////////////////////////////////////////////////////////////////////////////////////////////// bg added 100vh height to background image
  
 }
 
 #footer-container {// second issue found in the web inspector
   position: absolute; 
-  bottom: 0;
+  top: 100;  
+  // top: calc(100% - 59px);    
+  // bottom: 0;
   // top: calc(100% - 105px); 
   
 }
 
 #elephant-row {
-  margin-bottom: 13rem;
+  //margin-bottom: 13rem; // Is this creating a problem? Or should I use the filler div with media queries?
 }
 
 #bg-fullscreen {
-  min-height: 100vh;
+  min-height: calc(100vh - 110px) ;
+  position: relative; // set it as the parent for the footer when it is absolute
+  padding-top: 59px; // set the padding for the fixed navbar
 }
 
 
@@ -103,7 +108,7 @@ main h2 {
 
 #heading-container {
 position: relative;
-padding-top: 3rem;
+// padding-top: 3rem; ////////////////////////////////////////////////////////////////////////////////////////////////// Header containe adds padding to bottom of page when i add padding top
 }
 
 .header-heading {
@@ -112,7 +117,7 @@ text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
 }
 
 header img {
-margin-bottom: 2.5rem
+margin-bottom: 2.5rem;
 }
 
 /* Highlight color classes  */
@@ -167,9 +172,11 @@ color: #fcfcfc;
 }
 
 // 404 Error styling
-div#pnf-error {
+#pnf-error {
+  // min-height: 100vh;    ///////////////////////////////////////////////////////////////////////////////////////////// removed min height 
+  // background-color: orange;
   // min-height: 80%;
-  // margin-bottom:14rem; // one issue found in web inspector
+  // margin-bottom:14rem; // one issue found in web inspector ////////////////////////////////////////////////////////// pnf-error
 }
 
 div#pnf-error h4,
@@ -904,5 +911,9 @@ button.btn.take-me-back:hover {
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
+
+// #filler-div {
+//   min-height: 18em;
+// }
 
 }

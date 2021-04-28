@@ -67,10 +67,26 @@ body::-webkit-scrollbar {
 
 #bg-fullscreen {
   min-height: 100vh;
-  //min-height: calc(100vh - 107px); // Maybe I need this to move the footer back into the screen, but with media queries???
-  position: relative; // Setting this moved the footer into place at the bottom
+  position: relative; // Relative position makes it the parent for absolute positioned footer.
   padding-top: 59px; // set the padding for the fixed navbar
   padding-bottom: 10rem;
+}
+
+div#pnf-error {
+  min-height: 25rem;
+}
+
+div#pnf-error h4,
+div#four-0-four {
+  color: rgb(109, 76, 52);
+}
+
+// Blockquote styling
+blockquote p:first-child {
+  color: rgb(104, 86, 46);
+}
+p.blockquote-footer {
+  color: rgb(121, 92, 37);
 }
 
 h1 {
@@ -147,19 +163,6 @@ color: #fcfcfc;
   padding: .1em;
   border-radius: .3em;
   white-space: normal;
-}
-
-div#pnf-error h4,
-div#four-0-four {
-  color: rgb(109, 76, 52);
-}
-
-// Blockquote styling
-blockquote p:first-child {
-  color: rgb(104, 86, 46);
-}
-p.blockquote-footer {
-  color: rgb(121, 92, 37);
 }
 
 /* 
@@ -833,7 +836,7 @@ button.btn.take-me-back:hover {
     padding-bottom: 4rem; // padding bottom for footer in 404.html
   }
   div.footer {
-    height: 4rem!important;
+    height: 4rem!important; // positioned absolutely to bottom.
   }
 }
 
@@ -862,12 +865,7 @@ button.btn.take-me-back:hover {
   h2 {
       font-size: 1.4rem;
   }
-  // #bg-fullscreen {
-  //   padding-bottom: 4rem; // padding bottom for footer in 404.html
-  // }
-  // div.footer {
-  //   height: 4rem!important;
-  // }
+
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -884,19 +882,10 @@ button.btn.take-me-back:hover {
   h2 {
       font-size: 1.6rem;
   }
-  // #bg-fullscreen {
-  //   padding-bottom: 4rem; // padding bottom for footer in 404.html
-  // }
-  // div.footer {
-  //   height: 4rem!important;
-  // }
+
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-
-// #filler-div {
-//   min-height: 18em;
-// }
 
 }

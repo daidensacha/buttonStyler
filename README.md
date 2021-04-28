@@ -640,7 +640,7 @@ Without being able to check in my iPhone, I was working blind. I refreshed the c
 
 I plugged my iPhone into my MacBook Pro, opened the webpage on my iPhone, and under the "develop" menu, clicked the webpage. It opened a web inspector window showing the source code for the display on the iPhone. 
 
-![Sarari Web Inspector Checking iPhone source code](/documentation/images/screenshots/iphone-bug-webinspector-2.jpg)  
+![Safari Web Inspector Checking iPhone source code](/documentation/images/screenshots/iphone-bug-webinspector-2.jpg)  
 
 Using this, along with Chrome DevTools and my external monitor, I was able to work simultaneously on the GitHub Pages source code and the iPhone source code to root out the issue that was causing the display error. 
 I had a few issues, which I unpicked one by one until I found a solution. I could add a div and add height in the media queries for different screen sizes. It would push the footer down.  It was and late, so I left it there to come back to with a fresh mind. 
@@ -656,6 +656,15 @@ Using `d-flex flex-column align-items-end`, I applied Flexbox to the column with
 ![Chrome iPhone view](/documentation/images/screenshots/iphone-chrome-bug-1.jpg)![iPhone screenshot](/documentation/images/screenshots/iphone-bug-screenshot.jpg)  
 
 ![Chrome broswer view](/documentation/images/screenshots/iphone-bug-chrome-2.jpg)  
+
+**The Solution**
+The issues as identified, multiple.
+    1. I needed to become more informed about Flexbox. 
+    2. Absolute positioning requires a relative parent. 
+        i. In this case, a tag for the main container went awol. The main container did not contain the footer, so no amount of absolute positioning will place it inside the intended div.
+        ii. Setting the main container to relative makes it the parent of the absolute child.
+    3. When there is not enough content on the page to ensure the footer is at the bottom of the page, then set it to the absolute position was my best option.
+    4. I needed to add padding on the bottom of the main container, equal to the footer's height. I had the height set to auto, which made it difficult. My workaround was to fix the height in `rem`, linked to the responsive font sizing. I added media queries to ensure the height is correct on smartphones and larger screens.  
 
 To [testing.md/404 Page not found](/#404-page-not-found)  
 

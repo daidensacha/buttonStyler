@@ -63,6 +63,23 @@ body::-webkit-scrollbar {
   padding-bottom: 10rem;
 }
 
+div#pnf-error {
+  min-height: 25rem;
+}
+
+div#pnf-error h4,
+div#four-0-four {
+  color: #6d4c34;
+}
+
+blockquote p:first-child {
+  color: #68562e;
+}
+
+p.blockquote-footer {
+  color: #795c25;
+}
+
 h1 {
   color: #dea773 !important;
 }
@@ -137,19 +154,6 @@ header img {
   padding: 0.1em;
   border-radius: 0.3em;
   white-space: normal;
-}
-
-div#pnf-error h4,
-div#four-0-four {
-  color: #6d4c34;
-}
-
-blockquote p:first-child {
-  color: #68562e;
-}
-
-p.blockquote-footer {
-  color: #795c25;
 }
 
 /* 

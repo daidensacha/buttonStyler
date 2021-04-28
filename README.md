@@ -622,9 +622,48 @@ I missed that the width calculation changed the equation for the display of the 
 **Information Block Headings**  
 I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to see how he got on. He had spent the afternoon playing with it, created some buttons, found his way to the test codepen I made, and even copied the code into a repository. He asked me what he needed to do to get the font he chose, and I explained that the instruction was in point 3 of the information block, "Add your button". It was the part he had not read. The heading color was conservative beige, and I decided to change it to something bolder, as I want it to shout out "read me". It's now fluoro green but fits with the banner image that is a rainbow of colors. 
 
-**404 Page not found**  
+### 404 Page not found  
+
 ***The pièce de résistance*** last of all. I added a [custom 404 "Page not found"](/404.html) page. It was the last item to tick of the list. I encountered the GitHub pages default 404 error page with broken links as I was working on the README.md and testing.md files. 
 The first when the 404 error page opens is a negative impression. I kept the flavor of the site with the navbar, offcanvas, header title, blockquote, and footer. I added a full-screen image of an elephant sitting on a bench with a dog watching the sunset. If users find themselves at the 404 error page, I can't take away the negative experience, but the image lightens it somewhat. I also added light humor with the message, ***"Talk about the elephant in the room!"***. Humor also adds positive impressions, and there is a styled button saying, ***"Take me back!"***. It links to the homepage, where users can continue with the button styler if they wish. 
+
+**The 404 Page not found iPhone display issue**  
+I uploaded the 404 error page to the remote repository on GitHub. I was then able to check the live GitHub Pages site in the browser and my iPhone. The webpage was displaying perfectly locally in  Chrome DevTools, at all breakpoints. I viewed the live version in Chrome DevTools, and it also appeared as expected. I checked it in my iPhone, and the footer was displaying halfway up the screen, directly across the 404 error message and button. 
+I tried debugging locally in DevTools, but it wasn't easy as in the DevTools XS display; it appeared fine, in contrast to the display on the iPhone, which was incorrect. 
+I looked at the background image, thinking it might be the problem. I had some issues getting it to display full screen. There is not much page content, which generally pushes the footer down when the page is longer than the screen height. Then it isn't usually a problem. I set a min-height of the main container to 800px, which made the page longer but did not move the footer on the iPhone. It remained mid-screen.
+I thought it might have been an issue caused by adding bootstrap flex classes to the 404 messages incorrectly. I removed them.
+Without being able to check in my iPhone, I was working blind. I refreshed the cache often in Chrome and the iPhone. I noticed in the iPhone settings > Safari > Advanced; there is a toggle switch for "web inspector" and a note saying how to use it with Safari. 
+
+![iPhone Settings/Safari/Advanced](/documentation/images/screenshots/iphone-bug-settings-2.jpg)  
+
+![Safari Web Inspector Menu](/documentation/images/screenshots/iphone-bug-webinspector.jpg)  
+
+I plugged my iPhone into my MacBook Pro, opened the webpage on my iPhone, and under the "develop" menu, clicked the webpage. It opened a web inspector window showing the source code for the display on the iPhone. 
+
+![Sarari Web Inspector Checking iPhone source code](/documentation/images/screenshots/iphone-bug-webinspector-2.jpg)  
+
+Using this, along with Chrome DevTools and my external monitor, I was able to work simultaneously on the GitHub Pages source code and the iPhone source code to root out the issue that was causing the display error. 
+I had a few issues, which I unpicked one by one until I found a solution. I could add a div and add height in the media queries for different screen sizes. It would push the footer down.  It was and late, so I left it there to come back to with a fresh mind. 
+The next Day, assess my options:
+1. Leave the bug. With the bug, it would display fine on all screen sizes, apart from the iPhone, and finish off my documentation as I am preparing to submit the project in the next few days.
+2. Go with the `div` hack and media queries to set the min-height so at least the footer and the page would display correctly. Better than the first option, and it would buy me time to look into the bug once the project is submitted. 
+3. See if I can get it working as it should using the framework that is there. 
+I confess that my knowledge of Flexbox is limited, and Boostrap documentation outlining how to use it is relatively thin on explanations. That said, I realised my mistake was thinking it was a Bootstrap feature. It is widely used and supported by browsers and implemented by Bootstrap to include the functionality in their framework. 
+I took the morning to read the documentation on [MDN WebDocs Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox), and play with the examples. I also looked at [w3schools Flexbox documention](https://www.w3schools.com/css/css3_flexbox.asp), and examples. 
+I returned with a clear idea of what I wanted to achieve, a new understanding of Flexbox, and the knowledge of how to use the Safari web inspector to check source code in the iPhone.  
+Using `d-flex flex-column align-items-end`, I applied Flexbox to the column with the 404 message divs. I changed the padding on the child divs `p-sm-2 mr-sm-5 text-right`. The whole block moved over to the right, which is what I wanted. I set the styling back to the bare minimum, using Safari web inspector on the iPhone, together with Chrome DevTools displaying the site at different screen breakpoints. I used borders around all the divs I needed to see to understand what was happening when I made changes. 
+
+![Chrome iPhone view](/documentation/images/screenshots/iphone-chrome-bug-1.jpg)![iPhone screenshot](/documentation/images/screenshots/iphone-bug-screenshot.jpg)  
+
+![Chrome broswer view](/documentation/images/screenshots/iphone-bug-chrome-2.jpg)  
+
+To [testing.md/404 Page not found](/#404-page-not-found)  
+
+There are a lot of commits for the for 28 April because of this issue. I needed to work on it locally, then check the changes live. Only when I was able to work directly in the Safari Web inspector on the iPhone was I able to root out the issue. 
+I thought I finished my documentation, and I was in the cleaning up phase, but I added this to outline the issue and explain the multitude of commits that I  made on 28 April.  
+
+**Gold in the experience**  
+It's frustrating, and I'm confident that all coders go through it. That said, it pushed me to dive into really looking at Flexbox, how it works, and understand it. I also learned how to use the Safari Web inspector to check issues directly on the iPhone, and I can't express how helpful it is to see it and work on it.
 
 ### Feedback
 

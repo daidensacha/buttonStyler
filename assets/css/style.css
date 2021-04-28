@@ -40,19 +40,19 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Fullscreen background image for 404 page not found page*/
 .bg {
   background: url("../images/elephant.jpg") no-repeat center center fixed;
   background-size: cover;
   -o-background-size: cover;
 }
 
-#footer-container {
-  position: absolute;
-  top: 100;
+.main-container {
+  padding-top: 59px;
 }
 
 #bg-fullscreen {
-  min-height: calc(100vh - 110px);
+  min-height: 100vh;
   position: relative;
   padding-top: 59px;
 }
@@ -676,9 +676,9 @@ button.btn.take-me-back {
   font-size: 42px;
   text-shadow: 1px 2px 3px black;
   padding: 4px 19px;
-  border: 3px solid rgba(0, 0, 0, 0);
+  border: 3px solid rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 button.btn.take-me-back:hover {

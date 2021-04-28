@@ -442,7 +442,10 @@ mind on more important things while writing code when I have it written down.
 
 ## 404 Page not found
 - [x] I enter a file name in the URL for button styler, i.e. [https://daidensacha.github.io/buttonStyler/documents.html](https://daidensacha.github.io/buttonStyler/documents.html), and it opens the 404 Page not found page. I check the responsiveness, and it is presentable on all size screens. I click on the button under the 404 message, and it takes me back to the button styler homepage.  
-- [x] I check all icon links, the contact form link, and the contact form. All link to their target pages, and function as expected.
+- [x] I check all icon links, the contact form link, and the contact form. All link to their target pages, and function as expected.  
+
+**NOTE:** 
+I had real issues with the display of the 404 error page in the iPhone, and wrote this up in the README file. To [README.md/404 Page not found](/#-404-page-not-found)
 
 ## Responsive Breakpoints and media queries
 - [x] **Large** Large devices (large desktops, 992px and up) `@media (min-width: 992px)` 

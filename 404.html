@@ -123,16 +123,29 @@
 
                     <div class="p-sm-2 mr-sm-5 text-right">
                         <h4>Page not found.</h4>
+                        <h4>Redirecting ...</h4>
+                    </div>
+                    <div class="p-sm-2 mr-sm-5 text-right">
+                        <h4>Redirecting ...</h4>
                     </div>
 
-                    <div class="p-sm-2 mr-sm-5">
+                    <!-- <div class="p-sm-2 mr-sm-5">
                         <button class="btn btn-primary take-me-back " onclick="window.location.href='index.html'">Take
                             me back!</button>
-                    </div>
+                    </div> -->
                 </div>
 
             </div>
         </div>
+
+        <script>
+            function redirect() {
+              setTimeout(function(){ 
+                      window.location.replace("/");
+                  }
+                  , 500);	
+              }
+          </script>
 
         <!-- Modal Code -->
         <div class="modal fade" tabindex="-1" role="dialog" id="contactModal">

@@ -13,6 +13,8 @@ font-family: 'Poppins', sans-serif;
 font-family: 'PT Sans', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
+/****************************** Element Colors ********************************/
+/******************************* Color variables ******************************/
 /*
 ================================================================================ 
 =================================== BODY ======================================= 
@@ -35,12 +37,12 @@ body {
   overflow-x: hidden;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
+/**************** Hide scrollbar for Chrome, Safari and Opera *****************/
 body::-webkit-scrollbar {
   display: none;
 }
 
-/* Fullscreen background image for 404 page not found page*/
+/*********** Fullscreen background image for 404 page not found page **********/
 .bg {
   background: url("../images/elephant.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -72,6 +74,7 @@ div#four-0-four {
   color: #6d4c34;
 }
 
+/* ************************** Blockquote styling ******************************/
 blockquote p:first-child {
   color: #68562e;
 }
@@ -105,7 +108,7 @@ header img {
   margin-bottom: 2.5rem;
 }
 
-/* Highlight color classes  */
+/*************************** Highlight color classes **************************/
 .highlight-color-green {
   color: #248547;
 }
@@ -134,7 +137,7 @@ header img {
   color: #fcfcfc;
 }
 
-/* Highlight background classes  */
+/************************* Highlight background classes  **********************/
 .highlight-bg-light {
   background: #f5f2f0;
   padding: 0.1em;
@@ -203,6 +206,7 @@ header img {
   background-color: #716d6d !important;
 }
 
+/* ********************** Text input validation error span ********************/
 #required-message {
   position: absolute;
   bottom: -1.6em;
@@ -228,7 +232,7 @@ header img {
 ==================================== NAVBAR ==================================== 
 ================================================================================ 
 */
-/* Navbar and offcanbvas coutesy of Bootstrap example code */
+/*********** Navbar and offcanbvas coutesy of Bootstrap example code **********/
 .navbar {
   background-color: #d39e00ab !important;
   border-bottom: 1px solid #999965;
@@ -239,7 +243,7 @@ header img {
   background-color: #d39e00bb;
 }
 
-/************  Offcanvas **********/
+/*********************************  Offcanvas *********************************/
 #offCanvasLeft.offcanvas-collapse {
   position: fixed;
   top: 56px;
@@ -270,7 +274,7 @@ header img {
   border-right: 5px solid rgba(0, 0, 0, 0.2);
 }
 
-/* Makes the nav visibile with the open class */
+/****************** Makes the nav visibile with the open class ****************/
 #offCanvasLeft.offcanvas-collapse.open {
   left: 0;
   visibility: visible;
@@ -323,8 +327,8 @@ header img {
 ================================ RANGE SLIDER ================================== 
 ================================================================================ 
 
-/* Range with tooltip */
-/* https://css-tricks.com/value-bubbles-for-range-inputs/ */
+/********************************************************* Range with tooltip */
+/********************* https://css-tricks.com/value-bubbles-for-range-inputs/ */
 *,
 *:before,
 *:after {
@@ -339,7 +343,7 @@ header img {
   width: 100%;
 }
 
-/*  disabled styling */
+/*******************  disabled styling ********************/
 .range-slider__range:disabled {
   background: #716d6d;
 }
@@ -349,7 +353,6 @@ header img {
   width: calc(100% - (74px));
   height: 20px;
   border-radius: 5px;
-  /*   background: #d7dcdf; */
   background: #6b99f1;
   outline: none;
   padding: 0;
@@ -439,21 +442,19 @@ input::-moz-focus-outer {
 =================================== BUTTON BLOCK =============================== 
 ================================================================================ 
 */
-/* 
-  ================================ CSS CODE BLOCK  */
+/***************************** CSS CODE BLOCK  ********************************/
 div#css-button {
   height: auto;
 }
 
-/*  CSS BUTTON */
+/********************************* CSS BUTTON *********************************/
 #css-button {
   background-color: #dfdbd3;
   border-radius: 5px 5px 5px 5px;
   z-index: 10;
 }
 
-/* 
- =============== POSITION COLOR PICKER UNDER THE BUTTON DISPLAY  */
+/************** POSITION COLOR PICKER UNDER THE BUTTON DISPLAY  ***************/
 .display-background-picker {
   position: absolute;
   bottom: -38px;
@@ -481,7 +482,7 @@ pre.language-css {
   margin-bottom: 30px;
 }
 
-/* Copy to clipboard button */
+/************************** Copy to clipboard button **************************/
 .copy-code-button {
   top: 100px;
   min-height: 50%;
@@ -514,11 +515,10 @@ pre.language-css {
 }
 
 .bazinga pre {
-  /* Avoid pushing up the copy buttons. */
   margin-top: 100px;
 }
 
-/* Highlights the cssContainer text on copy */
+/****************** Highlights the cssContainer text on copy ******************/
 .copyHighlight {
   background-color: rgba(22, 118, 207, 0.33);
 }
@@ -535,7 +535,7 @@ pre.language-css {
   transition-property: opacity;
 }
 
-/* Error message class for unsuccesful clipboard copy */
+/************* Error message class for unsuccesful clipboard copy *************/
 .errorMsg {
   color: red;
   margin-left: 10px;
@@ -598,7 +598,6 @@ div.footer {
 ============================== CONTACT FORM MODAL ============================
 ==============================================================================
 */
-/* Equal column heights */
 input#fname.form-control,
 input#lname.form-control,
 input#email.form-control,
@@ -629,6 +628,7 @@ textarea#message.form-control {
  =================================== BUTTONS ================================== 
  ==============================================================================
  */
+/***************** Buttons created from the site buttonStyler *****************/
 .btn-custom-1.btn {
   font-family: "Abril Fatface", cursive;
   color: #9c23ae;
@@ -682,8 +682,9 @@ textarea#message.form-control {
 
 button.btn.take-me-back {
   font-family: "Dancing Script", cursive;
-  color: #0081ae;
+  color: #f88b43;
   font-size: 42px;
+  box-shadow: 1px 2px 15px black;
   text-shadow: 1px 2px 3px black;
   padding: 4px 19px;
   border: 3px solid rgba(0, 0, 0, 0.5);
@@ -692,7 +693,7 @@ button.btn.take-me-back {
 }
 
 button.btn.take-me-back:hover {
-  color: #20c997;
+  color: #fefccb;
   background: rgba(0, 0, 0, 0);
 }
 
@@ -701,13 +702,13 @@ button.btn.take-me-back:hover {
 ============================== DIRECTION SECTION =============================== 
 ================================================================================
 */
-/* display this row with flex and use wrap (= respect columns' widths) */
+/***** display this row with flex and use wrap (= respect columns' widths) ****/
 .row-flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-/* vertical spacing between columns */
+/********* vertical spacing between columns ***********/
 [class*=col-] {
   margin-bottom: 30px;
 }
@@ -718,7 +719,7 @@ button.btn.take-me-back:hover {
   color: #fff;
 }
 
-/* Demo backgrounds and styling*/
+/*********** Demo backgrounds and styling ************/
 .colour-4 {
   background: #2f351275;
 }
@@ -738,6 +739,7 @@ h1 {
 ============================ Breakpoint Specific ============================= 
 ============================================================================== 
 */
+/*************** Small devices (landscape phones, 576px and up) ***************/
 @media (min-width: 576px) {
   .copy-code-button {
     margin-top: 4em;
@@ -772,6 +774,7 @@ h1 {
     font-size: 1.1rem;
   }
 }
+/****************** Medium devices (tablets, 768px and up) ********************/
 @media (min-width: 768px) {
   #button-output {
     margin-bottom: 0.4rem;
@@ -849,6 +852,7 @@ h1 {
     font-size: 1.4rem;
   }
 }
+/************** X-Large devices (large desktops, 1200px and up) ***************/
 @media (min-width: 1200px) {
   .header-heading {
     font-size: 3.5rem;
@@ -866,5 +870,6 @@ h1 {
     font-size: 1.6rem;
   }
 }
+/************* XX-Large devices (larger desktops, 1400px and up) **************/
 
 /*# sourceMappingURL=style.css.map */

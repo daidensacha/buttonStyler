@@ -66,8 +66,8 @@ body::-webkit-scrollbar {
 }
 
 #bg-fullscreen {
-  // min-height: 100vh;
-  min-height: calc(100vh - 107px); // Maybe I need this to move the footer back into the screen, but with media queries???
+  min-height: 100vh;
+  //min-height: calc(100vh - 107px); // Maybe I need this to move the footer back into the screen, but with media queries???
   position: relative; // Setting this moved the footer into place at the bottom
   padding-top: 59px; // set the padding for the fixed navbar
 }

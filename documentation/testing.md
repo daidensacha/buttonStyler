@@ -445,7 +445,7 @@ mind on more important things while writing code when I have it written down.
 - [x] I check all icon links, the contact form link, and the contact form. All link to their target pages, and function as expected.  
 
 **NOTE:** 
-I had real issues with the display of the 404 error page in the iPhone, and wrote this up in the README file. To [README.md/404 Page not found](/#-404-page-not-found)
+I had real issues with the display of the 404 error page in the iPhone, and wrote this up in the README file. To [README.md/404 Page not found](/README.md/#404-page-not-found)
 
 ## Responsive Breakpoints and media queries
 - [x] **Large** Large devices (large desktops, 992px and up) `@media (min-width: 992px)` 

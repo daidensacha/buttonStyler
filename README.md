@@ -624,7 +624,7 @@ I gave the link to buttonStyler to Jürgen, and I chatted with him afterward to 
 
 ### 404 Page not found  
 
-***The pièce de résistance*** last of all. I added a [custom 404 "Page not found"](/404.html) page. It was the last item to tick of the list. I encountered the GitHub pages default 404 error page with broken links as I was working on the README.md and testing.md files. 
+***The pièce de résistance*** last of all. I added a [custom 404 "Page not found"](https://daidensacha.github.io/buttonStyler/documents.html) page. It was the last item to tick of the list. I encountered the GitHub pages default 404 error page with broken links as I was working on the README.md and testing.md files. 
 The first when the 404 error page opens is a negative impression. I kept the flavor of the site with the navbar, offcanvas, header title, blockquote, and footer. I added a full-screen image of an elephant sitting on a bench with a dog watching the sunset. If users find themselves at the 404 error page, I can't take away the negative experience, but the image lightens it somewhat. I also added light humor with the message, ***"Talk about the elephant in the room!"***. Humor also adds positive impressions, and there is a styled button saying, ***"Take me back!"***. It links to the homepage, where users can continue with the button styler if they wish. 
 
 **The 404 Page not found iPhone display issue**  
@@ -666,7 +666,7 @@ The issues as identified, multiple.
     3. When there is not enough content on the page to ensure the footer is at the bottom of the page, then set it to the absolute position was my best option.
     4. I needed to add padding on the bottom of the main container, equal to the footer's height. I had the height set to auto, which made it difficult. My workaround was to fix the height in `rem`, linked to the responsive font sizing. I added media queries to ensure the height is correct on smartphones and larger screens.  
 
-To [testing.md/404 Page not found](/#404-page-not-found)  
+To [testing.md/404 Page not found](/documentation/testing.md/#404-page-not-found)  
 
 There are a lot of commits for the for 28 April because of this issue. I needed to work on it locally, then check the changes live. Only when I was able to work directly in the Safari Web inspector on the iPhone was I able to root out the issue. 
 I thought I finished my documentation, and I was in the cleaning up phase, but I added this to outline the issue and explain the multitude of commits that I  made on 28 April.  

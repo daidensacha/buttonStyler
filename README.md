@@ -653,7 +653,7 @@ I took the morning to read the documentation on [MDN WebDocs Flexbox](https://de
 I returned with a clear idea of what I wanted to achieve, a new understanding of Flexbox, and the knowledge of how to use the Safari web inspector to check source code in the iPhone.  
 Using `d-flex flex-column align-items-end`, I applied Flexbox to the column with the 404 message divs. I changed the padding on the child divs `p-sm-2 mr-sm-5 text-right`. The whole block moved over to the right, which is what I wanted. I set the styling back to the bare minimum, using Safari web inspector on the iPhone, together with Chrome DevTools displaying the site at different screen breakpoints. I used borders around all the divs I needed to see to understand what was happening when I made changes. 
 
-![Chrome iPhone view](/documentation/images/screenshots/iphone-chrome-bug-1.jpg)![iPhone screenshot](/documentation/images/screenshots/iphone-bug-screenshot.jpg)  
+![Chrome DevTools iPhone vs iPhone view](/documentation/images/screenshots/iphone-compare-bug.jpg)  
 
 ![Chrome broswer view](/documentation/images/screenshots/iphone-bug-chrome-2.jpg)  
 

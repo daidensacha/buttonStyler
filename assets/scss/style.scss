@@ -60,9 +60,14 @@ body::-webkit-scrollbar {
   padding-top: 59px;
 }
 
+#footer-container { // trying to get the footer to sit at the bottom
+  position: absolute;
+  bottom: 0;
+}
+
 #bg-fullscreen {
-  min-height: 100vh;
-  // min-height: calc(100vh - 110px) ; // Maybe I need this??
+  // min-height: 100vh;
+  min-height: calc(100vh - 107px); // Maybe I need this to move the footer back into the screen, but with media queries???
   position: relative; // Setting this moved the footer into place at the bottom
   padding-top: 59px; // set the padding for the fixed navbar
 }

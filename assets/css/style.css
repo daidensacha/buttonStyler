@@ -51,8 +51,13 @@ body::-webkit-scrollbar {
   padding-top: 59px;
 }
 
+#footer-container {
+  position: absolute;
+  bottom: 0;
+}
+
 #bg-fullscreen {
-  min-height: 100vh;
+  min-height: calc(100vh - 107px);
   position: relative;
   padding-top: 59px;
 }

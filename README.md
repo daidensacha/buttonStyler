@@ -240,8 +240,8 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 11. [Visual Studio Code](https://code.visualstudio.com/)
 	My editor of choice. My project was created and worked on locally and then pushed up to GitHub using terminal Git push.  
 
-12. [Joplin](https://joplinapp.org/)
-	It's a free, open-source note-taking and markdown application for OSX, iOS, Linux, Windows. I used it to create the README file for GitHub.
+12. [Stack Edit](https://stackedit.io/)
+	It's a free, online note-taking and markdown application. I used it to create the README file for GitHub.
 
 13. [Squoosh](https://squoosh.app/)
 	I used it to compress images to optimize load performance.

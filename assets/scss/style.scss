@@ -595,7 +595,12 @@ pre.language-css {
 /****************** Highlights the cssContainer text on copy ******************/
 
 .copyHighlight {
-  background-color: rgba(22, 118, 207, 0.33);
+  background-color: rgba(22, 118, 207, 0.33)!important;
+}
+/* Transition color from cssCOntainer aplha 0 to copyHighlight alpha 0.33 */
+#cssContainer {
+  transition: background-color .5s ease;
+  background-color: rgba(22, 118, 207, 0);
 }
 
 .show-fadein {

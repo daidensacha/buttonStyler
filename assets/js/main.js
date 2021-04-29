@@ -234,7 +234,7 @@ $(function () {
         },
     });
 } else if ( $(window).width() < 768 ) {
-    $('[data-toggle="tooltip"]').tooltip('destroy');
+    $('[data-toggle="tooltip"]').tooltip('dispose');
 }
 });
 

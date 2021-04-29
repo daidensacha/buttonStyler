@@ -216,16 +216,38 @@ clipboard.on('error', function (e) {
 
 // ========================= Initialise tooltips ===============================
 
+// $(function () {
+//     $('[data-toggle="tooltip"]').tooltip({
+//         trigger: 'hover',
+//         delay: {
+//             show: 500,
+//             hide: 100
+//         },
+//         // hide: 100
+//     });
+// });
+
+// To disable tooltips on touch screens.
+function isTouchDevice(){
+    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+}
+if(isTouchDevice()===false) {
+    $("[rel='tooltip']").tooltip();
+}
 $(function () {
+    if ( $(window).width() >= 768 ){
     $('[data-toggle="tooltip"]').tooltip({
         trigger: 'hover',
         delay: {
             show: 500,
-            // hide: 100
+            hide: 100
         },
-        hide: 100
     });
+} else if ( $(window).width() < 768 ) {
+    $('[data-toggle="tooltip"]').tooltip('destroy');
+}
 });
+
 
 // ====================== Redirect 404 page to home page========================
 
@@ -237,10 +259,5 @@ function redirect() {
 }
 
 
-function isTouchDevice(){
-    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
-}
-if(isTouchDevice()===false) {
-    $("[rel='tooltip']").tooltip();
-}
     
+

@@ -229,12 +229,12 @@ $(function () {
 
 // ====================== Redirect 404 page to home page========================
 
-function redirect() {
-    setTimeout(function () {
-        window.location.replace("https://daidensacha.github.io/buttonStyler/index.html");
-    }
-        , 3500);
-}
+// function redirect() {
+//     setTimeout(function () {
+//         window.location.replace("https://daidensacha.github.io/buttonStyler/index.html");
+//     }
+//         , 3500);
+// }
 
 
 

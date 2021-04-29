@@ -159,7 +159,8 @@ function update() {
     let textShadow = `\ttext-shadow: ${textShadowXRange.value}px ${textShadowYRange.value}px ${textShadowBlurRange.value}px ${textShadowColorPicker.toString('rgba')};`;
 
     /* CSS Box Shadow String */ 
-    let boxShadow = `\tbox-shadow: ${boxXRange.value}px ${boxYRange.value}px ${boxBlurRange.value}px ${boxColorPicker.toString('rgba')};`;
+    let boxShadow = `\t-webkit-box-shadow: ${boxXRange.value}px ${boxYRange.value}px ${boxBlurRange.value}px ${boxColorPicker.toString('rgba')};
+    \tbox-shadow: ${boxXRange.value}px ${boxYRange.value}px ${boxBlurRange.value}px ${boxColorPicker.toString('rgba')};`;
 
     /* CSS Padding Strings */ 
     let padding = `\tpadding: ${boxPaddingRange.value}px;`;

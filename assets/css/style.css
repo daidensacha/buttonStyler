@@ -20,6 +20,14 @@ font-family: 'Roboto', sans-serif;
 =================================== BODY ======================================= 
 ================================================================================ 
 */
+/*
+//////////////////////////////////////////// PREFIXED BY AUTOPREFIXER 28.04.2021
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
 body {
   padding-left: 0;
   padding-right: 0;
@@ -33,7 +41,6 @@ body {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none;
   /* IE and Edge */
-  scrollbar-width: none;
   overflow-x: hidden;
 }
 
@@ -71,18 +78,41 @@ div#pnf-error {
 
 div#pnf-error h4,
 div#four-0-four {
-  color: #3a1e10;
+  color: #f8f9fa;
+  text-shadow: 1px 1px 2px #343a40;
+}
+
+/************* screen size < 576 px */
+#spinner-404 {
+  position: absolute;
+  left: -1.5em;
+  bottom: 0.4em;
 }
 
 /* ************************** Blockquote styling ******************************/
-blockquote p:first-child {
-  color: #261f10;
+/************************************ Homepage blockquote */
+#blockquote-home p:first-child {
+  color: #7b7961;
+  text-shadow: 1px 1px 1px #343a409a;
 }
 
-p.blockquote-footer {
-  color: #261f10;
+#blockquote-home p.blockquote-footer {
+  color: #9b9881;
+  text-shadow: 1px 1px 1px #343a40b1;
 }
 
+/****************************** 404 error page blockquote */
+#blockquote-404 p:first-child {
+  color: #f8f9fa;
+  text-shadow: 1px 1px 2px #343a40;
+}
+
+#blockquote-404 p.blockquote-footer {
+  color: #f8f9fa;
+  text-shadow: 1px 1px 2px #343a40;
+}
+
+/* ***************************** Heading styling ******************************/
 h1 {
   color: #dea773 !important;
 }
@@ -95,6 +125,7 @@ main h2 {
   margin-left: 10%;
 }
 
+/* ***************************** Header styling *******************************/
 #heading-container {
   position: relative;
 }
@@ -216,14 +247,22 @@ header img {
 .show-span {
   color: red;
   opacity: 1;
+  -webkit-transition-duration: 2.7s;
+  -o-transition-duration: 2.7s;
   transition-duration: 2.7s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
 .hide-span {
   color: red;
   opacity: 0;
+  -webkit-transition-duration: 0.7s;
+  -o-transition-duration: 0.7s;
   transition-duration: 0.7s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
@@ -236,6 +275,7 @@ header img {
 .navbar {
   background-color: #d39e00ab !important;
   border-bottom: 1px solid #999965;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
@@ -257,12 +297,20 @@ header img {
   overflow-y: auto;
   visibility: hidden;
   background-color: #343a40;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+  -webkit-transition-property: left, visibility;
+  -o-transition-property: left, visibility;
   transition-property: left, visibility;
 }
 
 #offCanvasLeft.offcanvas-collapse {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: start;
   /*   Adds a subtle drop shadow   */
   -moz-background-clip: padding;
@@ -282,6 +330,8 @@ header img {
 
 #offCanvasLeft.navbar-expand-lg .navbar-nav {
   -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   flex-direction: column;
 }
 
@@ -294,6 +344,7 @@ header img {
 
 #offCanvasLeft.nav-scroller .nav {
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -332,6 +383,7 @@ header img {
 *,
 *:before,
 *:after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -399,6 +451,7 @@ header img {
 }
 
 .range-slider__range:focus::-webkit-slider-thumb {
+  -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
   box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
 }
 
@@ -475,6 +528,8 @@ pre.language-css {
   background-image: -webkit-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -moz-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -ms-linear-gradientt(0deg, rgba(0, 0, 0, 0.3), transparent);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(transparent));
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), transparent);
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
   background-image: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent);
   padding-right: 15px;
@@ -525,13 +580,21 @@ pre.language-css {
 
 .show-fadein {
   opacity: 1;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
   transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
 .hide-fadeout {
   opacity: 0;
+  -webkit-transition-duration: 2s;
+  -o-transition-duration: 2s;
   transition-duration: 2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
   transition-property: opacity;
 }
 
@@ -568,6 +631,7 @@ div.footer {
   background-color: #343a40;
   border-top: 1px solid black;
   padding-top: 10px;
+  -webkit-box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.8);
   box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.8);
   height: 10rem;
 }
@@ -584,12 +648,18 @@ div.footer {
   display: inline-block;
   color: white;
   font-size: 25px;
+  -webkit-transition: -webkit-transform 0.7s ease-in-out;
+  transition: -webkit-transform 0.7s ease-in-out;
+  -o-transition: transform 0.7s ease-in-out;
   transition: transform 0.7s ease-in-out;
+  transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
 }
 
 .social-links a:hover {
   color: #9bf5f8;
   font-size: 25px;
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
@@ -650,6 +720,7 @@ textarea#message.form-control {
   color: #9c23ae;
   font-size: 12px;
   text-shadow: 1px 2px 2px rgba(6, 6, 6, 0.56);
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.52);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.52);
   padding: 4px 12px;
   border: 1px solid #9c23ae;
@@ -684,6 +755,7 @@ button.btn.take-me-back {
   font-family: "Dancing Script", cursive;
   color: #f88b43;
   font-size: 42px;
+  -webkit-box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.5);
   text-shadow: 1px 2px 3px black;
   padding: 4px 19px;
@@ -704,7 +776,10 @@ button.btn.take-me-back:hover {
 */
 /***** display this row with flex and use wrap (= respect columns' widths) ****/
 .row-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
@@ -773,6 +848,12 @@ h1 {
   h2 {
     font-size: 1.1rem;
   }
+
+  #spinner-404 {
+    position: absolute;
+    left: -1em;
+    bottom: 1em;
+  }
 }
 /****************** Medium devices (tablets, 768px and up) ********************/
 @media (min-width: 768px) {
@@ -815,10 +896,12 @@ h1 {
 
   #bg-fullscreen {
     padding-bottom: 4rem;
+    /* padding bottom for footer in 404.html*/
   }
 
   div.footer {
     height: 4rem !important;
+    /* positioned absolutely to bottom.*/
   }
 }
 @media (min-width: 992px) {

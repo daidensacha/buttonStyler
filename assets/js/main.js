@@ -65,7 +65,7 @@ let rangeSlider = function () {
 // This function enables and disables the text shadow group
 $(function () {
     $('#text-shadow-toggle').on('change', function () {
-        $(".blur-group").prop('disabled', true); // TESTING THE DISABLE OF COLOR PICKER
+        $(".blur-group").prop('disabled', true);
         if (this.checked) {
             $('.blur-group').prop('disabled', false);
         } else {
@@ -73,7 +73,6 @@ $(function () {
         }
     });
 });
-
 
 
 // This function enables and disables the box shadow group

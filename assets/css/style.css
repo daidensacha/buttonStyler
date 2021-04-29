@@ -653,6 +653,7 @@ div.footer {
   -o-transition: transform 0.7s ease-in-out;
   transition: transform 0.7s ease-in-out;
   transition: transform 0.7s ease-in-out, -webkit-transform 0.7s ease-in-out;
+  outline: none;
 }
 
 .social-links a:hover {

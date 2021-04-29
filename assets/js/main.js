@@ -216,17 +216,6 @@ clipboard.on('error', function (e) {
 
 // ========================= Initialise tooltips ===============================
 
-// $(function () {
-//     $('[data-toggle="tooltip"]').tooltip({
-//         trigger: 'hover',
-//         delay: {
-//             show: 500,
-//             hide: 100
-//         },
-//         // hide: 100
-//     });
-// });
-
 // To disable tooltips on touch screens.
 function isTouchDevice(){
     return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
@@ -234,6 +223,7 @@ function isTouchDevice(){
 if(isTouchDevice()===false) {
     $("[rel='tooltip']").tooltip();
 }
+// Backup check device screen size and hide tooltips on screens < 768 px wide
 $(function () {
     if ( $(window).width() >= 768 ){
     $('[data-toggle="tooltip"]').tooltip({
@@ -247,7 +237,6 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip('destroy');
 }
 });
-
 
 // ====================== Redirect 404 page to home page========================
 

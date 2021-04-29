@@ -710,7 +710,7 @@ Throughout my project, I was continually challenged to research and learn, to dr
 
 - [Google Fonts](https://fonts.google.com/) - I chose fonts from Google Fonts and for the buttonStyler font-family selector.
 
-**NOTES:**
+## Notes
 
 * * *
 
@@ -718,3 +718,19 @@ Throughout my project, I was continually challenged to research and learn, to dr
     Before starting writing the HTML for the forms, I created an excel sheet with the information in the linked table. GitHub markdown does not have colspan or rowspan, which I needed to present the information. For example, using colspan and rowspan makes it more explicit about the function of the toggle switches. In this document, I reverted to using HTML table tags with colspan and rowspan. 
 
 It has been a process to learn and develop this application. I had to use and implement many features that I have not used before. It is my first genuine attempt at using Javascript and jQuery, so at times I felt totally out of my depth. That said, I learned a lot and already viewed my work with a critical eye for ideas on improving and doing better. That will be in a future project when I rebuild this with the wisdom of hindsight.
+
+## IMPROVEMENTS
+
+I had my last meeting with my mentor, and he mentioned that he clicked on a disabled input expecting it to work before realising there was a toggle switch.
+He suggested that if the user clicked on the input, it would be nice to enable the field/ fieldset. I spent a day researching and found there was a fair bit to contemplate and consider. 
+**Disabled elements are not visible for JS events**  
+The first complication was that It's impossible to add a click event or event listener to a disabled fieldset or child. See [MDN Web Docs - Disabled](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled) for a complete explanation. In short, disabled means disabled, usually for a reason. 
+**There is a solution**  
+I created an [example codepen](https://codepen.io/daidensacha/pen/OJWxmvP), which I mentioned earlier in my documentation. I originally made it to experiment with adding and using different inputs with a toggle switch. In that codepen, I implemented a toggle switch to toggle a fieldset on and off. 
+I used that codepen to expand and experiment with triggering the toggle switch by another means so that a user could click (or double click) and activate the fieldset.
+I enclosed the fieldset in a containing div, and added another div inside it after the fieldset. The containing div is set to `position: relative;`. The second div (lets call it the onclick div) added after the fieldset is set to `position: absolute; top: 0; left:0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4)`. The default setting for the fieldset is `disabled = true`. 
+I set the fieldset to `z-index: 1;`, the default onclick div to `z-index: 2;`, so it sits directly over the fieldset, with a semi-transparent color. When I click on the onclick div, the JS function sets the `z-index: -1` positioning it behind the fieldset, checks the toggle to switch it on, and sets fieldset to `disabled = false`. It's a one-way click, and the toggle works to switch it off or on. But it allows the user to activate the fieldset with a click on any point within the covering onclick div. 
+You can see the working example in the linked codepen, with the boolean and z-index values being output beside the fieldset. 
+**UX Considerations**
+My assignment is due in a few days, so I have too little time to implement this now, and to be honest, I need to contemplate the UX ramifications before doing it. 
+On touch screen devices, a click event is a tap, and I have had experiences scrolling pages with forms when it is harrowing, and the experience is not the expected behavior. With so many inputs and fieldsets that t

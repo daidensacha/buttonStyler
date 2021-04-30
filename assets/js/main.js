@@ -216,38 +216,61 @@ clipboard.on('error', function (e) {
 
 // ================================= TOOLTIPS ==================================
 
-// Function checks for touch screen
-function is_touch_enabled() {
-    return ( 'ontouchstart' in window ) || 
-           ( navigator.maxTouchPoints > 0 ) ||
-           ( navigator.msMaxTouchPoints > 0 );
-}
 
-if( is_touch_enabled() ) {
-    // If touch screen == true it disposes of tooltips
-    $('[data-toggle="tooltip"]').tooltip('dispose');
-}
-else {
-/* backup init code for tooltip */
-//     $( function () {
-//     $('[data-toggle="tooltip"]').tooltip();  
-//     setInterval(function () {
-//          $('[data-toggle="tooltip"]').tooltip('hide'); 
-//     }, 2000);
-// });
-/* Manually shows and hides tooltips */
-$('[data-toggle="tooltip"]').mouseenter(function(){
-    var that = $(this)
-    that.tooltip('show');
-    setTimeout(function(){
-        that.tooltip('hide');
+
+// Initialises tooltips
+$( function () {
+    $('[data-toggle="tooltip"]').tooltip();   
+    setInterval(function () {
+         $('[data-toggle="tooltip"]').tooltip('hide'); 
     }, 2000);
 });
 
-$('[data-toggle="tooltip"]').mouseleave(function(){
-    $(this).tooltip('hide');
-});
-}
+// Hides the tooltip on touchscreens
+window.addEventListener('touchstart', function() {
+    // the user touched the screen!
+    $('[data-toggle="tooltip"]').tooltip('dispose');
+
+  });
+
+// Detect screen function source https://www.geeksforgeeks.org/how-to-detect-touch-screen-device-using-javascript/
+// Function checks for touch screen
+// function is_touch_enabled() {
+//     return ( 'ontouchstart' in window ) || 
+//            ( navigator.maxTouchPoints > 0 ) ||
+//            ( navigator.msMaxTouchPoints > 0 );
+// }
+
+// if( is_touch_enabled() ) {
+//     // If touch screen == true it disposes of tooltips
+//     $('[data-toggle="tooltip"]').tooltip('dispose');
+// }
+// else {
+
+// /* backup init code for tooltip */
+// /* Manually shows and hides tooltips */
+// //     $( function () {
+// //     $('[data-toggle="tooltip"]').tooltip();  
+// //     setInterval(function () {
+// //          $('[data-toggle="tooltip"]').tooltip('hide'); 
+// //     }, 2000);
+// // });
+
+// /* Manually shows and hides tooltips */
+// $( function () {
+// $('[data-toggle="tooltip"]').mouseenter(function(){
+//     var that = $(this)
+//     that.tooltip('show');
+//     setTimeout(function(){
+//         that.tooltip('hide');
+//     }, 2000);
+// });
+
+// $('[data-toggle="tooltip"]').mouseleave(function(){
+//     $(this).tooltip('hide');
+// });
+// });
+// }
 
 
 

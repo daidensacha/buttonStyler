@@ -214,29 +214,42 @@ clipboard.on('error', function (e) {
 
 });
 
-// ========================= Initialise tooltips ===============================
+// ================================= TOOLTIPS ==================================
 
-// To disable tooltips on touch screens.
-function isTouchDevice(){
-    return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
+// Function checks for touch screen
+function is_touch_enabled() {
+    return ( 'ontouchstart' in window ) || 
+           ( navigator.maxTouchPoints > 0 ) ||
+           ( navigator.msMaxTouchPoints > 0 );
 }
-if(isTouchDevice()===false) {
-    $("[rel='tooltip']").tooltip();
-}
-// Backup check device screen size and hide tooltips on screens < 768 px wide
-$(function () {
-    if ( $(window).width() >= 768 ){
-    $('[data-toggle="tooltip"]').tooltip({
-        trigger: 'hover',
-        delay: {
-            show: 500,
-            hide: 100
-        },
-    });
-} else if ( $(window).width() < 768 ) {
+
+if( is_touch_enabled() ) {
+    // If touch screen == true it disposes of tooltips
     $('[data-toggle="tooltip"]').tooltip('dispose');
 }
+else {
+/* backup init code for tooltip */
+//     $( function () {
+//     $('[data-toggle="tooltip"]').tooltip();  
+//     setInterval(function () {
+//          $('[data-toggle="tooltip"]').tooltip('hide'); 
+//     }, 2000);
+// });
+/* Manually shows and hides tooltips */
+$('[data-toggle="tooltip"]').mouseenter(function(){
+    var that = $(this)
+    that.tooltip('show');
+    setTimeout(function(){
+        that.tooltip('hide');
+    }, 2000);
 });
+
+$('[data-toggle="tooltip"]').mouseleave(function(){
+    $(this).tooltip('hide');
+});
+}
+
+
 
 // ====================== Redirect 404 page to home page========================
 
@@ -246,7 +259,3 @@ function redirect() {
     }
         , 3500);
 }
-
-
-    
-

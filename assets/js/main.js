@@ -217,44 +217,22 @@ clipboard.on('error', function (e) {
 
 
 // Initialises tooltips
-
-if (!('ontouchstart' in window)) {
     $(function () {
-        $('[data-toggle="tooltip"]').on('mouseenter', function () {
-            let that = $(this)
-            that.tooltip('show');
-            setTimeout(function () {
-                that.tooltip('hide');
-            }, 1500);
-        })
-    
-        $('[data-toggle="tooltip"]').on('mouseleave', function () {
-            $(this).tooltip('hide');
-        })
+        if ((screen.width>1024)) {
+            $('[data-toggle="tooltip"]').on('mouseenter', function () {
+                let that = $(this)
+                that.tooltip('show');
+                setTimeout(function () {
+                    that.tooltip('hide');
+                }, 2000);
+            })
+            $('[data-toggle="tooltip"]').on('mouseleave', function () {
+                $(this).tooltip('hide');
+            })
+        } else {
+            $('[data-toggle="tooltip"]').tooltip('dispose');
+        }
     });
-    
-} else {
-    $(function () {
-    $('[data-toggle="tooltip"]').tooltip('dispose');
-})
-}
-
-    // $(function () {
-    //     $('[data-toggle="tooltip"]').on('mouseenter', function () {
-    //         let that = $(this)
-    //         that.tooltip('show');
-    //         setTimeout(function () {
-    //             that.tooltip('hide');
-    //         }, 1500);
-    //     })
-    
-    //     $('[data-toggle="tooltip"]').on('mouseleave', function () {
-    //         $(this).tooltip('hide');
-    //     })
-    // });
-
-     
-
 
 // ====================== Redirect 404 page to home page========================
 

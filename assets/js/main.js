@@ -219,11 +219,26 @@ clipboard.on('error', function (e) {
 
 
 // Initialises tooltips
+// $( function () {
+//     $('[data-toggle="tooltip"]').tooltip();   
+//     setInterval(function () {
+//          $('[data-toggle="tooltip"]').tooltip('hide'); 
+//     }, 2000);
+// });
+
+/* Manually shows and hides tooltips */
 $( function () {
-    $('[data-toggle="tooltip"]').tooltip();   
-    setInterval(function () {
-         $('[data-toggle="tooltip"]').tooltip('hide'); 
+$('[data-toggle="tooltip"]').mouseenter(function(){
+    var that = $(this)
+    that.tooltip('show');
+    setTimeout(function(){
+        that.tooltip('hide');
     }, 2000);
+});
+
+$('[data-toggle="tooltip"]').mouseleave(function(){
+    $(this).tooltip('hide');
+});
 });
 
 // Hides the tooltip on touchscreens
@@ -278,7 +293,7 @@ window.addEventListener('touchstart', function() {
 
 function redirect() {
     setTimeout(function () {
-        window.location.replace("https://daidensacha.github.io/buttonStyler/index.html");
+        window.location.replace("/index.html");
     }
         , 3500);
 }

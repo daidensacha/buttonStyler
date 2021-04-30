@@ -967,10 +967,5 @@ h1 {
 }
 /************* XX-Large devices (larger desktops, 1400px and up) **************/
 /*************************** Hide tooltips on ipad ****************************/
-@media only screen and (min-device-width: 300px) and (max-device-width: 1024px) {
-  .tooltip {
-    display: none !important;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */

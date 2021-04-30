@@ -226,14 +226,39 @@ clipboard.on('error', function (e) {
 // });
 
 // Hides the tooltip on touchscreens
+// window.addEventListener('touchstart', function () {
+//         $(function () {
+//             // the user touched the screen!
+//             $('[data-toggle="tooltip"]').tooltip('dispose');
+//         })
+// });
 window.addEventListener('touchstart', function () {
-        $(function () {
-            // the user touched the screen!
-            $('[data-toggle="tooltip"]').tooltip('dispose');
-        })
+   window.WINDOW_TOUCHED = true;
 });
 
-
+$(function () {
+    if (WINDOW_TOUCHED == !true) {
+        $(function () {
+            $('[data-toggle="tooltip"]').mouseenter(function () {
+                var that = $(this)
+                that.tooltip('show');
+                setTimeout(function () {
+                    that.tooltip('hide');
+                }, 2000);
+            });
+            $('[data-toggle="tooltip"]').mouseleave(function () {
+                $(this).tooltip('hide');
+            });
+        });
+    } else if 
+        (WINDOW_TOUCHED == true)  {
+            $(function () {
+                // the user touched the screen!
+                $('[data-toggle="tooltip"]').tooltip('dispose');
+            }) 
+        }
+    
+})
     $(function () {
         $('[data-toggle="tooltip"]').mouseenter(function () {
             var that = $(this)

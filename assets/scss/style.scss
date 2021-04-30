@@ -984,12 +984,12 @@ button.btn.take-me-back:hover {
 }
 
 /*************************** Hide tooltips on ipad ****************************/
-@media only screen 
-and (min-device-width : 300px) 
-and (max-device-width : 1024px) {
-    .tooltip {
-        display: none !important;
-    }
- } 
+// @media only screen 
+// and (min-device-width : 300px) 
+// and (max-device-width : 1024px) {
+//     .tooltip {
+//         display: none !important;
+//     }
+//  } 
 
 

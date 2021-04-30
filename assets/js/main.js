@@ -216,121 +216,44 @@ clipboard.on('error', function (e) {
 // ================================= TOOLTIPS ==================================
 
 
-
 // Initialises tooltips
-// $( function () {
-//     $('[data-toggle="tooltip"]').tooltip();   
-//     setInterval(function () {
-//          $('[data-toggle="tooltip"]').tooltip('hide'); 
-//     }, 2000);
-// });
 
-// Hides the tooltip on touchscreens
-// window.addEventListener('touchstart', function () {
-//         $(function () {
-//             // the user touched the screen!
-//             $('[data-toggle="tooltip"]').tooltip('dispose');
-//         })
-// });
-window.addEventListener('touchstart', function () {
-   window.WINDOW_TOUCHED = true;
-});
-
-$(function () {
-    if (WINDOW_TOUCHED == !true) {
-        $(function () {
-            $('[data-toggle="tooltip"]').mouseenter(function () {
-                var that = $(this)
-                that.tooltip('show');
-                setTimeout(function () {
-                    that.tooltip('hide');
-                }, 2000);
-            });
-            $('[data-toggle="tooltip"]').mouseleave(function () {
-                $(this).tooltip('hide');
-            });
-        });
-    } else if 
-        (WINDOW_TOUCHED == true)  {
-            $(function () {
-                // the user touched the screen!
-                $('[data-toggle="tooltip"]').tooltip('dispose');
-            }) 
-        }
-    
-})
+if (!('ontouchstart' in window)) {
     $(function () {
-        $('[data-toggle="tooltip"]').mouseenter(function () {
-            var that = $(this)
+        $('[data-toggle="tooltip"]').on('mouseenter', function () {
+            let that = $(this)
             that.tooltip('show');
             setTimeout(function () {
                 that.tooltip('hide');
-            }, 2000);
-        });
-        $('[data-toggle="tooltip"]').mouseleave(function () {
+            }, 1500);
+        })
+    
+        $('[data-toggle="tooltip"]').on('mouseleave', function () {
             $(this).tooltip('hide');
-        });
+        })
     });
+    
+} else {
+    $(function () {
+    $('[data-toggle="tooltip"]').tooltip('dispose');
+})
+}
 
+    // $(function () {
+    //     $('[data-toggle="tooltip"]').on('mouseenter', function () {
+    //         let that = $(this)
+    //         that.tooltip('show');
+    //         setTimeout(function () {
+    //             that.tooltip('hide');
+    //         }, 1500);
+    //     })
+    
+    //     $('[data-toggle="tooltip"]').on('mouseleave', function () {
+    //         $(this).tooltip('hide');
+    //     })
+    // });
 
-/* Manually shows and hides tooltips */
-// $( function () {
-// $('[data-toggle="tooltip"]').mouseenter(function(){
-//     var that = $(this)
-//     that.tooltip('show');
-//     setTimeout(function(){
-//         that.tooltip('hide');
-//     }, 2000);
-// });
-
-// $('[data-toggle="tooltip"]').mouseleave(function(){
-//     $(this).tooltip('hide');
-// });
-
-
-// });
-
-
-
-// Detect screen function source https://www.geeksforgeeks.org/how-to-detect-touch-screen-device-using-javascript/
-// Function checks for touch screen
-// function is_touch_enabled() {
-//     return ( 'ontouchstart' in window ) || 
-//            ( navigator.maxTouchPoints > 0 ) ||
-//            ( navigator.msMaxTouchPoints > 0 );
-// }
-
-// if( is_touch_enabled() ) {
-//     // If touch screen == true it disposes of tooltips
-//     $('[data-toggle="tooltip"]').tooltip('dispose');
-// }
-// else {
-
-// /* backup init code for tooltip */
-// /* Manually shows and hides tooltips */
-// //     $( function () {
-// //     $('[data-toggle="tooltip"]').tooltip();  
-// //     setInterval(function () {
-// //          $('[data-toggle="tooltip"]').tooltip('hide'); 
-// //     }, 2000);
-// // });
-
-// /* Manually shows and hides tooltips */
-// $( function () {
-// $('[data-toggle="tooltip"]').mouseenter(function(){
-//     var that = $(this)
-//     that.tooltip('show');
-//     setTimeout(function(){
-//         that.tooltip('hide');
-//     }, 2000);
-// });
-
-// $('[data-toggle="tooltip"]').mouseleave(function(){
-//     $(this).tooltip('hide');
-// });
-// });
-// }
-
+     
 
 
 // ====================== Redirect 404 page to home page========================

@@ -573,6 +573,11 @@ pre.language-css {
   margin-top: 100px;
 }
 
+/* Fixes bug on iPad where code wraps */
+code {
+  word-wrap: inherit !important;
+}
+
 /****************** Highlights the cssContainer text on copy ******************/
 .copyHighlight {
   background-color: rgba(22, 118, 207, 0.33) !important;

@@ -591,6 +591,10 @@ pre.language-css {
 .bazinga pre {
   margin-top: 100px;
 }
+/* Fixes bug on iPad where code wraps */
+code {
+  word-wrap:inherit!important;
+}
 
 /****************** Highlights the cssContainer text on copy ******************/
 

@@ -1,43 +1,42 @@
-
 // NAVBAR OFFCANVAS JS - Solution forclosing the modal foudn on Stack Overflow
 // https://stackoverflow.com/questions/57259093/how-do-i-outside-click-to-close-this-custom-offcanvas-nav-from-bootstraps-docs
 $(function () {
     'use strict';
     $(document)
-      .on('click', '[data-toggle="offcanvas"], #navToggle', function(e) {
-        $('.offcanvas-collapse').toggleClass('open'); // toggle `.open`
-        e.stopPropagation(); // and stop propagation
-      })
-      .on('click', function() {
-        $('.offcanvas-collapse').removeClass('open'); // remove `.open`
-      });
-  });
+        .on('click', '[data-toggle="offcanvas"], #navToggle', function (e) {
+            $('.offcanvas-collapse').toggleClass('open'); // toggle `.open`
+            e.stopPropagation(); // and stop propagation
+        })
+        .on('click', function () {
+            $('.offcanvas-collapse').removeClass('open'); // remove `.open`
+        });
+});
 
 // TOGGLE MODAL
-$(function() {
-    $("contactToggle").on('click', function(){
-    $('#contactModal').modal('show');
+$(function () {
+    $("contactToggle").on('click', function () {
+        $('#contactModal').modal('show');
     });
 });
 
 // To top smooth scroll function
 // https://bbbootstrap.com/snippets/simple-back-top-smooth-scroll-17111555
-$(document).ready(function() {
-    $(window).scroll(function() {
-    if ($(this).scrollTop() > 20) {
-    $('#toTopBtn').fadeIn();
-    } else {
-    $('#toTopBtn').fadeOut();
-    }
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 20) {
+            $('#toTopBtn').fadeIn();
+        } else {
+            $('#toTopBtn').fadeOut();
+        }
     });
-    
-    $('#toTopBtn').click(function() {
-    $("html, body").animate({
-    scrollTop: 0
-    }, 1000);
-    return false;
+
+    $('#toTopBtn').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 1000);
+        return false;
     });
-    });
+});
 
 // ==============  RANGE SLIDER ================================================
 // Range with tooltip
@@ -59,8 +58,8 @@ let rangeSlider = function () {
         });
     });
 };
-  
-  rangeSlider();
+
+rangeSlider();
 
 // This function enables and disables the text shadow group
 $(function () {
@@ -178,7 +177,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 let clipboard = new ClipboardJS('.copy-code-button', {
     target: function (trigger) {
         let target = document.querySelector("#cssContainer");
-   
+
         return trigger.nextElementSibling;
     }
 });
@@ -226,27 +225,47 @@ clipboard.on('error', function (e) {
 //     }, 2000);
 // });
 
-/* Manually shows and hides tooltips */
-$( function () {
-$('[data-toggle="tooltip"]').mouseenter(function(){
-    var that = $(this)
-    that.tooltip('show');
-    setTimeout(function(){
-        that.tooltip('hide');
-    }, 2000);
-});
-
-$('[data-toggle="tooltip"]').mouseleave(function(){
-    $(this).tooltip('hide');
-});
-});
-
 // Hides the tooltip on touchscreens
-window.addEventListener('touchstart', function() {
-    // the user touched the screen!
-    $('[data-toggle="tooltip"]').tooltip('dispose');
+window.addEventListener('touchstart', function () {
+        $(function () {
+            // the user touched the screen!
+            $('[data-toggle="tooltip"]').tooltip('dispose');
+        })
+});
 
-  });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').mouseenter(function () {
+            var that = $(this)
+            that.tooltip('show');
+            setTimeout(function () {
+                that.tooltip('hide');
+            }, 2000);
+        });
+        $('[data-toggle="tooltip"]').mouseleave(function () {
+            $(this).tooltip('hide');
+        });
+    });
+
+
+/* Manually shows and hides tooltips */
+// $( function () {
+// $('[data-toggle="tooltip"]').mouseenter(function(){
+//     var that = $(this)
+//     that.tooltip('show');
+//     setTimeout(function(){
+//         that.tooltip('hide');
+//     }, 2000);
+// });
+
+// $('[data-toggle="tooltip"]').mouseleave(function(){
+//     $(this).tooltip('hide');
+// });
+
+
+// });
+
+
 
 // Detect screen function source https://www.geeksforgeeks.org/how-to-detect-touch-screen-device-using-javascript/
 // Function checks for touch screen
@@ -293,7 +312,6 @@ window.addEventListener('touchstart', function() {
 
 function redirect() {
     setTimeout(function () {
-        window.location.replace("/index.html");
-    }
-        , 3500);
+        window.location.replace("/buttonStyler/index.html");
+    }, 3500);
 }

@@ -218,7 +218,7 @@ clipboard.on('error', function (e) {
 
 // Initialises tooltips
     $(function () {
-        if ((screen.width>1024)) {
+        if ((screen.width>768)) {
             $('[data-toggle="tooltip"]').on('mouseenter', function () {
                 let that = $(this)
                 that.tooltip('show');
@@ -230,7 +230,7 @@ clipboard.on('error', function (e) {
                 $(this).tooltip('hide');
             })
         } else {
-            $('[data-toggle="tooltip"]').tooltip('dispose');
+            $('[data-toggle="tooltip"]').tooltip('disable');
         }
     });
 

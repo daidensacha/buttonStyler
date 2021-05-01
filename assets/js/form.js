@@ -47,7 +47,7 @@ function update() {
     let demoButton = document.querySelector('#demo-button');
 
     // Container to display generated CSS rules 
-    let cssContainer = document.querySelector('#cssContainer');
+    let cssContainer = document.querySelector('#css-container');
 
     // Assign varian to the button background color picker
     let displayBgPicker = document.querySelector("#display-bg-picker").jscolor;

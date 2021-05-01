@@ -252,6 +252,9 @@ Color. Fun. Exploration. I want to take off my conservative hat and be a little 
 15. [shoelace](http://shoelace.io/)
 	Application for building Bootstrap grids. It is a convenient tool that simplifies building the responsive grid.
 
+16. [Web Maker App](https://webmaker.app/)  
+    An offline web playground similart to Codepen, but can be used locally and in the browswer. Create and save doce pens locally, and export them to html to share or display work. I moved to using this for development purposes, and it is exceptional. Had I found it earlier, I would have used it to create examples and share them in my readme. Far better than providing links that take people away from your presentaion.
+
 ## Testing
 [Testing-Plan (Pre-development)](/documentation/testing.md/#testing-plan-pre-development  ) outlines my development and testing strategy.
 

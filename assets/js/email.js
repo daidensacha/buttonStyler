@@ -20,7 +20,7 @@ function sendMail(contactForm) {
             contactForm.message.value = "";
             targetDiv.innerHTML = successMessage;
             setTimeout(() => {
-                targetDiv.innerHTML = ""; // removes the message after 2 seconds
+                targetDiv.innerHTML = "";
             }, 2000);
         }, function(error) {
            console.log('FAILED...', error);
@@ -29,7 +29,7 @@ function sendMail(contactForm) {
             targetDiv.className = "alert-danger";
             targetDiv.innerHTML = errorMessage;
             setTimeout(() => {
-                targetDiv.innerHTML = ""; // removes the message after 2 seconds
+                targetDiv.innerHTML = "";
             }, 2000);
         });
      

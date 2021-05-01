@@ -3,19 +3,19 @@
 $(function () {
     'use strict';
     $(document)
-        .on('click', '[data-toggle="offcanvas"], #navToggle', function (e) {
-            $('.offcanvas-collapse').toggleClass('open'); // toggle `.open`
-            e.stopPropagation(); // and stop propagation
+        .on('click', '[data-toggle="offcanvas"], #nav-toggle', function (e) {
+            $('.offcanvas-collapse').toggleClass('open'); 
+            e.stopPropagation(); 
         })
         .on('click', function () {
-            $('.offcanvas-collapse').removeClass('open'); // remove `.open`
+            $('.offcanvas-collapse').removeClass('open'); 
         });
 });
 
 // TOGGLE MODAL
 $(function () {
-    $("contactToggle").on('click', function () {
-        $('#contactModal').modal('show');
+    $("contact-toggle").on('click', function () {
+        $('#contact-modal').modal('show');
     });
 });
 
@@ -24,13 +24,13 @@ $(function () {
 $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 20) {
-            $('#toTopBtn').fadeIn();
+            $('#to-top-button').fadeIn();
         } else {
-            $('#toTopBtn').fadeOut();
+            $('#to-top-button').fadeOut();
         }
     });
 
-    $('#toTopBtn').click(function () {
+    $('#to-top-button').click(function () {
         $("html, body").animate({
             scrollTop: 0
         }, 1000);
@@ -145,7 +145,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 
     // Create the container for the icon for the clipboard button
     let iconClipboard = document.createElement("i");
-    iconClipboard.className = "far fa-2x copyCss"; // note: fas = solid, far = outline
+    iconClipboard.className = "far fa-2x copy-css"; // note: fas = solid, far = outline
     //  iconClipboard.innerHTML = "&#xf328;"; // clipboard icon
     iconClipboard.innerHTML = "&#xf0c5;"; // copy icon
     iconClipboard.setAttribute("data-toggle", "tooltip");
@@ -176,7 +176,7 @@ document.querySelectorAll('pre > code').forEach(function (codeBlock) {
 // Function copies CSS output on click of the clipboard icon
 let clipboard = new ClipboardJS('.copy-code-button', {
     target: function (trigger) {
-        let target = document.querySelector("#cssContainer");
+        let target = document.querySelector("#css-container");
 
         return trigger.nextElementSibling;
     }
@@ -185,13 +185,13 @@ let clipboard = new ClipboardJS('.copy-code-button', {
 // Define variable for target message element
 let copied = document.querySelector("#copied");
 
-// Define variable for the cssContainer to highlight text on copy
-let cssContainer = document.querySelector("#cssContainer");
+// Define variable for the css-container to highlight text on copy
+let cssContainer = document.querySelector("#css-container");
 
 // Function to display success message
 clipboard.on('success', function (e) {
-    cssContainer.className = "show-fadein copyHighlight";
-    copied.className = "show-fadein successMsg";
+    cssContainer.className = "show-fadein copy-highlight";
+    copied.className = "show-fadein success-msg";
     copied.innerHTML = "Bazinga, CSS copied!";
     setTimeout(() => {
         cssContainer.className = "language-css";
@@ -204,7 +204,7 @@ clipboard.on('success', function (e) {
 
 // Prints the error message if the copy doesn't work.
 clipboard.on('error', function (e) {
-    copied.className = "show-fadein errorMsg"; // Add class to message span to change color of message to red
+    copied.className = "show-fadein error-msg"; // Add class to message span to change color of message to red
     copied.innerHTML = "Oops, that didn't copy!";
     setTimeout(() => {
         copied.className = "hide-fadeout"; // removes the class and message
@@ -215,8 +215,8 @@ clipboard.on('error', function (e) {
 
 // ================================= TOOLTIPS ==================================
 
-
-// Initialises tooltips
+// Initialise tooltips if screen > 768 px. 
+/* This is a temporary fix to kill tooltips on small screens */
     $(function () {
         if ((screen.width>768)) {
             $('[data-toggle="tooltip"]').on('mouseenter', function () {
@@ -235,7 +235,7 @@ clipboard.on('error', function (e) {
     });
 
 // ====================== Redirect 404 page to home page========================
-
+/* Redirects without browser history so back button in browser does not return to error page*/
 function redirect() {
     setTimeout(function () {
         window.location.replace("/buttonStyler/index.html");

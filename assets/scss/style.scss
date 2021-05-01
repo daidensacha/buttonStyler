@@ -296,7 +296,7 @@ color: #fcfcfc;
 
 /*********************************  Offcanvas *********************************/
 
-#offCanvasLeft.offcanvas-collapse {
+#off-canvas-left.offcanvas-collapse {
   position: fixed;
   top: 56px;
   /* Height of navbar */
@@ -320,7 +320,7 @@ color: #fcfcfc;
   transition-property: left, visibility;
 }
 
-#offCanvasLeft.offcanvas-collapse {
+#off-canvas-left.offcanvas-collapse {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -337,26 +337,26 @@ color: #fcfcfc;
 
 /****************** Makes the nav visibile with the open class ****************/
 
-#offCanvasLeft.offcanvas-collapse.open {
+#off-canvas-left.offcanvas-collapse.open {
   left: 0;
   visibility: visible;
 }
 
-#offCanvasLeft.navbar-expand-lg .navbar-nav {
+#off-canvas-left.navbar-expand-lg .navbar-nav {
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
 }
 
-#offCanvasLeft.nav-scroller {
+#off-canvas-left.nav-scroller {
   position: relative;
   z-index: 2;
   height: 2.75rem;
   overflow-y: hidden;
 }
 
-#offCanvasLeft.nav-scroller .nav {
+#off-canvas-left.nav-scroller .nav {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -567,7 +567,7 @@ pre.language-css {
   margin-bottom: -2px;
   margin-top: 2rem;
   font-size: 0.8em;
-  z-index: 11;
+  z-index: 11!important;
 }
 
 #demo-button {
@@ -575,16 +575,16 @@ pre.language-css {
   margin-bottom: 65px;
 }
 
-.copyCss {
+.copy-css {
   color: rgb(170, 88, 11);
 
 }
-.copyCss:hover {
+.copy-css:hover {
   cursor: pointer;
   color:green;
 }
 
-.copyCss:focus {
+.copy-css:focus {
   outline: 0 !important;
 }
 
@@ -596,13 +596,13 @@ code {
   word-wrap:inherit!important;
 }
 
-/****************** Highlights the cssContainer text on copy ******************/
+/****************** Highlights the css-container text on copy ******************/
 
-.copyHighlight {
+.copy-highlight {
   background-color: rgba(22, 118, 207, 0.33)!important;
 }
-/* Transition color from cssCOntainer aplha 0 to copyHighlight alpha 0.33 */
-#cssContainer {
+/* Transition color from css-container aplha 0 to copy-highlight alpha 0.33 */
+#css-container {
   transition: background-color .5s ease;
   background-color: rgba(22, 118, 207, 0);
 }
@@ -628,12 +628,12 @@ code {
 }
 
 /************* Error message class for unsuccesful clipboard copy *************/
-.errorMsg {
+.error-msg {
   color: red;
   margin-left: 10px;
 }
 
-.successMsg {
+.success-msg {
   color: rgb(9, 153, 62);
   margin-left: 10px;
 }
@@ -982,14 +982,4 @@ button.btn.take-me-back:hover {
 @media (min-width: 1400px) {
 
 }
-
-/*************************** Hide tooltips on ipad ****************************/
-// @media only screen 
-// and (min-device-width : 300px) 
-// and (max-device-width : 1024px) {
-//     .tooltip {
-//         display: none !important;
-//     }
-//  } 
-
-
+/* test */

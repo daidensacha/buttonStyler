@@ -724,6 +724,7 @@ It has been a process to learn and develop this application. I had to use and im
 
 ## IMPROVEMENTS
 
+**UX Feedback**
 I had my last meeting with my mentor, and he mentioned that he clicked on a disabled input expecting it to work before realising there was a toggle switch.
 He suggested that if the user clicked on the input, it would be nice to enable the field/ fieldset. I spent a day researching and found there was a fair bit to contemplate and consider. 
 **Disabled elements are not visible for JS events**  
@@ -740,3 +741,9 @@ You can see the working example in the linked codepen, with the boolean and z-in
 **UX Considerations**
 My assignment is due in a few days, so I have too little time to implement this now, and to be honest, I need to contemplate the UX ramifications before doing it. 
 On touch screen devices, a click event is a tap, and I have had experiences scrolling pages with forms when it is harrowing, and the experience is not the expected behavior. With so many inputs and fieldsets that toggle, if a user scrolling has to deal with accidentally enabling fields and fieldsets, that could be far worse than just learning that the toggle switch is that, a controller. I'm still researching and have created the codepen, so I know it's possible.  I need to work out if I want to do it. It might be that I need to make it more straightforward what the toggle switches do. I could, for instance, implement the covering div and use it to trigger a mouseover event (on desktops, tap on touchscreens) with a message appearing saying that the fieldset is disabled and to use the toggle to switch it on. There are many possibilities, all worth consideration. 
+
+**Minor Bugs**  
+I discovered a few minor issues that I will be researching and addressing in due time.
+1. I found out that Apple is discontinuing support for the iPad Air gen 1. I wrote some code that listened for touch and disabled the tooltips on contact. It worked on iPhone, and iPad air Gen 4, in DevTools touch devices too. It didn't work on iPad Air Gen 1 and created more issues, like the copy code icon not working correctly. I compromised and decided to disable the tooltips on a screen size smaller than 924 px. I had my reasons to disable them for small screens. 
+I didn't particularly appreciate how the Bootstrap tooltips appeared on touch screens and impacted user experience. They hung there, and then links sometimes need to be clicked a second time. It opened my eyes to design from multiple perspectives, with different needs on different devices. 
+2. When scrolling the page, I set the z-index of the copy icon, so it stayed on top of other elements as it scrolled. Something changed the last days when I was working on disabling the tooltips for small screens. When I scroll, the icon sometimes does not stay on top, and if I move the css overflow to the left, the icon appears on top. Unfortunately, for now, it has to stay, and I will be looking into it. 

@@ -73,7 +73,6 @@ $(function () {
     });
 });
 
-
 // This function enables and disables the box shadow group
 $(function () {
     $("#box-shadow-toggle").on("change", function () {
@@ -217,22 +216,22 @@ clipboard.on('error', function (e) {
 
 // Initialise tooltips if screen > 768 px. 
 /* This is a temporary fix to kill tooltips on small screens */
-    $(function () {
-        if ((screen.width>768)) {
-            $('[data-toggle="tooltip"]').on('mouseenter', function () {
-                let that = $(this)
-                that.tooltip('show');
-                setTimeout(function () {
-                    that.tooltip('hide');
-                }, 2000);
-            })
-            $('[data-toggle="tooltip"]').on('mouseleave', function () {
-                $(this).tooltip('hide');
-            })
-        } else {
-            $('[data-toggle="tooltip"]').tooltip('disable');
-        }
-    });
+$(function () {
+    if ((screen.width>768)) {
+        $('[data-toggle="tooltip"]').on('mouseenter', function () {
+            let that = $(this);
+            that.tooltip('show');
+            setTimeout(function () {
+                that.tooltip('hide');
+            }, 2000);
+        });
+        $('[data-toggle="tooltip"]').on('mouseleave', function () {
+            $(this).tooltip('hide');
+        });
+    } else {
+        $('[data-toggle="tooltip"]').tooltip('disable');
+    }
+});
 
 // ====================== Redirect 404 page to home page========================
 /* Redirects without browser history so back button in browser does not return to error page*/
